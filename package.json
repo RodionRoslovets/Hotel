@@ -1,0 +1,19 @@
+{
+  "name": "hotek",
+  "version": "1.0.0",
+  "description": "Hotel for FSD",
+  "main": "index.js",
+  "dependencies": {
+    "path": "^0.12.7",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "webpack-dev-server --open --mode development",
+    "build": "webpack --mode production"
+  },
+  "author": "Rodion Roslovets",
+  "license": "ISC"
+}
