@@ -1,0 +1,7 @@
+$headingColor:#ffcc00;
+h1{
+    color:$headingColor;
+    background: #ccff00;
+    transition: all .1s linear;
+    box-sizing: border-box;
+}
