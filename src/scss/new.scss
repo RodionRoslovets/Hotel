@@ -1,4 +1,5 @@
 $headingColor:#ffcc00;
+
 h1{
     color:$headingColor;
     background: #ccff00;
@@ -6,6 +7,10 @@ h1{
     box-sizing: border-box;
 }
 body{
-    background:url('/assets/img/20141122_012053.jpg');
+    background: url('../img/20141122_012053.jpg');
     background-size: 100px;
+}
+p{
+    color:red;
+    width:1000px;
 }
