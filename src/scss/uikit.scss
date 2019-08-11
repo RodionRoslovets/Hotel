@@ -1,0 +1,108 @@
+.input-text{
+    width:320px;
+    height:44px;
+    background:#fff;
+    padding:13px 0px 13px 15px;
+    @include Montserrat();
+    @include inputBorder();
+    transition:all .1s linear;    
+    outline: none;
+    &:focus{
+        @include inputBorderFocus();
+    }
+}
+.dropdown{
+    @include Montserrat();
+    position: relative;
+}
+.dropdown--wrapper{
+    width:320px;
+    position: relative;
+}
+.dropdown--dropdown-arrow{
+    width:44px;
+    height:44px;
+    text-align: center;
+    vertical-align: middle;
+    position:absolute;
+    top:0;
+    right:0;
+    cursor:pointer;
+    line-height: 24px;
+}
+.material-icons{
+    line-height: 44px;
+    color:$darkShade75;
+}
+.dropdown--dropdown-result{
+    position:relative;
+    width:320px;
+    height:44px;
+    padding:13px 0px 13px 15px;
+    color:$darkShade75;
+    @include inputBorder();
+}
+.dropdown--dropdown-result-opened{
+    border-radius: 4px 4px 0 0;
+}
+.dropdown--dropdown-item{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.dropdown-item-name, .dropdown-count-result{
+    @include MontserratBold();
+    text-transform: uppercase;
+    color:$darkShade;
+}
+.dropdown-count{
+    width:92px;
+    position: absolute;
+    right:0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dropdown-count-minus, .dropdown-count-plus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-size:18px;
+    color: $darkShade50;
+    cursor:pointer;
+    width:30px;
+    height:30px;
+    border:1px solid $darkShade25;
+    border-radius:50%;
+    text-align: center;
+}
+.dropdown--dropdown-items{
+    height:159px;
+    position: absolute;
+    display:none;
+    opacity:0;
+    top:0px;
+    width:320px;
+    border:1px solid $darkShade25;
+    border-radius: 0 0 4px 4px;
+    padding:13px 7px 15px;
+    transition: all .1s linear;
+}
+.dropdown--dropdown-items-visible{
+    opacity:1;
+    top:43px;
+}
+.confirm{
+    text-align: right;
+    position: absolute;
+    right: 7px;
+    bottom: 13px;
+}
+.confirm-link{
+    cursor: pointer;
+    color:$purple;
+    text-transform: uppercase;
+    @include MontserratBold();
+}

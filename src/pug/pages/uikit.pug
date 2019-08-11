@@ -1,0 +1,10 @@
+block variables
+	- var title = 'uikit'
+
+include ../includes/header.pug
+
+label Text field
+	+textInput('Email')
+br
+label dropdown
+	+dropdown(3, 'взрослые', 'дети', 'младенцы')

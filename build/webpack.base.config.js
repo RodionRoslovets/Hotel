@@ -22,7 +22,7 @@ module.exports = {
     output: {
         filename: `${PATHS.assets}js/[name].js`,
         path: PATHS.dist,
-        publicPath: '/'
+        publicPath: './'
     },
     module: {
         rules: [{
@@ -86,7 +86,7 @@ module.exports = {
                 to: `${PATHS.assets}img`
             }, {
                 from: `${PATHS.src}/static`,
-                to: ''
+                to: `${PATHS.assets}/static`
             }
         ]),
         ...PAGES.map(page => new HtmlWebpackPlugin({

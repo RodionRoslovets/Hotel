@@ -1,5 +1,5 @@
-alert('hello world');
-alert(5);
+console.log('hello world');
+console.log(5);
 let a=20,
-bbb = ()=>alert(a);
+bbb = ()=>console.log(a);
 bbb();

@@ -1,16 +1,10 @@
-$headingColor:#ffcc00;
+@import './_fonts';
+@import './variables';
+@import './mixins.scss';
+@import './uikit';
 
-h1{
-    color:$headingColor;
-    background: #ccff00;
-    transition: all .1s linear;
-    box-sizing: border-box;
+
+*, *:before, *:after{
+    box-sizing:border-box;
 }
-body{
-    background: url('../img/20141122_012053.jpg');
-    background-size: 100px;
-}
-p{
-    color:red;
-    width:1000px;
-}
+

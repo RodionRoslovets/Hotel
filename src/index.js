@@ -1,2 +1,4 @@
-import './js/alert';
-import './scss/new.scss';
+    import './js/alert';
+    import './js/dropdown';
+    import './js/count';
+    import './scss/new.scss';

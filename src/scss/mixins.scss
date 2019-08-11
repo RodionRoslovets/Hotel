@@ -1,0 +1,15 @@
+@mixin Montserrat() {
+    font-family: 'Montserrat';
+    font-size:14px;
+}
+@mixin MontserratBold(){
+    font-family: 'Montserrat-Bold';
+    font-size:12px;
+}
+@mixin inputBorder(){
+    border:1px solid $darkShade25;
+    border-radius:4px;
+}
+@mixin inputBorderFocus(){
+    border:1px solid $darkShade50;
+}

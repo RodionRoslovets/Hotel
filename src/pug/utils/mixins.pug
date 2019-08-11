@@ -1,0 +1,22 @@
+mixin textInput(placeholder)
+	input.input-text(type='text', placeholder=placeholder)
+
+mixin dropdown(count)
+	.dropdown
+		.dropdown--wrapper
+			.dropdown--dropdown-result Cколько гостей
+			.dropdown--dropdown-arrow 
+				i.material-icons expand_more
+		.dropdown--dropdown-items
+			- for (var i=1; i<=count;i++)
+				.dropdown--dropdown-item
+					.dropdown-item-name #{arguments[i]}
+					.dropdown-count
+						.dropdown-count-minus 
+							span -
+						.dropdown-count-result 0
+						.dropdown-count-plus 
+							span +
+			.confirm
+				.confirm-link применить
+		
