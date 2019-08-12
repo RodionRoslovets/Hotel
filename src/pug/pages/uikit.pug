@@ -1,10 +1,34 @@
 block variables
-	- var title = 'uikit'
-
+	- var title = 'uikit';
+	- var chckBox = [{name:'breakfast', val:'Завтрак'}, {name:'breakfst', val:'Письменный стол'}, {name:'feedChair', val:'Стул для кормления'}, {name:'litlleBad', val:'Кроватка'}, {name:'tv1', val:'Телевизор'}, {name:'schampoo1', val:'Шампунь'}, {name:'tv2', val:'Телевизор'}, {name:'schampoo2', val:'Шампунь'}];
+	- var chckBtns = [{name:'smoke', val:'Можно курить'}, {name:'pets', val:'Можно с питомцами'}, {name:'gusts', val:'Можно пригласить гостей (до 10 человек)'}];
+	- var radioBtns = [{name:'man', val:'Мужчина'}, {name:'woman', val:'Женщина'}]
 include ../includes/header.pug
 
 label Text field
-	+textInput('Email')
++textInput('Email')
 br
 label dropdown
-	+dropdown(3, 'взрослые', 'дети', 'младенцы')
++dropdown(3, 'взрослые', 'дети', 'младенцы')
+br
+label Masked text field
++maskedText()
+br
+label date dropdown
++date()
+label date dropdown
++date()
+br
+label filter date dropdown
++dateFilter()
+label subscribe text field
++subscrTextField('Email')
+br
+label checkbox buttons
++checkBoxBtns(chckBtns, 'checkBoxButtons')
+br
+label expandable checkbox
++checkboxList(chckBox, 'list')
+br
+label radio buttons
++radioBtns(radioBtns, 'radio')

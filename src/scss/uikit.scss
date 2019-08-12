@@ -1,108 +1,422 @@
-.input-text{
-    width:320px;
-    height:44px;
-    background:#fff;
-    padding:13px 0px 13px 15px;
+.input-text {
+    width: 320px;
+    height: 44px;
+    background: #fff;
+    padding: 13px 0px 13px 15px;
     @include Montserrat();
     @include inputBorder();
-    transition:all .1s linear;    
+    transition: all .1s linear;
     outline: none;
-    &:focus{
+
+    &:focus {
         @include inputBorderFocus();
     }
 }
-.dropdown{
+
+.dropdown {
     @include Montserrat();
     position: relative;
+    background: #fff;
 }
-.dropdown--wrapper{
-    width:320px;
+
+.dropdown--wrapper {
+    width: 320px;
     position: relative;
 }
-.dropdown--dropdown-arrow{
-    width:44px;
-    height:44px;
+
+.dropdown--dropdown-arrow {
+    width: 44px;
+    height: 44px;
     text-align: center;
     vertical-align: middle;
-    position:absolute;
-    top:0;
-    right:0;
-    cursor:pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
     line-height: 24px;
 }
-.material-icons{
+
+.material-icons {
     line-height: 44px;
-    color:$darkShade75;
+    color: $darkShade75;
 }
-.dropdown--dropdown-result{
-    position:relative;
-    width:320px;
-    height:44px;
-    padding:13px 0px 13px 15px;
-    color:$darkShade75;
+
+.dropdown--dropdown-result {
+    position: relative;
+    width: 320px;
+    height: 44px;
+    padding: 13px 0px 13px 15px;
+    color: $darkShade75;
     @include inputBorder();
 }
-.dropdown--dropdown-result-opened{
+
+.dropdown--dropdown-result-opened {
     border-radius: 4px 4px 0 0;
 }
-.dropdown--dropdown-item{
+
+.dropdown--dropdown-item {
     position: relative;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
-.dropdown-item-name, .dropdown-count-result{
+
+.dropdown-item-name,
+.dropdown-count-result {
     @include MontserratBold();
     text-transform: uppercase;
-    color:$darkShade;
+    color: $darkShade;
 }
-.dropdown-count{
-    width:92px;
+
+.dropdown-count {
+    width: 92px;
     position: absolute;
-    right:0;
-    display:flex;
+    right: 0;
+    display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.dropdown-count-minus, .dropdown-count-plus{
+
+.dropdown-count-minus {
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Montserrat';
-    font-size:18px;
-    color: $darkShade50;
-    cursor:pointer;
-    width:30px;
-    height:30px;
-    border:1px solid $darkShade25;
-    border-radius:50%;
+    font-size: 18px;
+    color: $darkShade5;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $darkShade5;
+    border-radius: 50%;
     text-align: center;
-}
-.dropdown--dropdown-items{
-    height:159px;
-    position: absolute;
-    display:none;
-    opacity:0;
-    top:0px;
-    width:320px;
-    border:1px solid $darkShade25;
-    border-radius: 0 0 4px 4px;
-    padding:13px 7px 15px;
     transition: all .1s linear;
 }
-.dropdown--dropdown-items-visible{
-    opacity:1;
-    top:43px;
+
+.dropdown-count-minus-active,
+.dropdown-count-plus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    color: $darkShade50;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $darkShade25;
+    border-radius: 50%;
+    text-align: center;
+    transition: all .1s linear;
 }
-.confirm{
+
+.dropdown--dropdown-items {
+    background: #fff;
+    height: 159px;
+    position: absolute;
+    display: none;
+    opacity: 0;
+    top: 0px;
+    width: 320px;
+    border: 1px solid $darkShade25;
+    border-radius: 0 0 4px 4px;
+    padding: 13px 7px 15px;
+    transition: all .1s linear;
+}
+
+.dropdown--dropdown-items-visible {
+    opacity: 1;
+    top: 43px;
+    z-index: 1;
+}
+
+.confirm {
     text-align: right;
     position: absolute;
     right: 7px;
     bottom: 13px;
 }
-.confirm-link{
+
+.clear {
+    display: none;
+    position: absolute;
+    left: 7px;
+    bottom: 13px;
+}
+
+.confirm-link,
+.clear-link {
     cursor: pointer;
-    color:$purple;
+    color: $purple;
     text-transform: uppercase;
     @include MontserratBold();
+}
+
+.clear-link {
+    color: $darkShade50;
+}
+
+.date-dropdown {
+    width: 150px;
+    @include Montserrat();
+    position: relative;
+    background: #fff;
+}
+
+.date-dropdown--wrapper {
+    position: relative;
+}
+
+.date-dropdown--dropdown-result {
+    position: relative;
+    height: 44px;
+    padding: 13px 0px 13px 15px;
+    color: $darkShade75;
+    @include inputBorder();
+}
+
+.date-dropdown--dropdown-arrow {
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    line-height: 24px;
+}
+
+.date-filter-dropdown {
+    width: 266px;
+    @include Montserrat();
+    position: relative;
+    background: #fff;
+}
+
+.date-filter-dropdown--wrapper {
+    position: relative;
+}
+
+.date-filter-dropdown--dropdown-result {
+    position: relative;
+    height: 44px;
+    padding: 13px 0px 13px 15px;
+    color: $darkShade75;
+    @include inputBorder();
+}
+
+.date-filter-dropdown--dropdown-arrow {
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    line-height: 24px;
+}
+
+.subscribe-field {
+    width: 266px;
+    position: relative;
+}
+
+.subscribe-field--input {
+    width: 266px;
+    height: 44px;
+    background: #fff;
+    padding: 13px 0px 13px 15px;
+    @include Montserrat();
+    @include inputBorder();
+    transition: all .1s linear;
+    outline: none;
+
+    &:focus {
+        @include inputBorderFocus();
+    }
+}
+
+.subscribe-field--arrow {
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    line-height: 24px;
+}
+
+.checkbox-list {
+    width: 266px;
+    padding: 14px 0 0 0;
+    position: relative;
+}
+
+.checkbox-list--wrapper {
+    position: relative;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkbox-list--description {
+    @include MontserratBold();
+    text-transform: uppercase;
+}
+
+.checkbox-list--arrow {
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    line-height: 24px;
+    transition: all .1s linear;
+}
+
+.checkbox-list--arrow-rotated {
+    transform: rotate(180deg);
+}
+
+.checkbox-list--list {
+    display: none;
+    position: relative;
+    ;
+    top: 0px;
+    opacity: 0;
+    transition: all .1s linear;
+}
+
+.checkbox-list--list-opened {
+    position: relative;
+    top: 0;
+    opacity: 1;
+}
+
+.checkbox-list--list-item {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+.list-item-chek {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include inputBorder();
+    margin-right: 10px;
+    transition: all .1s linear;
+    cursor: pointer;
+}
+
+.list-item-chek-active {
+    border-color: $purple;
+}
+
+.list-item-description {
+    @include Montserrat();
+    color: $darkShade50;
+    width: 236px;
+}
+
+.list-item-chek--checked {
+    opacity: 0;
+    transition: all .1s linear;
+}
+
+.list-item-chek--checked-active {
+    opacity: 1;
+}
+
+.checkbox-btns {
+    width: 266px;
+}
+
+.checkbox-btns--description {
+    text-transform: uppercase;
+    @include MontserratBold();
+    margin-bottom: 30px;
+}
+
+.checkbox-btns--list-item {
+    display: flex;
+}
+
+.checkbox-btns-item-chek {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include inputBorder();
+    margin-right: 10px;
+    transition: all .1s linear;
+    cursor: pointer;
+}
+
+.checkbox-btns--list-item {
+    margin-bottom: 10px;
+}
+
+.checkbox-btns-item-description {
+    width: 192px;
+    @include Montserrat();
+    color: $darkShade50;
+}
+
+.checkbox-btns-item-chek-active {
+    border-color: $purple;
+}
+
+.checkbox-btns-item-chek--checked {
+    opacity: 0;
+    transition: all .1s linear;
+}
+
+.checkbox-btns-item-chek--checked-active {
+    opacity: 1;
+}
+.radio-btns{
+    width:220px;
+}
+.radio-btns--description{
+    text-transform: uppercase;
+    @include MontserratBold();
+    margin-bottom:30px;
+}
+.radio-btns--list-item{
+    display:flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.radio-btns-item-chek{
+    width:20px;
+    height:20px;
+    @include inputBorder();
+    border-radius: 50%;
+    margin-right:10px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.radio-btns-item-chek--checked{
+    opacity:0;
+    transition:all .1s linear;
+}
+.radio-btns-item-chek--checked-active{
+    opacity:1;
 }
