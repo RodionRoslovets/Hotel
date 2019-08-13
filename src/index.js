@@ -5,4 +5,5 @@
     import './js/checkboxList';
     import './js/checkBoxBtns';
     import './js/radioBtns';
+    import './js/toggleSwitch';
     import './scss/new.scss';

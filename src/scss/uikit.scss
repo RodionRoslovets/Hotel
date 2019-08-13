@@ -389,34 +389,83 @@
 .checkbox-btns-item-chek--checked-active {
     opacity: 1;
 }
-.radio-btns{
-    width:220px;
+
+.radio-btns {
+    width: 220px;
 }
-.radio-btns--description{
+
+.radio-btns--description {
     text-transform: uppercase;
     @include MontserratBold();
-    margin-bottom:30px;
+    margin-bottom: 30px;
 }
-.radio-btns--list-item{
-    display:flex;
+.radio-btns--list{
+    display: flex;
+    justify-content: space-around;
+}
+.radio-btns--list-item {
+    display: flex;
     align-items: center;
     margin-bottom: 10px;
 }
-.radio-btns-item-chek{
-    width:20px;
-    height:20px;
+
+.radio-btns-item-chek {
+    width: 20px;
+    height: 20px;
     @include inputBorder();
     border-radius: 50%;
-    margin-right:10px;
-    display:flex;
+    margin-right: 10px;
+    display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
 }
-.radio-btns-item-chek--checked{
-    opacity:0;
+
+.radio-btns-item-chek-active {
+    border-color: $purple;
+}
+
+.radio-btns-item-chek--checked {
+    opacity: 0;
+    transition: all .1s linear;
+}
+
+.radio-btns-item-chek--checked-active {
+    opacity: 1;
+}
+.toggle-switch{
+    width: 260px;
+}
+.toggle-switch-wrapper{
+    display:flex; 
+    justify-content: space-around;
+}
+.toggle-switch--switchWrapper{
+    width:40px;
+    height: 20px;
+    border: 1px solid $darkShade25;
+    border-radius:10px;
+    position:relative;
+    cursor:pointer;
+    margin-right:10px;
+}
+.toggle-switch--switchWrapper-active{
+    border-color:$purple;
+}
+.switchWrapper-switch{
+    width:12px;
+    height:12px;
+    border-radius:50%;
+    background: rgba(31, 32, 65, 0.25);
+    position:absolute;
+    top:3px;
+    left:3px;
     transition:all .1s linear;
 }
-.radio-btns-item-chek--checked-active{
-    opacity:1;
+.switchWrapper-switch-active{
+    background: linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
+    left:23px;
+}
+.toggle-switch--description{
+    @include Montserrat();
 }
