@@ -6,4 +6,7 @@
     import './js/checkBoxBtns';
     import './js/radioBtns';
     import './js/toggleSwitch';
+    import './js/likeBtn';
+    import './js/rateBtn';
+    import './js/richChckBox';
     import './scss/new.scss';

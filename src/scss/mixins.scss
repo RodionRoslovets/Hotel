@@ -13,3 +13,17 @@
 @mixin inputBorderFocus(){
     border:1px solid $darkShade50;
 }
+@mixin cursorAndTransition(){
+    cursor:pointer;
+    transition: all .1s 
+}
+
+@mixin flexAllCenter(){
+    display:flex;
+    justify-content: center;
+    align-items:center; 
+}
+@mixin flexVertCenter(){
+    display:flex;
+    align-items:center; 
+}

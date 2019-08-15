@@ -36,7 +36,7 @@
     line-height: 24px;
 }
 
-.material-icons {
+.dropdown--dropdown-arrow-icon {
     line-height: 44px;
     color: $darkShade75;
 }
@@ -56,8 +56,7 @@
 
 .dropdown--dropdown-item {
     position: relative;
-    display: flex;
-    align-items: center;
+    @include flexVertCenter();
     margin-bottom: 20px;
 }
 
@@ -72,15 +71,12 @@
     width: 92px;
     position: absolute;
     right: 0;
-    display: flex;
-    align-items: center;
+    @include flexVertCenter();
     justify-content: space-between;
 }
 
 .dropdown-count-minus {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexAllCenter();
     font-family: 'Montserrat';
     font-size: 18px;
     color: $darkShade5;
@@ -95,9 +91,7 @@
 
 .dropdown-count-minus-active,
 .dropdown-count-plus {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexAllCenter();
     font-family: 'Montserrat';
     font-size: 18px;
     color: $darkShade50;
@@ -186,7 +180,10 @@
     cursor: pointer;
     line-height: 24px;
 }
-
+.date-dropdown--dropdown-arrow-icon{
+    line-height: 44px;
+    color:$darkShade75;
+}
 .date-filter-dropdown {
     width: 266px;
     @include Montserrat();
@@ -217,7 +214,10 @@
     cursor: pointer;
     line-height: 24px;
 }
-
+.date-filter-dropdown--dropdown-arrow-icon{
+    line-height: 44px;
+    color:$darkShade75;
+}
 .subscribe-field {
     width: 266px;
     position: relative;
@@ -249,7 +249,10 @@
     cursor: pointer;
     line-height: 24px;
 }
-
+.subscribe-field--arrow-icon{
+    line-height: 44px;
+    color:$darkShade75;
+}
 .checkbox-list {
     width: 266px;
     padding: 14px 0 0 0;
@@ -259,9 +262,8 @@
 .checkbox-list--wrapper {
     position: relative;
     height: 44px;
-    display: flex;
+    @include flexVertCenter();
     justify-content: space-between;
-    align-items: center;
 }
 
 .checkbox-list--description {
@@ -281,7 +283,10 @@
     line-height: 24px;
     transition: all .1s linear;
 }
-
+.checkbox-list--arrow-icon{
+    line-height: 44px;
+    color:$darkShade75;
+}
 .checkbox-list--arrow-rotated {
     transform: rotate(180deg);
 }
@@ -289,7 +294,6 @@
 .checkbox-list--list {
     display: none;
     position: relative;
-    ;
     top: 0px;
     opacity: 0;
     transition: all .1s linear;
@@ -302,8 +306,7 @@
 }
 
 .checkbox-list--list-item {
-    display: flex;
-    align-items: center;
+    @include flexVertCenter();
     height: 20px;
     margin-bottom: 10px;
 }
@@ -312,9 +315,7 @@
     width: 20px;
     height: 20px;
     background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexAllCenter();
     @include inputBorder();
     margin-right: 10px;
     transition: all .1s linear;
@@ -358,9 +359,7 @@
     width: 20px;
     height: 20px;
     background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexAllCenter();
     @include inputBorder();
     margin-right: 10px;
     transition: all .1s linear;
@@ -404,8 +403,7 @@
     justify-content: space-around;
 }
 .radio-btns--list-item {
-    display: flex;
-    align-items: center;
+    @include flexVertCenter();
     margin-bottom: 10px;
 }
 
@@ -415,9 +413,7 @@
     @include inputBorder();
     border-radius: 50%;
     margin-right: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexAllCenter();
     cursor: pointer;
 }
 
@@ -468,4 +464,310 @@
 }
 .toggle-switch--description{
     @include Montserrat();
+}
+.likeBtnBorder{
+    width:40px;
+    height:20px;
+    background:$darkShade25;
+    @include flexAllCenter();
+    border-radius:10px;    
+    transition:all .1s linear;
+}
+.likeBtnBorder-active{
+    background: linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
+}
+.likeBtn-wrapper{
+    width:38px;
+    height:18px;
+    background:#fff;
+    border-radius:10px;
+    @include flexVertCenter();
+    transition:all .1s linear; 
+    cursor:pointer;
+}
+
+.likeBtn--heart{
+    width:20px;
+    height:20px;
+    padding-left:5px;
+}
+.likeBtn--heart-icon{
+    font-size:10px;
+    line-height: 20px;
+    color:$darkShade25;
+    transition:all .1s linear;
+}
+.likeBtn--heart-icon-active{
+    color:$purple;
+}
+.likeBtn--num{
+    font-family:Montserrat;
+    font-size:10px;
+    color:$darkShade25;
+    transition:all .1s linear;
+}
+.likeBtn--num-active{
+    color:$purple;
+}
+.rateBtns{
+    width:120px;
+    @include flexVertCenter();
+}
+.rateBtns-line {
+    @include flexVertCenter();
+}
+.rateBtns--star{
+    margin:0px 2px;
+    cursor:pointer;
+    @include flexAllCenter();
+}
+.rateBtns--star-icon{
+    @include flexVertCenter();
+    background:linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition:all .1s linear;
+}
+.rateBtns--star-icon-active{
+    transition: all .1s linear;
+}
+
+.richCheckBox{
+    width:266px;
+}
+.richCheckBox--description{
+    text-transform: uppercase;
+    @include MontserratBold();
+    margin-bottom:10px;
+}
+.richCheckBox--items-item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:10px;
+
+}
+.richCheckBox--items-item-chek{
+    width:20px;
+    height:20px;
+    @include inputBorder();
+    margin-right: 10px;
+    transition: all .1s linear;
+    cursor: pointer;
+    @include flexAllCenter();
+}
+.richCheckBox--items-item-chek-active{
+    border-color:$purple;
+}
+.richCheckBox--items-item-chek--checked{
+    transition:all .1s linear;
+    opacity: 0;
+}
+.richCheckBox--items-item-chek--checked-active{
+    opacity: 1;
+}
+.richCheckBox--items-item-description{
+    width:236px;
+}
+.richCheckBox--items-item-description-heading{
+    @include MontserratBold();
+    font-size:14px;
+    color:$darkShade75;
+    margin-bottom:5px;
+}
+.richCheckBox--items-item-description-text{
+    @include Montserrat();
+    font-size:12px;
+    color:$darkShade50;
+}
+.bulletList{
+    width:292px;
+}
+.bulletList--description{
+    text-transform: uppercase;
+    @include MontserratBold();
+    margin-bottom:10px;
+}
+.bulletList--list-item{
+    display:flex;
+    align-items: baseline;
+    margin-bottom:10px;
+}
+.bulletList--list-item-marker{
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background: $darkShade25;
+    margin-right:10px;
+}
+.bulletList--list-item-description{
+    width:240px;
+    @include Montserrat();
+    color:$darkShade75;
+}
+.filledBtn--button{
+    height:44px;
+    padding:14px 20px;
+    text-transform: uppercase;
+    @include MontserratBold();
+    border:none;
+    border-radius:22px;
+    background: linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
+    color:#fff;
+    cursor: pointer;
+    transition:all .1s linear;
+        &:focus{
+            outline: none;
+        }
+        &:active{
+            opacity: 0.5;
+        }
+}
+.borderedBtn-wrapper{
+    height:44px;
+    width:105px;
+    border-radius:22px;
+    background: linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
+    cursor: pointer;
+    transition:all .1s linear;
+    @include flexAllCenter();
+        &:active{
+            opacity: 0.5;
+        }
+}
+.borderedBtn--button{
+    height:40px;
+    padding:14px 20px;
+    text-transform: uppercase;
+    @include MontserratBold();
+    border:none;
+    border-radius:22px;
+    background: #fff;
+    color:$purple;
+    cursor: pointer;
+    transition:all .1s linear;
+        &:focus{
+            outline: none;
+        }
+        &:active{
+            opacity: 1;
+        }
+}
+.textBtn--button{
+    text-decoration: none;
+    @include MontserratBold();
+    text-transform: uppercase;
+    color:$darkShade50;
+    transition: all .1s linear;
+    &:hover, &:active{
+        color:$purple;
+    }
+}
+.longBtn--button{
+    position:relative;
+    width:320px;
+    height:44px;
+    text-transform: uppercase;
+    @include MontserratBold();
+    border:none;
+    border-radius:22px;
+    background: linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
+    color:#fff;
+    cursor: pointer;
+    transition:all .1s linear;
+        &:focus{
+            outline: none;
+        }
+}
+.longBtn--arrow-icon{
+    position: absolute;
+    top:10px;
+    right:15px;
+}
+.pagination{
+    width:240px;
+}
+.pagination--line{
+    display:flex;
+    justify-content: space-between;
+    font-family: 'Montserrat';
+    font-size:12px;
+    margin-bottom:10px;
+}
+.pagination--line-elem{
+    width:40px;
+    height:40px;
+    @include flexAllCenter();
+    color:$darkShade50;
+    background: #fff;
+    border-radius:50%;
+    cursor:pointer;
+    transition: all .1s linear;
+}
+.pagination--line-elem-active{
+    color:#fff;
+    background: linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
+}
+.pagination--options{
+    font-family: 'Montserrat';
+    font-size:14px;
+    @include flexAllCenter();
+}
+.pagination--line-elem-arrow-icon{
+    cursor:pointer;
+    color:#fff;
+    background: linear-gradient(180deg, $green 0%, #66D2EA 100%);
+}
+.range{
+    width:266px;
+}
+.range--description{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:10px;
+}
+.range--description-text{
+    @include MontserratBold();
+    text-transform: uppercase;
+}
+.range--description-values{
+    display:flex;
+    font-family: 'Montserrat';
+    font-size:12px;
+}
+.slider--base{
+    position:relative;
+    width:100%;
+    height:6px;
+    @include inputBorder();
+    border-radius:3px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    z-index: 0;
+}
+.slider--base-hover{
+    position:absolute;
+    z-index: 0;
+    width: 37%;
+    height:6px;
+    background: linear-gradient(180deg, $green 0%, #66D2EA 100%);
+    border-radius:3px;
+    cursor:pointer;
+}
+.slider--left-btn, .slider--right-btn{
+    position: absolute;
+    z-index: 2;
+    width:14px;
+    height:14px;
+    border:2px solid #fff;
+    background: linear-gradient(180deg, $green 0%, #66D2EA 100%);
+    border-radius: 50%;
+    cursor:pointer;
+}
+.slider--left-btn{
+    left:80px;
+    cursor:pointer;
+}
+.slider--right-btn{
+    right:80px;
 }

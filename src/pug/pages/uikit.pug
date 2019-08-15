@@ -3,8 +3,9 @@ block variables
 	- var chckBox = [{name:'breakfast', val:'Завтрак'}, {name:'breakfst', val:'Письменный стол'}, {name:'feedChair', val:'Стул для кормления'}, {name:'litlleBad', val:'Кроватка'}, {name:'tv1', val:'Телевизор'}, {name:'schampoo1', val:'Шампунь'}, {name:'tv2', val:'Телевизор'}, {name:'schampoo2', val:'Шампунь'}];
 	- var chckBtns = [{name:'smoke', val:'Можно курить'}, {name:'pets', val:'Можно с питомцами'}, {name:'gusts', val:'Можно пригласить гостей (до 10 человек)'}];
 	- var radioBtns = [{name:'man', val:'Мужчина'}, {name:'woman', val:'Женщина'}]
+	- var richCheckbox = [{name:'wide', value:'wide', head:'Широкий коридор', text:'Ширина коридоров не менее 91 см.'}, {name:'helper', value:'helper', head:'Помощник для инвалидов', text:'На 1 этаже вас встретит специалист и проводит до номера.'}]
+	- var bullets = [{text:'Нельзя с питомцами'}, {text: 'Без вечеринок и мероприятий'}, {text: 'Время прибытия — после 13:00, а выезд до 12:00'}]
 include ../includes/header.pug
-
 label Text field
 +textInput('Email')
 br
@@ -35,3 +36,36 @@ label radio buttons
 br
 label toggle
 +toggleSwitch('Получать спецпредложения', 'get')
+br
+label like button
++likeBtn(10)
+br
+label rate button
++rateBtns(second)
+br
+label rich checkbox button
++richCheckboxBtns(richCheckbox, 'richCheckBoxButtons')
+br
+label bullet list
++bulletList('bullets list', bullets)
+br
+label filled button
++filledBtn('click me')
+br
+label border button
++borderBtn('click me')
+br
+label text button
++textBtn('click me')
+br
+label long button
++longBtn('click me')
+br
+label pagination
++pagination()
+br
+label range slider
++rangeSlider()
+br
+label comment
++comment('./assets/img/image.png', 'Мурад Сарафанов', '5 дней назад', 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.')
