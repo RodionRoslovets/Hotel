@@ -771,3 +771,151 @@
 .slider--right-btn{
     right:80px;
 }
+.comment{
+    width:710px;
+}
+.comment-wrapper{
+    display:flex;
+    justify-content: space-between;
+}
+.comment-author{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin-right:10px;
+    margin-bottom:10px;
+}
+.comment-content{
+    display:flex;
+    flex-direction: column;
+    @include Montserrat();
+    color:$darkShade75;
+}
+.author-name{
+    font-family: 'Montserrat-Bold';
+    font-size:14px;
+    color:$darkShade75;
+    margin-bottom:10px;
+}
+.author-comment-date{
+    margin-bottom:5px;
+}
+.comment-text{
+    line-height: 24px;
+}
+.advantages{
+    width:290px;
+}
+.advantages-item{
+    display:flex;
+    align-items: center;
+    margin-bottom:10px;
+}
+.advantages-item-image-icon{
+    font-size:48px;
+    background:linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition:all .1s linear;
+    margin-right:10px;
+}
+.description-heading{
+    font-family: 'Montserrat-Bold';
+    font-size:14px;
+    margin-bottom:5px;
+}
+.description-text{
+    @include Montserrat();
+}
+.advantages-item-line{
+    width:280px;
+    background: rgba(31, 32, 65, 0.1);
+    border:none;
+    height:1px;
+    margin-bottom:10px;
+}
+.colors{
+    width:270px;
+}
+.colors-item{
+    @include flexVertCenter();
+    margin-bottom:20px;
+}
+.colors-block{
+    width:70px;
+    height:70px;
+    border-radius: 6px;
+    margin-right:30px;
+}
+.colors-heading{
+    margin-bottom:10px;
+}
+.type{
+    width: 403px;
+}
+.type-item{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:50px;
+}
+.type-tag{
+    width:40px;
+    text-align: right;
+}
+.type-description{
+    width:336px;
+}
+.calendar{
+    width: 320px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+}
+.calendar-wrapper{
+    width:100%;
+    max-width: 280px;
+    margin: 20px auto;
+}
+.calendar-heading{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.calendar-heading-arrow{
+    @include flexVertCenter();
+    color:$purple;
+    cursor: pointer;
+}
+.calendar-table{
+    width:100%;
+    margin-top:30px;
+}
+.calendar-table-head th{
+    @include MontserratBold();
+    color:$purple;
+    width:40px;
+    height:40px;
+}
+.calendar-table-body{
+    width:100%;
+    font-size:12px;
+}
+.calendar-table-body td{
+    width:40px;
+    height:40px;
+    text-align: center;
+    cursor: pointer;
+}
+.calendar-last-month, .calendar-next-month{
+    color:$darkShade25;
+}
+.calendar-buttons{
+    display: flex;
+    justify-content: space-between;
+    @include MontserratBold();
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.calendar-confirm-link{
+    color:$purple;
+}

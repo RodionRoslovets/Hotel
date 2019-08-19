@@ -9,4 +9,6 @@
     import './js/likeBtn';
     import './js/rateBtn';
     import './js/richChckBox';
+    import './js/calendar';
+
     import './scss/new.scss';

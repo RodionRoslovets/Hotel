@@ -5,7 +5,11 @@ block variables
 	- var radioBtns = [{name:'man', val:'Мужчина'}, {name:'woman', val:'Женщина'}]
 	- var richCheckbox = [{name:'wide', value:'wide', head:'Широкий коридор', text:'Ширина коридоров не менее 91 см.'}, {name:'helper', value:'helper', head:'Помощник для инвалидов', text:'На 1 этаже вас встретит специалист и проводит до номера.'}]
 	- var bullets = [{text:'Нельзя с питомцами'}, {text: 'Без вечеринок и мероприятий'}, {text: 'Время прибытия — после 13:00, а выезд до 12:00'}]
+	- var advantages = [{img: 'insert_emoticon', heading: 'Комфорт', text: 'Шумопоглощающие стены'}, {img: 'location_city', heading: 'Удобство', text: 'Окно в каждой из спален'}]
+	- var colors = [{heading: 'Dark Shade 100%', text: '#1F2041', style:'background: #1F2041;'}, {heading: 'Dark Shade 75%', text: '#1F2041', style:'background: rgba(31, 32, 65, 0.75);'}, {heading: 'Dark Shade 50%', text: '#1F2041', style:'background: rgba(31, 32, 65, 0.5);'}, {heading: 'Dark Shade 25%', text: '#1F2041', style:'background: rgba(31, 32, 65, 0.25);'}, {heading: 'Dark Shade 5%', text: '#1F2041', style:'background: rgba(31, 32, 65, 0.05);'}, {heading: 'Purple', text: '#BC9CFF', style:'background: #BC9CFF;'}, {heading: 'Green', text: '#6FCF97', style:'background: #6FCF97;'}]
+
 include ../includes/header.pug
++logo()
 label Text field
 +textInput('Email')
 br
@@ -69,3 +73,35 @@ label range slider
 br
 label comment
 +comment('./assets/img/image.png', 'Мурад Сарафанов', '5 дней назад', 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.')
+br
+label advantages
++advantages(advantages)
+.colors
+	each el in colors
+		.colors-item
+			.colors-block(style=el.style)
+			.colors-description
+				h2.colors-heading #{el.heading}
+				p.colors-text #{el.text}
+.type
+	.type-item
+		.type-tag
+			.type-tag-h1 H1
+		.type-description
+			h1.type-description-text This one is the sub-section or widget title
+	.type-item
+		.type-tag
+			.type-tag-h2 H2
+		.type-description
+			h2.type-description-text Next one is the item title inside widgets
+	.type-item
+		.type-tag
+			.type-tag-h3 H3
+		.type-description
+			h3.type-description-text This is a label or CTA text
+	.type-item
+		.type-tag
+			.type-tag-body Body
+		.type-description
+			body.type-description-text This is the body text which is used for most of the design, like paragraphs, lists, etc.
++calendar()
