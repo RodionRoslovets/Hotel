@@ -881,6 +881,10 @@
     justify-content:space-between;
     align-items:center;
 }
+.calendar-month{
+    margin-right:8px;
+}
+
 .calendar-heading-arrow{
     @include flexVertCenter();
     color:$purple;
@@ -918,4 +922,16 @@
 }
 .calendar-confirm-link{
     color:$purple;
+}
+.today-active{
+    font-weight: bold;
+    color:#fff;
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    border-radius:50%;
+}
+.calendar-month-cell-active{
+    font-weight: bold;
+    color:#fff;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius:50%;
 }
