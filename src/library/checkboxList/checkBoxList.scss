@@ -1,0 +1,87 @@
+.checkbox-list {
+    width: 266px;
+    padding: 14px 0 0 0;
+    position: relative;
+}
+
+.checkbox-list--wrapper {
+    position: relative;
+    height: 44px;
+    @include flexVertCenter();
+    justify-content: space-between;
+}
+
+.checkbox-list--description {
+    @include MontserratBold();
+    text-transform: uppercase;
+}
+
+.checkbox-list--arrow {
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    line-height: 24px;
+    transition: all .1s linear;
+}
+.checkbox-list--arrow-icon{
+    line-height: 44px;
+    color:$darkShade75;
+}
+.checkbox-list--arrow-rotated {
+    transform: rotate(180deg);
+}
+
+.checkbox-list--list {
+    display: none;
+    position: relative;
+    top: 0px;
+    opacity: 0;
+    transition: all .1s linear;
+}
+
+.checkbox-list--list-opened {
+    position: relative;
+    top: 0;
+    opacity: 1;
+}
+
+.checkbox-list--list-item {
+    @include flexVertCenter();
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+.list-item-chek {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    @include flexAllCenter();
+    @include inputBorder();
+    margin-right: 10px;
+    transition: all .1s linear;
+    cursor: pointer;
+}
+
+.list-item-chek-active {
+    border-color: $purple;
+}
+
+.list-item-description {
+    @include Montserrat();
+    color: $darkShade50;
+    width: 236px;
+}
+
+.list-item-chek--checked {
+    opacity: 0;
+    transition: all .1s linear;
+}
+
+.list-item-chek--checked-active {
+    opacity: 1;
+}

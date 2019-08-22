@@ -1,0 +1,32 @@
+@import "./focus/subscribeTextField-focus";
+.subscribe-field {
+    width: 266px;
+    position: relative;
+}
+
+.subscribe-field--input {
+    width: 266px;
+    height: 44px;
+    background: #fff;
+    padding: 13px 0px 13px 15px;
+    @include Montserrat();
+    @include inputBorder();
+    transition: all .1s linear;
+    outline: none;
+}
+
+.subscribe-field--arrow {
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    line-height: 24px;
+}
+.subscribe-field--arrow-icon{
+    line-height: 44px;
+    color:$darkShade75;
+}

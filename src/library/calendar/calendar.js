@@ -51,7 +51,7 @@ window.addEventListener('DOMContentLoaded', () => {
     yearHeading.forEach(el => {
         el.innerHTML = `${month.getFullYear()}`;
     });
-    
+
 
     //Заполняем таблицу числами 
     function fillTable() {
@@ -59,7 +59,30 @@ window.addEventListener('DOMContentLoaded', () => {
         table.forEach(el => {
             el.innerHTML = '';
         });
+        
+        function addRangeClass() {//Добавили класс для диапазона выбраных ячеек
+            for (let j = 0; j < dateCell.length; j++) {
+                if (dateCell[j].classList.contains('calendar-month-cell-active-start')) {
+                    dateCell[j + 1].classList.add('calendar-month-cell-active-range');
 
+                } else if (dateCell[j].classList.contains('calendar-month-cell-active-end')) {
+                    if(dateCell[j].classList.contains('calendar-month-cell-active-range')){
+                        dateCell[j].classList.remove('calendar-month-cell-active-range');
+                    }
+                    break;
+                } else if (dateCell[j].classList.contains('calendar-month-cell-active-range') && !dateCell[j + 1].classList.contains('calendar-month-cell-active-end')) {
+                    dateCell[j + 1].classList.add('calendar-month-cell-active-range');
+                }
+            }
+        }
+
+        function removeRangeClass(){//Убрали выделение диапазона
+            for (let i = 0; i < dateCell.length; i++) {
+                if (dateCell[i].classList.contains('calendar-month-cell-active-range')) {
+                    dateCell[i].classList.remove('calendar-month-cell-active-range');
+                }
+            }
+        }
         let day,
             date = month.getDate();
         //вернулись к первому дню месяца
@@ -143,31 +166,86 @@ window.addEventListener('DOMContentLoaded', () => {
         let dateCell = document.querySelectorAll('.calendar-month-cell'),
             todayActive = new Date();
 
-            for(let i = 0; i < dateCell.length; i++){
-                if (dateCell[i].innerHTML == todayActive.getDate() && monthHeading[0].innerHTML == months[todayActive.getMonth()].name && yearHeading[0].innerHTML == todayActive.getFullYear()) {
-                    dateCell[i].classList.add('today-active');
-                }
+        for (let i = 0; i < dateCell.length; i++) {
+            if (dateCell[i].innerHTML == todayActive.getDate() && monthHeading[0].innerHTML == months[todayActive.getMonth()].name && yearHeading[0].innerHTML == todayActive.getFullYear()) {
+                dateCell[i].classList.add('today-active');
             }
-            
-            for(let i = 0; i < dateCell.length; i++){
-                dateCell[i].addEventListener('click', (e)=>{
-                    dateCell[i].classList.toggle('calendar-month-cell-active');
-                    
-                    let cellActive = document.querySelectorAll('.calendar-month-cell-active');
+        }
+        //Выделение ячеек и назначение диапазона
+        for (let i = 0; i < dateCell.length; i++) {
+            dateCell[i].addEventListener('click', (e) => {
+                dateCell[i].classList.toggle('calendar-month-cell-active');
 
-                   
-                    
-                    if(cellActive.length > 2){
-                        if(cellActive.length > 2 && e.currentTarget.innerHTML < cellActive[1].innerHTML){
-                            cellActive[1].classList.remove('calendar-month-cell-active');
-                        }else {
-                            cellActive[0].classList.remove('calendar-month-cell-active');
+                
+                let cellActive = document.querySelectorAll('.calendar-month-cell-active');
+                if (cellActive.length < 2) {
+                    removeRangeClass();
+                }
+                if (cellActive.length == 2) {
+                    for (let k = 0; k < dateCell.length; k++) {
+                        dateCell[k].classList.remove('calendar-month-cell-active-start');
+                        dateCell[k].classList.remove('calendar-month-cell-active-end');
+
+
+                    }
+
+                    cellActive = document.querySelectorAll('.calendar-month-cell-active');
+                    if (cellActive.length < 2) {
+                        removeRangeClass();
+                    }
+                    cellActive[0].classList.add('calendar-month-cell-active-start');
+                    cellActive[1].classList.add('calendar-month-cell-active-end');
+                    addRangeClass();
+
+                } else {
+                    for (let k = 0; k < dateCell.length; k++) {
+                        dateCell[k].classList.remove('calendar-month-cell-active-start');
+                        dateCell[k].classList.remove('calendar-month-cell-active-end');
+                    }
+                }
+
+                if (cellActive.length > 2) {
+                    if (+e.currentTarget.innerHTML <= +cellActive[0].innerHTML || +e.currentTarget.innerHTML >= +cellActive[2].innerHTML) {
+                        for (let i = 0; i < dateCell.length; i++) {
+                            if (dateCell[i].classList.contains('calendar-month-cell-active')) {
+                                if (dateCell[i].innerHTML == cellActive[1].innerHTML) {
+                                    dateCell[i].classList.remove('calendar-month-cell-active');
+                                    cellActive = document.querySelectorAll('.calendar-month-cell-active');
+                                    if (cellActive.length < 2) {
+                                        removeRangeClass();
+                                    }
+                                    cellActive[0].classList.add('calendar-month-cell-active-start');
+                                    cellActive[1].classList.add('calendar-month-cell-active-end');
+                                    addRangeClass();
+                                    break;
+                                }
+                            }
                         }
-                        
-                    } 
-                    
-                });
-            }
+                    } else if (+e.currentTarget.innerHTML > +cellActive[0].innerHTML && +e.currentTarget.innerHTML < +cellActive[2].innerHTML) {
+                        for (let i = 0; i < dateCell.length; i++) {
+                            if (dateCell[i].classList.contains('calendar-month-cell-active')) {
+                                if (dateCell[i].innerHTML == cellActive[2].innerHTML) {
+                                    dateCell[i].classList.remove('calendar-month-cell-active');
+                                    cellActive = document.querySelectorAll('.calendar-month-cell-active');
+                                    
+                                    removeRangeClass();
+
+                                    cellActive[0].classList.add('calendar-month-cell-active-start');
+                                    cellActive[1].classList.add('calendar-month-cell-active-end');
+                                    addRangeClass();
+                                    break;
+                                }
+                            }
+                        }
+                    }
+
+
+                }
+
+
+
+            });
+        }
     }
     fillTable();
 
@@ -210,6 +288,5 @@ window.addEventListener('DOMContentLoaded', () => {
             fillTable();
         });
     }
-
 
 });

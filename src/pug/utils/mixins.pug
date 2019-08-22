@@ -1,76 +1,27 @@
+include ../../library/textInput/textInput.pug
+include ../../library/dropdown/dropdown.pug
+include ../../library/maskedText/maskedText.pug
+include ../../library/date/date.pug
+include ../../library/dateFilter/dateFilter.pug
+include ../../library/subscrTextField/subscrTextField.pug
+include ../../library/checkboxList/checkBoxList.pug
+
+
 mixin logo()
 	.logo
 		svg(width="48", height="48", viewBox="0 0 48 48", fill="none", xmlns="http://www.w3.org/2000/svg")
 			path(d="M23.9989 32.4712C23.2224 32.4712 22.5871 31.8359 22.5871 31.0594C22.5871 25.6241 18.14 21.177 12.7047 21.177C11.9283 21.177 11.293 20.5418 11.293 19.7653C11.293 18.9888 11.9283 18.3535 12.7047 18.3535C19.7283 18.3535 25.4106 24.0359 25.4106 31.0594C25.4106 31.8359 24.7753 32.4712 23.9989 32.4712Z", fill="#1F2041", fill-opacity="0.25")
 			path(d="M36.7068 19.7653C36.7068 20.5418 36.0715 21.177 35.295 21.177C31.9421 21.177 28.9421 22.8712 27.1774 25.4476C26.7892 24.4594 26.3303 23.5418 25.7656 22.6947C28.095 20.0123 31.5186 18.3535 35.295 18.3535C36.0715 18.3535 36.7068 18.9888 36.7068 19.7653Z", fill="#1F2041", fill-opacity="0.25")
 			path(d="M24 48C10.7647 48 0 37.2353 0 24C0 10.7647 10.7647 0 24 0C37.2353 0 48 10.7647 48 24C48 37.2353 37.2353 48 24 48ZM24 2.82353C12.3176 2.82353 2.82353 12.3176 2.82353 24C2.82353 35.6824 12.3176 45.1765 24 45.1765C35.6824 45.1765 45.1765 35.6824 45.1765 24C45.1765 12.3176 35.6824 2.82353 24 2.82353Z", fill="#1F2041", fill-opacity="0.25")
-mixin textInput(placeholder)
-	input.input-text(type='text', placeholder=placeholder)
 
-mixin dropdown(count)
-	.dropdown
-		.dropdown--wrapper
-			.dropdown--dropdown-result Cколько гостей
-			.dropdown--dropdown-arrow 
-				i.material-icons.dropdown--dropdown-arrow-icon expand_more
-		.dropdown--dropdown-items
-			- for (var i=1; i<=count;i++)
-				.dropdown--dropdown-item
-					.dropdown-item-name #{arguments[i]}
-					.dropdown-count
-						.dropdown-count-minus 
-							span -
-						.dropdown-count-result 0
-						.dropdown-count-plus 
-							span +
-			.confirm
-				.confirm-link применить
-			.clear
-				.clear-link очистить
 
-mixin maskedText()
-	input.input-text.input-masked(type='text', placeholder='ДД.ММ.ГГГГ')
-mixin date()
-	.date-dropdown
-		.date-dropdown--wrapper
-			.date-dropdown--dropdown-result ДД.ММ.ГГГГ
-			.date-dropdown--dropdown-arrow 
-				i.material-icons.date-dropdown--dropdown-arrow-icon expand_more
-mixin dateFilter()
-	.date-filter-dropdown
-		.date-filter-dropdown--wrapper
-			.date-filter-dropdown--dropdown-result ДД.ММ.ГГГГ
-			.date-filter-dropdown--dropdown-arrow 
-				i.material-icons.date-filter-dropdown--dropdown-arrow-icon expand_more	
-mixin subscrTextField(placeholder)
-	.subscribe-field
-		input.subscribe-field--input(type='text', placeholder=placeholder)
-		.subscribe-field--arrow 
-			i.material-icons.subscribe-field--arrow-icon arrow_forward
-mixin checkboxList(arr, name)
-	.checkbox-list
-		.checkbox-list--wrapper
-			.checkbox-list--description
-				p expandable checkbox list
-			.checkbox-list--arrow
-				i.material-icons.checkbox-list--arrow-icon expand_more
-		.checkbox-list--list
-			each el in arr
-				.checkbox-list--list-item
-					input(type="checkbox", id=el.name, value=el.val, name=name, style="display:none;")
-					label.list-item-chek(for=el.name)
-						svg.list-item-chek--checked(width="10", height="10", viewBox="0 0 10 10", fill="none", xmlns="http://www.w3.org/2000/svg")
-							path(d="M1.46439 4.29245L5.70703 8.53509L4.29282 9.9493L0.0501771 5.70666L1.46439 4.29245Z", fill="url(#paint0_linear)")
-							path(d="M8.53546 2.87823L9.94967 4.29245L4.29282 9.9493L2.8786 8.53509L8.53546 2.87823Z", fill="url(#paint1_linear)" )
-							defs
-								linearGradient(id="paint0_linear", x1="7.82835", y1="2.17112", x2="2.1715", y2="7.82798", gradientUnits="userSpaceOnUse")
-									stop(stop-color="#BC9CFF")
-									stop(offset="1", stop-color="#8BA4F9")
-								linearGradient(id="paint1_linear", x1="7.82835", y1="2.17112", x2="2.1715", y2="7.82798", gradientUnits="userSpaceOnUse")
-									stop(stop-color="#BC9CFF")
-									stop(offset="1", stop-color="#8BA4F9")
-					.list-item-description
-						p #{el.val}
+
+
+
+
+
+
+
 mixin checkBoxBtns(arr, name)
 	.checkbox-btns
 		.checkbox-btns--wrapper

@@ -1,0 +1,132 @@
+@import './visible/visible';
+
+.dropdown {
+    @include Montserrat();
+    position: relative;
+    background: #fff;
+}
+
+.dropdown--wrapper {
+    width: 320px;
+    position: relative;
+}
+
+.dropdown--dropdown-arrow {
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    line-height: 24px;
+}
+
+.dropdown--dropdown-arrow-icon {
+    line-height: 44px;
+    color: $darkShade75;
+}
+
+.dropdown--dropdown-result {
+    position: relative;
+    width: 320px;
+    height: 44px;
+    padding: 9px 0px 13px 15px;
+    color: $darkShade75;
+    @include inputBorder();
+}
+
+.dropdown--dropdown-result-opened {
+    border-radius: 4px 4px 0 0;
+}
+
+.dropdown--dropdown-item {
+    position: relative;
+    @include flexVertCenter();
+    margin-bottom: 12px;
+}
+
+.dropdown-item-name,
+.dropdown-count-result {
+    @include MontserratBold();
+    text-transform: uppercase;
+    color: $darkShade;
+}
+
+.dropdown-count {
+    width: 92px;
+    position: absolute;
+    right: 0;
+    @include flexVertCenter();
+    justify-content: space-between;
+}
+
+.dropdown-count-minus {
+    @include flexAllCenter();
+    font-family: 'Montserrat';
+    font-size: 18px;
+    color: $darkShade5;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $darkShade5;
+    border-radius: 50%;
+    text-align: center;
+    transition: all .1s linear;
+}
+
+.dropdown-count-minus-active,
+.dropdown-count-plus {
+    @include flexAllCenter();
+    font-family: 'Montserrat';
+    font-size: 18px;
+    color: $darkShade50;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $darkShade25;
+    border-radius: 50%;
+    text-align: center;
+    transition: all .1s linear;
+}
+
+.dropdown--dropdown-items {
+    background: #fff;
+    height: 159px;
+    position: absolute;
+    display: none;
+    opacity: 0;
+    top: 0px;
+    width: 320px;
+    border: 1px solid $darkShade25;
+    border-radius: 0 0 4px 4px;
+    padding: 13px 7px 15px;
+    transition: all .1s linear;
+}
+
+.confirm {
+    text-align: right;
+    position: absolute;
+    right: 7px;
+    bottom: 13px;
+}
+
+.clear {
+    display: none;
+    position: absolute;
+    left: 7px;
+    bottom: 13px;
+}
+
+.confirm-link,
+.clear-link {
+    cursor: pointer;
+    color: $purple;
+    text-transform: uppercase;
+    @include MontserratBold();
+}
+
+.clear-link {
+    color: $darkShade50;
+}

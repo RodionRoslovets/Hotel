@@ -1,0 +1,5 @@
+.subscribe-field--input {
+    &:focus {
+        @include inputBorderFocus();
+    }
+}
