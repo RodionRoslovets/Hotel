@@ -1,0 +1,31 @@
+.advantages{
+    width:290px;
+}
+.advantages-item{
+    display:flex;
+    align-items: center;
+    margin-bottom:10px;
+}
+.advantages-item-image-icon{
+    font-size:48px;
+    background:linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition:all .1s linear;
+    margin-right:10px;
+}
+.description-heading{
+    font-family: 'Montserrat-Bold';
+    font-size:14px;
+    margin-bottom:5px;
+}
+.description-text{
+    @include Montserrat();
+}
+.advantages-item-line{
+    width:280px;
+    background: rgba(31, 32, 65, 0.1);
+    border:none;
+    height:1px;
+    margin-bottom:10px;
+}

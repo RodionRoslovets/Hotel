@@ -1,0 +1,33 @@
+.comment{
+    width:710px;
+}
+.comment-wrapper{
+    display:flex;
+    justify-content: space-between;
+}
+.comment-author{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin-right:10px;
+    margin-bottom:10px;
+}
+.comment-content{
+    display:flex;
+    flex-direction: column;
+    @include Montserrat();
+    color:$darkShade75;
+}
+.author-name{
+    font-family: 'Montserrat-Bold';
+    font-size:14px;
+    color:$darkShade75;
+    margin-bottom:10px;
+}
+.author-comment-date{
+    margin-bottom:5px;
+}
+.comment-text{
+    line-height: 24px;
+}

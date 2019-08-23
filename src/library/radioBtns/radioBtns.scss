@@ -1,0 +1,40 @@
+.radio-btns {
+    width: 220px;
+}
+
+.radio-btns--description {
+    text-transform: uppercase;
+    @include MontserratBold();
+    margin-bottom: 30px;
+}
+.radio-btns--list{
+    display: flex;
+    justify-content: space-around;
+}
+.radio-btns--list-item {
+    @include flexVertCenter();
+    margin-bottom: 10px;
+}
+
+.radio-btns-item-chek {
+    width: 20px;
+    height: 20px;
+    @include inputBorder();
+    border-radius: 50%;
+    margin-right: 10px;
+    @include flexAllCenter();
+    cursor: pointer;
+}
+
+.radio-btns-item-chek-active {
+    border-color: $purple;
+}
+
+.radio-btns-item-chek--checked {
+    opacity: 0;
+    transition: all .1s linear;
+}
+
+.radio-btns-item-chek--checked-active {
+    opacity: 1;
+}

@@ -1,0 +1,5 @@
+.borderedBtn--button{
+    &:focus{
+            outline: none;
+        }
+}

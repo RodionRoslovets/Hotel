@@ -1,0 +1,47 @@
+.checkbox-btns {
+    width: 266px;
+}
+
+.checkbox-btns--description {
+    text-transform: uppercase;
+    @include MontserratBold();
+    margin-bottom: 30px;
+}
+
+.checkbox-btns--list-item {
+    display: flex;
+}
+
+.checkbox-btns-item-chek {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    @include flexAllCenter();
+    @include inputBorder();
+    margin-right: 10px;
+    transition: all .1s linear;
+    cursor: pointer;
+}
+
+.checkbox-btns--list-item {
+    margin-bottom: 10px;
+}
+
+.checkbox-btns-item-description {
+    width: 192px;
+    @include Montserrat();
+    color: $darkShade50;
+}
+
+.checkbox-btns-item-chek-active {
+    border-color: $purple;
+}
+
+.checkbox-btns-item-chek--checked {
+    opacity: 0;
+    transition: all .1s linear;
+}
+
+.checkbox-btns-item-chek--checked-active {
+    opacity: 1;
+}

@@ -8,4 +8,7 @@
     @include inputBorder();
     transition: all .1s linear;
     outline: none;
-}
+    @include placeholder{
+        color: $darkShade25;
+    }
+} 

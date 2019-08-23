@@ -1,0 +1,14 @@
+@import "./active/active";
+@import "./focus/focus";
+.filledBtn--button{
+    height:44px;
+    padding:14px 20px;
+    text-transform: uppercase;
+    @include MontserratBold();
+    border:none;
+    border-radius:22px;
+    background: linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
+    color:#fff;
+    cursor: pointer;
+    transition:all .1s linear;
+}

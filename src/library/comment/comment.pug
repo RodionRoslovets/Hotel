@@ -1,0 +1,17 @@
+mixin comment(imgSrc, authorName, daysAgo, text)
+	.comment
+		.comment-wrapper
+			.comment-author
+				.author-avatar
+					img(src=imgSrc, alt="")
+				.comment-like
+					+likeBtn(45)
+				
+			.comment-content
+				.author-data
+					.author-name
+						p #{authorName}
+					.author-comment-date
+						p #{daysAgo}
+				.comment-text
+					p #{text}

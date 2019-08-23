@@ -15,7 +15,7 @@
 }
 @mixin cursorAndTransition(){
     cursor:pointer;
-    transition: all .1s 
+    transition: all .1s linear;
 }
 @mixin flexAllCenter(){
     display:flex;
@@ -26,3 +26,15 @@
     display:flex;
     align-items:center; 
 }
+@mixin MB($num) {
+    margin-bottom:$num;
+}
+@mixin MT($num) {
+    margin-top:$num;
+}
+@mixin placeholder {
+    &::-webkit-input-placeholder{@content}
+    &:-moz-placeholder{@content}
+    &::-moz-placeholder{@content}
+    &:-ms-input-placeholder{@content}  
+  }

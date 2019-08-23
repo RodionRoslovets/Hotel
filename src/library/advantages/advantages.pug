@@ -1,0 +1,11 @@
+mixin advantages(arr)
+	.advantages
+		.advantages-wrapper
+			each el in arr
+				.advantages-item
+					.advantages-item-image
+						i.material-icons.advantages-item-image-icon #{el.img}
+					.advantages-item-description
+						h3.description-heading #{el.heading}
+						p.description-text #{el.text}
+				hr.advantages-item-line

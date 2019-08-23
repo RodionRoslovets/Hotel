@@ -1,0 +1,26 @@
+@import "./active/button-active";
+@import "./active/wrapper-active";
+@import "./focus/button-focus";
+
+.borderedBtn-wrapper{
+    height:44px;
+    width:99px;
+    border-radius:22px;
+    background: linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
+    cursor: pointer;
+    transition:all .1s linear;
+    @include flexAllCenter();
+}
+.borderedBtn--button{
+    Width:95px;
+    height:40px;
+    @include flexAllCenter();
+    text-transform: uppercase;
+    @include MontserratBold();
+    border:none;
+    border-radius:22px;
+    background: #fff;
+    color:$purple;
+    cursor: pointer;
+    transition:all .1s linear;
+}

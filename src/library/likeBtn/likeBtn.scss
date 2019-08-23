@@ -1,0 +1,44 @@
+.likeBtnBorder{
+    width:40px;
+    height:20px;
+    background:$darkShade25;
+    @include flexAllCenter();
+    border-radius:10px;    
+    transition:all .1s linear;
+}
+.likeBtnBorder-active{
+    background: linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
+}
+.likeBtn-wrapper{
+    width:38px;
+    height:18px;
+    background:#fff;
+    border-radius:10px;
+    @include flexVertCenter();
+    transition:all .1s linear; 
+    cursor:pointer;
+}
+
+.likeBtn--heart{
+    width:20px;
+    height:20px;
+    padding-left:5px;
+}
+.likeBtn--heart-icon{
+    font-size:10px;
+    line-height: 20px;
+    color:$darkShade25;
+    transition:all .1s linear;
+}
+.likeBtn--heart-icon-active{
+    color:$purple;
+}
+.likeBtn--num{
+    font-family:Montserrat;
+    font-size:10px;
+    color:$darkShade25;
+    transition:all .1s linear;
+}
+.likeBtn--num-active{
+    color:$purple;
+}

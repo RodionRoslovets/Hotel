@@ -5,6 +5,22 @@ include ../../library/date/date.pug
 include ../../library/dateFilter/dateFilter.pug
 include ../../library/subscrTextField/subscrTextField.pug
 include ../../library/checkboxList/checkBoxList.pug
+include ../../library/checkBoxBtns/checkBoxBtns.pug
+include ../../library/radioBtns/radioBtns.pug
+include ../../library/toggleSwitch/toggleSwitch.pug
+include ../../library/likeBtn/likeBtn.pug
+include ../../library/rateBtns/rateBtns.pug
+include ../../library/richCheckboxBtns/richCheckboxBtns.pug
+include ../../library/bulletList/bulletList.pug
+include ../../library/filledBtn/filledBtn.pug
+include ../../library/borderBtn/borderBtn.pug
+include ../../library/textBtn/textBtn.pug
+include ../../library/longBtn/longBtn.pug
+include ../../library/pagination/pagination.pug
+include ../../library/rangeSlider/rangeSlider.pug
+include ../../library/comment/comment.pug
+include ../../library/advantages/advantages.pug
+include ../../library/calendar/calendar.pug
 
 
 mixin logo()
@@ -13,225 +29,3 @@ mixin logo()
 			path(d="M23.9989 32.4712C23.2224 32.4712 22.5871 31.8359 22.5871 31.0594C22.5871 25.6241 18.14 21.177 12.7047 21.177C11.9283 21.177 11.293 20.5418 11.293 19.7653C11.293 18.9888 11.9283 18.3535 12.7047 18.3535C19.7283 18.3535 25.4106 24.0359 25.4106 31.0594C25.4106 31.8359 24.7753 32.4712 23.9989 32.4712Z", fill="#1F2041", fill-opacity="0.25")
 			path(d="M36.7068 19.7653C36.7068 20.5418 36.0715 21.177 35.295 21.177C31.9421 21.177 28.9421 22.8712 27.1774 25.4476C26.7892 24.4594 26.3303 23.5418 25.7656 22.6947C28.095 20.0123 31.5186 18.3535 35.295 18.3535C36.0715 18.3535 36.7068 18.9888 36.7068 19.7653Z", fill="#1F2041", fill-opacity="0.25")
 			path(d="M24 48C10.7647 48 0 37.2353 0 24C0 10.7647 10.7647 0 24 0C37.2353 0 48 10.7647 48 24C48 37.2353 37.2353 48 24 48ZM24 2.82353C12.3176 2.82353 2.82353 12.3176 2.82353 24C2.82353 35.6824 12.3176 45.1765 24 45.1765C35.6824 45.1765 45.1765 35.6824 45.1765 24C45.1765 12.3176 35.6824 2.82353 24 2.82353Z", fill="#1F2041", fill-opacity="0.25")
-
-
-
-
-
-
-
-
-
-mixin checkBoxBtns(arr, name)
-	.checkbox-btns
-		.checkbox-btns--wrapper
-			.checkbox-btns--description
-				p checkbox buttons
-		.checkbox-btns--list
-			each el in arr
-				.checkbox-btns--list-item
-					input(type="checkbox", id=el.name, value=el.val, name=name, style="display:none;")
-					label.checkbox-btns-item-chek(for=el.name)
-						svg.checkbox-btns-item-chek--checked(width="10", height="11", viewBox="0 0 10 11", fill="none", xmlns="http://www.w3.org/2000/svg")
-							path(d="M1.46439 4.40768L5.70703 8.65032L4.29282 10.0645L0.0501771 5.82189L1.46439 4.40768Z", fill="url(#paint0_linear)")
-							path(d="M8.53546 2.99347L9.94967 4.40768L4.29282 10.0645L2.8786 8.65032L8.53546 2.99347Z", fill="url(#paint1_linear)")
-							defs
-								linearGradient(id="paint0_linear", x1="7.82835", y1="2.28636", x2="2.1715", y2="7.94321", gradientUnits="userSpaceOnUse")
-									stop(stop-color="#BC9CFF")
-									stop(offset="1", stop-color="#8BA4F9")
-								linearGradient(id="paint1_linear", x1="7.82835", y1="2.28636", x2="2.1715", y2="7.94321", gradientUnits="userSpaceOnUse")
-									stop(stop-color="#BC9CFF")
-									stop(offset="1", stop-color="#8BA4F9")
-					.checkbox-btns-item-description
-						p #{el.val}	
-mixin radioBtns(arr, name)
-	.radio-btns
-		.radio-btns--wrapper
-			.radio-btns--description
-				p radio buttons
-		.radio-btns--list
-			each el in arr
-				.radio-btns--list-item
-					input(type="radio", id=el.name, value=el.val, name=name, style="display:none;")
-					label.radio-btns-item-chek(for=el.name)
-						svg.radio-btns-item-chek--checked(width="12", height="12", viewBox="0 0 12 12", fill="none" xmlns="http://www.w3.org/2000/svg")
-							rect(width="12", height="12", rx="6", fill="url(#paint0_linear)")
-							defs
-								linearGradient(id="paint0_linear", x1="6", y1="0", x2="6", y2="12", gradientUnits="userSpaceOnUse")
-									stop(stop-color="#BC9CFF")
-									stop(offset="1" stop-color="#8BA4F9")
-					.radio-btns-item-description
-						p #{el.val}
-mixin toggleSwitch(descr, id)
-	.toggle-switch
-		.toggle-switch-wrapper
-			input(type="checkbox", id=id, style="display:none;")
-			label.toggle-switch--switchWrapper(for=id)
-				.switchWrapper-switch
-			.toggle-switch--description 
-				p #{descr}
-mixin likeBtn(num)
-	.likeBtn
-		.likeBtnBorder
-			.likeBtn-wrapper
-				.likeBtn--heart 
-					i.material-icons.likeBtn--heart-icon favorite_border
-				.likeBtn--num
-					.likeBtn--num-inner #{num}
-mixin rateBtns()
-	.rateBtns
-		.rateBtns-wrapper
-			.rateBtns-line
-				- for (var i = 0; i < 5; i++)
-					.rateBtns--star
-						svg(width="20", height="19", viewBox="0 0 20 19", fill="none", xmlns="http://www.w3.org/2000/svg", class="rateBtns--star-icon")
-							path(d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z", fill="url(#paint0_linear)")
-							defs
-								linearGradient(id="paint0_linear", x1="10", y1="-2", x2="10", y2="22", gradientUnits="userSpaceOnUse")
-									stop(stop-color="#BC9CFF")
-									stop(offset="1", stop-color="#8BA4F9")
-mixin richCheckboxBtns(arr, name)
-	.richCheckBox
-		.richCheckBox--wrapper
-			.richCheckBox--description
-				p rich checkbox buttons
-			.richCheckBox--items
-				each el in arr
-					.richCheckBox--items-item
-						input(type="checkbox", id=el.name, value=el.val, name=name, style='display:none;')
-						label.richCheckBox--items-item-chek(for=el.name)
-							svg.richCheckBox--items-item-chek--checked(width="10", height="10", viewBox="0 0 10 10", fill="none", xmlns="http://www.w3.org/2000/svg")
-								path(d="M1.46439 4.29245L5.70703 8.53509L4.29282 9.9493L0.0501771 5.70666L1.46439 4.29245Z", fill="url(#paint0_linear)")
-								path(d="M8.53546 2.87823L9.94967 4.29245L4.29282 9.9493L2.8786 8.53509L8.53546 2.87823Z", fill="url(#paint1_linear)" )
-								defs
-									linearGradient(id="paint0_linear", x1="7.82835", y1="2.17112", x2="2.1715", y2="7.82798", gradientUnits="userSpaceOnUse")
-										stop(stop-color="#BC9CFF")
-										stop(offset="1", stop-color="#8BA4F9")
-									linearGradient(id="paint1_linear", x1="7.82835", y1="2.17112", x2="2.1715", y2="7.82798", gradientUnits="userSpaceOnUse")
-										stop(stop-color="#BC9CFF")
-										stop(offset="1", stop-color="#8BA4F9")
-						.richCheckBox--items-item-description
-							h3.richCheckBox--items-item-description-heading #{el.head}
-							p.richCheckBox--items-item-description-text #{el.text}
-mixin bulletList(decription, arr)
-	.bulletList
-		.bulletList-wrapper
-			.bulletList--description
-				p #{decription}
-			.bulletList--list
-				each el in arr
-					.bulletList--list-item
-						.bulletList--list-item-marker
-						.bulletList--list-item-description
-							p #{el.text}
-mixin filledBtn(name)
-	.filledBtn
-		button.filledBtn--button #{name}
-mixin borderBtn(name)
-	.borderedBtn
-		.borderedBtn-wrapper
-			button.borderedBtn--button #{name}
-mixin textBtn(name)
-	.textBtn
-		a.textBtn--button(href='#') #{name}
-mixin longBtn(name)
-	.longBtn
-		button.longBtn--button #{name} 
-			i.material-icons.longBtn--arrow-icon arrow_forward
-mixin pagination()
-	.pagination
-		.pagination--line
-			.pagination--line-elem.pagination--line-elem-active
-				p 1
-			.pagination--line-elem
-				p 2
-			.pagination--line-elem
-				p 3
-			.pagination--line-elem
-				p ...
-			.pagination--line-elem
-				p 15
-			.pagination--line-elem.pagination--line-elem-arrow-icon
-				i.material-icons arrow_forward
-		.pagination--options
-			p 1 – 12 из 100+ вариантов аренды
-mixin rangeSlider()
-	.range
-		.range-wrapper
-			.range--description
-				.range--description-text
-					p range slider
-				.range--description-values
-					.range--description-values-lower 5 000 &#x20bd; 
-					span -
-					.range--description-values-higher 10 000 &#x20bd;
-			.range--slider
-				.slider--base
-					.slider--left-btn
-					.slider--base-hover
-					.slider--right-btn
-mixin comment(imgSrc, authorName, daysAgo, text)
-	.comment
-		.comment-wrapper
-			.comment-author
-				.author-avatar
-					img(src=imgSrc, alt="")
-				.comment-like
-					+likeBtn(45)
-				
-			.comment-content
-				.author-data
-					.author-name
-						p #{authorName}
-					.author-comment-date
-						p #{daysAgo}
-				.comment-text
-					p #{text}
-mixin advantages(arr)
-	.advantages
-		.advantages-wrapper
-			each el in arr
-				.advantages-item
-					.advantages-item-image
-						i.material-icons.advantages-item-image-icon #{el.img}
-					.advantages-item-description
-						h3.description-heading #{el.heading}
-						p.description-text #{el.text}
-				hr.advantages-item-line
-mixin calendar()
-	.calendar
-		.calendar-wrapper
-			.calendar-heading
-				.calendar-heading-arrow
-					i.material-icons.calendar-heading-arrow-left  arrow_back
-				h2.calendar-heading-title 
-					span.calendar-month  
-					span.calendar-year  
-				.calendar-heading-arrow 
-					i.material-icons.calendar-heading-arrow-right arrow_forward
-			table.calendar-table
-				thead.calendar-table-head
-					tr
-						th Пн
-						th Вт
-						th Ср
-						th Чт
-						th Пт
-						th Сб
-						th Вс
-				tbody.calendar-table-body
-					tr
-						td.calendar-month-cell 1
-						td.calendar-month-cell 2
-						td.calendar-month-cell 3
-						td.calendar-month-cell 4
-						td.calendar-month-cell 5 
-						td.calendar-month-cell 6
-						td.calendar-month-cell
-					
-			.calendar-buttons
-				.calendar-clear
-					.calendar-clear-link очистить
-				.calendar-confirm
-					.calendar-confirm-link применить
-				

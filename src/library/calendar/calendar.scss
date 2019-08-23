@@ -1,0 +1,117 @@
+.calendar{
+    width: 320px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+}
+.calendar-wrapper{
+    width:100%;
+    max-width: 280px;
+    margin: 20px auto;
+}
+.calendar-heading{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.calendar-month{
+    margin-right:8px;
+}
+
+.calendar-heading-arrow{
+    @include flexVertCenter();
+    color:$purple;
+    cursor: pointer;
+}
+.calendar-table{
+    width:100%;
+    margin-top:30px;
+    border-spacing: 0px;
+}
+.calendar-table-head th{
+    @include MontserratBold();
+    color:$purple;
+    width:40px;
+    height:40px;
+}
+.calendar-table-body{
+    width:100%;
+    font-size:12px;
+}
+.calendar-table-body td{
+    width:40px;
+    height:40px;
+    text-align: center;
+    cursor: pointer;
+    position:relative;
+}
+.calendar-last-month, .calendar-next-month{
+    color:$darkShade25;
+}
+.calendar-buttons{
+    display: flex;
+    justify-content: space-between;
+    @include MontserratBold();
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.calendar-confirm-link{
+    color:$purple;
+}
+.today-active{
+    font-weight: bold;
+    color:#fff;
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    border-radius:50%;
+}
+.calendar-month-cell-active{
+    font-weight: bold;
+    color:#fff;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius:50%;
+}
+.calendar-month-cell-active-start{
+    position:relative;
+    z-index: 1;
+    &:after{
+        content: '';
+        display:block;
+        position:absolute;
+        top:0;
+        right:0;
+        z-index:-1;
+        width:20px;
+        height:40px;
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        opacity:0.25;
+    }
+}
+.calendar-month-cell-active-end{
+    position:relative;
+    z-index: 1;
+    &:after{
+        content: '';
+        display:block;
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:-1;
+        width:20px;
+        height:40px;
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        opacity:0.25;
+    }
+}
+.calendar-month-cell-active-range{
+    z-index: 1;
+    &:after{
+        content: '';
+        width:40px;
+        height:40px;
+        position: absolute;
+        top:0;
+        left:0;
+        z-index: -1;
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        opacity:0.25;
+    }
+}

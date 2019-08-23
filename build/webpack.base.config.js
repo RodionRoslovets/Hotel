@@ -17,7 +17,9 @@ module.exports = {
         paths: PATHS
     },
     entry: {
-        main: PATHS.src
+        main: PATHS.src,
+        uikit: `${PATHS.src}/uikit.js`,
+        cards: `${PATHS.src}/cards.js`
     },
     output: {
         filename: `${PATHS.assets}js/[name].js`,

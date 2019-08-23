@@ -1,0 +1,34 @@
+.pagination{
+    width:240px;
+}
+.pagination--line{
+    display:flex;
+    justify-content: space-between;
+    font-family: 'Montserrat';
+    font-size:12px;
+    margin-bottom:10px;
+}
+.pagination--line-elem{
+    width:40px;
+    height:40px;
+    @include flexAllCenter();
+    color:$darkShade50;
+    background: #fff;
+    border-radius:50%;
+    cursor:pointer;
+    transition: all .1s linear;
+}
+.pagination--line-elem-active{
+    color:#fff;
+    background: linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
+}
+.pagination--options{
+    font-family: 'Montserrat';
+    font-size:14px;
+    @include flexAllCenter();
+}
+.pagination--line-elem-arrow-icon{
+    cursor:pointer;
+    color:#fff;
+    background: linear-gradient(180deg, $green 0%, #66D2EA 100%);
+}

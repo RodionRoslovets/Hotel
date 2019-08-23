@@ -1,0 +1,36 @@
+mixin calendar()
+	.calendar
+		.calendar-wrapper
+			.calendar-heading
+				.calendar-heading-arrow
+					i.material-icons.calendar-heading-arrow-left  arrow_back
+				h2.calendar-heading-title 
+					span.calendar-month  
+					span.calendar-year  
+				.calendar-heading-arrow 
+					i.material-icons.calendar-heading-arrow-right arrow_forward
+			table.calendar-table
+				thead.calendar-table-head
+					tr
+						th Пн
+						th Вт
+						th Ср
+						th Чт
+						th Пт
+						th Сб
+						th Вс
+				tbody.calendar-table-body
+					tr
+						td.calendar-month-cell 1
+						td.calendar-month-cell 2
+						td.calendar-month-cell 3
+						td.calendar-month-cell 4
+						td.calendar-month-cell 5 
+						td.calendar-month-cell 6
+						td.calendar-month-cell
+					
+			.calendar-buttons
+				.calendar-clear
+					.calendar-clear-link очистить
+				.calendar-confirm
+					.calendar-confirm-link применить
