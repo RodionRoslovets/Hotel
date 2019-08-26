@@ -43,6 +43,8 @@ window.addEventListener('DOMContentLoaded', () => {
         arrowRight = document.querySelectorAll('.calendar-heading-arrow-right'),
         table = document.querySelectorAll('.calendar-table-body');
 
+    
+    
     //Получаем сегодняшнюю дату и месяц-год записываем в заголовок
     let month = new Date();
     monthHeading.forEach(el => {
@@ -52,13 +54,12 @@ window.addEventListener('DOMContentLoaded', () => {
         el.innerHTML = `${month.getFullYear()}`;
     });
 
-
     //Заполняем таблицу числами 
     function fillTable() {
         //очистили таблицу
-        table.forEach(el => {
-            el.innerHTML = '';
-        });
+        for(let i = 0; i < table.length; i++){
+            table[i].innerHTML = '';
+        }
         
         function addRangeClass() {//Добавили класс для диапазона выбраных ячеек
             for (let j = 0; j < dateCell.length; j++) {
@@ -83,6 +84,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 }
             }
         }
+
         let day,
             date = month.getDate();
         //вернулись к первому дню месяца
@@ -185,8 +187,6 @@ window.addEventListener('DOMContentLoaded', () => {
                     for (let k = 0; k < dateCell.length; k++) {
                         dateCell[k].classList.remove('calendar-month-cell-active-start');
                         dateCell[k].classList.remove('calendar-month-cell-active-end');
-
-
                     }
 
                     cellActive = document.querySelectorAll('.calendar-month-cell-active');
@@ -238,16 +238,11 @@ window.addEventListener('DOMContentLoaded', () => {
                             }
                         }
                     }
-
-
                 }
-
-
-
-            });
-        }
+             });
+        } 
     }
-    fillTable();
+    fillTable(); 
 
     //Назначаем функции стрелкам
     for (let i = 0; i < arrowRight.length; i++) {

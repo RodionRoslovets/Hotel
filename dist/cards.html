@@ -9,253 +9,488 @@
 </html>
 <div class="wrapper">
   <div class="column">
-    <div class="find">
-      <form class="find-form" action="#">
-        <h1 class="find-form--heading">Найдем номера под ваши пожелания</h1>
-        <div class="find-form--date">
-          <label class="find-form--date-label">Прибытие
-            <div class="date-dropdown">
-              <div class="date-dropdown--wrapper">
-                <div class="date-dropdown--dropdown-result">ДД.ММ.ГГГГ</div>
-                <div class="date-dropdown--dropdown-arrow"> <i class="material-icons date-dropdown--dropdown-arrow-icon">expand_more</i></div>
-              </div>
-            </div>
-          </label>
-          <label class="find-form--date-label">Выезд
-            <div class="date-dropdown">
-              <div class="date-dropdown--wrapper">
-                <div class="date-dropdown--dropdown-result">ДД.ММ.ГГГГ</div>
-                <div class="date-dropdown--dropdown-arrow"> <i class="material-icons date-dropdown--dropdown-arrow-icon">expand_more</i></div>
-              </div>
-            </div>
-          </label>
-        </div>
-        <div class="find-form--guests">
-          <label class="find-form--guests-label">Гости
-            <div class="dropdown">
-              <div class="dropdown--wrapper">
-                <div class="dropdown--dropdown-result">Cколько гостей</div>
-                <div class="dropdown--dropdown-arrow"> <i class="material-icons dropdown--dropdown-arrow-icon">expand_more</i></div>
-              </div>
-              <div class="dropdown--dropdown-items">
-                <div class="dropdown--dropdown-item">
-                  <div class="dropdown-item-name">взрослые</div>
-                  <div class="dropdown-count">
-                    <div class="dropdown-count-minus"> <span>-</span></div>
-                    <div class="dropdown-count-result">0</div>
-                    <div class="dropdown-count-plus"> <span>+</span></div>
+        <div class="find">
+          <form class="find-form" action="#">
+            <h1 class="find-form--heading">Найдем номера под ваши пожелания</h1>
+            <div class="find-form--date">
+              <label class="find-form--date-label">Прибытие
+                <div class="date-dropdown">
+                  <div class="date-dropdown--wrapper">
+                    <div class="date-dropdown--dropdown-result">ДД.ММ.ГГГГ</div>
+                    <div class="date-dropdown--dropdown-arrow"> <i class="material-icons date-dropdown--dropdown-arrow-icon">expand_more</i></div>
                   </div>
                 </div>
-                <div class="dropdown--dropdown-item">
-                  <div class="dropdown-item-name">дети</div>
-                  <div class="dropdown-count">
-                    <div class="dropdown-count-minus"> <span>-</span></div>
-                    <div class="dropdown-count-result">0</div>
-                    <div class="dropdown-count-plus"> <span>+</span></div>
-                  </div>
-                </div>
-                <div class="dropdown--dropdown-item">
-                  <div class="dropdown-item-name">младенцы</div>
-                  <div class="dropdown-count">
-                    <div class="dropdown-count-minus"> <span>-</span></div>
-                    <div class="dropdown-count-result">0</div>
-                    <div class="dropdown-count-plus"> <span>+</span></div>
-                  </div>
-                </div>
-                <div class="confirm">
-                  <div class="confirm-link">применить</div>
-                </div>
-                <div class="clear">
-                  <div class="clear-link">очистить</div>
-                </div>
-              </div>
-            </div>
-          </label>
-        </div>
-        <div class="longBtn">
-          <button class="longBtn--button">подобрать номер <i class="material-icons longBtn--arrow-icon">arrow_forward</i></button>
-        </div>
-      </form>
-    </div>
-    <div class="reg">
-      <form class="reg-form" action="#">   
-        <h1 class="reg-form--heading">Регистрация аккаунта</h1>
-        <div class="reg-form--input">
-          <input class="input-text" type="text" placeholder="Имя" name="firstName">
-          <input class="input-text" type="text" placeholder="Фамилия" name="lastName">
-        </div>
-        <div class="reg-form--radio">
-          <div class="radio-btns">
-            <div class="radio-btns--wrapper">
-              <div class="radio-btns--list">
-                <div class="radio-btns--list-item">
-                  <input type="radio" id="man" value="Мужчина" name="radio" style="display:none;">
-                  <label class="radio-btns-item-chek" for="man">
-                    <svg class="radio-btns-item-chek--checked" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect width="12" height="12" rx="6" fill="url(#paint0_linear)"></rect>
-                      <defs>
-                        <linearGradient id="paint0_linear" x1="6" y1="0" x2="6" y2="12" gradientUnits="userSpaceOnUse">
-                          <stop stop-color="#BC9CFF"></stop>
-                          <stop offset="1" stop-color="#8BA4F9"></stop>
-                        </linearGradient>
-                      </defs>
-                    </svg>
-                  </label>
-                  <div class="radio-btns-item-description">
-                    <p>Мужчина</p>
-                  </div>
-                </div>
-                <div class="radio-btns--list-item">
-                  <input type="radio" id="woman" value="Женщина" name="radio" style="display:none;">
-                  <label class="radio-btns-item-chek" for="woman">
-                    <svg class="radio-btns-item-chek--checked" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect width="12" height="12" rx="6" fill="url(#paint0_linear)"></rect>
-                      <defs>
-                        <linearGradient id="paint0_linear" x1="6" y1="0" x2="6" y2="12" gradientUnits="userSpaceOnUse">
-                          <stop stop-color="#BC9CFF"></stop>
-                          <stop offset="1" stop-color="#8BA4F9"></stop>
-                        </linearGradient>
-                      </defs>
-                    </svg>
-                  </label>
-                  <div class="radio-btns-item-description">
-                    <p>Женщина</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="reg-form--birthDate">
-          <label class="reg-form--birthDate-label">Дата рождения
-            <input class="input-text input-masked" type="text" placeholder="ДД.ММ.ГГГГ">
-          </label>
-        </div>
-        <div class="reg-form--enterData">   
-          <label class="reg-form--enterData-label">Данные для входа в сервис
-            <input class="input-text" type="text" placeholder="Email" name="email">
-            <input class="input-text" type="text" placeholder="Пароль" name="password">
-          </label>
-        </div>
-        <div class="reg-form--toggleSwitch">
-          <div class="toggle-switch">
-            <div class="toggle-switch-wrapper">
-              <input type="checkbox" id="get" style="display:none;">
-              <label class="toggle-switch--switchWrapper" for="get">
-                <div class="switchWrapper-switch"></div>
               </label>
-              <div class="toggle-switch--description"> 
-                <p>Получать спецпредложения</p>
+              <label class="find-form--date-label">Выезд
+                <div class="date-dropdown">
+                  <div class="date-dropdown--wrapper">
+                    <div class="date-dropdown--dropdown-result">ДД.ММ.ГГГГ</div>
+                    <div class="date-dropdown--dropdown-arrow"> <i class="material-icons date-dropdown--dropdown-arrow-icon">expand_more</i></div>
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div class="find-form--guests">
+              <label class="find-form--guests-label">Гости
+                <div class="dropdown">
+                  <div class="dropdown--wrapper">
+                    <div class="dropdown--dropdown-result">Cколько гостей</div>
+                    <div class="dropdown--dropdown-arrow"> <i class="material-icons dropdown--dropdown-arrow-icon">expand_more</i></div>
+                  </div>
+                  <div class="dropdown--dropdown-items">
+                    <div class="dropdown--dropdown-item">
+                      <div class="dropdown-item-name">взрослые</div>
+                      <div class="dropdown-count">
+                        <div class="dropdown-count-minus"> <span>-</span></div>
+                        <div class="dropdown-count-result">0</div>
+                        <div class="dropdown-count-plus"> <span>+</span></div>
+                      </div>
+                    </div>
+                    <div class="dropdown--dropdown-item">
+                      <div class="dropdown-item-name">дети</div>
+                      <div class="dropdown-count">
+                        <div class="dropdown-count-minus"> <span>-</span></div>
+                        <div class="dropdown-count-result">0</div>
+                        <div class="dropdown-count-plus"> <span>+</span></div>
+                      </div>
+                    </div>
+                    <div class="dropdown--dropdown-item">
+                      <div class="dropdown-item-name">младенцы</div>
+                      <div class="dropdown-count">
+                        <div class="dropdown-count-minus"> <span>-</span></div>
+                        <div class="dropdown-count-result">0</div>
+                        <div class="dropdown-count-plus"> <span>+</span></div>
+                      </div>
+                    </div>
+                    <div class="confirm">
+                      <div class="confirm-link">применить</div>
+                    </div>
+                    <div class="clear">
+                      <div class="clear-link">очистить</div>
+                    </div>
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div class="longBtn">
+              <button class="longBtn--button">подобрать номер <i class="material-icons longBtn--arrow-icon">arrow_forward</i></button>
+            </div>
+          </form>
+        </div>
+        <div class="reg">
+          <form class="reg-form" action="#">   
+            <h1 class="reg-form--heading">Регистрация аккаунта</h1>
+            <div class="reg-form--input"></div>
+            <input class="input-text" type="text" placeholder="Имя" name="firstName">
+            <div class="reg-form--radio">
+              <div class="radio-btns">
+                <div class="radio-btns--wrapper">
+                  <div class="radio-btns--list">
+                    <div class="radio-btns--list-item">
+                      <input type="radio" id="man" value="Мужчина" name="radio" style="display:none;">
+                      <label class="radio-btns-item-chek" for="man">
+                        <svg class="radio-btns-item-chek--checked" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="12" height="12" rx="6" fill="url(#paint0_linear)"></rect>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="6" y1="0" x2="6" y2="12" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </label>
+                      <div class="radio-btns-item-description">
+                        <p>Мужчина</p>
+                      </div>
+                    </div>
+                    <div class="radio-btns--list-item">
+                      <input type="radio" id="woman" value="Женщина" name="radio" style="display:none;">
+                      <label class="radio-btns-item-chek" for="woman">
+                        <svg class="radio-btns-item-chek--checked" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="12" height="12" rx="6" fill="url(#paint0_linear)"></rect>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="6" y1="0" x2="6" y2="12" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </label>
+                      <div class="radio-btns-item-description">
+                        <p>Женщина</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="reg-form--birthDate">
+              <label class="reg-form--birthDate-label">Дата рождения
+                <input class="input-text input-masked" type="text" placeholder="ДД.ММ.ГГГГ">
+              </label>
+            </div>
+            <div class="reg-form--enterData">   
+              <label class="reg-form--enterData-label">Данные для входа в сервис
+                <input class="input-text" type="text" placeholder="Email" name="email">
+                <input class="input-text" type="text" placeholder="Пароль" name="password">
+              </label>
+            </div>
+            <div class="reg-form--toggleSwitch">
+              <div class="toggle-switch">
+                <div class="toggle-switch-wrapper">
+                  <input type="checkbox" id="get" style="display:none;">
+                  <label class="toggle-switch--switchWrapper" for="get">
+                    <div class="switchWrapper-switch"></div>
+                  </label>
+                  <div class="toggle-switch--description"> 
+                    <p>Получать спецпредложения</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="longBtn">
+              <button class="longBtn--button">Перейти к оплате <i class="material-icons longBtn--arrow-icon">arrow_forward</i></button>
+            </div>
+          </form>
+          <div class="reg-haveAnAcc">
+            <div class="reg-haveAnAcc-description">Уже есть аккаунт на Toxin</div>
+            <div class="borderedBtn">
+              <div class="borderedBtn-wrapper">
+                <button class="borderedBtn--button">Войти</button>
               </div>
             </div>
           </div>
         </div>
-        <div class="longBtn">
-          <button class="longBtn--button">Перейти к оплате <i class="material-icons longBtn--arrow-icon">arrow_forward</i></button>
+  </div>
+  <div class="column">
+        <div class="room-card">
+          <form class="room-card-form" action="#">
+            <header class="room-card-form--header">
+              <h1 class="room-card-form--header-heading"><span class="heading--num">№ </span>888 <span class="heading--room-type">люкс</span></h1>
+              <div class="room-card-form--header-price">
+                <p class="header-price">9 990&#x20bd; </p><span class="header-price-perDay"> в сутки</span>
+              </div>
+            </header>
+            <div class="room-card-form--date">
+              <label class="room-card-form--date-label">Прибытие
+                <div class="date-dropdown">
+                  <div class="date-dropdown--wrapper">
+                    <div class="date-dropdown--dropdown-result">ДД.ММ.ГГГГ</div>
+                    <div class="date-dropdown--dropdown-arrow"> <i class="material-icons date-dropdown--dropdown-arrow-icon">expand_more</i></div>
+                  </div>
+                </div>
+              </label>
+              <label class="room-card-form--date-label">Выезд
+                <div class="date-dropdown">
+                  <div class="date-dropdown--wrapper">
+                    <div class="date-dropdown--dropdown-result">ДД.ММ.ГГГГ</div>
+                    <div class="date-dropdown--dropdown-arrow"> <i class="material-icons date-dropdown--dropdown-arrow-icon">expand_more</i></div>
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div class="room-card-form--guests">
+              <label class="room-card-form--guests-label">Гости
+                <div class="dropdown">
+                  <div class="dropdown--wrapper">
+                    <div class="dropdown--dropdown-result">Cколько гостей</div>
+                    <div class="dropdown--dropdown-arrow"> <i class="material-icons dropdown--dropdown-arrow-icon">expand_more</i></div>
+                  </div>
+                  <div class="dropdown--dropdown-items">
+                    <div class="dropdown--dropdown-item">
+                      <div class="dropdown-item-name">взрослые</div>
+                      <div class="dropdown-count">
+                        <div class="dropdown-count-minus"> <span>-</span></div>
+                        <div class="dropdown-count-result">0</div>
+                        <div class="dropdown-count-plus"> <span>+</span></div>
+                      </div>
+                    </div>
+                    <div class="dropdown--dropdown-item">
+                      <div class="dropdown-item-name">дети</div>
+                      <div class="dropdown-count">
+                        <div class="dropdown-count-minus"> <span>-</span></div>
+                        <div class="dropdown-count-result">0</div>
+                        <div class="dropdown-count-plus"> <span>+</span></div>
+                      </div>
+                    </div>
+                    <div class="dropdown--dropdown-item">
+                      <div class="dropdown-item-name">младенцы</div>
+                      <div class="dropdown-count">
+                        <div class="dropdown-count-minus"> <span>-</span></div>
+                        <div class="dropdown-count-result">0</div>
+                        <div class="dropdown-count-plus"> <span>+</span></div>
+                      </div>
+                    </div>
+                    <div class="confirm">
+                      <div class="confirm-link">применить</div>
+                    </div>
+                    <div class="clear">
+                      <div class="clear-link">очистить</div>
+                    </div>
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div class="room-card-form--priceList">
+              <div class="priceList--item">
+                <p class="priceList--item-description">9 990&#x20bd; X 4 суток</p>
+                <p class="priceList--item-price">39 960&#x20bd;</p>
+              </div>
+              <div class="priceList--item">
+                <p class="priceList--item-description">Сбор за услуги: скидка 2 179&#x20bd;</p>
+                <p class="priceList--item-price">0&#x20bd;</p>
+              </div>
+              <div class="priceList--item">
+                <p class="priceList--item-description">Сбор за дополнительные услуги</p>
+                <p class="priceList--item-price">300&#x20bd;</p>
+              </div>
+              <div class="priceList--total">
+                <h2 class="priceList--total--heading">Итого</h2>
+                <div class="priceList--total--line"></div>
+                <p class="priceList--total--price">38 081&#x20bd;</p>
+              </div>
+            </div>
+            <div class="longBtn">
+              <button class="longBtn--button">Забронировать <i class="material-icons longBtn--arrow-icon">arrow_forward</i></button>
+            </div>
+          </form>
         </div>
-      </form>
-      <div class="reg-haveAnAcc">
-        <div class="reg-haveAnAcc-description">Уже есть аккаунт на Toxin</div>
-        <div class="borderedBtn">
-          <div class="borderedBtn-wrapper">
-            <button class="borderedBtn--button">Войти</button>
+    <div class="enter">
+            <form class="enter-form" action="#">
+              <header class="enter-form--header">
+                <h1 class="enter-form--header-heading">Войти</h1>
+              </header>
+              <div class="enter-form--input-items">
+                <div class="enter-form--input"></div>
+                <input class="input-text" type="text" placeholder="Email" name="Email">
+                <div class="enter-form--input"></div>
+                <input class="input-text" type="text" placeholder="Пароль" name="Password">
+              </div>
+              <div class="longBtn">
+                <button class="longBtn--button">Войти <i class="material-icons longBtn--arrow-icon">arrow_forward</i></button>
+              </div>
+              <div class="enter-noAcc">
+                <div class="enter-noAcc-description">Уже есть аккаунт на Toxin</div>
+                <div class="borderedBtn">
+                  <div class="borderedBtn-wrapper">
+                    <button class="borderedBtn--button">Войти</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+    </div>
+  </div>
+  <div class="column">
+    <div class="calendar">
+      <div class="calendar-wrapper">
+        <div class="calendar-heading">
+          <div class="calendar-heading-arrow"><i class="material-icons calendar-heading-arrow-left"> arrow_back</i></div>
+          <h2 class="calendar-heading-title"> <span class="calendar-month"> </span><span class="calendar-year"> </span></h2>
+          <div class="calendar-heading-arrow"> <i class="material-icons calendar-heading-arrow-right">arrow_forward</i></div>
+        </div>
+        <table class="calendar-table">
+          <thead class="calendar-table-head">
+            <tr>
+              <th>Пн</th>
+              <th>Вт</th>
+              <th>Ср</th>
+              <th>Чт</th>
+              <th>Пт</th>
+              <th>Сб</th>
+              <th>Вс</th>
+            </tr>
+          </thead>
+          <tbody class="calendar-table-body"></tbody>
+        </table>
+        <div class="calendar-buttons">
+          <div class="calendar-clear">
+            <div class="calendar-clear-link">очистить</div>
+          </div>
+          <div class="calendar-confirm">
+            <div class="calendar-confirm-link">применить</div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="column">
-    <div class="room-card">
-      <form class="room-card-form" action="#">
-        <header class="room-card-form--header">
-          <h1 class="room-card-form--header-heading"><span class="heading--num">№ </span>888 <span class="heading--room-type">люкс</span></h1>
-          <div class="room-card-form--header-price">
-            <p class="header-price">9 990&#x20bd; </p><span class="header-price-perDay"> в сутки</span>
+        <div class="roomDescr">
+          <div class="roomDescr--slider">
+            <div class="roomDescr--slider-image"><img src="./assets/img/room1.jpg" alt=""></div>
+            <div class="roomDescr--slider-controls">
+              <div class="roomDescr--slider-controls-left"><i class="material-icons roomDescr--slider-controls-left-arrow">expand_more</i></div>
+              <div class="roomDescr--slider-controls-right"><i class="material-icons roomDescr--slider-controls-right-arrow">expand_more</i></div>
+            </div>
+            <div class="roomDescr--slider-dots">
+              <div class="roomDescr--slider-dots-dot roomDescr--slider-dots-dot--active"></div>
+              <div class="roomDescr--slider-dots-dot"></div>
+              <div class="roomDescr--slider-dots-dot"></div>
+              <div class="roomDescr--slider-dots-dot"></div>
+            </div>
           </div>
-        </header>
-        <div class="room-card-form--date">
-          <label class="room-card-form--date-label">Прибытие
-            <div class="date-dropdown">
-              <div class="date-dropdown--wrapper">
-                <div class="date-dropdown--dropdown-result">ДД.ММ.ГГГГ</div>
-                <div class="date-dropdown--dropdown-arrow"> <i class="material-icons date-dropdown--dropdown-arrow-icon">expand_more</i></div>
+          <div class="roomDescr--description">
+            <div class="roomDescr--description-header">
+              <h1 class="roomDescr--description-header-heading"><span class="heading--num">№  </span>888 <span class="heading--room-type">люкс</span></h1>
+              <div class="roomDescr--description-price">
+                <p class="roomDescr--description-price-num">9 990&#x20bd;  </p><span class="roomDescr--description-price-perDay"> в сутки</span>
               </div>
             </div>
-          </label>
-          <label class="room-card-form--date-label">Выезд
-            <div class="date-dropdown">
-              <div class="date-dropdown--wrapper">
-                <div class="date-dropdown--dropdown-result">ДД.ММ.ГГГГ</div>
-                <div class="date-dropdown--dropdown-arrow"> <i class="material-icons date-dropdown--dropdown-arrow-icon">expand_more</i></div>
+            <hr class="roomDescr--divider">
+            <div class="roomDescr--rate">
+              <div class="roomDescr--rate-rateBtns"> 
+                <div class="rateBtns">
+                  <div class="rateBtns-wrapper">
+                    <div class="rateBtns-line">
+                      <div class="rateBtns--star">
+                        <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns--star">
+                        <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns--star">
+                        <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns--star">
+                        <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns--star">
+                        <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="roomDescr--rate-feedback"> <span class="roomDescr--rate-feedback-num">145 </span>Отзывов</p>
+            </div>
+          </div>
+        </div>
+        <div class="roomDescr">
+          <div class="roomDescr--slider">
+            <div class="roomDescr--slider-image"><img src="./assets/img/room2.jpg" alt=""></div>
+            <div class="roomDescr--slider-controls">
+              <div class="roomDescr--slider-controls-left"><i class="material-icons roomDescr--slider-controls-left-arrow">expand_more</i></div>
+              <div class="roomDescr--slider-controls-right"><i class="material-icons roomDescr--slider-controls-right-arrow">expand_more</i></div>
+            </div>
+            <div class="roomDescr--slider-dots">
+              <div class="roomDescr--slider-dots-dot roomDescr--slider-dots-dot--active"></div>
+              <div class="roomDescr--slider-dots-dot"></div>
+              <div class="roomDescr--slider-dots-dot"></div>
+              <div class="roomDescr--slider-dots-dot"></div>
+            </div>
+          </div>
+          <div class="roomDescr--description">
+            <div class="roomDescr--description-header">
+              <h1 class="roomDescr--description-header-heading"><span class="heading--num">№  </span>840 <span class="heading--room-type"></span></h1>
+              <div class="roomDescr--description-price">
+                <p class="roomDescr--description-price-num">9 990&#x20bd;  </p><span class="roomDescr--description-price-perDay"> в сутки</span>
               </div>
             </div>
-          </label>
-        </div>
-        <div class="room-card-form--guests">
-          <label class="room-card-form--guests-label">Гости
-            <div class="dropdown">
-              <div class="dropdown--wrapper">
-                <div class="dropdown--dropdown-result">Cколько гостей</div>
-                <div class="dropdown--dropdown-arrow"> <i class="material-icons dropdown--dropdown-arrow-icon">expand_more</i></div>
+            <hr class="roomDescr--divider">
+            <div class="roomDescr--rate">
+              <div class="roomDescr--rate-rateBtns"> 
+                <div class="rateBtns">
+                  <div class="rateBtns-wrapper">
+                    <div class="rateBtns-line">
+                      <div class="rateBtns--star">
+                        <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns--star">
+                        <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns--star">
+                        <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns--star">
+                        <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns--star">
+                        <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="dropdown--dropdown-items">
-                <div class="dropdown--dropdown-item">
-                  <div class="dropdown-item-name">взрослые</div>
-                  <div class="dropdown-count">
-                    <div class="dropdown-count-minus"> <span>-</span></div>
-                    <div class="dropdown-count-result">0</div>
-                    <div class="dropdown-count-plus"> <span>+</span></div>
-                  </div>
-                </div>
-                <div class="dropdown--dropdown-item">
-                  <div class="dropdown-item-name">дети</div>
-                  <div class="dropdown-count">
-                    <div class="dropdown-count-minus"> <span>-</span></div>
-                    <div class="dropdown-count-result">0</div>
-                    <div class="dropdown-count-plus"> <span>+</span></div>
-                  </div>
-                </div>
-                <div class="dropdown--dropdown-item">
-                  <div class="dropdown-item-name">младенцы</div>
-                  <div class="dropdown-count">
-                    <div class="dropdown-count-minus"> <span>-</span></div>
-                    <div class="dropdown-count-result">0</div>
-                    <div class="dropdown-count-plus"> <span>+</span></div>
-                  </div>
-                </div>
-                <div class="confirm">
-                  <div class="confirm-link">применить</div>
-                </div>
-                <div class="clear">
-                  <div class="clear-link">очистить</div>
-                </div>
-              </div>
+              <p class="roomDescr--rate-feedback"> <span class="roomDescr--rate-feedback-num">65 </span>Отзывов</p>
             </div>
-          </label>
-        </div>
-        <div class="room-card-form--priceList">
-          <div class="priceList--item">
-            <p class="priceList--item-description">9 990&#x20bd; X 4 суток</p>
-            <p class="priceList--item-price">39 960&#x20bd;</p>
-          </div>
-          <div class="priceList--item">
-            <p class="priceList--item-description">Сбор за услуги: скидка 2 179&#x20bd;</p>
-            <p class="priceList--item-price">0&#x20bd;</p>
-          </div>
-          <div class="priceList--item">
-            <p class="priceList--item-description">Сбор за дополнительные услуги</p>
-            <p class="priceList--item-price">300&#x20bd;</p>
-          </div>
-          <div class="priceList--total">
-            <h2 class="priceList--total--heading">Итого</h2>
-            <div class="priceList--total--line"></div>
-            <p class="priceList--total--price">38 081&#x20bd;</p>
           </div>
         </div>
-        <div class="longBtn">
-          <button class="longBtn--button">Забронировать <i class="material-icons longBtn--arrow-icon">arrow_forward</i></button>
-        </div>
-      </form>
-    </div>
   </div>
 </div>

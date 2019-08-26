@@ -2,6 +2,8 @@
     width: 320px;
     border: 1px solid rgba(31, 32, 65, 0.25);
     border-radius: 4px;
+    background: #fff;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
 }
 .calendar-wrapper{
     width:100%;
@@ -53,9 +55,13 @@
     @include MontserratBold();
     text-transform: uppercase;
     cursor: pointer;
+    @include MT(20px);
 }
 .calendar-confirm-link{
     color:$purple;
+}
+.calendar-clear-link{
+    color:$darkShade25;
 }
 .today-active{
     font-weight: bold;
