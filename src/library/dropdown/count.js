@@ -25,11 +25,13 @@ window.addEventListener('DOMContentLoaded', () => {
                 items += 1;
             }
         }
+
         counts = items * (i + 1);
 
         if (i == 0) {
             items = 0;
         }
+        items *= i;
     }
 
     function reset() {

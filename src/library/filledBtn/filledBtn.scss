@@ -1,8 +1,12 @@
 @import "./active/active";
 @import "./focus/focus";
+.filledBtn{
+    height:100%;
+    width: 100%;
+}
 .filledBtn--button{
-    height:44px;
-    padding:14px 20px;
+    height:100%;
+    width: 100%;
     text-transform: uppercase;
     @include MontserratBold();
     border:none;

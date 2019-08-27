@@ -97,6 +97,10 @@ body {
     @include flexVertCenter();
     justify-content: space-between;
 }
+.reg-haveAnAcc-button{
+    width:99px;
+    height:44px;
+}
 
 .room-card-form--header,.roomDescr--description-header {
     display: flex;
@@ -164,6 +168,10 @@ body {
     display:flex;
     justify-content: space-between;
     align-items: center;
+}
+.enter-noAcc-button{
+    width:99px;
+    height:44px;
 }
 .roomDescr{
     width:271px;

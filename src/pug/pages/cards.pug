@@ -4,128 +4,13 @@ include ../includes/header.pug
 
 
 .wrapper
-	.column
-		mixin findForm()
-			.find
-				form.find-form(action="#")
-					h1.find-form--heading Найдем номера под ваши пожелания
-					.find-form--date
-						label.find-form--date-label Прибытие
-							+date()
-						label.find-form--date-label Выезд
-							+date()
-					.find-form--guests
-						label.find-form--guests-label Гости
-							+dropdown(3, 'взрослые', 'дети', 'младенцы')
-					+longBtn('подобрать номер')
+	.column		
 		+findForm()
-		mixin regForm()
-			.reg
-				form.reg-form(action="#")    
-					h1.reg-form--heading Регистрация аккаунта
-					.reg-form--input
-					+textInput('Имя', 'firstName')
-						+textInput('Фамилия', 'lastName')
-					.reg-form--radio
-						+radioBtns(radioBtns, 'radio')
-					.reg-form--birthDate
-						label.reg-form--birthDate-label Дата рождения
-							+maskedText()
-					.reg-form--enterData    
-						label.reg-form--enterData-label Данные для входа в сервис
-							+textInput('Email', 'email')
-							+textInput('Пароль', 'password')
-					.reg-form--toggleSwitch
-						+toggleSwitch('Получать спецпредложения', 'get')
-					+longBtn('Перейти к оплате')
-				.reg-haveAnAcc
-					.reg-haveAnAcc-description Уже есть аккаунт на Toxin
-					+borderBtn('Войти')
 		+regForm()
 	.column
-		mixin roomCard()
-			.room-card
-				form.room-card-form(action="#")
-					header.room-card-form--header
-						h1.room-card-form--header-heading
-							span.heading--num № 
-							| 888 
-							span.heading--room-type люкс
-						.room-card-form--header-price
-							p.header-price 9 990&#x20bd; 
-							span.header-price-perDay  в сутки
-					.room-card-form--date
-						label.room-card-form--date-label Прибытие
-							+date()
-						label.room-card-form--date-label Выезд
-							+date()
-					.room-card-form--guests
-						label.room-card-form--guests-label Гости
-							+dropdown(3, 'взрослые', 'дети', 'младенцы')
-					.room-card-form--priceList
-						.priceList--item
-							p.priceList--item-description 9 990&#x20bd; X 4 суток
-							p.priceList--item-price 39 960&#x20bd;
-						.priceList--item
-							p.priceList--item-description Сбор за услуги: скидка 2 179&#x20bd;
-							p.priceList--item-price 0&#x20bd;
-						.priceList--item
-							p.priceList--item-description Сбор за дополнительные услуги
-							p.priceList--item-price 300&#x20bd;
-						.priceList--total
-							h2.priceList--total--heading Итого
-							.priceList--total--line
-							p.priceList--total--price 38 081&#x20bd;
-					+longBtn('Забронировать')
 		+roomCard()
-		.enter
-			mixin enterForm()
-				form.enter-form(action="#")
-					header.enter-form--header
-						h1.enter-form--header-heading Войти
-					.enter-form--input-items
-						.enter-form--input
-						+textInput('Email', 'Email')
-						.enter-form--input
-						+textInput('Пароль', 'Password')
-					+longBtn('Войти')
-					.enter-noAcc
-						.enter-noAcc-description Уже есть аккаунт на Toxin
-						+borderBtn('Войти')
-			+enterForm()
+		+enterForm()
 	.column
-		+calendar()
-
-		mixin roomDescr(src, num, count, type)
-			.roomDescr
-				.roomDescr--slider
-					.roomDescr--slider-image
-						img(src=src, alt="")
-					.roomDescr--slider-controls
-						.roomDescr--slider-controls-left
-							i.material-icons.roomDescr--slider-controls-left-arrow expand_more
-						.roomDescr--slider-controls-right
-							i.material-icons.roomDescr--slider-controls-right-arrow expand_more
-					.roomDescr--slider-dots
-						.roomDescr--slider-dots-dot.roomDescr--slider-dots-dot--active
-						.roomDescr--slider-dots-dot
-						.roomDescr--slider-dots-dot
-						.roomDescr--slider-dots-dot
-				.roomDescr--description
-					.roomDescr--description-header
-						h1.roomDescr--description-header-heading
-							span.heading--num №  
-							| #{num} 
-							span.heading--room-type #{type}
-						.roomDescr--description-price
-							p.roomDescr--description-price-num 9 990&#x20bd;  
-							span.roomDescr--description-price-perDay  в сутки
-					hr.roomDescr--divider
-					.roomDescr--rate
-						.roomDescr--rate-rateBtns 
-							+rateBtns()
-						p.roomDescr--rate-feedback 
-							span.roomDescr--rate-feedback-num #{count} 
-							|Отзывов
+		+calendar()		
 		+roomDescr('./assets/img/room1.jpg', '888', '145', 'люкс')
 		+roomDescr('./assets/img/room2.jpg', '840', '65')

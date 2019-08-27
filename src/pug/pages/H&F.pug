@@ -1,0 +1,11 @@
+block variables
+	- var headerNav = [{name:'Home', submenu:false},{name:'About Us', submenu:false},{name:'Services', submenu:true},{name:'Careers', submenu:false},{name:'News', submenu:false},{name:'Documentation', submenu:false}]
+	- var footerNav = [{heading: 'Navigation', items:['About Us', 'News', 'Support', 'Products']}, {heading: 'About Us', items:['Who we are', 'Our team', 'Careers', 'Investors']},{heading: 'Support', items:['Documentation', 'Community', 'Get in Touch']}]
+
+include ../includes/header.pug
+
++header(false, headerNav)
++header(true, headerNav, 'Cosmin Negoita')
++footer(footerNav)
++footerNew()
+
