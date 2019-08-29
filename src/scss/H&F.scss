@@ -9,7 +9,6 @@
     justify-content:space-between;
     align-items: center;
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-    @include MB(40px);
     color:$darkShade50;
     &-content{
         display: flex;
@@ -22,7 +21,7 @@
         height:34px;
     }
     &--register-button{
-        width: 101px;
+        width: auto;
         height:34px;
     }
     &--vert-line{
@@ -64,7 +63,6 @@
     background:#fff;
     width:1440px;
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-    @include MB(40px);
     color:$darkShade50;
     
     &-siteDescr{
@@ -139,7 +137,6 @@
     background:#fff;
     width:1440px;
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-    @include MB(40px);
     color:$darkShade50;
     padding:100px 440px 110px;
     display: flex;

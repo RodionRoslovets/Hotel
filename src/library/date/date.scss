@@ -1,12 +1,15 @@
 .date-dropdown {
-    width: 150px;
+    width: 320px;
     @include Montserrat();
     position: relative;
-    background: #fff;
+    display:flex;
+    justify-content: space-between;
 }
 
-.date-dropdown--wrapper {
+.date-dropdown--item-wrapper {
     position: relative;
+    width:150px;    
+    background: #fff;
 }
 
 .date-dropdown--dropdown-result {

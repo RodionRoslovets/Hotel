@@ -20,7 +20,9 @@ module.exports = {
         main: PATHS.src,
         uikit: `${PATHS.src}/uikit.js`,
         cards: `${PATHS.src}/cards.js`,
-        HandF: `${PATHS.src}/H&F.js`
+        HandF: `${PATHS.src}/H&F.js`,
+        landing: `${PATHS.src}/landing.js`,
+        searchRoom: `${PATHS.src}/searchRoom.js`
     },
     output: {
         filename: `${PATHS.assets}js/[name].js`,

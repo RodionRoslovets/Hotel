@@ -57,10 +57,7 @@ mixin findForm()
 				form.find-form(action="#")
 					h1.find-form--heading Найдем номера под ваши пожелания
 					.find-form--date
-						label.find-form--date-label Прибытие
-							+date()
-						label.find-form--date-label Выезд
-							+date()
+							+date('Прибытие', 'Выезд')
 					.find-form--guests
 						label.find-form--guests-label Гости
 							+dropdown(3, 'взрослые', 'дети', 'младенцы')
@@ -100,10 +97,7 @@ mixin roomCard()
 							p.header-price 9 990&#x20bd; 
 							span.header-price-perDay  в сутки
 					.room-card-form--date
-						label.room-card-form--date-label Прибытие
-							+date()
-						label.room-card-form--date-label Выезд
-							+date()
+						+date('Прибытие', 'Выезд')
 					.room-card-form--guests
 						label.room-card-form--guests-label Гости
 							+dropdown(3, 'взрослые', 'дети', 'младенцы')
@@ -168,7 +162,7 @@ mixin roomDescr(src, num, count, type)
 						p.roomDescr--rate-feedback 
 							span.roomDescr--rate-feedback-num #{count} 
 							|Отзывов
-mixin header(isReg, arr, userName)
+mixin header(isReg, arr, userName, borderedBtnName, filledBtnName)
 	header.header
 		.header-logo
 			+logoFull()
@@ -185,17 +179,17 @@ mixin header(isReg, arr, userName)
 				.header--userName #{userName}
 			else
 				.header--login-button
-					+borderBtn('Login')
+					+borderBtn(borderedBtnName)
 				.header--register-button
-					+filledBtn('Register')
-mixin footer(arr)
+					+filledBtn(filledBtnName)
+mixin footer(arr, siteDescrText, subscrHeadng, subscrDescription, copyrightText, placeholder)
 	footer.footer
 		.footer-nav
 			.footer-siteDescr
 				.footer-siteDescr-logo
 					+logoFull()
 				.footer-siteDescr-description
-					p Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
+					p #{siteDescrText}
 			nav.footer-menu
 				each el in arr
 					.footer-menu-column
@@ -205,11 +199,11 @@ mixin footer(arr)
 								li.footer-menu-column--list-item
 									a(href='#') #{el.items[x]}
 			.footer-subscribe
-				h3.footer-subscribe--heading Subscribe to our newsletter
-				p.footer-subscribe--text Receive our latest news and promotions in your inbox!
-				+subscrTextField('Your email addres')
+				h3.footer-subscribe--heading #{subscrHeadng}
+				p.footer-subscribe--text #{subscrDescription}
+				+subscrTextField(placeholder)
 		.footer-copyright
-			p.footer-copyright--text Copyright © 2018 Toxin UI Kit. All rights reserved.
+			p.footer-copyright--text #{copyrightText}
 			.footer-copyright--social
 				.footer-copyright--social-icon
 					svg(width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg")

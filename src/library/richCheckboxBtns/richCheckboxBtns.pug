@@ -1,8 +1,7 @@
-mixin richCheckboxBtns(arr, name)
+mixin richCheckboxBtns(arr, name, text)
 	.richCheckBox
 		.richCheckBox--wrapper
-			.richCheckBox--description
-				p rich checkbox buttons
+			h3.richCheckBox--description #{text}
 			.richCheckBox--items
 				each el in arr
 					.richCheckBox--items-item

@@ -1,8 +1,7 @@
-mixin checkboxList(arr, name)
+mixin checkboxList(arr, name, text)
 	.checkbox-list
 		.checkbox-list--wrapper
-			.checkbox-list--description
-				p expandable checkbox list
+			h3.checkbox-list--description #{text}
 			.checkbox-list--arrow
 				i.material-icons.checkbox-list--arrow-icon expand_more
 		.checkbox-list--list

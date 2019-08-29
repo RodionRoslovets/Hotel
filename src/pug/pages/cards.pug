@@ -1,16 +1,17 @@
 block variables
+	- var title = 'Cards'
 	- var radioBtns = [{name:'man', val:'Мужчина'}, {name:'woman', val:'Женщина'}]
 include ../includes/header.pug
 
 
 .wrapper
-	.column		
+	.column
 		+findForm()
 		+regForm()
 	.column
 		+roomCard()
 		+enterForm()
 	.column
-		+calendar()		
+		+calendar()
 		+roomDescr('./assets/img/room1.jpg', '888', '145', 'люкс')
 		+roomDescr('./assets/img/room2.jpg', '840', '65')

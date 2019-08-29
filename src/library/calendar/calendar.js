@@ -283,5 +283,62 @@ window.addEventListener('DOMContentLoaded', () => {
             fillTable();
         });
     }
+    //Выводим результат
+    let acceptButton = document.querySelectorAll('.calendar-confirm-link'), 
+		dateField = document.querySelectorAll('.date-dropdown--dropdown-result'),
+		calendarClear = document.querySelectorAll('.calendar-clear-link');
+    
+    
+		for(let i = 0;i < acceptButton.length; i++){
+			acceptButton[i].addEventListener('click', ()=>{
+				let res,
+                    res2,
+                    resMonth,
+				    firstday = document.querySelectorAll('.calendar-month-cell-active-start')[i].innerHTML,
+                    lastday = document.querySelectorAll('.calendar-month-cell-active-end')[i].innerHTML;
+                
+                function firstDecadeZero(a){
+                    if(a >= 1 && a <10){
+                        a = '0' + a;
+                    }
+                    return a;
+                }
+                
+                firstday = firstDecadeZero(firstday);
+                lastday = firstDecadeZero(lastday);
 
+                for(let k = 0; k < months.length; k++){
+                    if(months[k].name == monthHeading[i].innerHTML){
+                        resMonth = firstDecadeZero(k + 1);
+                        
+                    }
+                }
+                
+                
+					
+				res = firstday + '.' + resMonth + '.' + yearHeading[i].innerHTML;
+				res2 = lastday + '.' + resMonth + '.' + yearHeading[i].innerHTML;
+				dateField[0].textContent = res;
+				dateField[1].textContent = res2;
+				
+				calendarClear[i].classList.add('calendar-clear-link--active');
+				
+			});
+		}
+		
+		for(let i = 0; i < calendarClear.length; i++){
+			calendarClear[i].addEventListener('click', ()=>{
+				dateField.forEach(el => {
+                    el.innerHTML = 'ДД.ММ.ГГГГ';
+                });
+                let dateCell = document.querySelectorAll('.calendar-month-cell');
+                dateCell.forEach(el => {
+                    el.classList.remove('calendar-month-cell-active-start');
+                    el.classList.remove('calendar-month-cell-active-end');
+                    el.classList.remove('calendar-month-cell-active');
+                    el.classList.remove('calendar-month-cell-active-range');
+                });
+                calendarClear[i].classList.remove('calendar-clear-link--active');
+			});
+		}
 });

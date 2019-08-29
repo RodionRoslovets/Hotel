@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title></title>
+    <title>Cards</title>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="./assets/css/main.css" rel="stylesheet"><link href="./assets/css/uikit.css" rel="stylesheet"><link href="./assets/css/cards.css" rel="stylesheet"><link href="./assets/css/HandF.css" rel="stylesheet"></head>
-  <body><script type="text/javascript" src="./assets/js/main.js"></script><script type="text/javascript" src="./assets/js/uikit.js"></script><script type="text/javascript" src="./assets/js/cards.js"></script><script type="text/javascript" src="./assets/js/HandF.js"></script></body>
+  <link href="./assets/css/main.css" rel="stylesheet"><link href="./assets/css/uikit.css" rel="stylesheet"><link href="./assets/css/cards.css" rel="stylesheet"><link href="./assets/css/HandF.css" rel="stylesheet"><link href="./assets/css/landing.css" rel="stylesheet"><link href="./assets/css/searchRoom.css" rel="stylesheet"></head>
+  <body><script type="text/javascript" src="./assets/js/main.js"></script><script type="text/javascript" src="./assets/js/uikit.js"></script><script type="text/javascript" src="./assets/js/cards.js"></script><script type="text/javascript" src="./assets/js/HandF.js"></script><script type="text/javascript" src="./assets/js/landing.js"></script><script type="text/javascript" src="./assets/js/searchRoom.js"></script></body>
 </html>
 <div class="wrapper">
   <div class="column">
@@ -13,22 +13,53 @@
       <form class="find-form" action="#">
         <h1 class="find-form--heading">Найдем номера под ваши пожелания</h1>
         <div class="find-form--date">
-          <label class="find-form--date-label">Прибытие
-            <div class="date-dropdown">
-              <div class="date-dropdown--wrapper">
+          <div class="date-dropdown">
+            <div class="date-dropdown--item">
+              <h3 class="date-dropdown--item-heading">Прибытие</h3>
+              <div class="date-dropdown--item-wrapper">
                 <div class="date-dropdown--dropdown-result">ДД.ММ.ГГГГ</div>
                 <div class="date-dropdown--dropdown-arrow"> <i class="material-icons date-dropdown--dropdown-arrow-icon">expand_more</i></div>
               </div>
             </div>
-          </label>
-          <label class="find-form--date-label">Выезд
-            <div class="date-dropdown">
-              <div class="date-dropdown--wrapper">
+            <div class="date-dropdown--item">
+              <h3 class="date-dropdown--item-heading">Выезд</h3>
+              <div class="date-dropdown--item-wrapper">
                 <div class="date-dropdown--dropdown-result">ДД.ММ.ГГГГ</div>
                 <div class="date-dropdown--dropdown-arrow"> <i class="material-icons date-dropdown--dropdown-arrow-icon">expand_more</i></div>
               </div>
             </div>
-          </label>
+            <div class="calendar">
+              <div class="calendar-wrapper">
+                <div class="calendar-heading">
+                  <div class="calendar-heading-arrow"><i class="material-icons calendar-heading-arrow-left"> arrow_back</i></div>
+                  <h2 class="calendar-heading-title"> <span class="calendar-month"> </span><span class="calendar-year"> </span></h2>
+                  <div class="calendar-heading-arrow"> <i class="material-icons calendar-heading-arrow-right">arrow_forward</i></div>
+                </div>
+                <table class="calendar-table">
+                  <thead class="calendar-table-head">
+                    <tr>
+                      <th>Пн</th>
+                      <th>Вт</th>
+                      <th>Ср</th>
+                      <th>Чт</th>
+                      <th>Пт</th>
+                      <th>Сб</th>
+                      <th>Вс</th>
+                    </tr>
+                  </thead>
+                  <tbody class="calendar-table-body"></tbody>
+                </table>
+                <div class="calendar-buttons">
+                  <div class="calendar-clear">
+                    <div class="calendar-clear-link">очистить</div>
+                  </div>
+                  <div class="calendar-confirm">
+                    <div class="calendar-confirm-link">применить</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="find-form--guests">
           <label class="find-form--guests-label">Гости
@@ -174,22 +205,53 @@
           </div>
         </header>
         <div class="room-card-form--date">
-          <label class="room-card-form--date-label">Прибытие
-            <div class="date-dropdown">
-              <div class="date-dropdown--wrapper">
+          <div class="date-dropdown">
+            <div class="date-dropdown--item">
+              <h3 class="date-dropdown--item-heading">Прибытие</h3>
+              <div class="date-dropdown--item-wrapper">
                 <div class="date-dropdown--dropdown-result">ДД.ММ.ГГГГ</div>
                 <div class="date-dropdown--dropdown-arrow"> <i class="material-icons date-dropdown--dropdown-arrow-icon">expand_more</i></div>
               </div>
             </div>
-          </label>
-          <label class="room-card-form--date-label">Выезд
-            <div class="date-dropdown">
-              <div class="date-dropdown--wrapper">
+            <div class="date-dropdown--item">
+              <h3 class="date-dropdown--item-heading">Выезд</h3>
+              <div class="date-dropdown--item-wrapper">
                 <div class="date-dropdown--dropdown-result">ДД.ММ.ГГГГ</div>
                 <div class="date-dropdown--dropdown-arrow"> <i class="material-icons date-dropdown--dropdown-arrow-icon">expand_more</i></div>
               </div>
             </div>
-          </label>
+            <div class="calendar">
+              <div class="calendar-wrapper">
+                <div class="calendar-heading">
+                  <div class="calendar-heading-arrow"><i class="material-icons calendar-heading-arrow-left"> arrow_back</i></div>
+                  <h2 class="calendar-heading-title"> <span class="calendar-month"> </span><span class="calendar-year"> </span></h2>
+                  <div class="calendar-heading-arrow"> <i class="material-icons calendar-heading-arrow-right">arrow_forward</i></div>
+                </div>
+                <table class="calendar-table">
+                  <thead class="calendar-table-head">
+                    <tr>
+                      <th>Пн</th>
+                      <th>Вт</th>
+                      <th>Ср</th>
+                      <th>Чт</th>
+                      <th>Пт</th>
+                      <th>Сб</th>
+                      <th>Вс</th>
+                    </tr>
+                  </thead>
+                  <tbody class="calendar-table-body"></tbody>
+                </table>
+                <div class="calendar-buttons">
+                  <div class="calendar-clear">
+                    <div class="calendar-clear-link">очистить</div>
+                  </div>
+                  <div class="calendar-confirm">
+                    <div class="calendar-confirm-link">применить</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="room-card-form--guests">
           <label class="room-card-form--guests-label">Гости

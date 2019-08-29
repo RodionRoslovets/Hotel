@@ -39,9 +39,12 @@
     font-size:14px;
     color:$darkShade75;
     margin-bottom:5px;
+    text-transform: none;
+    line-height: 18px;
 }
 .richCheckBox--items-item-description-text{
     @include Montserrat();
     font-size:12px;
     color:$darkShade50;
+    line-height: 14px;
 }

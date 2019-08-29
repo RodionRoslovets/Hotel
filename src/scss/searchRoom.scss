@@ -1,0 +1,49 @@
+@import './variables';
+@import './mixins.scss';
+
+.searchRoom-header{
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    position:relative;
+    z-index: 10;
+    width:1440px;
+}
+.main-content{
+    background:#fff;
+    width:1440px;
+    padding: 30px 140px 70px;
+    display:flex;
+    justify-content: space-between;
+    &-sidebar{
+        width:266px;
+        &--dateFilter{
+            @include MB(20px);
+        }
+        &--dropdownList, 
+        &--range, 
+        &--checkBoxBtns, 
+        &--richCheckbox{
+            @include MB(30px);
+        }
+        &--dropdownList{
+            @include MB(16px);
+        }
+    }
+    &-main{
+        width:834px;
+        &--heading{
+            @include MB(20px);
+        }
+        &--rooms-line{
+            display:flex;
+            justify-content: space-between;
+            @include MB(20px);
+        }
+        &--rooms{
+            @include MB(40px);
+        }
+        &--pagination{
+            display:flex;
+            justify-content: center;
+        }
+    }
+}
