@@ -1,11 +1,12 @@
 mixin advantages(arr)
 	.advantages
 		.advantages-wrapper
-			each el in arr
+			-for(let i = 0; i < arr.length; i++)
 				.advantages-item
 					.advantages-item-image
-						i.material-icons.advantages-item-image-icon #{el.img}
+						i.material-icons.advantages-item-image-icon #{arr[i].img}
 					.advantages-item-description
-						h3.description-heading #{el.heading}
-						p.description-text #{el.text}
-				hr.advantages-item-line
+						h3.description-heading #{arr[i].heading}
+						p.description-text #{arr[i].text}
+				-if(i != arr.length -1)
+					hr.advantages-item-line

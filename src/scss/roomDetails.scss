@@ -1,0 +1,131 @@
+@import './variables';
+@import './mixins.scss';
+
+.roomDetails-header{
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    position:relative;
+    z-index: 10;
+    width:1440px;
+}
+.roomDetails-main{
+    width:1440px;
+    background:#fff;
+    &--room-pictures{
+        display:flex;
+        height:485px;
+        &-small{
+            display:flex;
+            flex-direction: column;
+            &-item{
+                position: relative;
+                top:-1px;
+            }
+            &-item:first-child{
+                position: static;
+            }
+        }
+    }
+    &--details{
+        padding:70px 140px;
+        display:flex;
+        justify-content: space-between;
+        &-information{
+            width:710px;
+            &--roomAndImpressions{
+                display:flex;
+                &-impressions{
+                    margin-left:70px;
+                }
+                &-impressions-heading{
+                    @include MB(20px);
+                }
+                &-impressions-info{
+                    display:flex;
+                    &-list{
+                        align-self: flex-end;
+                        list-style-type: none;
+                        margin-left:30px;
+                        &-item{
+                            display:flex;
+                            align-items:center;
+                        }                   
+                        &-item::before{
+                            content:'';
+                            display:block;
+                            width:10px;
+                            height: 10px;
+                            border-radius:50%;
+                            margin-right:5px;
+                        }  
+                        &-item:nth-child(1)::before{
+                            background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
+                        }
+                        &-item:nth-child(2)::before{
+                            background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+                        }
+                        &-item:nth-child(3)::before{
+                            background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+                        }
+                        &-item:nth-child(4)::before{
+                            background: linear-gradient(180deg, #919191 0%, #3D4975 100%);
+                        }
+                    }
+                }
+                &-impressions-info-diagramm{
+                    position:relative;
+                    width:120px;
+                    height:120px;
+                    display:flex;
+                    justify-content: space-between;
+                    &-right-side{
+                        display:flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                    }
+                    &-description{
+                        position: absolute;
+                        top: 30%;
+                        left: 25%;
+                        text-align: center;
+                        color: $purple;
+                        &-num{
+                            font-family: Quicksand;
+                            font-weight: bold;
+                            font-size: 24px;
+                            line-height: 30px;
+                        }
+                        &-text{
+                            @include MontserratBold();
+                            line-height: 15px;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+            &-feedback{
+                @include MT(30px);
+                &-head{
+                    display:flex;
+                    justify-content: space-between;
+                }
+                &-head-heading{
+                    @include MB(20px);
+                }
+                &-comment{
+                    @include MB(23px);
+                }
+            }
+
+            &-rulesAndcancel{
+                display:flex;
+                justify-content:space-between;
+                @include MT(30px);
+            }
+            &-cancel{
+                width:340px;
+            }
+        }
+    }
+
+}
+

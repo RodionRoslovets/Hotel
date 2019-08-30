@@ -1,0 +1,75 @@
+block variables
+	- var headerNav = [{name:'О нас', submenu:false},{name:'Улуги', submenu:true},{name:'Вакансии', submenu:false},{name:'Новости', submenu:false},{name:'Соглашения', submenu:true}]
+	- var footerNav = [{heading: 'Навигация', items:['О нас', 'Новости', 'Служба поддержки', 'Услуги']}, {heading: 'О нас', items:['О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы']},{heading: 'Служба поддержки', items:['Соглашения', 'Сообщество', 'Связь с нами']}]
+	- var advantages = [{img: 'insert_emoticon', heading: 'Комфорт', text: 'Шумопоглощающие стены'}, {img: 'location_city', heading: 'Удобство', text: 'Окно в каждой из спален'}, {img: 'whatshot', heading: 'Уют', text: 'Номер оснащён камином'}]
+	- var impressions = ['Великолепно', 'Хорошо', 'Удовлетворительно', 'Разочарован']
+	- var bullets =  [{text:'Нельзя с питомцами'}, {text: 'Без вечеринок и мероприятий'}, {text: 'Время прибытия — после 13:00, а выезд до 12:00'}]
+
+include ../includes/header.pug
+
+.roomDetails-header
+	+header(false, headerNav, '','Войти', 'Зарегистироваться')
+main.roomDetails-main
+	.roomDetails-main--room-pictures
+		.roomDetails-main--room-pictures-big
+			img.roomDetails-main--room-pictures-big-item(src="./assets/img/roomPic1.jpg", alt="")
+		.roomDetails-main--room-pictures-small
+			img.roomDetails-main--room-pictures-small-item(src="./assets/img/roomPic2.jpg", alt="")
+			img.roomDetails-main--room-pictures-small-item(src="./assets/img/roomPic3.jpg", alt="")
+	.roomDetails-main--details
+		.roomDetails-main--details-information
+			.roomDetails-main--details-information--roomAndImpressions
+				.roomDetails-main--details-information-roomAndImpressions-roomDetails
+					h2.roomDetails-main--details-information-roomAndImpressions-roomDetails-heading Сведения о номере
+					.roomDetails-main--details-information-roomAndImpressions-roomDetails-info
+						+advantages(advantages)
+				.roomDetails-main--details-information--roomAndImpressions-impressions
+					h2.roomDetails-main--details-information--roomAndImpressions-impressions-heading Впечатления от номера
+					.roomDetails-main--details-information--roomAndImpressions-impressions-info
+						.roomDetails-main--details-information--roomAndImpressions-impressions-info-diagramm
+							.roomDetails-main--details-information--roomAndImpressions-impressions-info-diagramm-left-side
+								svg(width="59" height="120" viewBox="0 0 59 120" fill="none" xmlns="http://www.w3.org/2000/svg")
+									circle( cx="60" cy="60" r="58" stroke="url(#paint0_linear_diag_circle)" stroke-width="4")
+									defs
+										linearGradient(id="paint0_linear_diag_circle" x1="60" y1="0" x2="60" y2="120" gradientUnits="userSpaceOnUse")
+											stop(stop-color="#FFE39C")
+											stop(offset="1", stop-color="#FFBA9C")
+							.roomDetails-main--details-information--roomAndImpressions-impressions-info-diagramm-right-side
+								svg.purple-quad( width="59" height="59" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg")
+									circle(cx="-1" cy="60" r="55" stroke="url(#paint0_linear_quart)" stroke-width="10")
+									defs
+										linearGradient(id="paint0_linear_quart" x1="-1" y1="0" x2="-1" y2="120" gradientUnits="userSpaceOnUse")
+											stop(stop-color="#BC9CFF")
+											stop(offset="1" stop-color="#8BA4F9")
+								svg.green-quad( width="59" height="59" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg")
+									circle(cx="-1" cy="-1" r="58" transform="rotate(90 -1 -1)" stroke="url(#paint0_linear_quart1)" stroke-width="4")
+									defs
+										linearGradient(id="paint0_linear_quart1" x1="-1" y1="-61" x2="-1" y2="59" gradientUnits="userSpaceOnUse")
+											stop(stop-color="#6FCF97")
+											stop(offset="1" stop-color="#66D2EA")
+							.roomDetails-main--details-information--roomAndImpressions-impressions-info-diagramm-description 
+								span.roomDetails-main--details-information--roomAndImpressions-impressions-info-diagramm-description-num 260 
+								p.roomDetails-main--details-information--roomAndImpressions-impressions-info-diagramm-description-text голосов
+						ul.roomDetails-main--details-information--roomAndImpressions-impressions-info-list
+							- for(let i = 0; i < 4; i++)
+								li.roomDetails-main--details-information--roomAndImpressions-impressions-info-list-item #{impressions[i]}
+			.roomDetails-main--details-information-feedback
+				.roomDetails-main--details-information-feedback-head
+					h2.roomDetails-main--details-information-feedback-head-heading Отзывы посетителей номера
+					p.roomDetails-main--details-information-feedback-head-text 2 отзыва
+				.roomDetails-main--details-information-feedback-comment
+					+comment('./assets/img/image.png', 'Мурад Сарафанов', '5 дней назад', 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.', 12) 
+				.roomDetails-main--details-information-feedback-comment
+					+comment('./assets/img/comment.png', 'Патрисия Стёклышкова', 'Неделю назад', 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент', 2) 
+			.roomDetails-main--details-information-rulesAndcancel
+				.roomDetails-main--details-information-rules
+					h2.roomDetails-main--details-information-rules-heading Правила
+					.roomDetails-main--details-information-rules-bullets
+						+bulletList(bullets)
+				.roomDetails-main--details-information-cancel
+					h2.roomDetails-main--details-information-cancel-heading Отмена
+					p.roomDetails-main--details-information-cancel-text Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+
+		.roomDetails-main--details-card
+			+roomCard()
++footer(footerNav, 'Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»', 'Подписка', 'Получайте специальные предложения и новости сервиса', 'Copyright © 2018 Toxin отель. Все права зачищены.', 'Email')

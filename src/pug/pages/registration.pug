@@ -1,0 +1,16 @@
+block variables
+    - var title = 'registration'
+    - var headerNav = [{name:'О нас', submenu:false},{name:'Улуги', submenu:true},{name:'Вакансии', submenu:false},{name:'Новости', submenu:false},{name:'Соглашения', submenu:true}]
+    - var footerNav = [{heading: 'Навигация', items:['О нас', 'Новости', 'Служба поддержки', 'Услуги']}, {heading: 'О нас', items:['О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы']},{heading: 'Служба поддержки', items:['Соглашения', 'Сообщество', 'Связь с нами']}]
+    - var radioBtns = [{name:'man', val:'Мужчина'}, {name:'woman', val:'Женщина'}]
+include ../includes/header.pug
+
+.registration-header
+    +header(false, headerNav, '','Войти', 'Зарегистироваться')
+main.registration-main
+    .registration-main-regForm.registration-main-regForm--active
+        +regForm()
+    .registration-main-enterForm
+        +enterForm()
+.registration-footer
+    +footer(footerNav, 'Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»', 'Подписка', 'Получайте специальные предложения и новости сервиса', 'Copyright © 2018 Toxin отель. Все права зачищены.', 'Email')

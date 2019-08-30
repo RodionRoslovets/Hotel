@@ -1,11 +1,11 @@
-mixin comment(imgSrc, authorName, daysAgo, text)
+mixin comment(imgSrc, authorName, daysAgo, text, likeNum)
 	.comment
 		.comment-wrapper
 			.comment-author
 				.author-avatar
 					img(src=imgSrc, alt="")
 				.comment-like
-					+likeBtn(45)
+					+likeBtn(likeNum)
 				
 			.comment-content
 				.author-data

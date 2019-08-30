@@ -66,9 +66,7 @@ body {
     @include MB(30px);
 }
 
-.reg {
-    @include MT(40px);
-}
+
 
 .input-text {
     @include MB(10px);
@@ -154,9 +152,7 @@ body {
     font-size: 19px;
 }
 
-.enter{
-    @include MT(40px);
-}
+
 .enter-form--header{
     @include MB(20px);
 }
