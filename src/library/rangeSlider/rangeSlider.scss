@@ -4,7 +4,8 @@
 .range--description{
     display:flex;
     justify-content: space-between;
-    margin-bottom:10px;
+    margin-bottom:18px;
+    line-height: 15px;
 }
 .range--description-text{
     @include MontserratBold();
@@ -29,7 +30,8 @@
 .slider--base-hover{
     position:absolute;
     z-index: 0;
-    width: 37%;
+    width: 34%;
+    left: 75px;
     height:6px;
     background: linear-gradient(180deg, $green 0%, #66D2EA 100%);
     border-radius:3px;
@@ -46,9 +48,9 @@
     cursor:pointer;
 }
 .slider--left-btn{
-    left:80px;
+    left:75px;
     cursor:pointer;
 }
 .slider--right-btn{
-    right:80px;
+    right:90px;
 }

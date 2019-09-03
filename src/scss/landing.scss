@@ -6,14 +6,14 @@
     flex-direction:column;
     
     width:1440px;
-    padding:70px 140px 18px;
-    background: url('../img/image3.jpg');
+    padding:70px 134px 18px 140px;
+    background: url(../img/image3.jpg) center bottom;
     &--tagline {
         width: 297px;
         height: 48px;
         text-align: right;
         color:$darkShade75;
         align-self: flex-end;
-        @include MT(320px);
+        @include MT(318px);
     }
 }

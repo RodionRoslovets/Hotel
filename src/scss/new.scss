@@ -18,23 +18,23 @@ body{
     color:$darkShade75;
 }
 h1{
-    font-family: Quicksand, sans-serif;
-    font-weight: bold;
+    font-family: Quicksand, 'open_sansbold', sans-serif;
+    /* font-weight: normal; */
     font-size: 24px;
     color:$darkShade;
-    letter-spacing: -.75px;
 }
 h2{
-    font-family: Quicksand, sans-serif;
-    font-weight: bold;
+    font-family: Quicksand, 'open_sansbold', sans-serif;
+    /* font-weight: normal; */
     font-size: 19px;
-    letter-spacing: 0px;
     color:$darkShade;
 }
 h3{
     font-family: Montserrat-Bold;
     font-weight: normal;
     font-size: 12px;
+    line-height: 15px;
+    margin-bottom:5px;
     color:$darkShade;
     text-transform: uppercase;
 }

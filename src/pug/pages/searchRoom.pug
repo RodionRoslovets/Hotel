@@ -1,38 +1,39 @@
 block variables
 	- var title = 'Search Room'
-	- var headerNav = [{name:'О нас', submenu:false},{name:'Улуги', submenu:true},{name:'Вакансии', submenu:false},{name:'Новости', submenu:false},{name:'Соглашения', submenu:true}]
+	- var headerNav = [{name:'О нас', submenu:false},{name:'Услуги', submenu:true},{name:'Вакансии', submenu:false},{name:'Новости', submenu:false},{name:'Соглашения', submenu:true}]
 	- var footerNav = [{heading: 'Навигация', items:['О нас', 'Новости', 'Служба поддержки', 'Услуги']}, {heading: 'О нас', items:['О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы']},{heading: 'Служба поддержки', items:['Соглашения', 'Сообщество', 'Связь с нами']}]
 	- var chckBtns = [{name:'smoke', val:'Можно курить'}, {name:'pets', val:'Можно с питомцами'}, {name:'gusts', val:'Можно пригласить гостей (до 10 человек)'}]
-	- var richCheckbox = [{name:'wide', value:'wide', head:'Широкий коридор', text:'Ширина коридоров не менее 91 см.'}, {name:'helper', value:'helper', head:'Помощник для инвалидов', text:'На 1 этаже вас встретит специалист и проводит до номера.'}]
+	- var richCheckbox = [{name:'wide', value:'wide', head:'Широкий коридор', text:'Ширина коридоров в номере не менее 91 см.'}, {name:'helper', value:'helper', head:'Помощник для инвалидов', text:'На 1 этаже вас встретит специалист и проводит до номера.'}]
 	- var chckBox = [{name:'breakfast', val:'Завтрак'}, {name:'breakfst', val:'Письменный стол'}, {name:'feedChair', val:'Стул для кормления'}, {name:'litlleBad', val:'Кроватка'}, {name:'tv1', val:'Телевизор'}, {name:'schampoo1', val:'Шампунь'}, {name:'tv2', val:'Телевизор'}, {name:'schampoo2', val:'Шампунь'}]
 	- var footerNav = [{heading: 'Навигация', items:['О нас', 'Новости', 'Служба поддержки', 'Услуги']}, {heading: 'О нас', items:['О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы']},{heading: 'Служба поддержки', items:['Соглашения', 'Сообщество', 'Связь с нами']}]
 
 include ../includes/header.pug
 
 .searchRoom-header
-	+header(false, headerNav, '','Войти', 'Зарегистироваться')
+	+header(false, headerNav, '','Войти', 'Зарегистрироваться')
 main.main-content
 	aside.main-content-sidebar
 		.main-content-sidebar--dateFilter 
 			h3.main-content-sidebar--dateFilter-heading даты пребывания в отеле
 			+dateFilter('19 авг - 23 авг')
-		.main-content-sidebar--dropdownList
-			h3.main-content-sidebar--dropdownList-heading даты пребывания в отеле
+		.main-content-sidebar--dropdownList-guests
+			h3.main-content-sidebar--dropdownList-heading Гости
 			+dropdown(3, 'взрослые', 'дети', 'младенцы')
 		.main-content-sidebar--range
-			+rangeSlider('диапазон цены')
+			.main-content-sidebar--range-slider
+				+rangeSlider('диапазон цены')
 			p.main-content-sidebar--range-description Стоимость за сутки пребывания в номере
 		.main-content-sidebar--checkBoxBtns
 			+checkBoxBtns(chckBtns, 'checkBoxButtons')
 		.main-content-sidebar--richCheckbox
 			+richCheckboxBtns(richCheckbox, 'richCheckBoxButtons', 'Доступность')
-		.main-content-sidebar--dropdownList
+		.main-content-sidebar--dropdownList-comfort
 			h3.main-content-sidebar--dropdownList-heading удобства номера
 			+dropdown(3, 'спальни', 'кровати', 'Ванные комнаты')
 		.main-content-sidebar--checkBoxList
 			+checkboxList(chckBox, 'list', 'дополнительные удобства')
 	.main-content-main
-		h2.main-content-main--heading Номера, которые мы для вас подобрали
+		h1.main-content-main--heading Номера, которые мы для вас подобрали
 		.main-content-main--rooms
 			.main-content-main--rooms-line
 				.main-content-main--rooms-line-item

@@ -1,5 +1,5 @@
 block variables
-	- var headerNav = [{name:'О нас', submenu:false},{name:'Улуги', submenu:true},{name:'Вакансии', submenu:false},{name:'Новости', submenu:false},{name:'Соглашения', submenu:true}]
+	- var headerNav = [{name:'О нас', submenu:false},{name:'Услуги', submenu:true},{name:'Вакансии', submenu:false},{name:'Новости', submenu:false},{name:'Соглашения', submenu:true}]
 	- var footerNav = [{heading: 'Навигация', items:['О нас', 'Новости', 'Служба поддержки', 'Услуги']}, {heading: 'О нас', items:['О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы']},{heading: 'Служба поддержки', items:['Соглашения', 'Сообщество', 'Связь с нами']}]
 	- var advantages = [{img: 'insert_emoticon', heading: 'Комфорт', text: 'Шумопоглощающие стены'}, {img: 'location_city', heading: 'Удобство', text: 'Окно в каждой из спален'}, {img: 'whatshot', heading: 'Уют', text: 'Номер оснащён камином'}]
 	- var impressions = ['Великолепно', 'Хорошо', 'Удовлетворительно', 'Разочарован']
@@ -8,7 +8,7 @@ block variables
 include ../includes/header.pug
 
 .roomDetails-header
-	+header(false, headerNav, '','Войти', 'Зарегистироваться')
+	+header(false, headerNav, '','Войти', 'Зарегистрироваться')
 main.roomDetails-main
 	.roomDetails-main--room-pictures
 		.roomDetails-main--room-pictures-big
@@ -20,7 +20,7 @@ main.roomDetails-main
 		.roomDetails-main--details-information
 			.roomDetails-main--details-information--roomAndImpressions
 				.roomDetails-main--details-information-roomAndImpressions-roomDetails
-					h2.roomDetails-main--details-information-roomAndImpressions-roomDetails-heading Сведения о номере
+					h2.roomDetails-main--details-information--roomAndImpressions-roomDetails-heading Сведения о номере
 					.roomDetails-main--details-information-roomAndImpressions-roomDetails-info
 						+advantages(advantages)
 				.roomDetails-main--details-information--roomAndImpressions-impressions
@@ -62,13 +62,13 @@ main.roomDetails-main
 				.roomDetails-main--details-information-feedback-comment
 					+comment('./assets/img/comment.png', 'Патрисия Стёклышкова', 'Неделю назад', 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент', 2) 
 			.roomDetails-main--details-information-rulesAndcancel
-				.roomDetails-main--details-information-rules
-					h2.roomDetails-main--details-information-rules-heading Правила
-					.roomDetails-main--details-information-rules-bullets
+				.roomDetails-main--details-information-rulesAndcancel-rules
+					h2.roomDetails-main--details-information-rulesAndcancel-rules-heading Правила
+					.roomDetails-main--details-information-rulesAndcancel-rules-bullets
 						+bulletList(bullets)
-				.roomDetails-main--details-information-cancel
-					h2.roomDetails-main--details-information-cancel-heading Отмена
-					p.roomDetails-main--details-information-cancel-text Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+				.roomDetails-main--details-information-rulesAndcancel-cancel
+					h2.roomDetails-main--details-information-rulesAndcancel-cancel-heading Отмена
+					p.roomDetails-main--details-information-rulesAndcancel-cancel-text Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
 
 		.roomDetails-main--details-card
 			+roomCard()

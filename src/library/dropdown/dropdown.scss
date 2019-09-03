@@ -33,7 +33,8 @@
     position: relative;
     width: 100%;
     height: 44px;
-    padding: 9px 0px 13px 15px;
+    line-height: 18px;
+    padding: 13px 0px 13px 14px;
     color: $darkShade75;
     @include inputBorder();
 }
@@ -102,7 +103,7 @@
     width: 100%;
     border: 1px solid $darkShade25;
     border-radius: 0 0 4px 4px;
-    padding: 13px 7px 15px;
+    padding: 10px 7px 15px 13px;
     transition: all .1s linear;
 }
 
@@ -110,14 +111,14 @@
     text-align: right;
     position: absolute;
     right: 7px;
-    bottom: 13px;
+    bottom: 6px;
 }
 
 .clear {
     display: none;
     position: absolute;
-    left: 7px;
-    bottom: 13px;
+    left: 12px;
+    bottom: 6px;
 }
 
 .confirm-link,

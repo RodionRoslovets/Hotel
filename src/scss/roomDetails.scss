@@ -26,13 +26,14 @@
         }
     }
     &--details{
-        padding:70px 140px;
+        padding:70px 140px 62px;
         display:flex;
         justify-content: space-between;
         &-information{
             width:710px;
             &--roomAndImpressions{
                 display:flex;
+                margin-bottom: 31px;
                 &-impressions{
                     margin-left:70px;
                 }
@@ -45,6 +46,7 @@
                         align-self: flex-end;
                         list-style-type: none;
                         margin-left:30px;
+                        padding-top: 27px;
                         &-item{
                             display:flex;
                             align-items:center;
@@ -101,29 +103,45 @@
                         }
                     }
                 }
+                &-roomDetails-heading{
+                    margin-bottom: 22px;
             }
-            &-feedback{
-                @include MT(30px);
-                &-head{
-                    display:flex;
-                    justify-content: space-between;
-                }
-                &-head-heading{
-                    @include MB(20px);
-                }
-                &-comment{
-                    @include MB(23px);
-                }
-            }
-
-            &-rulesAndcancel{
-                display:flex;
-                justify-content:space-between;
-                @include MT(30px);
+        }
+        &-rulesAndcancel{
+            display:flex;
+            justify-content:space-between;
+            @include MT(33px);
+            &-rules{
+                &-heading{
+                    padding-left:20px;
+                    @include MB(17px);
+                }                
             }
             &-cancel{
                 width:340px;
+                position:relative;
+                left:-9px;
+                &-text{
+                    position:relative;
+                    top:17px;
+                }
             }
+        }
+        
+        &-feedback{
+            @include MT(30px);
+            &-head{
+                display:flex;
+                justify-content: space-between;
+            }
+            &-head-heading{
+                @include MB(20px);
+            }
+            &-comment{
+                @include MB(23px);
+            }
+        }
+
         }
     }
 

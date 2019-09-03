@@ -12,7 +12,7 @@
     transition: all .1s linear;
 }
 .calendar-active{
-    top:75px;
+    top:69px;
     opacity:1;
 }
 .calendar-wrapper{
@@ -64,6 +64,7 @@
     justify-content: space-between;
     @include MontserratBold();
     text-transform: uppercase;
+    line-height: 15px;
     cursor: pointer;
     @include MT(20px);
 }

@@ -5,11 +5,16 @@
 .checkbox-btns--description {
     text-transform: uppercase;
     @include MontserratBold();
-    margin-bottom: 15px;
+    margin-bottom: 9px;
 }
-
+.checkbox-btns--list{
+    padding-top:3px;
+}
 .checkbox-btns--list-item {
     display: flex;
+    margin-bottom: 11px;
+    vertical-align: middle;
+    line-height: 18px;
 }
 
 .checkbox-btns-item-chek {

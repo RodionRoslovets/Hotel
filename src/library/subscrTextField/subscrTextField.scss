@@ -1,12 +1,12 @@
 @import "./focus/subscribeTextField-focus";
 .subscribe-field {
-    width: 266px;
+    width: auto;
     position: relative;
 }
 
 .subscribe-field--input {
-    width: 266px;
-    height: 44px;
+    width: 100%;
+    height: auto;
     background: #fff;
     padding: 13px 0px 13px 15px;
     @include Montserrat();

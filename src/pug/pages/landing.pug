@@ -1,11 +1,11 @@
 block variables
 	- var title = 'Landing'
-	- var headerNav = [{name:'О нас', submenu:false},{name:'Улуги', submenu:true},{name:'Вакансии', submenu:false},{name:'Новости', submenu:false},{name:'Соглашения', submenu:true}]
+	- var headerNav = [{name:'О нас', submenu:false},{name:'Уcлуги', submenu:true},{name:'Вакансии', submenu:false},{name:'Новости', submenu:false},{name:'Соглашения', submenu:true}]
 	- var footerNav = [{heading: 'Навигация', items:['О нас', 'Новости', 'Служба поддержки', 'Услуги']}, {heading: 'О нас', items:['О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы']},{heading: 'Служба поддержки', items:['Соглашения', 'Сообщество', 'Связь с нами']}]
 
 include ../includes/header.pug
 
-+header(false, headerNav, '','Войти', 'Зарегистироваться')
++header(false, headerNav, '','Войти', 'Зарегистрироваться')
 .main-screen
 	+findForm()
 	p.main-screen--tagline Лучшие номера для вашей работы, отдыха и просто вдохновения

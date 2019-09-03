@@ -18,20 +18,35 @@
         &--dateFilter{
             @include MB(20px);
         }
-        &--dropdownList, 
-        &--range, 
-        &--checkBoxBtns, 
-        &--richCheckbox{
-            @include MB(30px);
+        &--dropdownList-guests{
+            @include MB(32px);
         }
-        &--dropdownList{
+        &--dropdownList-comfort{
             @include MB(16px);
+        }
+        
+        &--checkBoxBtns{
+            @include MB(31px);
+        }
+        &--richCheckbox{
+            @include MB(28px);
+        }
+        &--range-description{
+            font-size: 12px;
+            line-height: 14px;
+        }
+        &--range-slider{
+            margin-bottom: 15px;
+        }
+        &--range{
+            @include MB(25px);
         }
     }
     &-main{
         width:834px;
+        padding-top: 3px;
         &--heading{
-            @include MB(20px);
+            @include MB(23px);
         }
         &--rooms-line{
             display:flex;

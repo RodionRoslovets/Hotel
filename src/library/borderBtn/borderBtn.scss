@@ -18,11 +18,13 @@
 .borderedBtn--button{
     height:90%;
     width:95%;
+    padding:0 20px;
     @include flexAllCenter();
     text-transform: uppercase;
     @include MontserratBold();
     border:none;
     border-radius:22px;
+    line-height: 15px;
     background: #fff;
     color:$purple;
     cursor: pointer;

@@ -1,12 +1,14 @@
 .pagination{
     width:240px;
+    position: relative;
+    left: -7px;
 }
 .pagination--line{
     display:flex;
     justify-content: space-between;
     font-family: 'Montserrat';
     font-size:12px;
-    margin-bottom:10px;
+    margin-bottom:7px;
 }
 .pagination--line-elem{
     width:40px;

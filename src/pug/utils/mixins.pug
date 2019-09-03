@@ -55,12 +55,12 @@ mixin logoFull()
 mixin findForm()
 			.find
 				form.find-form(action="#")
-					h1.find-form--heading Найдем номера под ваши пожелания
+					h1.find-form--heading Найдём номера под <br> ваши пожелания
 					.find-form--date
 							+date('Прибытие', 'Выезд')
 					.find-form--guests
-						label.find-form--guests-label Гости
-							+dropdown(3, 'взрослые', 'дети', 'младенцы')
+						h3.find-form--guests-heading Гости
+						+dropdown(3, 'взрослые', 'дети', 'младенцы')
 					+longBtn('подобрать номер')
 mixin regForm()
 			.reg
@@ -109,7 +109,9 @@ mixin roomCard()
 							p.priceList--item-description Сбор за услуги: скидка 2 179&#x20bd;
 							p.priceList--item-price 0&#x20bd;
 						.priceList--item
-							p.priceList--item-description Сбор за дополнительные услуги
+							p.priceList--item-description Сбор за дополнительные 
+								br 
+								| услуги
 							p.priceList--item-price 300&#x20bd;
 						.priceList--total
 							h2.priceList--total--heading Итого
@@ -123,14 +125,14 @@ mixin enterForm()
 						h1.enter-form--header-heading Войти
 					.enter-form--input-items
 						.enter-form--input
-						+textInput('Email', 'Email')
+							+textInput('Email', 'Email')
 						.enter-form--input
-						+textInput('Пароль', 'Password')
+							+textInput('Пароль', 'Password')
 					+longBtn('Войти')
 					.enter-noAcc
-						.enter-noAcc-description Уже есть аккаунт на Toxin
+						.enter-noAcc-description Нет аккаунта на Toxin?
 						.enter-noAcc-button
-							+borderBtn('Войти')
+							+borderBtn('Создать')
 mixin roomDescr(src, num, count, type)
 			.roomDescr
 				.roomDescr--slider
@@ -148,13 +150,13 @@ mixin roomDescr(src, num, count, type)
 						.roomDescr--slider-dots-dot
 				.roomDescr--description
 					.roomDescr--description-header
-						h1.roomDescr--description-header-heading
+						h2.roomDescr--description-header-heading
 							span.heading--num №  
 							| #{num} 
 							span.heading--room-type #{type}
 						.roomDescr--description-price
-							p.roomDescr--description-price-num 9 990&#x20bd;  
-							span.roomDescr--description-price-perDay  в сутки
+							p.roomDescr--description-price-num 9 990&#x20bd;&nbsp; 
+							span.roomDescr--description-price-perDay в сутки
 					hr.roomDescr--divider
 					.roomDescr--rate
 						.roomDescr--rate-rateBtns 
@@ -201,7 +203,8 @@ mixin footer(arr, siteDescrText, subscrHeadng, subscrDescription, copyrightText,
 			.footer-subscribe
 				h3.footer-subscribe--heading #{subscrHeadng}
 				p.footer-subscribe--text #{subscrDescription}
-				+subscrTextField(placeholder)
+				.footer-subscribe-field
+					+subscrTextField(placeholder)
 		.footer-copyright
 			p.footer-copyright--text #{copyrightText}
 			.footer-copyright--social

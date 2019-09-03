@@ -23,7 +23,6 @@ body {
 }
 
 .find,
-.reg,
 .room-card,
 .enter-form {
     background: #fff;
@@ -38,16 +37,14 @@ body {
     width: 320px;
 }
 
-.find-form--date,
-.room-card-form--date {
+.find-form--date{
     display: flex;
     justify-content: space-between;
     @include MB(20px);
 }
 
 .find-form--heading,
-.reg-form--heading,
-.room-card-form--header {
+.reg-form--heading{
     line-height: 30px;
     @include MB(20px);
 }
@@ -69,13 +66,25 @@ body {
 
 
 .input-text {
-    @include MB(10px);
+    @include MB(9px);
 }
 
+.reg{
+    background: #fff;
+    width: 380px;
+    padding: 39px 30px 30px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
 .reg-form--radio {
-    @include MB(20px);
+    width:220px;
+    @include MB(7px);
 }
-
+.reg-form--enterData{
+    position: relative;
+    top: -5px;
+}
 .reg-form--birthDate-label,
 .reg-form--enterData-label {
     @include MontserratBold();
@@ -87,7 +96,9 @@ body {
 }
 
 .reg-form--toggleSwitch {
-    @include MB(20px);
+    @include MB(18px);
+    position: relative;
+    top: -6px;
 }
 
 .reg-haveAnAcc {
@@ -116,25 +127,33 @@ body {
     text-transform: uppercase;
     letter-spacing: normal;
 }
-
+.room-card-form--header{
+    @include MB(20px);
+} 
 .room-card-form--header-price {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
 }
+.room-card-form--date {
+    @include MB(16px);
+}
 .room-card-form--guests{
-    @include MB(20px);
+    @include MB(17px);
 }
 .header-price {
     color: $darkShade50;
     @include MontserratBold();
     font-size: 14px;
 }
-
+.room-card-form--priceList{
+    padding-top:3px;
+}
 .priceList--item{
     display: flex;
     justify-content: space-between;
-    @include MB(10px);
+    line-height: 18px;
+    @include MB(16px);
 }
 .priceList--total--line{
     border-bottom: 1px dotted $darkShade25;
@@ -144,6 +163,7 @@ body {
     display:flex;
     align-items: baseline;
     justify-content: space-between;
+    @include MT(30px);
     @include MB(20px);
 }
 .priceList--total--price{
@@ -253,7 +273,7 @@ body {
     font-size:12px;
 }
 .roomDescr--divider{
-    margin:10px 0px;
+    margin:7px 0px;
 }
 .roomDescr--rate{
     display:flex;

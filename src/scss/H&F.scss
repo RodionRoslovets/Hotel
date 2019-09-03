@@ -14,10 +14,10 @@
         display: flex;
         justify-content:space-between;
         align-items: center;
-        flex-grow:.355;
+        flex-grow:.304;
     }
     &--login-button{
-        width: 79px;
+        width: auto;
         height:34px;
     }
     &--register-button{
@@ -38,7 +38,7 @@
     @include Montserrat();
     display:flex;
     align-items: center;
-    flex-grow: .7;
+    flex-grow: .67;
     &--list{
         width:100%;
         display:flex;
@@ -67,8 +67,9 @@
     
     &-siteDescr{
         width:260px;
+        margin-right: 40px;
         &-logo{
-            @include MB(20px);
+            @include MB(17px);
         }
         &-description{
             color:$darkShade75;
@@ -78,7 +79,14 @@
     &-menu{
         display: flex;
         justify-content:space-between;
-        flex-grow:.5;
+        flex-grow:1;
+        margin-right:52px;
+        &-column{
+            padding-top: 4px;
+        }
+        &-column:nth-child(1){
+            margin-right: -35px;
+        }
         &-column--heading{
             line-height: 15px;
         }
@@ -95,27 +103,30 @@
     }
     &-subscribe{
         width:260px;
+        padding-top: 4px;
         &--heading{
             line-height: 15px;
-            @include MB(20px);
+            @include MB(17px);
+        }
+        &-field{
+            width:260px;
         }
         &--text{
             color:$darkShade75;
             line-height: 24px;
-            @include MB(20px);
+            @include MB(22px);
         }
     }
     &-nav{
         height: 372px;
         padding:100px 140px;
         display:flex;
-        justify-content:space-between;
         border-top:1px solid #E5E5E5;
         border-bottom:1px solid #E5E5E5;
     }
 }
 .footer-copyright{
-    padding:23px 140px;
+    padding:25px 140px;
     display:flex;
     justify-content:space-between;
     align-items: center;
@@ -128,7 +139,7 @@
         display:flex;
         justify-content:space-between;
         align-items: center;
-        flex-grow:.05;
+        flex-grow:.06;
         &-icon{
             height:24px;
         }
