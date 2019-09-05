@@ -1,5 +1,5 @@
 .checkbox-list {
-    width: 266px;
+    width: auto;
     position: relative;
 }
 
@@ -26,10 +26,16 @@
     cursor: pointer;
     line-height: 24px;
     transition: all .1s linear;
+    @media screen and (max-width:1199px) and (min-width:960px){
+        height: 39px;
+    }
 }
 .checkbox-list--arrow-icon{
     line-height: 44px;
     color:$darkShade75;
+    @media screen and (max-width:1199px) and (min-width:960px){
+        line-height: 39px;
+    }
 }
 .checkbox-list--arrow-rotated {
     transform: rotate(180deg);

@@ -1,5 +1,5 @@
 .range{
-    width:266px;
+    width:auto;
 }
 .range--description{
     display:flex;
@@ -53,4 +53,7 @@
 }
 .slider--right-btn{
     right:90px;
+    @media screen and (max-width:1199px) and (min-width:900px){
+        right:45px;
+    }
 }

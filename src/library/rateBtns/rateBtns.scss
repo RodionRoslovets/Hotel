@@ -1,5 +1,5 @@
 .rateBtns{
-    width:120px;
+    width:auto;
     @include flexVertCenter();
 }
 .rateBtns-line {
@@ -9,6 +9,9 @@
     margin:0px 2px;
     cursor:pointer;
     @include flexAllCenter();
+    @media screen and(max-width:1199px) and (min-width:900px) {
+        width:15px;
+    }
 }
 .rateBtns--star-icon{
     @include flexVertCenter();
@@ -16,7 +19,13 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     transition:all .1s linear;
+    @media screen and(max-width:1199px) and (min-width:900px) {
+        width:15px;
+    }
 }
 .rateBtns--star-icon-active{
     transition: all .1s linear;
+    @media screen and(max-width:1199px) and (min-width:900px) {
+        width:15px;
+    }
 }

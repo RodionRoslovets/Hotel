@@ -3,7 +3,7 @@
 
 .header{
     background:#fff;
-    width:1440px;
+    width:100%;
     padding:15px 140px;
     display:flex;
     justify-content:space-between;
@@ -15,6 +15,15 @@
         justify-content:space-between;
         align-items: center;
         flex-grow:.304;
+        &-mobile{
+            display:none;
+            @media screen and (max-width:768px) {
+                display:block;
+            }
+        }
+        @media screen and (max-width:768px) {
+            display:none;
+        }
     }
     &--login-button{
         width: auto;
@@ -29,16 +38,35 @@
         height: 30px;
         background: rgba(31, 32, 65, 0.1);
     }
+    @media screen and (min-width:1200px) and (max-width:1439px) {
+        padding:15px 110px;
+    }
+    @media screen and (min-width:900px) and (max-width:1199px) {
+        padding:15px 60px;
+    }
+    @media screen and (min-width:768px) and (max-width:899px) {
+        padding:10px 10px;
+    }
+    @media screen and (max-width:768px) {
+        padding:5px 10px;
+    }
 }
 .logo-full{
     display: flex;
     align-items: center;
+    @media screen and (min-width:768px) and (max-width:899px) {
+        width:70%;
+    }
 }
 .header-nav{
     @include Montserrat();
     display:flex;
     align-items: center;
     flex-grow: .67;
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        font-size:12px;
+    }
+    
     &--list{
         width:100%;
         display:flex;
@@ -58,21 +86,42 @@
             font-weight:900;
         }
     }
+    
 }
 .footer{
     background:#fff;
-    width:1440px;
+    width:100%;
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
     color:$darkShade50;
     
     &-siteDescr{
         width:260px;
         margin-right: 40px;
+        @media screen and (min-width:1200px) and (max-width:1439px) {
+            width:200px;
+            margin-right: 20px;
+        }
+        @media screen and (min-width:900px) and (max-width:1199px) {
+            width:200px;
+            margin-right: 26px;
+        }
+        @media screen and (min-width:768px) and (max-width:899px) {
+            width: 150px;
+            font-size: 10px;
+            margin-right: 10px;
+        }
+        @media screen and (max-width:768px) {
+            margin-right: 0px;
+            margin:auto;
+        }
         &-logo{
             @include MB(17px);
         }
         &-description{
             color:$darkShade75;
+            @media screen and (max-width:768px) {
+                display:none;
+            }
         }
     }
 
@@ -81,6 +130,22 @@
         justify-content:space-between;
         flex-grow:1;
         margin-right:52px;
+        @media screen and (min-width:1660px) {
+            flex-grow:.6;
+        }
+        @media screen and (min-width:1200px) and (max-width:1439px) {
+            margin-right: 20px;
+            flex-grow:.6;            
+        }
+        @media screen and (min-width:900px) and (max-width:1199px) {
+            margin-right: 40px;         
+        }
+        @media screen and (min-width:768px) and (max-width:899px) {
+            margin-right: 10px;      
+        }
+        @media screen and (max-width:768px) {
+            display:none;
+        }
         &-column{
             padding-top: 4px;
         }
@@ -104,12 +169,37 @@
     &-subscribe{
         width:260px;
         padding-top: 4px;
+        @media screen and (min-width:1200px) and (max-width:1439px) {
+            width:200px;
+        }
+        @media screen and (min-width:900px) and (max-width:1199px) {
+            width:200px;
+        }
+        @media screen and (min-width:768px) and (max-width:899px) {
+            width:150px;
+            font-size: 10px;
+        }
+        @media screen and (max-width:768px) {
+            margin:auto;
+        }
         &--heading{
             line-height: 15px;
             @include MB(17px);
+            @media screen and (max-width:768px) {
+                display:none;
+            }
         }
         &-field{
             width:260px;
+            @media screen and (min-width:1200px) and (max-width:1439px) {
+                width:200px;
+            }
+            @media screen and (min-width:900px) and (max-width:1199px) {
+                width:200px;
+            }
+            @media screen and (min-width:768px) and (max-width:899px) {
+                width:150px;
+            }
         }
         &--text{
             color:$darkShade75;
@@ -123,17 +213,48 @@
         display:flex;
         border-top:1px solid #E5E5E5;
         border-bottom:1px solid #E5E5E5;
+        justify-content:space-between;        
+        @media screen and (min-width:1200px) and (max-width:1439px) {
+            padding:100px 110px;
+            height: 320px;
+        }
+        @media screen and (min-width:900px) and (max-width:1199px) {
+            padding:50px 60px;
+            height: 270px;
+        }
+        @media screen and (min-width:768px) and (max-width:899px) {
+            height: 240px;
+            padding: 25px 35px;
+        }
+        @media screen and (max-width:768px) {
+            flex-direction: column;
+            padding: 25px 35px;
+            height: 230px;
+        }
     }
+    
 }
 .footer-copyright{
     padding:25px 140px;
     display:flex;
     justify-content:space-between;
     align-items: center;
+    @media screen and (min-width:1200px) and (max-width:1439px) {
+        padding:25px 80px;
+    }
+    @media screen and (min-width:768px) and (max-width:899px) {
+        padding: 25px 35px;
+    }
+    @media screen and (max-width:768px) {
+        flex-direction: column;
+    }
     &--text{
         color:$darkShade75;
         height:18px;
         line-height: 17px;
+        @media screen and (max-width:768px) {
+            height:50px;
+        }
     }
     &--social{
         display:flex;
@@ -144,10 +265,16 @@
             height:24px;
         }
     }
+    @media screen and (min-width:1200px) and (max-width:1439px) {
+        padding:15px 110px;
+    }
+    @media screen and (min-width:900px) and (max-width:1199px) {
+        padding:15px 60px;
+    }
 }
 .footerNew{
     background:#fff;
-    width:1440px;
+    width:100%;
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
     color:$darkShade50;
     padding:100px 440px 110px;

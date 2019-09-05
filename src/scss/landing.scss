@@ -3,11 +3,42 @@
 
 .main-screen{
     display:flex;
-    flex-direction:column;
-    
-    width:1440px;
+    flex-direction:column;    
+    width:100%;
     padding:70px 134px 18px 140px;
-    background: url(../img/image3.jpg) center bottom;
+    background: url(../img/image3.jpg)center bottom no-repeat;
+    background-size:100%;
+    @media screen and (min-width:1200px) and (max-width:1439px) {
+        padding:55px 110px 18px;
+        &--tagline{
+            @include MT(150px);
+        }
+    }
+    @media screen and (min-width:900px) and (max-width:1199px) {
+        padding:40px 60px 18px;
+        &--tagline{
+            @include MT(75px);
+        }
+    }
+    @media screen and (min-width:768px) and (max-width:899px) {
+        padding:18px 35px;
+        &--tagline{
+            @include MT(0px);
+        }
+    }
+    @media screen and (max-width:768px) {
+        background: url(../img/image3.jpg)center top no-repeat;
+        padding:18px 20px;
+        &-find{
+            margin:auto;
+        }
+        &--tagline{
+            @include MT(10px);
+            align-self: center;
+            color:#fff;
+            text-align: center;
+        }
+    }
     &--tagline {
         width: 297px;
         height: 48px;

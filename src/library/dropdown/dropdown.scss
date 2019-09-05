@@ -6,6 +6,9 @@
     background: #fff;
     text-transform: none;
     width:100%;
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        font-size:12px;
+    }
 }
 
 .dropdown--wrapper {
@@ -54,6 +57,9 @@
     @include MontserratBold();
     text-transform: uppercase;
     color: $darkShade;
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        font-size:10px;
+    }
 }
 
 .dropdown-count {
@@ -127,6 +133,9 @@
     color: $purple;
     text-transform: uppercase;
     @include MontserratBold();
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        font-size:10px;
+    }
 }
 
 .clear-link {

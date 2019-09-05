@@ -1,8 +1,11 @@
 .date-filter-dropdown {
-    width: 266px;
+    width: auto;
     @include Montserrat();
     position: relative;
     background: #fff;
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        font-size:12px;
+    }
 }
 
 .date-filter-dropdown--wrapper {

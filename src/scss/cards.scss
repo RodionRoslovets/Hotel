@@ -119,6 +119,9 @@ body {
 
 .heading--num {
     font-size: 14px;
+    @media screen and (max-width:1199px) and (min-width:900px){
+        font-size: 12px;
+    }
 }
 
 .heading--room-type {
@@ -126,6 +129,9 @@ body {
     color: $purple;
     text-transform: uppercase;
     letter-spacing: normal;
+    @media screen and (max-width:1199px) and (min-width:900px){
+        font-size: 10px;
+    }
 }
 .room-card-form--header{
     @include MB(20px);
@@ -190,17 +196,24 @@ body {
     height:44px;
 }
 .roomDescr{
-    width:271px;
+    width:auto;
     background:#fff;
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
     border-radius: 4px;
+    
 }
 .roomDescr--slider{
     height:152px;
     position:relative;
+    @media screen and (max-width:1399px) and (min-width:1200px){
+        height:134px;
+    }
+    @media screen and (max-width:1199px) and (min-width:900px){
+        height:112px;
+    }
 }
 .roomDescr--slider-image img{
-    width:271px;
+    width:100%;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
 }
@@ -257,6 +270,17 @@ body {
 }
 .roomDescr--description{
     padding:20px;
+    @media screen and (max-width:1399px) and (min-width:1200px){
+        padding: 0 10px 10px;
+    }
+    @media screen and (max-width:1199px) and (min-width:900px){
+        padding: 10px;
+    }
+    &-header-heading{
+        @media screen and (max-width:1199px) and (min-width:900px){
+            font-size:16px;
+        } 
+    }
 }
 .roomDescr--description-price{
     display:flex;
@@ -268,9 +292,15 @@ body {
 .roomDescr--description-price-num, .roomDescr--rate-feedback-num{
     font-family:Montserrat-Bold;
     font-size:14px;
+    @media screen and (max-width:1199px) and (min-width:900px){
+        font-size:12px;
+    }
 }
 .roomDescr--description-price-perDay{
     font-size:12px;
+    @media screen and (max-width:1199px) and (min-width:900px){
+        font-size:10px;
+    }
 }
 .roomDescr--divider{
     margin:7px 0px;
