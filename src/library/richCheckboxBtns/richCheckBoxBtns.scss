@@ -1,9 +1,9 @@
 .richCheckBox{
     width:auto;
 }
-.richCheckBox--description{
+.richCheckBox--heading{
     text-transform: uppercase;
-    @include MontserratBold();
+    font-family: Montserrat-Bold;
     margin-bottom:16px;
 }
 .richCheckBox--items-item{
@@ -41,6 +41,9 @@
     margin-bottom:5px;
     text-transform: none;
     line-height: 18px;
+    @media screen and (max-width:899px) and (min-width:768px){
+        font-size:12px;
+    }
 }
 .richCheckBox--items-item-description-text{
     @include Montserrat();

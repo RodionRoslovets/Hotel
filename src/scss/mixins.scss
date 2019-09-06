@@ -1,16 +1,12 @@
 @mixin Montserrat() {
     font-family: 'Montserrat';
     font-size:14px;
-    @media screen and (min-width:900px) and (max-width:1439px) {
-        font-size: 12px;
-    }
+    
 }
 @mixin MontserratBold(){
     font-family: 'Montserrat-Bold';
     font-size:12px;
-    @media screen and (min-width:1000px) and (max-width:1439px) {
-        font-size: 9px;
-    }
+    
 }
 @mixin inputBorder(){
     border:1px solid $darkShade25;

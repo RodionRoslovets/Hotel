@@ -1,5 +1,5 @@
 .date-dropdown {
-    width: 320px;
+    width: 100%;
     @include Montserrat();
     position: relative;
     display:flex;
@@ -7,12 +7,19 @@
     @media screen and (min-width:768px) and (max-width:1199px) {
         font-size:12px;
     }
+    @media screen and (max-width:768px){
+        flex-direction: column;
+    }
+
 }
 
 .date-dropdown--item-wrapper {
     position: relative;
     width:150px;    
     background: #fff;
+    @media screen and (max-width:768px){
+        width:100%; 
+    }
 }
 
 .date-dropdown--dropdown-result {

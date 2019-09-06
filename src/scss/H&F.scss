@@ -242,11 +242,9 @@
     @media screen and (min-width:1200px) and (max-width:1439px) {
         padding:25px 80px;
     }
-    @media screen and (min-width:768px) and (max-width:899px) {
-        padding: 25px 35px;
-    }
-    @media screen and (max-width:768px) {
+    @media screen and (max-width:768px){
         flex-direction: column;
+        padding: 25px 35px;
     }
     &--text{
         color:$darkShade75;

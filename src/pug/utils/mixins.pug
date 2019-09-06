@@ -117,7 +117,8 @@ mixin roomCard()
 							h2.priceList--total--heading Итого
 							.priceList--total--line
 							p.priceList--total--price 38 081&#x20bd;
-					+longBtn('Забронировать')
+					.room-card-form--longBtn
+						+longBtn('Забронировать')
 mixin enterForm()
 			.enter
 				form.enter-form(action="#")

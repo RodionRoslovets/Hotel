@@ -7,6 +7,25 @@
     z-index: 10;
     width:100%;
 }
+.searchRoom-overlay{
+    width: 100%;
+    position:absolute;
+    z-index: 11;
+    background:rgb(0,0,0);
+    opacity:.0;
+    display:none;
+    transition:all .1s linear;
+    &-close{
+        color:#fff;
+        font-size: 20px;
+        cursor: pointer;
+        text-align: right;
+        padding:20px;
+    }
+    &-active{
+        opacity:.5;
+    }
+}
 .main-content{
     background:#fff;
     width:100%;
@@ -18,13 +37,21 @@
         @media screen and (max-width:1199px) and (min-width:900px){
             width:190px;
         }
-        @media screen and (max-width:899px) and (min-width:768px){
+        @media screen and (max-width:899px){
             width: 297px;
             position: absolute;
             left: -100%;
-            z-index: 10;
+            top:0;
+            z-index: 12;
             background: #fff;
-            padding: 0 20px;
+            padding: 20px;
+            transition:all .1s linear;
+            &-active{
+                left: 0;
+            }
+        }
+        @media screen and (max-width:767px) {
+            
         }
         &--dateFilter{
             @include MB(20px);
@@ -37,10 +64,10 @@
         }
         
         &--checkBoxBtns{
-            @include MB(31px);
+            @include MB(32px);
         }
         &--richCheckbox{
-            @include MB(28px);
+            @include MB(29px);
         }
         &--range-description{
             font-size: 12px;
@@ -50,7 +77,7 @@
             margin-bottom: 15px;
         }
         &--range{
-            @include MB(25px);
+            @include MB(28px);
         }
     
     }
@@ -66,6 +93,9 @@
     }
     @media screen and (max-width:899px) and (min-width:768px){
         padding: 30px 10px 70px;
+    }
+    @media screen and (max-width:767px) {
+        padding: 30px 60px 70px;
     }
     &-main{
         width:900px;
@@ -83,12 +113,25 @@
             width:100%;
         }
         &--heading{
+            display:flex;
+            justify-content:space-between;
             @include MB(23px);
+            &-filter{
+                display:none;
+                cursor:pointer;
+                @media screen and (max-width:899px){
+                    display:block;
+                }
+            }
         }
         &--rooms-line{
             display:flex;
             justify-content: space-between;
             @include MB(20px);
+            @media screen and (max-width:767px) {
+                flex-direction: column;
+                @include MB(10px);
+            }
             &-item{
                 width:271px;
                 @media screen and (max-width:1399px) and (min-width:1200px){
@@ -100,6 +143,9 @@
                 @media screen and (max-width:899px) and (min-width:768px){
                     width:230px;
                 }
+                @media screen and (max-width:767px) {
+                    width:100%;
+                }
             }
         }
         &--rooms{
@@ -109,5 +155,6 @@
             display:flex;
             justify-content: center;
         }
+        
     }
 }

@@ -2,13 +2,13 @@
     width: auto;
 }
 
-.checkbox-btns--description {
+.checkbox-btns--heading {
     text-transform: uppercase;
-    @include MontserratBold();
+    font-family:Montserrat-Bold;
     margin-bottom: 9px;
 }
 .checkbox-btns--list{
-    padding-top:3px;
+    padding-top:8px;
 }
 .checkbox-btns--list-item {
     display: flex;
@@ -34,8 +34,11 @@
 
 .checkbox-btns-item-description {
     width: 192px;
-    @include Montserrat();
+    font-family: Montserrat;
     color: $darkShade50;
+    @media screen and (max-width:899px) and (min-width:768px){
+        font-size:12px;
+    }
 }
 
 .checkbox-btns-item-chek-active {

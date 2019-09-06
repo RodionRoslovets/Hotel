@@ -5,17 +5,39 @@
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
     position:relative;
     z-index: 10;
-    width:1440px;
+    width:100%;
 }
 .roomDetails-main{
-    width:1440px;
+    width:100%;
     background:#fff;
     &--room-pictures{
         display:flex;
-        height:485px;
+        width:1440px;
+        margin:auto;
+        @media screen and (max-width:1439px){
+            width:100%;
+        }
+        &-big{
+            @media screen and (max-width:1439px) and (min-width:1200px){
+                width:69%;             
+            }
+            @media screen and (max-width:1199px){
+                width:100%;
+                &-item{
+                    width:100%;
+                }             
+            }
+        }
         &-small{
             display:flex;
             flex-direction: column;
+            @media screen and (max-width:1439px) and (min-width:1200px){
+                width:31%;
+                max-height:465px;
+            } 
+            @media screen and (max-width:1199px){
+                display: none;              
+            }
             &-item{
                 position: relative;
                 top:-1px;
@@ -26,27 +48,67 @@
         }
     }
     &--details{
-        padding:70px 140px 62px;
+        padding:65px 230px 62px;
         display:flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        @media screen and (max-width:1600px) and (min-width:1440px){
+            padding:63px 140px 62px;
+            justify-content: space-between;
+        }
+        @media screen and (max-width:1199px){
+            display:block;
+            padding:65px 0px 62px;              
+        }
+        @media screen and (max-width:768px){
+            width:80%;
+            margin:auto;            
+        }
         &-information{
             width:710px;
+            @media screen and (max-width:1439px) and (min-width:1200px){
+                margin-right:40px;
+            }
+            @media screen and (max-width:1199px){
+                margin:auto;
+            }
+            @media screen and (max-width:768px){
+                width:100%;
+            }
             &--roomAndImpressions{
                 display:flex;
                 margin-bottom: 31px;
+                @media screen and (max-width:768px){
+                    display: block;
+                    margin:auto;
+                }
                 &-impressions{
                     margin-left:70px;
+                    @media screen and (max-width:768px){
+                        margin: 0;
+                    }
                 }
                 &-impressions-heading{
                     @include MB(20px);
+                    @media screen and (max-width:768px){
+                        text-align: center;
+                    }
                 }
                 &-impressions-info{
                     display:flex;
+                    @media screen and (max-width:768px){
+                        display:block;
+                        width:250px;
+                        margin:auto;
+                    }
                     &-list{
                         align-self: flex-end;
                         list-style-type: none;
                         margin-left:30px;
                         padding-top: 27px;
+                        @media screen and (max-width:768px){
+                            width:165px;
+                            margin:auto;
+                        }
                         &-item{
                             display:flex;
                             align-items:center;
@@ -79,6 +141,9 @@
                     height:120px;
                     display:flex;
                     justify-content: space-between;
+                    @media screen and (max-width:768px){
+                        margin:auto;
+                    }
                     &-right-side{
                         display:flex;
                         flex-direction: column;
@@ -103,24 +168,63 @@
                         }
                     }
                 }
+                &-roomDetails{
+                    @media screen and (max-width:768px){
+                        @include MB(30px);
+                    }
+                }
                 &-roomDetails-heading{
                     margin-bottom: 22px;
-            }
+                    @media screen and (max-width:768px){
+                        text-align:center;
+                    }
+                }
+                &-roomDetails-info{
+                    @media screen and (max-width:768px){
+                        width:250px;
+                        margin: auto;
+                    }
+                }
         }
+        
         &-rulesAndcancel{
             display:flex;
             justify-content:space-between;
             @include MT(33px);
+            
+            @media screen and (max-width:768px){
+                display: block;
+                margin:auto;
+                @include MB(30px);
+            }
             &-rules{
                 &-heading{
                     padding-left:20px;
                     @include MB(17px);
+                    @media screen and (max-width:768px){
+                        text-align: center;
+                    }
+                }
+                &-bullets{
+                    @media screen and (max-width:768px){
+                        width:fit-content;
+                        margin:auto;
+                    }
                 }                
             }
             &-cancel{
                 width:340px;
                 position:relative;
                 left:-9px;
+                @media screen and (max-width:768px){
+                    width:275px;
+                    margin:auto;
+                }
+                &-heading{
+                    @media screen and (max-width:768px){
+                        text-align: center;
+                    } 
+                }
                 &-text{
                     position:relative;
                     top:17px;
@@ -133,6 +237,14 @@
             &-head{
                 display:flex;
                 justify-content: space-between;
+                @media screen and (max-width:768px){
+                    justify-content: center;
+                }
+                &-text{
+                    @media screen and (max-width:768px){
+                        display: none;
+                    }
+                }
             }
             &-head-heading{
                 @include MB(20px);
@@ -142,6 +254,16 @@
             }
         }
 
+        }
+        &-card{
+            @media screen and (max-width:1199px){
+                width: 380px;
+                margin:auto;
+                @include MT(10px);
+            }
+            @media screen and (max-width:768px){
+                width: 100%;
+            }
         }
     }
 

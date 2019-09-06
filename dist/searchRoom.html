@@ -8,6 +8,9 @@
   <link href="./assets/css/main.css" rel="stylesheet"><link href="./assets/css/uikit.css" rel="stylesheet"><link href="./assets/css/cards.css" rel="stylesheet"><link href="./assets/css/HandF.css" rel="stylesheet"><link href="./assets/css/landing.css" rel="stylesheet"><link href="./assets/css/searchRoom.css" rel="stylesheet"><link href="./assets/css/roomDetails.css" rel="stylesheet"><link href="./assets/css/registration.css" rel="stylesheet"></head>
   <body><script type="text/javascript" src="./assets/js/main.js"></script><script type="text/javascript" src="./assets/js/uikit.js"></script><script type="text/javascript" src="./assets/js/cards.js"></script><script type="text/javascript" src="./assets/js/HandF.js"></script><script type="text/javascript" src="./assets/js/landing.js"></script><script type="text/javascript" src="./assets/js/searchRoom.js"></script><script type="text/javascript" src="./assets/js/roomDetails.js"></script><script type="text/javascript" src="./assets/js/registration.js"></script></body>
 </html>
+<div class="searchRoom-overlay">
+  <p class="searchRoom-overlay-close">X</p>
+</div>
 <div class="searchRoom-header">
   <header class="header">
     <div class="header-logo">
@@ -157,9 +160,9 @@
     <div class="main-content-sidebar--checkBoxBtns">
       <div class="checkbox-btns">
         <div class="checkbox-btns--wrapper">
-          <div class="checkbox-btns--description">
+          <h3 class="checkbox-btns--heading">
             <p>checkbox buttons</p>
-          </div>
+          </h3>
         </div>
         <div class="checkbox-btns--list">
           <div class="checkbox-btns--list-item">
@@ -234,7 +237,7 @@
     <div class="main-content-sidebar--richCheckbox">
       <div class="richCheckBox">
         <div class="richCheckBox--wrapper">
-          <h3 class="richCheckBox--description">Доступность</h3>
+          <h3 class="richCheckBox--heading">Доступность</h3>
           <div class="richCheckBox--items">
             <div class="richCheckBox--items-item">
               <input type="checkbox" id="wide" name="richCheckBoxButtons" style="display:none;">
@@ -330,7 +333,7 @@
     <div class="main-content-sidebar--checkBoxList">
       <div class="checkbox-list">
         <div class="checkbox-list--wrapper">
-          <h3 class="checkbox-list--description">дополнительные удобства</h3>
+          <h3 class="checkbox-list--heading">дополнительные удобства</h3>
           <div class="checkbox-list--arrow"><i class="material-icons checkbox-list--arrow-icon">expand_more</i></div>
         </div>
         <div class="checkbox-list--list">
@@ -515,7 +518,10 @@
     </div>
   </aside>
   <div class="main-content-main">
-    <h1 class="main-content-main--heading">Номера, которые мы для вас подобрали</h1>
+    <div class="main-content-main--heading">
+      <h1 class="main-content-main--heading-text">Номера, которые мы для вас подобрали</h1>
+      <p class="main-content-main--heading-filter">Фильтры</p>
+    </div>
     <div class="main-content-main--rooms">
       <div class="main-content-main--rooms-line">
         <div class="main-content-main--rooms-line-item">

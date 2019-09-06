@@ -1,5 +1,8 @@
 .advantages{
     width:290px;
+    @media screen and (max-width:768px){
+        width:100%;
+    }
 }
 
 .advantages-item{
@@ -29,4 +32,7 @@
     border:none;
     height:1px;
     margin:20px 0px;
+    @media screen and (max-width:768px){
+        width:100%;
+    }
 }

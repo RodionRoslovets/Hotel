@@ -8,7 +8,7 @@
     line-height: 15px;
 }
 .range--description-text{
-    @include MontserratBold();
+    font-family: Montserrat-Bold;
     text-transform: uppercase;
 }
 .range--description-values{
