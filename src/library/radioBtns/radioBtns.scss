@@ -1,5 +1,8 @@
 .radio-btns {
     width: 220px;
+    @media screen and(max-width:768px){
+        width:100%;
+    }
 }
 
 .radio-btns--description {
@@ -14,6 +17,9 @@
 .radio-btns--list-item {
     @include flexVertCenter();
     margin-bottom: 10px;
+    @media screen and(max-width:768px){
+        margin-right: 10px;
+    }
 }
 
 .radio-btns-item-chek {
@@ -24,6 +30,9 @@
     margin-right: 10px;
     @include flexAllCenter();
     cursor: pointer;
+    @media screen and(max-width:768px){
+        margin-right: 5px;
+    }
 }
 
 .radio-btns-item-chek-active {

@@ -25,8 +25,8 @@ body{
     }
 }
 h1{
-    font-family: Quicksand, 'open_sansbold', sans-serif;
-    /* font-weight: normal; */
+    font-family: Quicksand,'Open Sans', sans-serifl;
+    font-weight: normal;
     font-size: 24px;
     color:$darkShade;
     @media screen and (min-width:1200px) and (max-width:1439px) {
@@ -37,8 +37,8 @@ h1{
     }
 }
 h2{
-    font-family: Quicksand, 'open_sansbold', sans-serif;
-    /* font-weight: normal; */
+    font-family: Quicksand, 'Open Sans', sans-serif;
+    font-weight: normal;
     font-size: 19px;
     color:$darkShade;
     @media screen and (min-width:1200px) and (max-width:1439px) {
@@ -46,7 +46,7 @@ h2{
     }
 }
 h3{
-    font-family: Montserrat-Bold;
+    font-family: Montserrat-Bold, sans-serif;
     font-weight: normal;
     font-size: 12px;
     line-height: 15px;

@@ -1,5 +1,8 @@
 .toggle-switch{
     width: 260px;
+    @media screen and(max-width:768px){
+        width:100%;
+    }
 }
 .toggle-switch-wrapper{
     display:flex; 
