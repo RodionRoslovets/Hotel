@@ -1,38 +1,31 @@
-.advantages{
+.advantages-wrapper{
     width:290px;
     @media screen and (max-width:768px){
         width:100%;
     }
 }
-
-.advantages-item{
-    display:flex;
-    align-items: center;
-}
-.advantages-item-image-icon{
-    font-size:48px;
-    background:linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition:all .1s linear;
-    margin-right:10px;
-    vertical-align: middle;
-}
-.description-heading{
-    font-family: 'Montserrat-Bold';
-    font-size:14px;
-    text-transform: none;
-}
-.description-text{
-    @include Montserrat();
-}
-.advantages-item-line{
-    width:280px;
-    background: rgba(31, 32, 65, 0.1);
-    border:none;
-    height:1px;
-    margin:20px 0px;
-    @media screen and (max-width:768px){
-        width:100%;
+.advantages{
+    &-item{
+        display:flex;
+        align-items: center;
+        &__image-icon{
+            font-size:48px;
+            background:linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition:all .1s linear;
+            margin-right:10px;
+            vertical-align: middle;
+        }
+        &__line{
+            width:280px;
+            background: rgba(31, 32, 65, 0.1);
+            border:none;
+            height:1px;
+            margin:20px 0px;
+            @media screen and (max-width:768px){
+                width:100%;
+            }
+        }
     }
 }

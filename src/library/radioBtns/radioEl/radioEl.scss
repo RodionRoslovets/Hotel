@@ -1,0 +1,22 @@
+.radio__item-chek {
+    width: 20px;
+    height: 20px;
+    @include inputBorder();
+    border-radius: 50%;
+    margin-right: 10px;
+    @include flexAllCenter();
+    cursor: pointer;
+    @media screen and(max-width:768px){
+        margin-right: 5px;
+    }
+    &__active {
+        border-color: $purple;
+    }
+}
+.radio__item-checked {
+    opacity: 0;
+    transition: all .1s linear;
+    &__active {
+        opacity: 1;
+    }
+}

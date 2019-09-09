@@ -1,15 +1,15 @@
-.likeBtnBorder{
+.like__border{
     width:40px;
     height:20px;
     background:$darkShade25;
     @include flexAllCenter();
     border-radius:10px;    
     transition:all .1s linear;
+    &__active{
+        background: linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
+    }
 }
-.likeBtnBorder-active{
-    background: linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
-}
-.likeBtn-wrapper{
+.like-wrapper{
     width:38px;
     height:18px;
     background:#fff;
@@ -19,27 +19,28 @@
     cursor:pointer;
 }
 
-.likeBtn--heart{
+.like__heart{
     width:20px;
     height:20px;
     padding-left:5px;
+    &-icon{
+        font-size:10px;
+        line-height: 20px;
+        color:$darkShade25;
+        vertical-align: top;
+        transition:all .1s linear;
+        &__active{
+            color:$purple;
+        }
+    }
 }
-.likeBtn--heart-icon{
-    font-size:10px;
-    line-height: 20px;
-    color:$darkShade25;
-    vertical-align: top;
-    transition:all .1s linear;
-}
-.likeBtn--heart-icon-active{
-    color:$purple;
-}
-.likeBtn--num{
+
+.like__num{
     font-family:Montserrat;
     font-size:10px;
     color:$darkShade25;
     transition:all .1s linear;
-}
-.likeBtn--num-active{
-    color:$purple;
+    &__active{
+        color:$purple;
+    }
 }

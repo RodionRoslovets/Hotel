@@ -1,20 +1,20 @@
 mixin dropdown(count)
-	.dropdown
-		.dropdown--wrapper
-			.dropdown--dropdown-result Cколько гостей
-			.dropdown--dropdown-arrow 
-				i.material-icons.dropdown--dropdown-arrow-icon expand_more
-		.dropdown--dropdown-items
+	.dropdown-wrapper
+		.dropdown__input
+			.dropdown__result Cколько гостей
+			.dropdown__arrow 
+				i.material-icons.dropdown__arrow-icon expand_more
+		.dropdown__items
 			- for (var i=1; i<=count;i++)
-				.dropdown--dropdown-item
-					.dropdown-item-name #{arguments[i]}
+				.dropdown__item
+					.dropdown__item-name #{arguments[i]}
 					.dropdown-count
-						.dropdown-count-minus 
+						.dropdown-count__minus 
 							span -
-						.dropdown-count-result 0
-						.dropdown-count-plus 
+						.dropdown-count__result 0
+						.dropdown-count__plus 
 							span +
-			.confirm
+			.dropdown__confirm
 				.confirm-link применить
-			.clear
+			.dropdown__clear
 				.clear-link очистить

@@ -58,14 +58,14 @@
         </ul>
       </nav>
       <div class="header--login-button">
-        <div class="borderedBtn">
-          <div class="borderedBtn-wrapper">
-            <button class="borderedBtn--button">Войти</button>
-          </div>
+        <div class="borderedBtn-wrapper">
+          <button class="button borderedBtn__button">Войти
+          </button>
         </div>
       </div>
       <div class="header--register-button">
-        <button class="filledBtn--button">Зарегистрироваться</button>
+        <button class="button filledBtn">Зарегистрироваться
+        </button>
       </div>
     </div>
     <div class="header-content-mobile">
@@ -87,49 +87,47 @@
   <aside class="main-content-sidebar">
     <div class="main-content-sidebar--dateFilter"> 
       <h3 class="main-content-sidebar--dateFilter-heading">даты пребывания в отеле</h3>
-      <div class="date-filter-dropdown">
-        <div class="date-filter-dropdown--wrapper">
-          <div class="date-filter-dropdown--dropdown-result">19 авг - 23 авг</div>
-          <div class="date-filter-dropdown--dropdown-arrow"> <i class="material-icons date-filter-dropdown--dropdown-arrow-icon">expand_more	</i></div>
-        </div>
+      <div class="date-filter-wrapper">
+        <div class="date-filter__result">19 авг - 23 авг</div>
+        <div class="date-filter__arrow"> <i class="material-icons date-filter__arrow-icon">expand_more	</i></div>
       </div>
     </div>
     <div class="main-content-sidebar--dropdownList-guests">
       <h3 class="main-content-sidebar--dropdownList-heading">Гости</h3>
-      <div class="dropdown">
-        <div class="dropdown--wrapper">
-          <div class="dropdown--dropdown-result">Cколько гостей</div>
-          <div class="dropdown--dropdown-arrow"> <i class="material-icons dropdown--dropdown-arrow-icon">expand_more</i></div>
+      <div class="dropdown-wrapper">
+        <div class="dropdown__input">
+          <div class="dropdown__result">Cколько гостей</div>
+          <div class="dropdown__arrow"> <i class="material-icons dropdown__arrow-icon">expand_more</i></div>
         </div>
-        <div class="dropdown--dropdown-items">
-          <div class="dropdown--dropdown-item">
-            <div class="dropdown-item-name">взрослые</div>
+        <div class="dropdown__items">
+          <div class="dropdown__item">
+            <div class="dropdown__item-name">взрослые</div>
             <div class="dropdown-count">
-              <div class="dropdown-count-minus"> <span>-</span></div>
-              <div class="dropdown-count-result">0</div>
-              <div class="dropdown-count-plus"> <span>+</span></div>
+              <div class="dropdown-count__minus"> <span>-</span></div>
+              <div class="dropdown-count__result">0</div>
+              <div class="dropdown-count__plus"> <span>+</span></div>
             </div>
           </div>
-          <div class="dropdown--dropdown-item">
-            <div class="dropdown-item-name">дети</div>
+          <div class="dropdown__item">
+            <div class="dropdown__item-name">дети</div>
             <div class="dropdown-count">
-              <div class="dropdown-count-minus"> <span>-</span></div>
-              <div class="dropdown-count-result">0</div>
-              <div class="dropdown-count-plus"> <span>+</span></div>
+              <div class="dropdown-count__minus"> <span>-</span></div>
+              <div class="dropdown-count__result">0</div>
+              <div class="dropdown-count__plus"> <span>+</span></div>
             </div>
           </div>
-          <div class="dropdown--dropdown-item">
-            <div class="dropdown-item-name">младенцы</div>
+          <div class="dropdown__item">
+            <div class="dropdown__item-name">младенцы</div>
             <div class="dropdown-count">
-              <div class="dropdown-count-minus"> <span>-</span></div>
-              <div class="dropdown-count-result">0</div>
-              <div class="dropdown-count-plus"> <span>+</span></div>
+              <div class="dropdown-count__minus"> <span>-</span></div>
+              <div class="dropdown-count__result">0</div>
+              <div class="dropdown-count__plus"> <span>+</span></div>
             </div>
           </div>
-          <div class="confirm">
+          <div class="dropdown__confirm">
             <div class="confirm-link">применить</div>
           </div>
-          <div class="clear">
+          <div class="dropdown__clear">
             <div class="clear-link">очистить</div>
           </div>
         </div>
@@ -137,21 +135,19 @@
     </div>
     <div class="main-content-sidebar--range">
       <div class="main-content-sidebar--range-slider">
-        <div class="range">
-          <div class="range-wrapper">
-            <div class="range--description">
-              <h3 class="range--description-text">диапазон цены</h3>
-              <div class="range--description-values">
-                <div class="range--description-values-lower">5 000 &#x20bd; </div><span>&nbsp;-&nbsp;</span>
-                <div class="range--description-values-higher">10 000 &#x20bd;</div>
-              </div>
+        <div class="range-wrapper">
+          <div class="range__heading">
+            <h3 class="range__heading-text">диапазон цены</h3>
+            <div class="range__values">
+              <div class="range__lower">5 000 &#x20bd; </div><span>&nbsp;-&nbsp;</span>
+              <div class="range__higher">10 000 &#x20bd;</div>
             </div>
-            <div class="range--slider">
-              <div class="slider--base">
-                <div class="slider--left-btn"></div>
-                <div class="slider--base-hover"></div>
-                <div class="slider--right-btn"></div>
-              </div>
+          </div>
+          <div class="range__slider">
+            <div class="slider__base">
+              <div class="slider__left-btn"></div>
+              <div class="slider__base-hover"></div>
+              <div class="slider__right-btn"></div>
             </div>
           </div>
         </div>
@@ -159,17 +155,13 @@
       <p class="main-content-sidebar--range-description">Стоимость за сутки пребывания в номере</p>
     </div>
     <div class="main-content-sidebar--checkBoxBtns">
-      <div class="checkbox-btns">
-        <div class="checkbox-btns--wrapper">
-          <h3 class="checkbox-btns--heading">
-            <p>checkbox buttons</p>
-          </h3>
-        </div>
-        <div class="checkbox-btns--list">
-          <div class="checkbox-btns--list-item">
+      <div class="checkbox-btns-wrapper">
+        <h3 class="checkbox-btns__heading">checkbox buttons</h3>
+        <div class="checkbox-btns__list">
+          <div class="checkbox-btns__list-item">
             <input type="checkbox" id="smoke" value="Можно курить" name="checkBoxButtons" style="display:none;">
-            <label class="checkbox-btns-item-chek" for="smoke">
-              <svg class="checkbox-btns-item-chek--checked" width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <label class="checkField" for="smoke">
+              <svg class="checkField__checked" width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.46439 4.40768L5.70703 8.65032L4.29282 10.0645L0.0501771 5.82189L1.46439 4.40768Z" fill="url(#paint0_linear)"></path>
                 <path d="M8.53546 2.99347L9.94967 4.40768L4.29282 10.0645L2.8786 8.65032L8.53546 2.99347Z" fill="url(#paint1_linear)"></path>
                 <defs>
@@ -184,14 +176,14 @@
                 </defs>
               </svg>
             </label>
-            <div class="checkbox-btns-item-description">
+            <div class="checkbox-btns__item-description">
               <p>Можно курить	</p>
             </div>
           </div>
-          <div class="checkbox-btns--list-item">
+          <div class="checkbox-btns__list-item">
             <input type="checkbox" id="pets" value="Можно с питомцами" name="checkBoxButtons" style="display:none;">
-            <label class="checkbox-btns-item-chek" for="pets">
-              <svg class="checkbox-btns-item-chek--checked" width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <label class="checkField" for="pets">
+              <svg class="checkField__checked" width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.46439 4.40768L5.70703 8.65032L4.29282 10.0645L0.0501771 5.82189L1.46439 4.40768Z" fill="url(#paint0_linear)"></path>
                 <path d="M8.53546 2.99347L9.94967 4.40768L4.29282 10.0645L2.8786 8.65032L8.53546 2.99347Z" fill="url(#paint1_linear)"></path>
                 <defs>
@@ -206,14 +198,14 @@
                 </defs>
               </svg>
             </label>
-            <div class="checkbox-btns-item-description">
+            <div class="checkbox-btns__item-description">
               <p>Можно с питомцами	</p>
             </div>
           </div>
-          <div class="checkbox-btns--list-item">
-            <input type="checkbox" id="gusts" value="Можно пригласить гостей (до 10 человек)" name="checkBoxButtons" style="display:none;">
-            <label class="checkbox-btns-item-chek" for="gusts">
-              <svg class="checkbox-btns-item-chek--checked" width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div class="checkbox-btns__list-item">
+            <input type="checkbox" id="guests" value="Можно пригласить гостей (до 10 человек)" name="checkBoxButtons" style="display:none;">
+            <label class="checkField" for="guests">
+              <svg class="checkField__checked" width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.46439 4.40768L5.70703 8.65032L4.29282 10.0645L0.0501771 5.82189L1.46439 4.40768Z" fill="url(#paint0_linear)"></path>
                 <path d="M8.53546 2.99347L9.94967 4.40768L4.29282 10.0645L2.8786 8.65032L8.53546 2.99347Z" fill="url(#paint1_linear)"></path>
                 <defs>
@@ -228,7 +220,7 @@
                 </defs>
               </svg>
             </label>
-            <div class="checkbox-btns-item-description">
+            <div class="checkbox-btns__item-description">
               <p>Можно пригласить гостей (до 10 человек)	</p>
             </div>
           </div>
@@ -236,55 +228,53 @@
       </div>
     </div>
     <div class="main-content-sidebar--richCheckbox">
-      <div class="richCheckBox">
-        <div class="richCheckBox--wrapper">
-          <h3 class="richCheckBox--heading">Доступность</h3>
-          <div class="richCheckBox--items">
-            <div class="richCheckBox--items-item">
-              <input type="checkbox" id="wide" name="richCheckBoxButtons" style="display:none;">
-              <label class="richCheckBox--items-item-chek" for="wide">
-                <svg class="richCheckBox--items-item-chek--checked" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.46439 4.29245L5.70703 8.53509L4.29282 9.9493L0.0501771 5.70666L1.46439 4.29245Z" fill="url(#paint0_linear)"></path>
-                  <path d="M8.53546 2.87823L9.94967 4.29245L4.29282 9.9493L2.8786 8.53509L8.53546 2.87823Z" fill="url(#paint1_linear)"></path>
-                  <defs>
-                    <linearGradient id="paint0_linear" x1="7.82835" y1="2.17112" x2="2.1715" y2="7.82798" gradientUnits="userSpaceOnUse">
-                      <stop stop-color="#BC9CFF"></stop>
-                      <stop offset="1" stop-color="#8BA4F9"></stop>
-                    </linearGradient>
-                    <linearGradient id="paint1_linear" x1="7.82835" y1="2.17112" x2="2.1715" y2="7.82798" gradientUnits="userSpaceOnUse">
-                      <stop stop-color="#BC9CFF"></stop>
-                      <stop offset="1" stop-color="#8BA4F9"></stop>
-                    </linearGradient>
-                  </defs>
-                </svg>
-              </label>
-              <div class="richCheckBox--items-item-description">
-                <h3 class="richCheckBox--items-item-description-heading">Широкий коридор</h3>
-                <p class="richCheckBox--items-item-description-text">Ширина коридоров в номере не менее 91 см.</p>
-              </div>
+      <div class="richCheckBox-wrapper">
+        <h3 class="richCheckBox__heading">Доступность</h3>
+        <div class="richCheckBox__items">
+          <div class="richCheckBox__item">
+            <input type="checkbox" id="wide" value="wide" name="richCheckBoxButtons" style="display:none;">
+            <label class="checkField" for="wide">
+              <svg class="checkField__checked" width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.46439 4.40768L5.70703 8.65032L4.29282 10.0645L0.0501771 5.82189L1.46439 4.40768Z" fill="url(#paint0_linear)"></path>
+                <path d="M8.53546 2.99347L9.94967 4.40768L4.29282 10.0645L2.8786 8.65032L8.53546 2.99347Z" fill="url(#paint1_linear)"></path>
+                <defs>
+                  <linearGradient id="paint0_linear" x1="7.82835" y1="2.28636" x2="2.1715" y2="7.94321" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#BC9CFF"></stop>
+                    <stop offset="1" stop-color="#8BA4F9"></stop>
+                  </linearGradient>
+                  <linearGradient id="paint1_linear" x1="7.82835" y1="2.28636" x2="2.1715" y2="7.94321" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#BC9CFF"></stop>
+                    <stop offset="1" stop-color="#8BA4F9"></stop>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </label>
+            <div class="richCheckBox__item-description">
+              <h3 class="richCheckBox__description-heading">Широкий коридор</h3>
+              <p class="richCheckBox__description-text">Ширина коридоров в номере не менее 91 см.</p>
             </div>
-            <div class="richCheckBox--items-item">
-              <input type="checkbox" id="helper" name="richCheckBoxButtons" style="display:none;">
-              <label class="richCheckBox--items-item-chek" for="helper">
-                <svg class="richCheckBox--items-item-chek--checked" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.46439 4.29245L5.70703 8.53509L4.29282 9.9493L0.0501771 5.70666L1.46439 4.29245Z" fill="url(#paint0_linear)"></path>
-                  <path d="M8.53546 2.87823L9.94967 4.29245L4.29282 9.9493L2.8786 8.53509L8.53546 2.87823Z" fill="url(#paint1_linear)"></path>
-                  <defs>
-                    <linearGradient id="paint0_linear" x1="7.82835" y1="2.17112" x2="2.1715" y2="7.82798" gradientUnits="userSpaceOnUse">
-                      <stop stop-color="#BC9CFF"></stop>
-                      <stop offset="1" stop-color="#8BA4F9"></stop>
-                    </linearGradient>
-                    <linearGradient id="paint1_linear" x1="7.82835" y1="2.17112" x2="2.1715" y2="7.82798" gradientUnits="userSpaceOnUse">
-                      <stop stop-color="#BC9CFF"></stop>
-                      <stop offset="1" stop-color="#8BA4F9"></stop>
-                    </linearGradient>
-                  </defs>
-                </svg>
-              </label>
-              <div class="richCheckBox--items-item-description">
-                <h3 class="richCheckBox--items-item-description-heading">Помощник для инвалидов</h3>
-                <p class="richCheckBox--items-item-description-text">На 1 этаже вас встретит специалист и проводит до номера.</p>
-              </div>
+          </div>
+          <div class="richCheckBox__item">
+            <input type="checkbox" id="helper" name="richCheckBoxButtons" style="display:none;">
+            <label class="checkField" for="helper">
+              <svg class="checkField__checked" width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.46439 4.40768L5.70703 8.65032L4.29282 10.0645L0.0501771 5.82189L1.46439 4.40768Z" fill="url(#paint0_linear)"></path>
+                <path d="M8.53546 2.99347L9.94967 4.40768L4.29282 10.0645L2.8786 8.65032L8.53546 2.99347Z" fill="url(#paint1_linear)"></path>
+                <defs>
+                  <linearGradient id="paint0_linear" x1="7.82835" y1="2.28636" x2="2.1715" y2="7.94321" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#BC9CFF"></stop>
+                    <stop offset="1" stop-color="#8BA4F9"></stop>
+                  </linearGradient>
+                  <linearGradient id="paint1_linear" x1="7.82835" y1="2.28636" x2="2.1715" y2="7.94321" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#BC9CFF"></stop>
+                    <stop offset="1" stop-color="#8BA4F9"></stop>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </label>
+            <div class="richCheckBox__item-description">
+              <h3 class="richCheckBox__description-heading">Помощник для инвалидов</h3>
+              <p class="richCheckBox__description-text">На 1 этаже вас встретит специалист и проводит до номера.</p>
             </div>
           </div>
         </div>
@@ -292,225 +282,225 @@
     </div>
     <div class="main-content-sidebar--dropdownList-comfort">
       <h3 class="main-content-sidebar--dropdownList-heading">удобства номера</h3>
-      <div class="dropdown">
-        <div class="dropdown--wrapper">
-          <div class="dropdown--dropdown-result">Cколько гостей</div>
-          <div class="dropdown--dropdown-arrow"> <i class="material-icons dropdown--dropdown-arrow-icon">expand_more</i></div>
+      <div class="dropdown-wrapper">
+        <div class="dropdown__input">
+          <div class="dropdown__result">Cколько гостей</div>
+          <div class="dropdown__arrow"> <i class="material-icons dropdown__arrow-icon">expand_more</i></div>
         </div>
-        <div class="dropdown--dropdown-items">
-          <div class="dropdown--dropdown-item">
-            <div class="dropdown-item-name">спальни</div>
+        <div class="dropdown__items">
+          <div class="dropdown__item">
+            <div class="dropdown__item-name">спальни</div>
             <div class="dropdown-count">
-              <div class="dropdown-count-minus"> <span>-</span></div>
-              <div class="dropdown-count-result">0</div>
-              <div class="dropdown-count-plus"> <span>+</span></div>
+              <div class="dropdown-count__minus"> <span>-</span></div>
+              <div class="dropdown-count__result">0</div>
+              <div class="dropdown-count__plus"> <span>+</span></div>
             </div>
           </div>
-          <div class="dropdown--dropdown-item">
-            <div class="dropdown-item-name">кровати</div>
+          <div class="dropdown__item">
+            <div class="dropdown__item-name">кровати</div>
             <div class="dropdown-count">
-              <div class="dropdown-count-minus"> <span>-</span></div>
-              <div class="dropdown-count-result">0</div>
-              <div class="dropdown-count-plus"> <span>+</span></div>
+              <div class="dropdown-count__minus"> <span>-</span></div>
+              <div class="dropdown-count__result">0</div>
+              <div class="dropdown-count__plus"> <span>+</span></div>
             </div>
           </div>
-          <div class="dropdown--dropdown-item">
-            <div class="dropdown-item-name">Ванные комнаты</div>
+          <div class="dropdown__item">
+            <div class="dropdown__item-name">Ванные комнаты</div>
             <div class="dropdown-count">
-              <div class="dropdown-count-minus"> <span>-</span></div>
-              <div class="dropdown-count-result">0</div>
-              <div class="dropdown-count-plus"> <span>+</span></div>
+              <div class="dropdown-count__minus"> <span>-</span></div>
+              <div class="dropdown-count__result">0</div>
+              <div class="dropdown-count__plus"> <span>+</span></div>
             </div>
           </div>
-          <div class="confirm">
+          <div class="dropdown__confirm">
             <div class="confirm-link">применить</div>
           </div>
-          <div class="clear">
+          <div class="dropdown__clear">
             <div class="clear-link">очистить</div>
           </div>
         </div>
       </div>
     </div>
     <div class="main-content-sidebar--checkBoxList">
-      <div class="checkbox-list">
-        <div class="checkbox-list--wrapper">
-          <h3 class="checkbox-list--heading">дополнительные удобства</h3>
-          <div class="checkbox-list--arrow"><i class="material-icons checkbox-list--arrow-icon">expand_more</i></div>
+      <div class="checkbox-list-wrapper">
+        <div class="checkbox-list__head">
+          <h3 class="checkbox-list__head-heading">дополнительные удобства</h3>
+          <div class="checkbox-list__head-arrow"><i class="material-icons checkbox-list__head-arrow-icon">expand_more</i></div>
         </div>
-        <div class="checkbox-list--list">
-          <div class="checkbox-list--list-item">
-            <input type="checkbox" id="breakfast" value="Завтрак" name="list" style="display:none;">
-            <label class="list-item-chek" for="breakfast">
-              <svg class="list-item-chek--checked" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1.46439 4.29245L5.70703 8.53509L4.29282 9.9493L0.0501771 5.70666L1.46439 4.29245Z" fill="url(#paint0_linear)"></path>
-                <path d="M8.53546 2.87823L9.94967 4.29245L4.29282 9.9493L2.8786 8.53509L8.53546 2.87823Z" fill="url(#paint1_linear)"></path>
+        <div class="checkbox-list__list">
+          <div class="checkbox-list__list-item">
+            <input type="checkbox" id="breakfast" value="Завтрак" style="display:none;">
+            <label class="checkField" for="breakfast">
+              <svg class="checkField__checked" width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.46439 4.40768L5.70703 8.65032L4.29282 10.0645L0.0501771 5.82189L1.46439 4.40768Z" fill="url(#paint0_linear)"></path>
+                <path d="M8.53546 2.99347L9.94967 4.40768L4.29282 10.0645L2.8786 8.65032L8.53546 2.99347Z" fill="url(#paint1_linear)"></path>
                 <defs>
-                  <linearGradient id="paint0_linear" x1="7.82835" y1="2.17112" x2="2.1715" y2="7.82798" gradientUnits="userSpaceOnUse">
+                  <linearGradient id="paint0_linear" x1="7.82835" y1="2.28636" x2="2.1715" y2="7.94321" gradientUnits="userSpaceOnUse">
                     <stop stop-color="#BC9CFF"></stop>
                     <stop offset="1" stop-color="#8BA4F9"></stop>
                   </linearGradient>
-                  <linearGradient id="paint1_linear" x1="7.82835" y1="2.17112" x2="2.1715" y2="7.82798" gradientUnits="userSpaceOnUse">
+                  <linearGradient id="paint1_linear" x1="7.82835" y1="2.28636" x2="2.1715" y2="7.94321" gradientUnits="userSpaceOnUse">
                     <stop stop-color="#BC9CFF"></stop>
                     <stop offset="1" stop-color="#8BA4F9"></stop>
                   </linearGradient>
                 </defs>
               </svg>
             </label>
-            <div class="list-item-description">
+            <div class="checkbox-list__item-description">
               <p>Завтрак</p>
             </div>
           </div>
-          <div class="checkbox-list--list-item">
-            <input type="checkbox" id="breakfst" value="Письменный стол" name="list" style="display:none;">
-            <label class="list-item-chek" for="breakfst">
-              <svg class="list-item-chek--checked" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1.46439 4.29245L5.70703 8.53509L4.29282 9.9493L0.0501771 5.70666L1.46439 4.29245Z" fill="url(#paint0_linear)"></path>
-                <path d="M8.53546 2.87823L9.94967 4.29245L4.29282 9.9493L2.8786 8.53509L8.53546 2.87823Z" fill="url(#paint1_linear)"></path>
+          <div class="checkbox-list__list-item">
+            <input type="checkbox" id="table" value="Письменный стол" style="display:none;">
+            <label class="checkField" for="table">
+              <svg class="checkField__checked" width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.46439 4.40768L5.70703 8.65032L4.29282 10.0645L0.0501771 5.82189L1.46439 4.40768Z" fill="url(#paint0_linear)"></path>
+                <path d="M8.53546 2.99347L9.94967 4.40768L4.29282 10.0645L2.8786 8.65032L8.53546 2.99347Z" fill="url(#paint1_linear)"></path>
                 <defs>
-                  <linearGradient id="paint0_linear" x1="7.82835" y1="2.17112" x2="2.1715" y2="7.82798" gradientUnits="userSpaceOnUse">
+                  <linearGradient id="paint0_linear" x1="7.82835" y1="2.28636" x2="2.1715" y2="7.94321" gradientUnits="userSpaceOnUse">
                     <stop stop-color="#BC9CFF"></stop>
                     <stop offset="1" stop-color="#8BA4F9"></stop>
                   </linearGradient>
-                  <linearGradient id="paint1_linear" x1="7.82835" y1="2.17112" x2="2.1715" y2="7.82798" gradientUnits="userSpaceOnUse">
+                  <linearGradient id="paint1_linear" x1="7.82835" y1="2.28636" x2="2.1715" y2="7.94321" gradientUnits="userSpaceOnUse">
                     <stop stop-color="#BC9CFF"></stop>
                     <stop offset="1" stop-color="#8BA4F9"></stop>
                   </linearGradient>
                 </defs>
               </svg>
             </label>
-            <div class="list-item-description">
+            <div class="checkbox-list__item-description">
               <p>Письменный стол</p>
             </div>
           </div>
-          <div class="checkbox-list--list-item">
-            <input type="checkbox" id="feedChair" value="Стул для кормления" name="list" style="display:none;">
-            <label class="list-item-chek" for="feedChair">
-              <svg class="list-item-chek--checked" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1.46439 4.29245L5.70703 8.53509L4.29282 9.9493L0.0501771 5.70666L1.46439 4.29245Z" fill="url(#paint0_linear)"></path>
-                <path d="M8.53546 2.87823L9.94967 4.29245L4.29282 9.9493L2.8786 8.53509L8.53546 2.87823Z" fill="url(#paint1_linear)"></path>
+          <div class="checkbox-list__list-item">
+            <input type="checkbox" id="feedChair" value="Стул для кормления" style="display:none;">
+            <label class="checkField" for="feedChair">
+              <svg class="checkField__checked" width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.46439 4.40768L5.70703 8.65032L4.29282 10.0645L0.0501771 5.82189L1.46439 4.40768Z" fill="url(#paint0_linear)"></path>
+                <path d="M8.53546 2.99347L9.94967 4.40768L4.29282 10.0645L2.8786 8.65032L8.53546 2.99347Z" fill="url(#paint1_linear)"></path>
                 <defs>
-                  <linearGradient id="paint0_linear" x1="7.82835" y1="2.17112" x2="2.1715" y2="7.82798" gradientUnits="userSpaceOnUse">
+                  <linearGradient id="paint0_linear" x1="7.82835" y1="2.28636" x2="2.1715" y2="7.94321" gradientUnits="userSpaceOnUse">
                     <stop stop-color="#BC9CFF"></stop>
                     <stop offset="1" stop-color="#8BA4F9"></stop>
                   </linearGradient>
-                  <linearGradient id="paint1_linear" x1="7.82835" y1="2.17112" x2="2.1715" y2="7.82798" gradientUnits="userSpaceOnUse">
+                  <linearGradient id="paint1_linear" x1="7.82835" y1="2.28636" x2="2.1715" y2="7.94321" gradientUnits="userSpaceOnUse">
                     <stop stop-color="#BC9CFF"></stop>
                     <stop offset="1" stop-color="#8BA4F9"></stop>
                   </linearGradient>
                 </defs>
               </svg>
             </label>
-            <div class="list-item-description">
+            <div class="checkbox-list__item-description">
               <p>Стул для кормления</p>
             </div>
           </div>
-          <div class="checkbox-list--list-item">
-            <input type="checkbox" id="litlleBad" value="Кроватка" name="list" style="display:none;">
-            <label class="list-item-chek" for="litlleBad">
-              <svg class="list-item-chek--checked" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1.46439 4.29245L5.70703 8.53509L4.29282 9.9493L0.0501771 5.70666L1.46439 4.29245Z" fill="url(#paint0_linear)"></path>
-                <path d="M8.53546 2.87823L9.94967 4.29245L4.29282 9.9493L2.8786 8.53509L8.53546 2.87823Z" fill="url(#paint1_linear)"></path>
+          <div class="checkbox-list__list-item">
+            <input type="checkbox" id="litlleBad" value="Кроватка" style="display:none;">
+            <label class="checkField" for="litlleBad">
+              <svg class="checkField__checked" width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.46439 4.40768L5.70703 8.65032L4.29282 10.0645L0.0501771 5.82189L1.46439 4.40768Z" fill="url(#paint0_linear)"></path>
+                <path d="M8.53546 2.99347L9.94967 4.40768L4.29282 10.0645L2.8786 8.65032L8.53546 2.99347Z" fill="url(#paint1_linear)"></path>
                 <defs>
-                  <linearGradient id="paint0_linear" x1="7.82835" y1="2.17112" x2="2.1715" y2="7.82798" gradientUnits="userSpaceOnUse">
+                  <linearGradient id="paint0_linear" x1="7.82835" y1="2.28636" x2="2.1715" y2="7.94321" gradientUnits="userSpaceOnUse">
                     <stop stop-color="#BC9CFF"></stop>
                     <stop offset="1" stop-color="#8BA4F9"></stop>
                   </linearGradient>
-                  <linearGradient id="paint1_linear" x1="7.82835" y1="2.17112" x2="2.1715" y2="7.82798" gradientUnits="userSpaceOnUse">
+                  <linearGradient id="paint1_linear" x1="7.82835" y1="2.28636" x2="2.1715" y2="7.94321" gradientUnits="userSpaceOnUse">
                     <stop stop-color="#BC9CFF"></stop>
                     <stop offset="1" stop-color="#8BA4F9"></stop>
                   </linearGradient>
                 </defs>
               </svg>
             </label>
-            <div class="list-item-description">
+            <div class="checkbox-list__item-description">
               <p>Кроватка</p>
             </div>
           </div>
-          <div class="checkbox-list--list-item">
-            <input type="checkbox" id="tv1" value="Телевизор" name="list" style="display:none;">
-            <label class="list-item-chek" for="tv1">
-              <svg class="list-item-chek--checked" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1.46439 4.29245L5.70703 8.53509L4.29282 9.9493L0.0501771 5.70666L1.46439 4.29245Z" fill="url(#paint0_linear)"></path>
-                <path d="M8.53546 2.87823L9.94967 4.29245L4.29282 9.9493L2.8786 8.53509L8.53546 2.87823Z" fill="url(#paint1_linear)"></path>
+          <div class="checkbox-list__list-item">
+            <input type="checkbox" id="tv1" value="Телевизор" style="display:none;">
+            <label class="checkField" for="tv1">
+              <svg class="checkField__checked" width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.46439 4.40768L5.70703 8.65032L4.29282 10.0645L0.0501771 5.82189L1.46439 4.40768Z" fill="url(#paint0_linear)"></path>
+                <path d="M8.53546 2.99347L9.94967 4.40768L4.29282 10.0645L2.8786 8.65032L8.53546 2.99347Z" fill="url(#paint1_linear)"></path>
                 <defs>
-                  <linearGradient id="paint0_linear" x1="7.82835" y1="2.17112" x2="2.1715" y2="7.82798" gradientUnits="userSpaceOnUse">
+                  <linearGradient id="paint0_linear" x1="7.82835" y1="2.28636" x2="2.1715" y2="7.94321" gradientUnits="userSpaceOnUse">
                     <stop stop-color="#BC9CFF"></stop>
                     <stop offset="1" stop-color="#8BA4F9"></stop>
                   </linearGradient>
-                  <linearGradient id="paint1_linear" x1="7.82835" y1="2.17112" x2="2.1715" y2="7.82798" gradientUnits="userSpaceOnUse">
+                  <linearGradient id="paint1_linear" x1="7.82835" y1="2.28636" x2="2.1715" y2="7.94321" gradientUnits="userSpaceOnUse">
                     <stop stop-color="#BC9CFF"></stop>
                     <stop offset="1" stop-color="#8BA4F9"></stop>
                   </linearGradient>
                 </defs>
               </svg>
             </label>
-            <div class="list-item-description">
+            <div class="checkbox-list__item-description">
               <p>Телевизор</p>
             </div>
           </div>
-          <div class="checkbox-list--list-item">
-            <input type="checkbox" id="schampoo1" value="Шампунь" name="list" style="display:none;">
-            <label class="list-item-chek" for="schampoo1">
-              <svg class="list-item-chek--checked" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1.46439 4.29245L5.70703 8.53509L4.29282 9.9493L0.0501771 5.70666L1.46439 4.29245Z" fill="url(#paint0_linear)"></path>
-                <path d="M8.53546 2.87823L9.94967 4.29245L4.29282 9.9493L2.8786 8.53509L8.53546 2.87823Z" fill="url(#paint1_linear)"></path>
+          <div class="checkbox-list__list-item">
+            <input type="checkbox" id="schampoo1" value="Шампунь" style="display:none;">
+            <label class="checkField" for="schampoo1">
+              <svg class="checkField__checked" width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.46439 4.40768L5.70703 8.65032L4.29282 10.0645L0.0501771 5.82189L1.46439 4.40768Z" fill="url(#paint0_linear)"></path>
+                <path d="M8.53546 2.99347L9.94967 4.40768L4.29282 10.0645L2.8786 8.65032L8.53546 2.99347Z" fill="url(#paint1_linear)"></path>
                 <defs>
-                  <linearGradient id="paint0_linear" x1="7.82835" y1="2.17112" x2="2.1715" y2="7.82798" gradientUnits="userSpaceOnUse">
+                  <linearGradient id="paint0_linear" x1="7.82835" y1="2.28636" x2="2.1715" y2="7.94321" gradientUnits="userSpaceOnUse">
                     <stop stop-color="#BC9CFF"></stop>
                     <stop offset="1" stop-color="#8BA4F9"></stop>
                   </linearGradient>
-                  <linearGradient id="paint1_linear" x1="7.82835" y1="2.17112" x2="2.1715" y2="7.82798" gradientUnits="userSpaceOnUse">
+                  <linearGradient id="paint1_linear" x1="7.82835" y1="2.28636" x2="2.1715" y2="7.94321" gradientUnits="userSpaceOnUse">
                     <stop stop-color="#BC9CFF"></stop>
                     <stop offset="1" stop-color="#8BA4F9"></stop>
                   </linearGradient>
                 </defs>
               </svg>
             </label>
-            <div class="list-item-description">
+            <div class="checkbox-list__item-description">
               <p>Шампунь</p>
             </div>
           </div>
-          <div class="checkbox-list--list-item">
-            <input type="checkbox" id="tv2" value="Телевизор" name="list" style="display:none;">
-            <label class="list-item-chek" for="tv2">
-              <svg class="list-item-chek--checked" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1.46439 4.29245L5.70703 8.53509L4.29282 9.9493L0.0501771 5.70666L1.46439 4.29245Z" fill="url(#paint0_linear)"></path>
-                <path d="M8.53546 2.87823L9.94967 4.29245L4.29282 9.9493L2.8786 8.53509L8.53546 2.87823Z" fill="url(#paint1_linear)"></path>
+          <div class="checkbox-list__list-item">
+            <input type="checkbox" id="tv2" value="Телевизор" style="display:none;">
+            <label class="checkField" for="tv2">
+              <svg class="checkField__checked" width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.46439 4.40768L5.70703 8.65032L4.29282 10.0645L0.0501771 5.82189L1.46439 4.40768Z" fill="url(#paint0_linear)"></path>
+                <path d="M8.53546 2.99347L9.94967 4.40768L4.29282 10.0645L2.8786 8.65032L8.53546 2.99347Z" fill="url(#paint1_linear)"></path>
                 <defs>
-                  <linearGradient id="paint0_linear" x1="7.82835" y1="2.17112" x2="2.1715" y2="7.82798" gradientUnits="userSpaceOnUse">
+                  <linearGradient id="paint0_linear" x1="7.82835" y1="2.28636" x2="2.1715" y2="7.94321" gradientUnits="userSpaceOnUse">
                     <stop stop-color="#BC9CFF"></stop>
                     <stop offset="1" stop-color="#8BA4F9"></stop>
                   </linearGradient>
-                  <linearGradient id="paint1_linear" x1="7.82835" y1="2.17112" x2="2.1715" y2="7.82798" gradientUnits="userSpaceOnUse">
+                  <linearGradient id="paint1_linear" x1="7.82835" y1="2.28636" x2="2.1715" y2="7.94321" gradientUnits="userSpaceOnUse">
                     <stop stop-color="#BC9CFF"></stop>
                     <stop offset="1" stop-color="#8BA4F9"></stop>
                   </linearGradient>
                 </defs>
               </svg>
             </label>
-            <div class="list-item-description">
+            <div class="checkbox-list__item-description">
               <p>Телевизор</p>
             </div>
           </div>
-          <div class="checkbox-list--list-item">
-            <input type="checkbox" id="schampoo2" value="Шампунь" name="list" style="display:none;">
-            <label class="list-item-chek" for="schampoo2">
-              <svg class="list-item-chek--checked" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1.46439 4.29245L5.70703 8.53509L4.29282 9.9493L0.0501771 5.70666L1.46439 4.29245Z" fill="url(#paint0_linear)"></path>
-                <path d="M8.53546 2.87823L9.94967 4.29245L4.29282 9.9493L2.8786 8.53509L8.53546 2.87823Z" fill="url(#paint1_linear)"></path>
+          <div class="checkbox-list__list-item">
+            <input type="checkbox" id="schampoo2" value="Шампунь" style="display:none;">
+            <label class="checkField" for="schampoo2">
+              <svg class="checkField__checked" width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.46439 4.40768L5.70703 8.65032L4.29282 10.0645L0.0501771 5.82189L1.46439 4.40768Z" fill="url(#paint0_linear)"></path>
+                <path d="M8.53546 2.99347L9.94967 4.40768L4.29282 10.0645L2.8786 8.65032L8.53546 2.99347Z" fill="url(#paint1_linear)"></path>
                 <defs>
-                  <linearGradient id="paint0_linear" x1="7.82835" y1="2.17112" x2="2.1715" y2="7.82798" gradientUnits="userSpaceOnUse">
+                  <linearGradient id="paint0_linear" x1="7.82835" y1="2.28636" x2="2.1715" y2="7.94321" gradientUnits="userSpaceOnUse">
                     <stop stop-color="#BC9CFF"></stop>
                     <stop offset="1" stop-color="#8BA4F9"></stop>
                   </linearGradient>
-                  <linearGradient id="paint1_linear" x1="7.82835" y1="2.17112" x2="2.1715" y2="7.82798" gradientUnits="userSpaceOnUse">
+                  <linearGradient id="paint1_linear" x1="7.82835" y1="2.28636" x2="2.1715" y2="7.94321" gradientUnits="userSpaceOnUse">
                     <stop stop-color="#BC9CFF"></stop>
                     <stop offset="1" stop-color="#8BA4F9"></stop>
                   </linearGradient>
                 </defs>
               </svg>
             </label>
-            <div class="list-item-description">
+            <div class="checkbox-list__item-description">
               <p>Шампунь</p>
             </div>
           </div>
@@ -550,64 +540,62 @@
               <hr class="roomDescr--divider">
               <div class="roomDescr--rate">
                 <div class="roomDescr--rate-rateBtns"> 
-                  <div class="rateBtns">
-                    <div class="rateBtns-wrapper">
-                      <div class="rateBtns-line">
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
+                  <div class="rateBtns-wrapper">
+                    <div class="rateBtns__line">
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
                       </div>
                     </div>
                   </div>
@@ -642,64 +630,62 @@
               <hr class="roomDescr--divider">
               <div class="roomDescr--rate">
                 <div class="roomDescr--rate-rateBtns"> 
-                  <div class="rateBtns">
-                    <div class="rateBtns-wrapper">
-                      <div class="rateBtns-line">
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
+                  <div class="rateBtns-wrapper">
+                    <div class="rateBtns__line">
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
                       </div>
                     </div>
                   </div>
@@ -734,64 +720,62 @@
               <hr class="roomDescr--divider">
               <div class="roomDescr--rate">
                 <div class="roomDescr--rate-rateBtns"> 
-                  <div class="rateBtns">
-                    <div class="rateBtns-wrapper">
-                      <div class="rateBtns-line">
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
+                  <div class="rateBtns-wrapper">
+                    <div class="rateBtns__line">
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
                       </div>
                     </div>
                   </div>
@@ -828,64 +812,62 @@
               <hr class="roomDescr--divider">
               <div class="roomDescr--rate">
                 <div class="roomDescr--rate-rateBtns"> 
-                  <div class="rateBtns">
-                    <div class="rateBtns-wrapper">
-                      <div class="rateBtns-line">
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
+                  <div class="rateBtns-wrapper">
+                    <div class="rateBtns__line">
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
                       </div>
                     </div>
                   </div>
@@ -920,64 +902,62 @@
               <hr class="roomDescr--divider">
               <div class="roomDescr--rate">
                 <div class="roomDescr--rate-rateBtns"> 
-                  <div class="rateBtns">
-                    <div class="rateBtns-wrapper">
-                      <div class="rateBtns-line">
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
+                  <div class="rateBtns-wrapper">
+                    <div class="rateBtns__line">
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
                       </div>
                     </div>
                   </div>
@@ -1012,64 +992,62 @@
               <hr class="roomDescr--divider">
               <div class="roomDescr--rate">
                 <div class="roomDescr--rate-rateBtns"> 
-                  <div class="rateBtns">
-                    <div class="rateBtns-wrapper">
-                      <div class="rateBtns-line">
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
+                  <div class="rateBtns-wrapper">
+                    <div class="rateBtns__line">
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
                       </div>
                     </div>
                   </div>
@@ -1106,64 +1084,62 @@
               <hr class="roomDescr--divider">
               <div class="roomDescr--rate">
                 <div class="roomDescr--rate-rateBtns"> 
-                  <div class="rateBtns">
-                    <div class="rateBtns-wrapper">
-                      <div class="rateBtns-line">
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
+                  <div class="rateBtns-wrapper">
+                    <div class="rateBtns__line">
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
                       </div>
                     </div>
                   </div>
@@ -1198,64 +1174,62 @@
               <hr class="roomDescr--divider">
               <div class="roomDescr--rate">
                 <div class="roomDescr--rate-rateBtns"> 
-                  <div class="rateBtns">
-                    <div class="rateBtns-wrapper">
-                      <div class="rateBtns-line">
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
+                  <div class="rateBtns-wrapper">
+                    <div class="rateBtns__line">
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
                       </div>
                     </div>
                   </div>
@@ -1290,64 +1264,62 @@
               <hr class="roomDescr--divider">
               <div class="roomDescr--rate">
                 <div class="roomDescr--rate-rateBtns"> 
-                  <div class="rateBtns">
-                    <div class="rateBtns-wrapper">
-                      <div class="rateBtns-line">
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
+                  <div class="rateBtns-wrapper">
+                    <div class="rateBtns__line">
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
                       </div>
                     </div>
                   </div>
@@ -1384,64 +1356,62 @@
               <hr class="roomDescr--divider">
               <div class="roomDescr--rate">
                 <div class="roomDescr--rate-rateBtns"> 
-                  <div class="rateBtns">
-                    <div class="rateBtns-wrapper">
-                      <div class="rateBtns-line">
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
+                  <div class="rateBtns-wrapper">
+                    <div class="rateBtns__line">
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
                       </div>
                     </div>
                   </div>
@@ -1476,64 +1446,62 @@
               <hr class="roomDescr--divider">
               <div class="roomDescr--rate">
                 <div class="roomDescr--rate-rateBtns"> 
-                  <div class="rateBtns">
-                    <div class="rateBtns-wrapper">
-                      <div class="rateBtns-line">
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
+                  <div class="rateBtns-wrapper">
+                    <div class="rateBtns__line">
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
                       </div>
                     </div>
                   </div>
@@ -1568,64 +1536,62 @@
               <hr class="roomDescr--divider">
               <div class="roomDescr--rate">
                 <div class="roomDescr--rate-rateBtns"> 
-                  <div class="rateBtns">
-                    <div class="rateBtns-wrapper">
-                      <div class="rateBtns-line">
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
-                        <div class="rateBtns--star">
-                          <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                            <defs>
-                              <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#BC9CFF"></stop>
-                                <stop offset="1" stop-color="#8BA4F9"></stop>
-                              </linearGradient>
-                            </defs>
-                          </svg>
-                        </div>
+                  <div class="rateBtns-wrapper">
+                    <div class="rateBtns__line">
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                      </div>
+                      <div class="rateBtns__star">
+                        <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                          <defs>
+                            <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#BC9CFF"></stop>
+                              <stop offset="1" stop-color="#8BA4F9"></stop>
+                            </linearGradient>
+                          </defs>
+                        </svg>
                       </div>
                     </div>
                   </div>
@@ -1639,25 +1605,25 @@
     </div>
     <div class="main-content-main--pagination">
       <div class="pagination">
-        <div class="pagination--line">
-          <div class="pagination--line-elem pagination--line-elem-active">
+        <div class="pagination__line">
+          <div class="pagination__line-item pagination__line-item__active">
             <p>1</p>
           </div>
-          <div class="pagination--line-elem">
+          <div class="pagination__line-item">
             <p>2</p>
           </div>
-          <div class="pagination--line-elem">
+          <div class="pagination__line-item">
             <p>3</p>
           </div>
-          <div class="pagination--line-elem">
+          <div class="pagination__line-item">
             <p>...</p>
           </div>
-          <div class="pagination--line-elem">
+          <div class="pagination__line-item">
             <p>15</p>
           </div>
-          <div class="pagination--line-elem pagination--line-elem-arrow-icon"><i class="material-icons">arrow_forward</i></div>
+          <div class="pagination__line-item pagination__arrow-icon"><i class="material-icons">arrow_forward</i></div>
         </div>
-        <div class="pagination--options">
+        <div class="pagination__options">
           <p>1 – 12 из 100+ вариантов аренды</p>
         </div>
       </div>
@@ -1732,8 +1698,8 @@
       <p class="footer-subscribe--text">Получайте специальные предложения и новости сервиса</p>
       <div class="footer-subscribe-field">
         <div class="subscribe-field">
-          <input class="subscribe-field--input" type="text" placeholder="Email">
-          <div class="subscribe-field--arrow"> <i class="material-icons subscribe-field--arrow-icon">arrow_forward</i></div>
+          <input class="subscribe-field__input" type="text" placeholder="Email">
+          <div class="subscribe-field__arrow"> <i class="material-icons subscribe-field__arrow-icon">arrow_forward</i></div>
         </div>
       </div>
     </div>

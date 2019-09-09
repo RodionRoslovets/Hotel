@@ -1,29 +1,22 @@
 window.addEventListener('DOMContentLoaded', ()=>{
-    let checkBox = document.getElementsByClassName('list-item-chek'),
-        itemChecked = document.getElementsByClassName('list-item-chek--checked'),
-        listItems = document.getElementsByClassName('checkbox-list--list')[0],
-        checkBoxArrow = document.getElementsByClassName('checkbox-list--arrow')[0];
+    let listItems = document.getElementsByClassName('checkbox-list__list'),
+        checkBoxArrow = document.getElementsByClassName('checkbox-list__head-arrow');
     
-    checkBoxArrow.addEventListener('click', ()=>{
-        if (!listItems.classList.contains('checkbox-list--list-opened')) {
-            listItems.style = "display:block;";
-            setTimeout(() => {
-                listItems.classList.add('checkbox-list--list-opened');
-                checkBoxArrow.classList.add('checkbox-list--arrow-rotated');
-            }, 100);
-        } else {
-            listItems.classList.remove('checkbox-list--list-opened');
-            checkBoxArrow.classList.remove('checkbox-list--arrow-rotated');
-            setTimeout(() => {
-                listItems.style = "";
-            }, 100);
+        for(let i = 0; i < checkBoxArrow.length; i++){
+            checkBoxArrow[i].addEventListener('click', ()=>{
+                if (!listItems[i].classList.contains('checkbox-list__list__opened')) {
+                    listItems[i].style = "display:block;";
+                    setTimeout(() => {
+                        listItems[i].classList.add('checkbox-list__list__opened');
+                        checkBoxArrow[i].classList.add('checkbox-list__head-arrow-rotated');
+                    }, 100);
+                } else {
+                    listItems[i].classList.remove('checkbox-list__list__opened');
+                    checkBoxArrow[i].classList.remove('checkbox-list__head-arrow-rotated');
+                    setTimeout(() => {
+                        listItems[i].style = "";
+                    }, 100);
+                }
+            });
         }
-    });
-    
-    for(let i = 0; i < checkBox.length; i++){
-        checkBox[i].addEventListener('click', ()=>{
-            checkBox[i].classList.toggle('list-item-chek-active');
-            itemChecked[i].classList.toggle('list-item-chek--checked-active');
-        });
-    }
 });

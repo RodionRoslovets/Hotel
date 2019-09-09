@@ -1,23 +1,13 @@
 @import "./active/active";
 @import "./focus/focus";
+@import "./__button/button";
 
-.filledBtn--button{
-    height:100%;
-    width: 100%;    
-    padding:0 20px;
+
+.filledBtn{ 
     text-transform: uppercase;
     line-height: 15px;
     @include MontserratBold();
-    border:none;
     border-radius:22px;
     background: linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
     color:#fff;
-    cursor: pointer;
-    transition:all .1s linear;
-    @media screen and (min-width:900px) and (max-width:1199px) {
-        font-size:10px;
-    }
-    @media screen and (min-width:768px) and (max-width:899px) {
-        font-size:9px;
-    }
 }

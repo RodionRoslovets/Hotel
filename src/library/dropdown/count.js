@@ -6,13 +6,13 @@ import {
 } from "babel-types";
 
 window.addEventListener('DOMContentLoaded', () => {
-    let minus = document.getElementsByClassName('dropdown-count-minus'),
-        plus = document.getElementsByClassName('dropdown-count-plus'),
-        count = document.getElementsByClassName('dropdown-count-result'),
+    let minus = document.getElementsByClassName('dropdown-count__minus'),
+        plus = document.getElementsByClassName('dropdown-count__plus'),
+        count = document.getElementsByClassName('dropdown-count__result'),
         confirmLink = document.getElementsByClassName('confirm-link'),
-        clearLink = document.getElementsByClassName('clear'),
-        dropdownResult = document.getElementsByClassName('dropdown--dropdown-result'),
-        dropItems = document.getElementsByClassName('dropdown--dropdown-items');
+        clearLink = document.getElementsByClassName('dropdown__clear'),
+        dropdownResult = document.getElementsByClassName('dropdown__result'),
+        dropItems = document.getElementsByClassName('dropdown__items');
 
     let result = 0,
         items = 0, //переменная с которой начнается отсчет
@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
     function getCounts(i) {
         for (let k = 0; k < dropItems[i].children.length; k++) {
             //получаем все элементы item в текущем выпадающем списке
-            if (dropItems[i].children[k].classList.contains('dropdown--dropdown-item')) {
+            if (dropItems[i].children[k].classList.contains('dropdown__item')) {
                 items += 1;
             }
         }
@@ -45,14 +45,14 @@ window.addEventListener('DOMContentLoaded', () => {
                 count[i].innerHTML--;
             }
             if (count[i].innerHTML == 0) {
-                minus[i].classList.remove('dropdown-count-minus-active');
+                minus[i].classList.remove('dropdown-count__minus__active');
             }
         });
     }
     for (let i = 0; i < plus.length; i++) {
         plus[i].addEventListener('click', function () {
             count[i].innerHTML++;
-            minus[i].classList.add('dropdown-count-minus-active');
+            minus[i].classList.add('dropdown-count__minus__active');
         });
     }
 
@@ -93,7 +93,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
             for (let i = items; i < counts; i++) {
                 count[i].innerHTML = 0;
-                minus[i].classList.remove('dropdown-count-minus-active');
+                minus[i].classList.remove('dropdown-count__minus__active');
             }
 
             reset();

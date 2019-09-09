@@ -55,14 +55,14 @@
         </ul>
       </nav>
       <div class="header--login-button">
-        <div class="borderedBtn">
-          <div class="borderedBtn-wrapper">
-            <button class="borderedBtn--button">Войти</button>
-          </div>
+        <div class="borderedBtn-wrapper">
+          <button class="button borderedBtn__button">Войти
+          </button>
         </div>
       </div>
       <div class="header--register-button">
-        <button class="filledBtn--button">Зарегистрироваться</button>
+        <button class="button filledBtn">Зарегистрироваться
+        </button>
       </div>
     </div>
     <div class="header-content-mobile">
@@ -89,42 +89,40 @@
         <input class="input-text" type="text" placeholder="Имя" name="firstName">
         <input class="input-text" type="text" placeholder="Фамилия" name="lastName">
         <div class="reg-form--radio">
-          <div class="radio-btns">
-            <div class="radio-btns--wrapper">
-              <div class="radio-btns--list">
-                <div class="radio-btns--list-item">
-                  <input type="radio" id="man" value="Мужчина" name="radio" style="display:none;">
-                  <label class="radio-btns-item-chek" for="man">
-                    <svg class="radio-btns-item-chek--checked" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect width="12" height="12" rx="6" fill="url(#paint0_linear)"></rect>
-                      <defs>
-                        <linearGradient id="paint0_linear" x1="6" y1="0" x2="6" y2="12" gradientUnits="userSpaceOnUse">
-                          <stop stop-color="#BC9CFF"></stop>
-                          <stop offset="1" stop-color="#8BA4F9"></stop>
-                        </linearGradient>
-                      </defs>
-                    </svg>
-                  </label>
-                  <div class="radio-btns-item-description">
-                    <p>Мужчина</p>
-                  </div>
+          <div class="radio-wrapper">
+            <div class="radio__list">
+              <div class="radio__item">
+                <input type="radio" id="man" value="Мужчина" name="radio" style="display:none;">
+                <label class="radio__item-chek" for="man">
+                  <svg class="radio__item-checked" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="12" height="12" rx="6" fill="url(#paint0_linear)"></rect>
+                    <defs>
+                      <linearGradient id="paint0_linear" x1="6" y1="0" x2="6" y2="12" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#BC9CFF"></stop>
+                        <stop offset="1" stop-color="#8BA4F9"></stop>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </label>
+                <div class="radio__item-description">
+                  <p>Мужчина	</p>
                 </div>
-                <div class="radio-btns--list-item">
-                  <input type="radio" id="woman" value="Женщина" name="radio" style="display:none;">
-                  <label class="radio-btns-item-chek" for="woman">
-                    <svg class="radio-btns-item-chek--checked" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect width="12" height="12" rx="6" fill="url(#paint0_linear)"></rect>
-                      <defs>
-                        <linearGradient id="paint0_linear" x1="6" y1="0" x2="6" y2="12" gradientUnits="userSpaceOnUse">
-                          <stop stop-color="#BC9CFF"></stop>
-                          <stop offset="1" stop-color="#8BA4F9"></stop>
-                        </linearGradient>
-                      </defs>
-                    </svg>
-                  </label>
-                  <div class="radio-btns-item-description">
-                    <p>Женщина</p>
-                  </div>
+              </div>
+              <div class="radio__item">
+                <input type="radio" id="woman" value="Женщина" name="radio" style="display:none;">
+                <label class="radio__item-chek" for="woman">
+                  <svg class="radio__item-checked" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="12" height="12" rx="6" fill="url(#paint0_linear)"></rect>
+                    <defs>
+                      <linearGradient id="paint0_linear" x1="6" y1="0" x2="6" y2="12" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#BC9CFF"></stop>
+                        <stop offset="1" stop-color="#8BA4F9"></stop>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </label>
+                <div class="radio__item-description">
+                  <p>Женщина	</p>
                 </div>
               </div>
             </div>
@@ -145,24 +143,26 @@
           <div class="toggle-switch">
             <div class="toggle-switch-wrapper">
               <input type="checkbox" id="get" style="display:none;">
-              <label class="toggle-switch--switchWrapper" for="get">
-                <div class="switchWrapper-switch"></div>
+              <label class="toggle-switch__switchWrapper" for="get">
+                <div class="toggle-switch__switch"></div>
               </label>
-              <div class="toggle-switch--description"> 
+              <div class="toggle-switch__description"> 
                 <p>Получать спецпредложения</p>
               </div>
             </div>
           </div>
         </div>
-        <button class="longBtn--button">Перейти к оплате <i class="material-icons longBtn--arrow-icon">arrow_forward</i></button>
+        <div class="reg-form__longBtn">
+          <button class="button longBtn">Перейти к оплате<i class="material-icons longBtn__arrow-icon">arrow_forward </i>
+          </button>
+        </div>
       </form>
       <div class="reg-haveAnAcc">
         <div class="reg-haveAnAcc-description">Уже есть аккаунт на Toxin</div>
         <div class="reg-haveAnAcc-button">
-          <div class="borderedBtn">
-            <div class="borderedBtn-wrapper">
-              <button class="borderedBtn--button">Войти</button>
-            </div>
+          <div class="borderedBtn-wrapper">
+            <button class="button borderedBtn__button">Войти
+            </button>
           </div>
         </div>
       </div>
@@ -182,14 +182,16 @@
             <input class="input-text" type="text" placeholder="Пароль" name="Password">
           </div>
         </div>
-        <button class="longBtn--button">Войти <i class="material-icons longBtn--arrow-icon">arrow_forward</i></button>
+        <div class="enter-form__longBtn">
+          <button class="button longBtn">Войти<i class="material-icons longBtn__arrow-icon">arrow_forward </i>
+          </button>
+        </div>
         <div class="enter-noAcc">
           <div class="enter-noAcc-description">Нет аккаунта на Toxin?</div>
           <div class="enter-noAcc-button">
-            <div class="borderedBtn">
-              <div class="borderedBtn-wrapper">
-                <button class="borderedBtn--button">Создать</button>
-              </div>
+            <div class="borderedBtn-wrapper">
+              <button class="button borderedBtn__button">Создать
+              </button>
             </div>
           </div>
         </div>
@@ -266,8 +268,8 @@
         <p class="footer-subscribe--text">Получайте специальные предложения и новости сервиса</p>
         <div class="footer-subscribe-field">
           <div class="subscribe-field">
-            <input class="subscribe-field--input" type="text" placeholder="Email">
-            <div class="subscribe-field--arrow"> <i class="material-icons subscribe-field--arrow-icon">arrow_forward</i></div>
+            <input class="subscribe-field__input" type="text" placeholder="Email">
+            <div class="subscribe-field__arrow"> <i class="material-icons subscribe-field__arrow-icon">arrow_forward</i></div>
           </div>
         </div>
       </div>

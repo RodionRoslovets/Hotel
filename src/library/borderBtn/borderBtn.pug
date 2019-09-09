@@ -1,4 +1,5 @@
-mixin borderBtn(name)
-	.borderedBtn
-		.borderedBtn-wrapper
-			button.borderedBtn--button #{name}
+include ./__button/button.pug
+
+mixin borderBtn(butName)
+	.borderedBtn-wrapper
+		+button(butName, 'borderedBtn__button')

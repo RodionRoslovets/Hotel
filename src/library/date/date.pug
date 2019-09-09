@@ -1,15 +1,15 @@
 mixin date(firstHeading, secondHeading)
-	.date-dropdown
-		.date-dropdown--item
-			h3.date-dropdown--item-heading #{firstHeading}
-			.date-dropdown--item-wrapper
-				.date-dropdown--dropdown-result ДД.ММ.ГГГГ
-				.date-dropdown--dropdown-arrow 
-					i.material-icons.date-dropdown--dropdown-arrow-icon expand_more
-		.date-dropdown--item
-			h3.date-dropdown--item-heading #{secondHeading}
-			.date-dropdown--item-wrapper
-				.date-dropdown--dropdown-result ДД.ММ.ГГГГ
-				.date-dropdown--dropdown-arrow 
-					i.material-icons.date-dropdown--dropdown-arrow-icon expand_more
+	.date-dropdown-wrapper
+		.date-dropdown__field
+			h3.date-dropdown__field-heading #{firstHeading}
+			.date-dropdown__field-result
+				.date-dropdown__result ДД.ММ.ГГГГ
+				.date-dropdown__arrow 
+					i.material-icons.date-dropdown__arrow-icon expand_more
+		.date-dropdown__field
+			h3.date-dropdown__field-heading #{secondHeading}
+			.date-dropdown__field-result
+				.date-dropdown__result ДД.ММ.ГГГГ
+				.date-dropdown__arrow 
+					i.material-icons.date-dropdown__arrow-icon expand_more
 		+calendar()

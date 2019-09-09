@@ -1,11 +1,6 @@
-@import "./active/button-active";
 @import "./active/wrapper-active";
-@import "./focus/button-focus";
+@import "./__button/button.scss";
 
-.borderedBtn{
-    height:100%;
-    width:100%;
-}
 .borderedBtn-wrapper{
     height:100%;
     width:100%;
@@ -15,24 +10,14 @@
     transition:all .1s linear;
     @include flexAllCenter();
 }
-.borderedBtn--button{
+.borderedBtn__button{
     height:90%;
     width:95%;
-    padding:0 20px;
     @include flexAllCenter();
     text-transform: uppercase;
     @include MontserratBold();
-    border:none;
     border-radius:22px;
     line-height: 15px;
     background: #fff;
-    color:$purple;
-    cursor: pointer;
-    transition:all .1s linear;
-    @media screen and (min-width:900px) and (max-width:1199px) {
-        font-size:10px;
-    }
-    @media screen and (min-width:768px) and (max-width:899px) {
-        font-size:9px;
-    }
+    color:$purple;    
 }

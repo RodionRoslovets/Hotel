@@ -2,7 +2,7 @@ block variables
     - var title = 'registration'
     - var headerNav = [{name:'О нас', submenu:false},{name:'Уcлуги', submenu:true},{name:'Вакансии', submenu:false},{name:'Новости', submenu:false},{name:'Соглашения', submenu:true}]
     - var footerNav = [{heading: 'Навигация', items:['О нас', 'Новости', 'Служба поддержки', 'Услуги']}, {heading: 'О нас', items:['О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы']},{heading: 'Служба поддержки', items:['Соглашения', 'Сообщество', 'Связь с нами']}]
-    - var radioBtns = [{name:'man', val:'Мужчина'}, {name:'woman', val:'Женщина'}]
+    - var radioBtns = [{val:'Мужчина', param:{name:'man', val:'Мужчина'}}, {val:'Женщина', param:{name:'woman', val:'Женщина'}}]
 include ../includes/header.pug
 
 .registration-header

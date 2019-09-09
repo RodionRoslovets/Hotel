@@ -61,7 +61,8 @@ mixin findForm()
 					.find-form--guests
 						h3.find-form--guests-heading Гости
 						+dropdown(3, 'взрослые', 'дети', 'младенцы')
-					+longBtn('подобрать номер')
+					.find-form__longBtn
+						+longBtn('подобрать номер')
 mixin regForm()
 			.reg
 				form.reg-form(action="#")    
@@ -80,7 +81,8 @@ mixin regForm()
 							+textInput('Пароль', 'password')
 					.reg-form--toggleSwitch
 						+toggleSwitch('Получать спецпредложения', 'get')
-					+longBtn('Перейти к оплате')
+					.reg-form__longBtn
+						+longBtn('Перейти к оплате')
 				.reg-haveAnAcc
 					.reg-haveAnAcc-description Уже есть аккаунт на Toxin
 					.reg-haveAnAcc-button
@@ -129,7 +131,8 @@ mixin enterForm()
 							+textInput('Email', 'Email')
 						.enter-form--input
 							+textInput('Пароль', 'Password')
-					+longBtn('Войти')
+					.enter-form__longBtn
+						+longBtn('Войти')
 					.enter-noAcc
 						.enter-noAcc-description Нет аккаунта на Toxin?
 						.enter-noAcc-button

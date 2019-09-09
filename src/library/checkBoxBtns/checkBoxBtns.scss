@@ -1,55 +1,33 @@
-.checkbox-btns {
+@import "./checkhField/checkField.scss";
+
+.checkbox-btns-wrapper {
     width: auto;
 }
 
-.checkbox-btns--heading {
-    text-transform: uppercase;
-    font-family:Montserrat-Bold;
-    margin-bottom: 9px;
-}
-.checkbox-btns--list{
-    padding-top:8px;
-}
-.checkbox-btns--list-item {
-    display: flex;
-    margin-bottom: 11px;
-    vertical-align: middle;
-    line-height: 18px;
-}
-
-.checkbox-btns-item-chek {
-    width: 20px;
-    height: 20px;
-    background: #fff;
-    @include flexAllCenter();
-    @include inputBorder();
-    margin-right: 10px;
-    transition: all .1s linear;
-    cursor: pointer;
-}
-
-.checkbox-btns--list-item {
-    margin-bottom: 10px;
-}
-
-.checkbox-btns-item-description {
-    width: 192px;
-    font-family: Montserrat;
-    color: $darkShade50;
-    @media screen and (max-width:899px) and (min-width:768px){
-        font-size:12px;
+.checkbox-btns{
+    &__heading {
+        text-transform: uppercase;
+        font-family:Montserrat-Bold;
+        margin-bottom: 9px;
     }
-}
-
-.checkbox-btns-item-chek-active {
-    border-color: $purple;
-}
-
-.checkbox-btns-item-chek--checked {
-    opacity: 0;
-    transition: all .1s linear;
-}
-
-.checkbox-btns-item-chek--checked-active {
-    opacity: 1;
+    &__list{
+        padding-top:8px;
+    }
+    &__list-item {
+        display: flex;
+        margin-bottom: 11px;
+        vertical-align: middle;
+        line-height: 18px;
+    }
+    &__list-item {
+        margin-bottom: 10px;
+    }
+    &__item-description {
+        width: 192px;
+        font-family: Montserrat;
+        color: $darkShade50;
+        @media screen and (max-width:899px) and (min-width:768px){
+            font-size:12px;
+        }
+    }
 }

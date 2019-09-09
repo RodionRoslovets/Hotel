@@ -1,17 +1,15 @@
 mixin comment(imgSrc, authorName, daysAgo, text, likeNum)
-	.comment
-		.comment-wrapper
-			.comment-author
-				.author-avatar
-					img(src=imgSrc, alt="")
-				.comment-like
-					+likeBtn(likeNum)
-				
-			.comment-content
-				.author-data
-					.author-name
-						p #{authorName}
-					.author-comment-date
-						p #{daysAgo}
-				.comment-text
-					p #{text}
+	.comment-wrapper
+		.comment__author
+			.comment__author-avatar
+				img(src=imgSrc, alt="")
+			.comment__author-like
+				+likeBtn(likeNum)
+		.comment__content
+			.comment__content-author-data
+				.comment__author-name
+					p #{authorName}
+				.comment__comment-date
+					p #{daysAgo}
+			.comment__content-text
+				p #{text}

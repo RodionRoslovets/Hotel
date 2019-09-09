@@ -1,4 +1,4 @@
-.date-dropdown {
+.date-dropdown-wrapper {
     width: 100%;
     @include Montserrat();
     position: relative;
@@ -13,25 +13,24 @@
 
 }
 
-.date-dropdown--item-wrapper {
+.date-dropdown__field {
     position: relative;
     width:150px;    
     background: #fff;
     @media screen and (max-width:768px){
         width:100%; 
     }
+    &-result {
+        position: relative;
+        height: 44px;
+        line-height: 18px;
+        padding: 11px 0px 13px 14px;
+        color: $darkShade75;
+        @include inputBorder();
+    }
 }
 
-.date-dropdown--dropdown-result {
-    position: relative;
-    height: 44px;
-    line-height: 18px;
-    padding: 11px 0px 13px 14px;
-    color: $darkShade75;
-    @include inputBorder();
-}
-
-.date-dropdown--dropdown-arrow {
+.date-dropdown__arrow {
     width: 44px;
     height: 44px;
     text-align: center;
@@ -41,8 +40,8 @@
     right: 0;
     cursor: pointer;
     line-height: 24px;
-}
-.date-dropdown--dropdown-arrow-icon{
-    line-height: 44px;
-    color:$darkShade75;
+    &-icon{
+        line-height: 44px;
+        color:$darkShade75;
+    }
 }

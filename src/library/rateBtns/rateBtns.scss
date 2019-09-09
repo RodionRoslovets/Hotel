@@ -1,31 +1,33 @@
-.rateBtns{
+.rateBtns-wrapper{
     width:auto;
     @include flexVertCenter();
 }
-.rateBtns-line {
-    @include flexVertCenter();
-}
-.rateBtns--star{
-    margin:0px 2px;
-    cursor:pointer;
-    @include flexAllCenter();
-    @media screen and(max-width:1199px) and (min-width:900px) {
-        width:15px;
+.rateBtns{
+    &__line {
+        @include flexVertCenter();
     }
-}
-.rateBtns--star-icon{
-    @include flexVertCenter();
-    background:linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition:all .1s linear;
-    @media screen and(max-width:1199px) and (min-width:900px) {
-        width:15px;
-    }
-}
-.rateBtns--star-icon-active{
-    transition: all .1s linear;
-    @media screen and(max-width:1199px) and (min-width:900px) {
-        width:15px;
+    &__star{
+        margin:0px 2px;
+        cursor:pointer;
+        @include flexAllCenter();
+        @media screen and(max-width:1199px) and (min-width:900px) {
+            width:15px;
+        }
+        &-icon{
+            @include flexVertCenter();
+            background:linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition:all .1s linear;
+            @media screen and(max-width:1199px) and (min-width:900px) {
+                width:15px;
+            }
+            &__active{
+                transition: all .1s linear;
+                @media screen and(max-width:1199px) and (min-width:900px) {
+                    width:15px;
+                }
+            }
+        }
     }
 }

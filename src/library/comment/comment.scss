@@ -1,36 +1,36 @@
-.comment{
-    width:auto;
-}
 .comment-wrapper{
+    width:auto;
     display:flex;
     justify-content: space-between;
 }
-.comment-author{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    margin-right:10px;
-    margin-bottom:10px;
-}
-.author-avatar{
-    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.1);
-    margin-bottom: 5px;
-}
-.comment-content{
-    display:flex;
-    flex-direction: column;
-    @include Montserrat();
-    color:$darkShade75;
-}
-.author-name{
-    font-family: 'Montserrat-Bold';
-    font-size:14px;
-    color:$darkShade75;
-}
-.author-comment-date{
-    margin-bottom:10px;
-}
-.comment-text{
-    line-height: 24px;
+.comment{
+    &__author{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        margin-right:10px;
+        margin-bottom:10px;
+        &-avatar{
+            box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.1);
+            margin-bottom: 5px;
+        }
+    }
+    &__content{
+        display:flex;
+        flex-direction: column;
+        @include Montserrat();
+        color:$darkShade75;
+        &-text{
+            line-height: 24px;
+        }
+    }
+    &__author-name{
+        font-family: 'Montserrat-Bold';
+        font-size:14px;
+        color:$darkShade75;
+    }
+    &__comment-date{
+        margin-bottom:10px;
+    }
 }

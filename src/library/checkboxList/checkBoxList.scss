@@ -1,95 +1,69 @@
-.checkbox-list {
+@import "./checkhField/checkField.scss";
+
+.checkbox-list-wrapper {
+    position: relative;
     width: auto;
-    position: relative;
+    height: auto;    
 }
-
-.checkbox-list--wrapper {
-    position: relative;
-    height: 44px;
-    @include flexVertCenter();
-    justify-content: space-between;
-}
-
-.checkbox-list--heading {
-    font-family: Montserrat-Bold;
-    text-transform: uppercase;
-}
-
-.checkbox-list--arrow {
-    width: 44px;
-    height: 44px;
-    text-align: center;
-    vertical-align: middle;
-    position: absolute;
-    top: 0;
-    right: 0;
-    cursor: pointer;
-    line-height: 24px;
-    transition: all .1s linear;
-    @media screen and (max-width:1199px) and (min-width:960px){
-        height: 39px;
+.checkbox-list{
+    &__head{
+        @include flexVertCenter();
+        justify-content: space-between;
+        height: 44px;
+        &-heading {
+            font-family: Montserrat-Bold;
+            text-transform: uppercase;
+            margin-bottom:0;
+        }
+        &-arrow {
+            width: 44px;
+            height: 44px;
+            text-align: center;
+            vertical-align: middle;
+            position: absolute;
+            top: 0;
+            right: 0;
+            cursor: pointer;
+            line-height: 24px;
+            transition: all .1s linear;
+            @media screen and (max-width:1199px) and (min-width:960px){
+                height: 39px;
+            }
+            &-icon{
+                line-height: 44px;
+                color:$darkShade75;
+                @media screen and (max-width:1199px) and (min-width:960px){
+                    line-height: 39px;
+                }
+            }
+            &-rotated {
+                transform: rotate(180deg);
+            }
+        }
     }
-}
-.checkbox-list--arrow-icon{
-    line-height: 44px;
-    color:$darkShade75;
-    @media screen and (max-width:1199px) and (min-width:960px){
-        line-height: 39px;
+    &__list {
+        display: none;
+        position: relative;
+        top: 0px;
+        opacity: 0;
+        transition: all .1s linear;
+        &-item {
+            @include flexVertCenter();
+            height: 20px;
+            margin-bottom: 11px;
+        }
+        &__opened {
+            position: relative;
+            top: 4px;
+            opacity: 1;
+        }
     }
-}
-.checkbox-list--arrow-rotated {
-    transform: rotate(180deg);
-}
-
-.checkbox-list--list {
-    display: none;
-    position: relative;
-    top: 0px;
-    opacity: 0;
-    transition: all .1s linear;
-}
-
-.checkbox-list--list-opened {
-    position: relative;
-    top: 4px;
-    opacity: 1;
-}
-
-.checkbox-list--list-item {
-    @include flexVertCenter();
-    height: 20px;
-    margin-bottom: 11px;
-}
-
-.list-item-chek {
-    width: 20px;
-    height: 20px;
-    background: #fff;
-    @include flexAllCenter();
-    @include inputBorder();
-    margin-right: 10px;
-    transition: all .1s linear;
-    cursor: pointer;
-}
-
-.list-item-chek-active {
-    border-color: $purple;
-}
-
-.list-item-description {
-    @include Montserrat();
-    color: $darkShade50;
-    width: 236px;
-    @media screen and (max-width:899px) and (min-width:768px){
-        font-size:12px;
+    &__item-description {
+        @include Montserrat();
+        color: $darkShade50;
+        width: 236px;
+        @media screen and (max-width:899px) and (min-width:768px){
+            font-size:12px;
+        }
     }
-}
-
-.list-item-chek--checked {
-    opacity: 0;
-    transition: all .1s linear;
-}
-
-.list-item-chek--checked-active {
-    opacity: 1;
 }

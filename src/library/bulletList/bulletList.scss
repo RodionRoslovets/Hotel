@@ -1,25 +1,22 @@
-.bulletList{
+.bulletList-wrapper{
     width:100%;
 }
-.bulletList--description{
-    text-transform: uppercase;
-    @include MontserratBold();
-    margin-bottom:10px;
-}
-.bulletList--list-item{
-    display:flex;
-    align-items: baseline;
-    margin-bottom:10px;
-}
-.bulletList--list-item-marker{
-    width:10px;
-    height:10px;
-    border-radius:50%;
-    background: $darkShade25;
-    margin-right:10px;
-}
-.bulletList--list-item-description{
-    width:240px;
-    @include Montserrat();
-    color:$darkShade75;
+.bulletList{
+    &__list-item{
+        display:flex;
+        align-items: baseline;
+        margin-bottom:10px;
+    }
+    &__item-marker{
+        width:10px;
+        height:10px;
+        border-radius:50%;
+        background: $darkShade25;
+        margin-right:10px;
+    }
+    &__item-description{
+        width:240px;
+        @include Montserrat();
+        color:$darkShade75;
+    }
 }

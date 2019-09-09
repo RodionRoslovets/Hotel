@@ -285,9 +285,8 @@ window.addEventListener('DOMContentLoaded', () => {
     }
     //Выводим результат
     let acceptButton = document.querySelectorAll('.calendar-confirm-link'), 
-		dateField = document.querySelectorAll('.date-dropdown--dropdown-result'),
-		calendarClear = document.querySelectorAll('.calendar-clear-link');
-    
+		dateField = document.querySelectorAll('.date-dropdown__result'),
+		calendarClear = document.querySelectorAll('.calendar-clear-link');    
     
 		for(let i = 0;i < acceptButton.length; i++){
 			acceptButton[i].addEventListener('click', ()=>{
@@ -313,9 +312,7 @@ window.addEventListener('DOMContentLoaded', () => {
                         
                     }
                 }
-                
-                
-					
+
 				res = firstday + '.' + resMonth + '.' + yearHeading[i].innerHTML;
 				res2 = lastday + '.' + resMonth + '.' + yearHeading[i].innerHTML;
 				dateField[0].textContent = res;

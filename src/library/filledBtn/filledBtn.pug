@@ -1,2 +1,4 @@
+include ./__button/button.pug
+
 mixin filledBtn(name)
-	button.filledBtn--button #{name}
+	+button(name, 'filledBtn')

@@ -15,19 +15,19 @@
       <form class="find-form" action="#">
         <h1 class="find-form--heading">Найдём номера под <br> ваши пожелания</h1>
         <div class="find-form--date">
-          <div class="date-dropdown">
-            <div class="date-dropdown--item">
-              <h3 class="date-dropdown--item-heading">Прибытие</h3>
-              <div class="date-dropdown--item-wrapper">
-                <div class="date-dropdown--dropdown-result">ДД.ММ.ГГГГ</div>
-                <div class="date-dropdown--dropdown-arrow"> <i class="material-icons date-dropdown--dropdown-arrow-icon">expand_more</i></div>
+          <div class="date-dropdown-wrapper">
+            <div class="date-dropdown__field">
+              <h3 class="date-dropdown__field-heading">Прибытие</h3>
+              <div class="date-dropdown__field-result">
+                <div class="date-dropdown__result">ДД.ММ.ГГГГ</div>
+                <div class="date-dropdown__arrow"> <i class="material-icons date-dropdown__arrow-icon">expand_more</i></div>
               </div>
             </div>
-            <div class="date-dropdown--item">
-              <h3 class="date-dropdown--item-heading">Выезд</h3>
-              <div class="date-dropdown--item-wrapper">
-                <div class="date-dropdown--dropdown-result">ДД.ММ.ГГГГ</div>
-                <div class="date-dropdown--dropdown-arrow"> <i class="material-icons date-dropdown--dropdown-arrow-icon">expand_more</i></div>
+            <div class="date-dropdown__field">
+              <h3 class="date-dropdown__field-heading">Выезд</h3>
+              <div class="date-dropdown__field-result">
+                <div class="date-dropdown__result">ДД.ММ.ГГГГ</div>
+                <div class="date-dropdown__arrow"> <i class="material-icons date-dropdown__arrow-icon">expand_more</i></div>
               </div>
             </div>
             <div class="calendar">
@@ -65,46 +65,49 @@
         </div>
         <div class="find-form--guests">
           <h3 class="find-form--guests-heading">Гости</h3>
-          <div class="dropdown">
-            <div class="dropdown--wrapper">
-              <div class="dropdown--dropdown-result">Cколько гостей</div>
-              <div class="dropdown--dropdown-arrow"> <i class="material-icons dropdown--dropdown-arrow-icon">expand_more</i></div>
+          <div class="dropdown-wrapper">
+            <div class="dropdown__input">
+              <div class="dropdown__result">Cколько гостей</div>
+              <div class="dropdown__arrow"> <i class="material-icons dropdown__arrow-icon">expand_more</i></div>
             </div>
-            <div class="dropdown--dropdown-items">
-              <div class="dropdown--dropdown-item">
-                <div class="dropdown-item-name">взрослые</div>
+            <div class="dropdown__items">
+              <div class="dropdown__item">
+                <div class="dropdown__item-name">взрослые</div>
                 <div class="dropdown-count">
-                  <div class="dropdown-count-minus"> <span>-</span></div>
-                  <div class="dropdown-count-result">0</div>
-                  <div class="dropdown-count-plus"> <span>+</span></div>
+                  <div class="dropdown-count__minus"> <span>-</span></div>
+                  <div class="dropdown-count__result">0</div>
+                  <div class="dropdown-count__plus"> <span>+</span></div>
                 </div>
               </div>
-              <div class="dropdown--dropdown-item">
-                <div class="dropdown-item-name">дети</div>
+              <div class="dropdown__item">
+                <div class="dropdown__item-name">дети</div>
                 <div class="dropdown-count">
-                  <div class="dropdown-count-minus"> <span>-</span></div>
-                  <div class="dropdown-count-result">0</div>
-                  <div class="dropdown-count-plus"> <span>+</span></div>
+                  <div class="dropdown-count__minus"> <span>-</span></div>
+                  <div class="dropdown-count__result">0</div>
+                  <div class="dropdown-count__plus"> <span>+</span></div>
                 </div>
               </div>
-              <div class="dropdown--dropdown-item">
-                <div class="dropdown-item-name">младенцы</div>
+              <div class="dropdown__item">
+                <div class="dropdown__item-name">младенцы</div>
                 <div class="dropdown-count">
-                  <div class="dropdown-count-minus"> <span>-</span></div>
-                  <div class="dropdown-count-result">0</div>
-                  <div class="dropdown-count-plus"> <span>+</span></div>
+                  <div class="dropdown-count__minus"> <span>-</span></div>
+                  <div class="dropdown-count__result">0</div>
+                  <div class="dropdown-count__plus"> <span>+</span></div>
                 </div>
               </div>
-              <div class="confirm">
+              <div class="dropdown__confirm">
                 <div class="confirm-link">применить</div>
               </div>
-              <div class="clear">
+              <div class="dropdown__clear">
                 <div class="clear-link">очистить</div>
               </div>
             </div>
           </div>
         </div>
-        <button class="longBtn--button">подобрать номер <i class="material-icons longBtn--arrow-icon">arrow_forward</i></button>
+        <div class="find-form__longBtn">
+          <button class="button longBtn">подобрать номер<i class="material-icons longBtn__arrow-icon">arrow_forward </i>
+          </button>
+        </div>
       </form>
     </div>
     <div class="reg">
@@ -114,42 +117,40 @@
         <input class="input-text" type="text" placeholder="Имя" name="firstName">
         <input class="input-text" type="text" placeholder="Фамилия" name="lastName">
         <div class="reg-form--radio">
-          <div class="radio-btns">
-            <div class="radio-btns--wrapper">
-              <div class="radio-btns--list">
-                <div class="radio-btns--list-item">
-                  <input type="radio" id="man" value="Мужчина" name="radio" style="display:none;">
-                  <label class="radio-btns-item-chek" for="man">
-                    <svg class="radio-btns-item-chek--checked" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect width="12" height="12" rx="6" fill="url(#paint0_linear)"></rect>
-                      <defs>
-                        <linearGradient id="paint0_linear" x1="6" y1="0" x2="6" y2="12" gradientUnits="userSpaceOnUse">
-                          <stop stop-color="#BC9CFF"></stop>
-                          <stop offset="1" stop-color="#8BA4F9"></stop>
-                        </linearGradient>
-                      </defs>
-                    </svg>
-                  </label>
-                  <div class="radio-btns-item-description">
-                    <p>Мужчина</p>
-                  </div>
+          <div class="radio-wrapper">
+            <div class="radio__list">
+              <div class="radio__item">
+                <input type="radio" id="man" value="Мужчина" name="radio" style="display:none;">
+                <label class="radio__item-chek" for="man">
+                  <svg class="radio__item-checked" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="12" height="12" rx="6" fill="url(#paint0_linear)"></rect>
+                    <defs>
+                      <linearGradient id="paint0_linear" x1="6" y1="0" x2="6" y2="12" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#BC9CFF"></stop>
+                        <stop offset="1" stop-color="#8BA4F9"></stop>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </label>
+                <div class="radio__item-description">
+                  <p>Мужчина	</p>
                 </div>
-                <div class="radio-btns--list-item">
-                  <input type="radio" id="woman" value="Женщина" name="radio" style="display:none;">
-                  <label class="radio-btns-item-chek" for="woman">
-                    <svg class="radio-btns-item-chek--checked" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect width="12" height="12" rx="6" fill="url(#paint0_linear)"></rect>
-                      <defs>
-                        <linearGradient id="paint0_linear" x1="6" y1="0" x2="6" y2="12" gradientUnits="userSpaceOnUse">
-                          <stop stop-color="#BC9CFF"></stop>
-                          <stop offset="1" stop-color="#8BA4F9"></stop>
-                        </linearGradient>
-                      </defs>
-                    </svg>
-                  </label>
-                  <div class="radio-btns-item-description">
-                    <p>Женщина</p>
-                  </div>
+              </div>
+              <div class="radio__item">
+                <input type="radio" id="woman" value="Женщина" name="radio" style="display:none;">
+                <label class="radio__item-chek" for="woman">
+                  <svg class="radio__item-checked" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="12" height="12" rx="6" fill="url(#paint0_linear)"></rect>
+                    <defs>
+                      <linearGradient id="paint0_linear" x1="6" y1="0" x2="6" y2="12" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#BC9CFF"></stop>
+                        <stop offset="1" stop-color="#8BA4F9"></stop>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </label>
+                <div class="radio__item-description">
+                  <p>Женщина	</p>
                 </div>
               </div>
             </div>
@@ -170,24 +171,26 @@
           <div class="toggle-switch">
             <div class="toggle-switch-wrapper">
               <input type="checkbox" id="get" style="display:none;">
-              <label class="toggle-switch--switchWrapper" for="get">
-                <div class="switchWrapper-switch"></div>
+              <label class="toggle-switch__switchWrapper" for="get">
+                <div class="toggle-switch__switch"></div>
               </label>
-              <div class="toggle-switch--description"> 
+              <div class="toggle-switch__description"> 
                 <p>Получать спецпредложения</p>
               </div>
             </div>
           </div>
         </div>
-        <button class="longBtn--button">Перейти к оплате <i class="material-icons longBtn--arrow-icon">arrow_forward</i></button>
+        <div class="reg-form__longBtn">
+          <button class="button longBtn">Перейти к оплате<i class="material-icons longBtn__arrow-icon">arrow_forward </i>
+          </button>
+        </div>
       </form>
       <div class="reg-haveAnAcc">
         <div class="reg-haveAnAcc-description">Уже есть аккаунт на Toxin</div>
         <div class="reg-haveAnAcc-button">
-          <div class="borderedBtn">
-            <div class="borderedBtn-wrapper">
-              <button class="borderedBtn--button">Войти</button>
-            </div>
+          <div class="borderedBtn-wrapper">
+            <button class="button borderedBtn__button">Войти
+            </button>
           </div>
         </div>
       </div>
@@ -203,19 +206,19 @@
           </div>
         </header>
         <div class="room-card-form--date">
-          <div class="date-dropdown">
-            <div class="date-dropdown--item">
-              <h3 class="date-dropdown--item-heading">Прибытие</h3>
-              <div class="date-dropdown--item-wrapper">
-                <div class="date-dropdown--dropdown-result">ДД.ММ.ГГГГ</div>
-                <div class="date-dropdown--dropdown-arrow"> <i class="material-icons date-dropdown--dropdown-arrow-icon">expand_more</i></div>
+          <div class="date-dropdown-wrapper">
+            <div class="date-dropdown__field">
+              <h3 class="date-dropdown__field-heading">Прибытие</h3>
+              <div class="date-dropdown__field-result">
+                <div class="date-dropdown__result">ДД.ММ.ГГГГ</div>
+                <div class="date-dropdown__arrow"> <i class="material-icons date-dropdown__arrow-icon">expand_more</i></div>
               </div>
             </div>
-            <div class="date-dropdown--item">
-              <h3 class="date-dropdown--item-heading">Выезд</h3>
-              <div class="date-dropdown--item-wrapper">
-                <div class="date-dropdown--dropdown-result">ДД.ММ.ГГГГ</div>
-                <div class="date-dropdown--dropdown-arrow"> <i class="material-icons date-dropdown--dropdown-arrow-icon">expand_more</i></div>
+            <div class="date-dropdown__field">
+              <h3 class="date-dropdown__field-heading">Выезд</h3>
+              <div class="date-dropdown__field-result">
+                <div class="date-dropdown__result">ДД.ММ.ГГГГ</div>
+                <div class="date-dropdown__arrow"> <i class="material-icons date-dropdown__arrow-icon">expand_more</i></div>
               </div>
             </div>
             <div class="calendar">
@@ -253,40 +256,40 @@
         </div>
         <div class="room-card-form--guests">
           <label class="room-card-form--guests-label">Гости
-            <div class="dropdown">
-              <div class="dropdown--wrapper">
-                <div class="dropdown--dropdown-result">Cколько гостей</div>
-                <div class="dropdown--dropdown-arrow"> <i class="material-icons dropdown--dropdown-arrow-icon">expand_more</i></div>
+            <div class="dropdown-wrapper">
+              <div class="dropdown__input">
+                <div class="dropdown__result">Cколько гостей</div>
+                <div class="dropdown__arrow"> <i class="material-icons dropdown__arrow-icon">expand_more</i></div>
               </div>
-              <div class="dropdown--dropdown-items">
-                <div class="dropdown--dropdown-item">
-                  <div class="dropdown-item-name">взрослые</div>
+              <div class="dropdown__items">
+                <div class="dropdown__item">
+                  <div class="dropdown__item-name">взрослые</div>
                   <div class="dropdown-count">
-                    <div class="dropdown-count-minus"> <span>-</span></div>
-                    <div class="dropdown-count-result">0</div>
-                    <div class="dropdown-count-plus"> <span>+</span></div>
+                    <div class="dropdown-count__minus"> <span>-</span></div>
+                    <div class="dropdown-count__result">0</div>
+                    <div class="dropdown-count__plus"> <span>+</span></div>
                   </div>
                 </div>
-                <div class="dropdown--dropdown-item">
-                  <div class="dropdown-item-name">дети</div>
+                <div class="dropdown__item">
+                  <div class="dropdown__item-name">дети</div>
                   <div class="dropdown-count">
-                    <div class="dropdown-count-minus"> <span>-</span></div>
-                    <div class="dropdown-count-result">0</div>
-                    <div class="dropdown-count-plus"> <span>+</span></div>
+                    <div class="dropdown-count__minus"> <span>-</span></div>
+                    <div class="dropdown-count__result">0</div>
+                    <div class="dropdown-count__plus"> <span>+</span></div>
                   </div>
                 </div>
-                <div class="dropdown--dropdown-item">
-                  <div class="dropdown-item-name">младенцы</div>
+                <div class="dropdown__item">
+                  <div class="dropdown__item-name">младенцы</div>
                   <div class="dropdown-count">
-                    <div class="dropdown-count-minus"> <span>-</span></div>
-                    <div class="dropdown-count-result">0</div>
-                    <div class="dropdown-count-plus"> <span>+</span></div>
+                    <div class="dropdown-count__minus"> <span>-</span></div>
+                    <div class="dropdown-count__result">0</div>
+                    <div class="dropdown-count__plus"> <span>+</span></div>
                   </div>
                 </div>
-                <div class="confirm">
+                <div class="dropdown__confirm">
                   <div class="confirm-link">применить</div>
                 </div>
-                <div class="clear">
+                <div class="dropdown__clear">
                   <div class="clear-link">очистить</div>
                 </div>
               </div>
@@ -313,7 +316,8 @@
           </div>
         </div>
         <div class="room-card-form--longBtn">
-          <button class="longBtn--button">Забронировать <i class="material-icons longBtn--arrow-icon">arrow_forward</i></button>
+          <button class="button longBtn">Забронировать<i class="material-icons longBtn__arrow-icon">arrow_forward </i>
+          </button>
         </div>
       </form>
     </div>
@@ -330,14 +334,16 @@
             <input class="input-text" type="text" placeholder="Пароль" name="Password">
           </div>
         </div>
-        <button class="longBtn--button">Войти <i class="material-icons longBtn--arrow-icon">arrow_forward</i></button>
+        <div class="enter-form__longBtn">
+          <button class="button longBtn">Войти<i class="material-icons longBtn__arrow-icon">arrow_forward </i>
+          </button>
+        </div>
         <div class="enter-noAcc">
           <div class="enter-noAcc-description">Нет аккаунта на Toxin?</div>
           <div class="enter-noAcc-button">
-            <div class="borderedBtn">
-              <div class="borderedBtn-wrapper">
-                <button class="borderedBtn--button">Создать</button>
-              </div>
+            <div class="borderedBtn-wrapper">
+              <button class="button borderedBtn__button">Создать
+              </button>
             </div>
           </div>
         </div>
@@ -400,64 +406,62 @@
         <hr class="roomDescr--divider">
         <div class="roomDescr--rate">
           <div class="roomDescr--rate-rateBtns"> 
-            <div class="rateBtns">
-              <div class="rateBtns-wrapper">
-                <div class="rateBtns-line">
-                  <div class="rateBtns--star">
-                    <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                      <defs>
-                        <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                          <stop stop-color="#BC9CFF"></stop>
-                          <stop offset="1" stop-color="#8BA4F9"></stop>
-                        </linearGradient>
-                      </defs>
-                    </svg>
-                  </div>
-                  <div class="rateBtns--star">
-                    <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                      <defs>
-                        <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                          <stop stop-color="#BC9CFF"></stop>
-                          <stop offset="1" stop-color="#8BA4F9"></stop>
-                        </linearGradient>
-                      </defs>
-                    </svg>
-                  </div>
-                  <div class="rateBtns--star">
-                    <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                      <defs>
-                        <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                          <stop stop-color="#BC9CFF"></stop>
-                          <stop offset="1" stop-color="#8BA4F9"></stop>
-                        </linearGradient>
-                      </defs>
-                    </svg>
-                  </div>
-                  <div class="rateBtns--star">
-                    <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                      <defs>
-                        <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                          <stop stop-color="#BC9CFF"></stop>
-                          <stop offset="1" stop-color="#8BA4F9"></stop>
-                        </linearGradient>
-                      </defs>
-                    </svg>
-                  </div>
-                  <div class="rateBtns--star">
-                    <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                      <defs>
-                        <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                          <stop stop-color="#BC9CFF"></stop>
-                          <stop offset="1" stop-color="#8BA4F9"></stop>
-                        </linearGradient>
-                      </defs>
-                    </svg>
-                  </div>
+            <div class="rateBtns-wrapper">
+              <div class="rateBtns__line">
+                <div class="rateBtns__star">
+                  <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                    <defs>
+                      <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#BC9CFF"></stop>
+                        <stop offset="1" stop-color="#8BA4F9"></stop>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="rateBtns__star">
+                  <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                    <defs>
+                      <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#BC9CFF"></stop>
+                        <stop offset="1" stop-color="#8BA4F9"></stop>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="rateBtns__star">
+                  <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                    <defs>
+                      <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#BC9CFF"></stop>
+                        <stop offset="1" stop-color="#8BA4F9"></stop>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="rateBtns__star">
+                  <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                    <defs>
+                      <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#BC9CFF"></stop>
+                        <stop offset="1" stop-color="#8BA4F9"></stop>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="rateBtns__star">
+                  <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                    <defs>
+                      <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#BC9CFF"></stop>
+                        <stop offset="1" stop-color="#8BA4F9"></stop>
+                      </linearGradient>
+                    </defs>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -490,64 +494,62 @@
         <hr class="roomDescr--divider">
         <div class="roomDescr--rate">
           <div class="roomDescr--rate-rateBtns"> 
-            <div class="rateBtns">
-              <div class="rateBtns-wrapper">
-                <div class="rateBtns-line">
-                  <div class="rateBtns--star">
-                    <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                      <defs>
-                        <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                          <stop stop-color="#BC9CFF"></stop>
-                          <stop offset="1" stop-color="#8BA4F9"></stop>
-                        </linearGradient>
-                      </defs>
-                    </svg>
-                  </div>
-                  <div class="rateBtns--star">
-                    <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                      <defs>
-                        <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                          <stop stop-color="#BC9CFF"></stop>
-                          <stop offset="1" stop-color="#8BA4F9"></stop>
-                        </linearGradient>
-                      </defs>
-                    </svg>
-                  </div>
-                  <div class="rateBtns--star">
-                    <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                      <defs>
-                        <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                          <stop stop-color="#BC9CFF"></stop>
-                          <stop offset="1" stop-color="#8BA4F9"></stop>
-                        </linearGradient>
-                      </defs>
-                    </svg>
-                  </div>
-                  <div class="rateBtns--star">
-                    <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                      <defs>
-                        <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                          <stop stop-color="#BC9CFF"></stop>
-                          <stop offset="1" stop-color="#8BA4F9"></stop>
-                        </linearGradient>
-                      </defs>
-                    </svg>
-                  </div>
-                  <div class="rateBtns--star">
-                    <svg class="rateBtns--star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                      <defs>
-                        <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                          <stop stop-color="#BC9CFF"></stop>
-                          <stop offset="1" stop-color="#8BA4F9"></stop>
-                        </linearGradient>
-                      </defs>
-                    </svg>
-                  </div>
+            <div class="rateBtns-wrapper">
+              <div class="rateBtns__line">
+                <div class="rateBtns__star">
+                  <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                    <defs>
+                      <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#BC9CFF"></stop>
+                        <stop offset="1" stop-color="#8BA4F9"></stop>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="rateBtns__star">
+                  <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                    <defs>
+                      <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#BC9CFF"></stop>
+                        <stop offset="1" stop-color="#8BA4F9"></stop>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="rateBtns__star">
+                  <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                    <defs>
+                      <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#BC9CFF"></stop>
+                        <stop offset="1" stop-color="#8BA4F9"></stop>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="rateBtns__star">
+                  <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                    <defs>
+                      <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#BC9CFF"></stop>
+                        <stop offset="1" stop-color="#8BA4F9"></stop>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="rateBtns__star">
+                  <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                    <defs>
+                      <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#BC9CFF"></stop>
+                        <stop offset="1" stop-color="#8BA4F9"></stop>
+                      </linearGradient>
+                    </defs>
+                  </svg>
                 </div>
               </div>
             </div>

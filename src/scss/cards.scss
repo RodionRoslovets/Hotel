@@ -70,7 +70,11 @@ body {
     @include MB(30px);
 }
 
-
+.find-form__longBtn,
+.reg-form__longBtn,
+.enter-form__longBtn{
+    height:44px;
+}
 
 .input-text {
     @include MB(9px);
@@ -214,6 +218,7 @@ body {
 }
 .room-card-form--longBtn{
     width:320px;
+    height: 44px;
     @media screen and (max-width:768px){
         width:100%; 
     }

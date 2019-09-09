@@ -1,4 +1,4 @@
-.date-filter-dropdown {
+.date-filter-wrapper {
     width: auto;
     @include Montserrat();
     position: relative;
@@ -7,31 +7,27 @@
         font-size:12px;
     }
 }
-
-.date-filter-dropdown--wrapper {
-    position: relative;
-}
-
-.date-filter-dropdown--dropdown-result {
-    position: relative;
-    height: 44px;
-    padding: 8px 0px 13px 15px;
-    color: $darkShade75;
-    @include inputBorder();
-}
-
-.date-filter-dropdown--dropdown-arrow {
-    width: 44px;
-    height: 44px;
-    text-align: center;
-    vertical-align: middle;
-    position: absolute;
-    top: 0;
-    right: 0;
-    cursor: pointer;
-    line-height: 24px;
-}
-.date-filter-dropdown--dropdown-arrow-icon{
-    line-height: 44px;
-    color:$darkShade75;
+.date-filter{
+    &__result {
+        position: relative;
+        height: 44px;
+        padding: 8px 0px 13px 15px;
+        color: $darkShade75;
+        @include inputBorder();
+    }
+    &__arrow  {
+        width: 44px;
+        height: 44px;
+        text-align: center;
+        vertical-align: middle;
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+        line-height: 24px;
+        &-icon{
+            line-height: 44px;
+            color:$darkShade75;
+        }
+    }
 }

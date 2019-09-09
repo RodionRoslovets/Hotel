@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded', ()=>{
-    let dateDropArrow = document.querySelectorAll('.date-dropdown--dropdown-arrow'),
+    let dateDropArrow = document.querySelectorAll('.date-dropdown__arrow'),
         dateCalendar = document.querySelectorAll('.calendar')[0];
 
     for(let i = 0; i < dateDropArrow.length; i++){

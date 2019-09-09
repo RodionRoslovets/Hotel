@@ -2,31 +2,29 @@
 .subscribe-field {
     width: auto;
     position: relative;
-}
-
-.subscribe-field--input {
-    width: 100%;
-    height: auto;
-    background: #fff;
-    padding: 13px 0px 13px 15px;
-    @include Montserrat();
-    @include inputBorder();
-    transition: all .1s linear;
-    outline: none;
-}
-
-.subscribe-field--arrow {
-    width: 44px;
-    height: 44px;
-    text-align: center;
-    vertical-align: middle;
-    position: absolute;
-    top: 0;
-    right: 0;
-    cursor: pointer;
-    line-height: 24px;
-}
-.subscribe-field--arrow-icon{
-    line-height: 44px;
-    color:$darkShade75;
+    &__input {
+        width: 100%;
+        height: auto;
+        background: #fff;
+        padding: 13px 0px 13px 15px;
+        @include Montserrat();
+        @include inputBorder();
+        transition: all .1s linear;
+        outline: none;
+    }
+    &__arrow {
+        width: 44px;
+        height: 44px;
+        text-align: center;
+        vertical-align: middle;
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+        line-height: 24px;
+        &-icon{
+            line-height: 44px;
+            color:$darkShade75;
+        }
+    }
 }

@@ -1,9 +1,8 @@
 mixin bulletList(arr)
-	.bulletList
-		.bulletList-wrapper
-			.bulletList--list
-				each el in arr
-					.bulletList--list-item
-						.bulletList--list-item-marker
-						.bulletList--list-item-description
-							p #{el.text}
+	.bulletList-wrapper
+		.bulletList__list
+			each el in arr
+				.bulletList__list-item
+					.bulletList__item-marker
+					.bulletList__item-description
+						p #{el.text}
