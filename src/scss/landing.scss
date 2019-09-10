@@ -10,40 +10,40 @@
     background-size:100%;
     @media screen and (min-width:1200px) and (max-width:1439px) {
         padding:55px 110px 18px;
-        &--tagline{
+        &__tagline{
             @include MT(150px);
         }
     }
     @media screen and (min-width:900px) and (max-width:1199px) {
         padding:40px 60px 18px;
-        &--tagline{
+        &__tagline{
             @include MT(75px);
         }
     }
     @media screen and (min-width:768px) and (max-width:899px) {
         padding:18px 35px;
-        &--tagline{
+        &__tagline{
             @include MT(0px);
         }
     }
     @media screen and (max-width:768px) {
         background: url(../img/image3.jpg)center top no-repeat;
         padding:18px 20px;
-        &-find{
+        &__find{
             width:70%;
             margin:auto;
             @media screen and (max-width:550px) {
                 width:100% 
             }
         }
-        &--tagline{
+        &__tagline{
             @include MT(10px);
             align-self: center;
             color:#fff;
             text-align: center;
         }
     }
-    &--tagline {
+    &__tagline {
         width: 297px;
         height: 48px;
         text-align: right;

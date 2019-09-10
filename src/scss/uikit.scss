@@ -26,37 +26,7 @@
 
 
 
-.colors{
-    width:270px;
-}
-.colors-item{
-    @include flexVertCenter();
-    margin-bottom:20px;
-}
-.colors-block{
-    width:70px;
-    height:70px;
-    border-radius: 6px;
-    margin-right:30px;
-}
-.colors-heading{
-    margin-bottom:10px;
-}
-.type{
-    width: 403px;
-}
-.type-item{
-    display:flex;
-    justify-content: space-between;
-    margin-bottom:50px;
-}
-.type-tag{
-    width:40px;
-    text-align: right;
-}
-.type-description{
-    width:336px;
-}
+
 .filled-button{
     width: 99px;
     height: 44px;

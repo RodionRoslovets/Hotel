@@ -1,271 +1,326 @@
 @import './variables';
 @import './mixins.scss';
 
-.roomDetails-header{
+.roomDetails-header {
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-    position:relative;
+    position: relative;
     z-index: 10;
-    width:100%;
+    width: 100%;
 }
-.roomDetails-main{
-    width:100%;
-    background:#fff;
-    &--room-pictures{
-        display:flex;
-        width:1440px;
-        margin:auto;
-        @media screen and (max-width:1439px){
-            width:100%;
-        }
-        &-big{
-            @media screen and (max-width:1439px) and (min-width:1200px){
-                width:69%;             
-            }
-            @media screen and (max-width:1199px){
-                width:100%;
-                &-item{
-                    width:100%;
-                }             
-            }
-        }
-        &-small{
-            display:flex;
-            flex-direction: column;
-            @media screen and (max-width:1439px) and (min-width:1200px){
-                width:31%;
-                max-height:465px;
-            } 
-            @media screen and (max-width:1199px){
-                display: none;              
-            }
-            &-item{
-                position: relative;
-                top:-1px;
-            }
-            &-item:first-child{
-                position: static;
-            }
+.roomDetails-main {
+    width: 100%;
+    background: #fff;
+}
+.main {
+    &__room-pictures {
+        display: flex;
+        width: 1440px;
+        margin: auto;
+
+        @media screen and (max-width:1439px) {
+            width: 100%;
         }
     }
-    &--details{
-        padding:65px 230px 62px;
-        display:flex;
+
+    &__details {
+        padding: 65px 230px 62px;
+        display: flex;
         justify-content: space-around;
-        @media screen and (max-width:1600px) and (min-width:1440px){
-            padding:63px 140px 62px;
+
+        @media screen and (max-width:1600px) and (min-width:1440px) {
+            padding: 63px 140px 62px;
             justify-content: space-between;
         }
-        @media screen and (max-width:1199px){
-            display:block;
-            padding:65px 0px 62px;              
-        }
-        @media screen and (max-width:768px){
-            width:80%;
-            margin:auto;            
-        }
-        &-information{
-            width:710px;
-            @media screen and (max-width:1439px) and (min-width:1200px){
-                margin-right:40px;
-            }
-            @media screen and (max-width:1199px){
-                margin:auto;
-            }
-            @media screen and (max-width:768px){
-                width:100%;
-            }
-            &--roomAndImpressions{
-                display:flex;
-                margin-bottom: 31px;
-                @media screen and (max-width:768px){
-                    display: block;
-                    margin:auto;
-                }
-                &-impressions{
-                    margin-left:70px;
-                    @media screen and (max-width:768px){
-                        margin: 0;
-                    }
-                }
-                &-impressions-heading{
-                    @include MB(20px);
-                    @media screen and (max-width:768px){
-                        text-align: center;
-                    }
-                }
-                &-impressions-info{
-                    display:flex;
-                    @media screen and (max-width:768px){
-                        display:block;
-                        width:250px;
-                        margin:auto;
-                    }
-                    &-list{
-                        align-self: flex-end;
-                        list-style-type: none;
-                        margin-left:30px;
-                        padding-top: 27px;
-                        @media screen and (max-width:768px){
-                            width:165px;
-                            margin:auto;
-                        }
-                        &-item{
-                            display:flex;
-                            align-items:center;
-                        }                   
-                        &-item::before{
-                            content:'';
-                            display:block;
-                            width:10px;
-                            height: 10px;
-                            border-radius:50%;
-                            margin-right:5px;
-                        }  
-                        &-item:nth-child(1)::before{
-                            background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
-                        }
-                        &-item:nth-child(2)::before{
-                            background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
-                        }
-                        &-item:nth-child(3)::before{
-                            background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-                        }
-                        &-item:nth-child(4)::before{
-                            background: linear-gradient(180deg, #919191 0%, #3D4975 100%);
-                        }
-                    }
-                }
-                &-impressions-info-diagramm{
-                    position:relative;
-                    width:120px;
-                    height:120px;
-                    display:flex;
-                    justify-content: space-between;
-                    @media screen and (max-width:768px){
-                        margin:auto;
-                    }
-                    &-right-side{
-                        display:flex;
-                        flex-direction: column;
-                        justify-content: space-between;
-                    }
-                    &-description{
-                        position: absolute;
-                        top: 30%;
-                        left: 25%;
-                        text-align: center;
-                        color: $purple;
-                        &-num{
-                            font-family: Quicksand;
-                            font-weight: bold;
-                            font-size: 24px;
-                            line-height: 30px;
-                        }
-                        &-text{
-                            @include MontserratBold();
-                            line-height: 15px;
-                            text-transform: uppercase;
-                        }
-                    }
-                }
-                &-roomDetails{
-                    @media screen and (max-width:768px){
-                        @include MB(30px);
-                    }
-                }
-                &-roomDetails-heading{
-                    margin-bottom: 22px;
-                    @media screen and (max-width:768px){
-                        text-align:center;
-                    }
-                }
-                &-roomDetails-info{
-                    @media screen and (max-width:768px){
-                        width:250px;
-                        margin: auto;
-                    }
-                }
-        }
-        
-        &-rulesAndcancel{
-            display:flex;
-            justify-content:space-between;
-            @include MT(33px);
-            
-            @media screen and (max-width:768px){
-                display: block;
-                margin:auto;
-                @include MB(30px);
-            }
-            &-rules{
-                &-heading{
-                    padding-left:20px;
-                    @include MB(17px);
-                    @media screen and (max-width:768px){
-                        text-align: center;
-                    }
-                }
-                &-bullets{
-                    @media screen and (max-width:768px){
-                        width:fit-content;
-                        margin:auto;
-                    }
-                }                
-            }
-            &-cancel{
-                width:340px;
-                position:relative;
-                left:-9px;
-                @media screen and (max-width:768px){
-                    width:275px;
-                    margin:auto;
-                }
-                &-heading{
-                    @media screen and (max-width:768px){
-                        text-align: center;
-                    } 
-                }
-                &-text{
-                    position:relative;
-                    top:17px;
-                }
-            }
-        }
-        
-        &-feedback{
-            @include MT(30px);
-            &-head{
-                display:flex;
-                justify-content: space-between;
-                @media screen and (max-width:768px){
-                    justify-content: center;
-                }
-                &-text{
-                    @media screen and (max-width:768px){
-                        display: none;
-                    }
-                }
-            }
-            &-head-heading{
-                @include MB(20px);
-            }
-            &-comment{
-                @include MB(23px);
-            }
+
+        @media screen and (max-width:1199px) {
+            display: block;
+            padding: 65px 0px 62px;
         }
 
+        @media screen and (max-width:768px) {
+            width: 80%;
+            margin: auto;
         }
-        &-card{
-            @media screen and (max-width:1199px){
-                width: 380px;
-                margin:auto;
-                @include MT(10px);
-            }
-            @media screen and (max-width:768px){
+    }
+}
+.room-pictures {
+    &__big {
+        @media screen and (max-width:1439px) and (min-width:1200px) {
+            width: 69%;
+        }
+
+        @media screen and (max-width:1199px) {
+            width: 100%;
+
+            &-item {
                 width: 100%;
             }
         }
     }
 
-}
+    &__small {
+        display: flex;
+        flex-direction: column;
 
+        @media screen and (max-width:1439px) and (min-width:1200px) {
+            width: 31%;
+            max-height: 465px;
+        }
+
+        @media screen and (max-width:1199px) {
+            display: none;
+        }
+
+        &-item {
+            position: relative;
+            top: -1px;
+        }
+
+        &-item:first-child {
+            position: static;
+        }
+    }
+}
+.details {
+    &-information {
+        width: 710px;
+
+        @media screen and (max-width:1439px) and (min-width:1200px) {
+            margin-right: 40px;
+        }
+
+        @media screen and (max-width:1199px) {
+            margin: auto;
+        }
+
+        @media screen and (max-width:768px) {
+            width: 100%;
+        }
+
+        &__roomAndImpressions {
+            display: flex;
+            margin-bottom: 31px;
+
+            @media screen and (max-width:768px) {
+                display: block;
+                margin: auto;
+            }
+        }
+        &__feedback{
+            @include MT(30px);
+        }
+        &__rulesAndcancel {
+            display: flex;
+            justify-content: space-between;
+            @include MT(33px);        
+            @media screen and (max-width:768px) {
+                display: block;
+                margin: auto;
+                @include MB(30px);
+            }
+        }
+    }
+    &__card {
+        @media screen and (max-width:1199px) {
+            width: 380px;
+            margin: auto;
+            @include MT(10px);
+        }
+    
+        @media screen and (max-width:768px) {
+            width: 100%;
+        }
+    }
+}
+.roomAndImpressions {
+    &__roomDetails {
+        @media screen and (max-width:768px) {
+            @include MB(30px);
+        }
+    }
+
+    &__roomDetails-heading {
+        margin-bottom: 22px;
+
+        @media screen and (max-width:768px) {
+            text-align: center;
+        }
+    }
+
+    &__roomDetails-info {
+        @media screen and (max-width:768px) {
+            width: 250px;
+            margin: auto;
+        }
+    }
+    &__impressions {
+        margin-left: 70px;
+
+        @media screen and (max-width:768px) {
+            margin: 0;
+        }
+    }
+}
+.impressions {
+    &__heading {
+        @include MB(20px);
+
+        @media screen and (max-width:768px) {
+            text-align: center;
+        }
+    }
+
+    &__info {
+        display: flex;
+
+        @media screen and (max-width:768px) {
+            display: block;
+            width: 250px;
+            margin: auto;
+        }
+
+        &-list {
+            align-self: flex-end;
+            list-style-type: none;
+            margin-left: 30px;
+            padding-top: 27px;
+
+            @media screen and (max-width:768px) {
+                width: 165px;
+                margin: auto;
+            }
+
+            &-item {
+                display: flex;
+                align-items: center;
+            }
+
+            &-item::before {
+                content: '';
+                display: block;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                margin-right: 5px;
+            }
+
+            &-item:nth-child(1)::before {
+                background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
+            }
+
+            &-item:nth-child(2)::before {
+                background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+            }
+
+            &-item:nth-child(3)::before {
+                background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+            }
+
+            &-item:nth-child(4)::before {
+                background: linear-gradient(180deg, #919191 0%, #3D4975 100%);
+            }
+        }
+    }
+
+    &__info-diagramm {
+        position: relative;
+        width: 120px;
+        height: 120px;
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width:768px) {
+            margin: auto;
+        }
+
+        &-right-side {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        &-description {
+            position: absolute;
+            top: 30%;
+            left: 25%;
+            text-align: center;
+            color: $purple;
+
+            &-num {
+                font-family: Quicksand;
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 30px;
+            }
+
+            &-text {
+                @include MontserratBold();
+                line-height: 15px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+.feedback{
+    &__head {
+            display: flex;
+            justify-content: space-between;
+    
+            @media screen and (max-width:768px) {
+                justify-content: center;
+            }
+            &-heading {
+                @include MB(20px);
+            }
+    
+            &__text {
+                @media screen and (max-width:768px) {
+                    display: none;
+                }
+            }
+        }    
+    &__comment {
+        @include MB(23px);
+    }
+    
+    
+}
+.rulesAndcancel{
+    &__cancel{
+        width: 340px;
+        position: relative;
+        left: -9px;
+        @media screen and (max-width:768px) {
+            width: 275px;
+            margin: auto;
+        }
+    }
+}
+.rules{
+    &__heading {
+        padding-left: 20px;
+        @include MB(17px);
+
+        @media screen and (max-width:768px) {
+            text-align: center;
+        }
+    }
+
+    &__bullets {
+        @media screen and (max-width:768px) {
+            width: fit-content;
+            margin: auto;
+        }
+    }
+}
+.cancel{ 
+    &__heading {
+        @media screen and (max-width:768px) {
+            text-align: center;
+        }
+    }
+    &__text {
+        position: relative;
+        top: 17px;
+    }
+}

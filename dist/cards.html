@@ -6,256 +6,77 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:700,800&amp;display=swap&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-  <link href="./assets/css/main.css" rel="stylesheet"><link href="./assets/css/uikit.css" rel="stylesheet"><link href="./assets/css/cards.css" rel="stylesheet"><link href="./assets/css/HandF.css" rel="stylesheet"><link href="./assets/css/landing.css" rel="stylesheet"><link href="./assets/css/searchRoom.css" rel="stylesheet"><link href="./assets/css/roomDetails.css" rel="stylesheet"><link href="./assets/css/registration.css" rel="stylesheet"></head>
-  <body><script type="text/javascript" src="./assets/js/main.js"></script><script type="text/javascript" src="./assets/js/uikit.js"></script><script type="text/javascript" src="./assets/js/cards.js"></script><script type="text/javascript" src="./assets/js/HandF.js"></script><script type="text/javascript" src="./assets/js/landing.js"></script><script type="text/javascript" src="./assets/js/searchRoom.js"></script><script type="text/javascript" src="./assets/js/roomDetails.js"></script><script type="text/javascript" src="./assets/js/registration.js"></script></body>
+  <link href="./assets/css/main.css" rel="stylesheet"><link href="./assets/css/uikit.css" rel="stylesheet"><link href="./assets/css/cards.css" rel="stylesheet"><link href="./assets/css/HandF.css" rel="stylesheet"><link href="./assets/css/landing.css" rel="stylesheet"><link href="./assets/css/searchRoom.css" rel="stylesheet"><link href="./assets/css/roomDetails.css" rel="stylesheet"><link href="./assets/css/registration.css" rel="stylesheet"><link href="./assets/css/colorsAndTypes.css" rel="stylesheet"></head>
+  <body><script type="text/javascript" src="./assets/js/main.js"></script><script type="text/javascript" src="./assets/js/uikit.js"></script><script type="text/javascript" src="./assets/js/cards.js"></script><script type="text/javascript" src="./assets/js/HandF.js"></script><script type="text/javascript" src="./assets/js/landing.js"></script><script type="text/javascript" src="./assets/js/searchRoom.js"></script><script type="text/javascript" src="./assets/js/roomDetails.js"></script><script type="text/javascript" src="./assets/js/registration.js"></script><script type="text/javascript" src="./assets/js/colorsAndTypes.js"></script></body>
 </html>
+<div class="logo-grey">
+  <div class="logo">
+    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M23.9989 32.4712C23.2224 32.4712 22.5871 31.8359 22.5871 31.0594C22.5871 25.6241 18.14 21.177 12.7047 21.177C11.9283 21.177 11.293 20.5418 11.293 19.7653C11.293 18.9888 11.9283 18.3535 12.7047 18.3535C19.7283 18.3535 25.4106 24.0359 25.4106 31.0594C25.4106 31.8359 24.7753 32.4712 23.9989 32.4712Z" fill="#1F2041" fill-opacity="0.25"></path>
+      <path d="M36.7068 19.7653C36.7068 20.5418 36.0715 21.177 35.295 21.177C31.9421 21.177 28.9421 22.8712 27.1774 25.4476C26.7892 24.4594 26.3303 23.5418 25.7656 22.6947C28.095 20.0123 31.5186 18.3535 35.295 18.3535C36.0715 18.3535 36.7068 18.9888 36.7068 19.7653Z" fill="#1F2041" fill-opacity="0.25"></path>
+      <path d="M24 48C10.7647 48 0 37.2353 0 24C0 10.7647 10.7647 0 24 0C37.2353 0 48 10.7647 48 24C48 37.2353 37.2353 48 24 48ZM24 2.82353C12.3176 2.82353 2.82353 12.3176 2.82353 24C2.82353 35.6824 12.3176 45.1765 24 45.1765C35.6824 45.1765 45.1765 35.6824 45.1765 24C45.1765 12.3176 35.6824 2.82353 24 2.82353Z" fill="#1F2041" fill-opacity="0.25"></path>
+    </svg>
+  </div>
+</div>
 <div class="wrapper">
   <div class="column">
-    <div class="find">
-      <form class="find-form" action="#">
-        <h1 class="find-form--heading">Найдём номера под <br> ваши пожелания</h1>
-        <div class="find-form--date">
-          <div class="date-dropdown-wrapper">
-            <div class="date-dropdown__field">
-              <h3 class="date-dropdown__field-heading">Прибытие</h3>
-              <div class="date-dropdown__field-result">
-                <div class="date-dropdown__result">ДД.ММ.ГГГГ</div>
-                <div class="date-dropdown__arrow"> <i class="material-icons date-dropdown__arrow-icon">expand_more</i></div>
-              </div>
-            </div>
-            <div class="date-dropdown__field">
-              <h3 class="date-dropdown__field-heading">Выезд</h3>
-              <div class="date-dropdown__field-result">
-                <div class="date-dropdown__result">ДД.ММ.ГГГГ</div>
-                <div class="date-dropdown__arrow"> <i class="material-icons date-dropdown__arrow-icon">expand_more</i></div>
-              </div>
-            </div>
-            <div class="calendar">
-              <div class="calendar-wrapper">
-                <div class="calendar-heading">
-                  <div class="calendar-heading-arrow"><i class="material-icons calendar-heading-arrow-left"> arrow_back</i></div>
-                  <h2 class="calendar-heading-title"> <span class="calendar-month"> </span><span class="calendar-year"> </span></h2>
-                  <div class="calendar-heading-arrow"> <i class="material-icons calendar-heading-arrow-right">arrow_forward</i></div>
+    <div class="column-elem__form">
+      <div class="find">
+        <form class="find-form" action="#">
+          <h1 class="find-form__heading">Найдём номера под <br> ваши пожелания</h1>
+          <div class="find-form__date">
+            <div class="date-dropdown-wrapper">
+              <div class="date-dropdown__field">
+                <h3 class="date-dropdown__field-heading">Прибытие</h3>
+                <div class="date-dropdown__field-result">
+                  <div class="date-dropdown__result">ДД.ММ.ГГГГ</div>
+                  <div class="date-dropdown__arrow"> <i class="material-icons date-dropdown__arrow-icon">expand_more</i></div>
                 </div>
-                <table class="calendar-table">
-                  <thead class="calendar-table-head">
-                    <tr>
-                      <th>Пн</th>
-                      <th>Вт</th>
-                      <th>Ср</th>
-                      <th>Чт</th>
-                      <th>Пт</th>
-                      <th>Сб</th>
-                      <th>Вс</th>
-                    </tr>
-                  </thead>
-                  <tbody class="calendar-table-body"></tbody>
-                </table>
-                <div class="calendar-buttons">
-                  <div class="calendar-clear">
-                    <div class="calendar-clear-link">очистить</div>
+              </div>
+              <div class="date-dropdown__field">
+                <h3 class="date-dropdown__field-heading">Выезд</h3>
+                <div class="date-dropdown__field-result">
+                  <div class="date-dropdown__result">ДД.ММ.ГГГГ</div>
+                  <div class="date-dropdown__arrow"> <i class="material-icons date-dropdown__arrow-icon">expand_more</i></div>
+                </div>
+              </div>
+              <div class="calendar">
+                <div class="calendar-wrapper">
+                  <div class="calendar-heading">
+                    <div class="calendar-heading-arrow"><i class="material-icons calendar-heading-arrow-left"> arrow_back</i></div>
+                    <h2 class="calendar-heading-title"> <span class="calendar-month"> </span><span class="calendar-year"> </span></h2>
+                    <div class="calendar-heading-arrow"> <i class="material-icons calendar-heading-arrow-right">arrow_forward</i></div>
                   </div>
-                  <div class="calendar-confirm">
-                    <div class="calendar-confirm-link">применить</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="find-form--guests">
-          <h3 class="find-form--guests-heading">Гости</h3>
-          <div class="dropdown-wrapper">
-            <div class="dropdown__input">
-              <div class="dropdown__result">Cколько гостей</div>
-              <div class="dropdown__arrow"> <i class="material-icons dropdown__arrow-icon">expand_more</i></div>
-            </div>
-            <div class="dropdown__items">
-              <div class="dropdown__item">
-                <div class="dropdown__item-name">взрослые</div>
-                <div class="dropdown-count">
-                  <div class="dropdown-count__minus"> <span>-</span></div>
-                  <div class="dropdown-count__result">0</div>
-                  <div class="dropdown-count__plus"> <span>+</span></div>
-                </div>
-              </div>
-              <div class="dropdown__item">
-                <div class="dropdown__item-name">дети</div>
-                <div class="dropdown-count">
-                  <div class="dropdown-count__minus"> <span>-</span></div>
-                  <div class="dropdown-count__result">0</div>
-                  <div class="dropdown-count__plus"> <span>+</span></div>
-                </div>
-              </div>
-              <div class="dropdown__item">
-                <div class="dropdown__item-name">младенцы</div>
-                <div class="dropdown-count">
-                  <div class="dropdown-count__minus"> <span>-</span></div>
-                  <div class="dropdown-count__result">0</div>
-                  <div class="dropdown-count__plus"> <span>+</span></div>
-                </div>
-              </div>
-              <div class="dropdown__confirm">
-                <div class="confirm-link">применить</div>
-              </div>
-              <div class="dropdown__clear">
-                <div class="clear-link">очистить</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="find-form__longBtn">
-          <button class="button longBtn">подобрать номер<i class="material-icons longBtn__arrow-icon">arrow_forward </i>
-          </button>
-        </div>
-      </form>
-    </div>
-    <div class="reg">
-      <form class="reg-form" action="#">   
-        <h1 class="reg-form--heading">Регистрация аккаунта</h1>
-        <div class="reg-form--input"></div>
-        <input class="input-text" type="text" placeholder="Имя" name="firstName">
-        <input class="input-text" type="text" placeholder="Фамилия" name="lastName">
-        <div class="reg-form--radio">
-          <div class="radio-wrapper">
-            <div class="radio__list">
-              <div class="radio__item">
-                <input type="radio" id="man" value="Мужчина" name="radio" style="display:none;">
-                <label class="radio__item-chek" for="man">
-                  <svg class="radio__item-checked" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="12" height="12" rx="6" fill="url(#paint0_linear)"></rect>
-                    <defs>
-                      <linearGradient id="paint0_linear" x1="6" y1="0" x2="6" y2="12" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#BC9CFF"></stop>
-                        <stop offset="1" stop-color="#8BA4F9"></stop>
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                </label>
-                <div class="radio__item-description">
-                  <p>Мужчина	</p>
-                </div>
-              </div>
-              <div class="radio__item">
-                <input type="radio" id="woman" value="Женщина" name="radio" style="display:none;">
-                <label class="radio__item-chek" for="woman">
-                  <svg class="radio__item-checked" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="12" height="12" rx="6" fill="url(#paint0_linear)"></rect>
-                    <defs>
-                      <linearGradient id="paint0_linear" x1="6" y1="0" x2="6" y2="12" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#BC9CFF"></stop>
-                        <stop offset="1" stop-color="#8BA4F9"></stop>
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                </label>
-                <div class="radio__item-description">
-                  <p>Женщина	</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="reg-form--birthDate">
-          <label class="reg-form--birthDate-label">Дата рождения
-            <input class="input-text input-masked" type="text" placeholder="ДД.ММ.ГГГГ">
-          </label>
-        </div>
-        <div class="reg-form--enterData">   
-          <label class="reg-form--enterData-label">Данные для входа в сервис
-            <input class="input-text" type="text" placeholder="Email" name="email">
-            <input class="input-text" type="text" placeholder="Пароль" name="password">
-          </label>
-        </div>
-        <div class="reg-form--toggleSwitch">
-          <div class="toggle-switch">
-            <div class="toggle-switch-wrapper">
-              <input type="checkbox" id="get" style="display:none;">
-              <label class="toggle-switch__switchWrapper" for="get">
-                <div class="toggle-switch__switch"></div>
-              </label>
-              <div class="toggle-switch__description"> 
-                <p>Получать спецпредложения</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="reg-form__longBtn">
-          <button class="button longBtn">Перейти к оплате<i class="material-icons longBtn__arrow-icon">arrow_forward </i>
-          </button>
-        </div>
-      </form>
-      <div class="reg-haveAnAcc">
-        <div class="reg-haveAnAcc-description">Уже есть аккаунт на Toxin</div>
-        <div class="reg-haveAnAcc-button">
-          <div class="borderedBtn-wrapper">
-            <button class="button borderedBtn__button">Войти
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="column">
-    <div class="room-card">
-      <form class="room-card-form" action="#">
-        <header class="room-card-form--header">
-          <h1 class="room-card-form--header-heading"><span class="heading--num">№ </span>888 <span class="heading--room-type">люкс</span></h1>
-          <div class="room-card-form--header-price">
-            <p class="header-price">9 990&#x20bd; </p><span class="header-price-perDay">&nbsp;в сутки</span>
-          </div>
-        </header>
-        <div class="room-card-form--date">
-          <div class="date-dropdown-wrapper">
-            <div class="date-dropdown__field">
-              <h3 class="date-dropdown__field-heading">Прибытие</h3>
-              <div class="date-dropdown__field-result">
-                <div class="date-dropdown__result">ДД.ММ.ГГГГ</div>
-                <div class="date-dropdown__arrow"> <i class="material-icons date-dropdown__arrow-icon">expand_more</i></div>
-              </div>
-            </div>
-            <div class="date-dropdown__field">
-              <h3 class="date-dropdown__field-heading">Выезд</h3>
-              <div class="date-dropdown__field-result">
-                <div class="date-dropdown__result">ДД.ММ.ГГГГ</div>
-                <div class="date-dropdown__arrow"> <i class="material-icons date-dropdown__arrow-icon">expand_more</i></div>
-              </div>
-            </div>
-            <div class="calendar">
-              <div class="calendar-wrapper">
-                <div class="calendar-heading">
-                  <div class="calendar-heading-arrow"><i class="material-icons calendar-heading-arrow-left"> arrow_back</i></div>
-                  <h2 class="calendar-heading-title"> <span class="calendar-month"> </span><span class="calendar-year"> </span></h2>
-                  <div class="calendar-heading-arrow"> <i class="material-icons calendar-heading-arrow-right">arrow_forward</i></div>
-                </div>
-                <table class="calendar-table">
-                  <thead class="calendar-table-head">
-                    <tr>
-                      <th>Пн</th>
-                      <th>Вт</th>
-                      <th>Ср</th>
-                      <th>Чт</th>
-                      <th>Пт</th>
-                      <th>Сб</th>
-                      <th>Вс</th>
-                    </tr>
-                  </thead>
-                  <tbody class="calendar-table-body"></tbody>
-                </table>
-                <div class="calendar-buttons">
-                  <div class="calendar-clear">
-                    <div class="calendar-clear-link">очистить</div>
-                  </div>
-                  <div class="calendar-confirm">
-                    <div class="calendar-confirm-link">применить</div>
+                  <table class="calendar-table">
+                    <thead class="calendar-table-head">
+                      <tr>
+                        <th>Пн</th>
+                        <th>Вт</th>
+                        <th>Ср</th>
+                        <th>Чт</th>
+                        <th>Пт</th>
+                        <th>Сб</th>
+                        <th>Вс</th>
+                      </tr>
+                    </thead>
+                    <tbody class="calendar-table-body"></tbody>
+                  </table>
+                  <div class="calendar-buttons">
+                    <div class="calendar-clear">
+                      <button class="button textBtn">очистить
+                      </button>
+                    </div>
+                    <div class="calendar-confirm">
+                      <button class="button textBtn textBtn__purple">применить
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="room-card-form--guests">
-          <label class="room-card-form--guests-label">Гости
+          <div class="find-form__guests">
+            <h3 class="find-form__guests-heading">Гости</h3>
             <div class="dropdown-wrapper">
               <div class="dropdown__input">
                 <div class="dropdown__result">Cколько гостей</div>
@@ -287,274 +108,532 @@
                   </div>
                 </div>
                 <div class="dropdown__confirm">
-                  <div class="confirm-link">применить</div>
+                  <button class="button textBtn textBtn__purple">применить
+                  </button>
                 </div>
                 <div class="dropdown__clear">
-                  <div class="clear-link">очистить</div>
+                  <button class="button textBtn">очистить
+                  </button>
                 </div>
               </div>
             </div>
-          </label>
-        </div>
-        <div class="room-card-form--priceList">
-          <div class="priceList--item">
-            <p class="priceList--item-description">9 990&#x20bd; X 4 суток</p>
-            <p class="priceList--item-price">39 960&#x20bd;</p>
           </div>
-          <div class="priceList--item">
-            <p class="priceList--item-description">Сбор за услуги: скидка 2 179&#x20bd;</p>
-            <p class="priceList--item-price">0&#x20bd;</p>
+          <div class="find-form__longBtn">
+            <button class="button longBtn">подобрать номер<i class="material-icons longBtn__arrow-icon">arrow_forward </i>
+            </button>
           </div>
-          <div class="priceList--item">
-            <p class="priceList--item-description">Сбор за дополнительные <br>услуги</p>
-            <p class="priceList--item-price">300&#x20bd;</p>
-          </div>
-          <div class="priceList--total">
-            <h2 class="priceList--total--heading">Итого</h2>
-            <div class="priceList--total--line"></div>
-            <p class="priceList--total--price">38 081&#x20bd;</p>
-          </div>
-        </div>
-        <div class="room-card-form--longBtn">
-          <button class="button longBtn">Забронировать<i class="material-icons longBtn__arrow-icon">arrow_forward </i>
-          </button>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
-    <div class="enter">
-      <form class="enter-form" action="#">
-        <header class="enter-form--header">
-          <h1 class="enter-form--header-heading">Войти</h1>
-        </header>
-        <div class="enter-form--input-items">
-          <div class="enter-form--input">
-            <input class="input-text" type="text" placeholder="Email" name="Email">
+    <div class="column-elem__form">
+      <div class="reg">
+        <form class="reg-form" action="#">   
+          <h1 class="reg-form__heading">Регистрация аккаунта</h1>
+          <div class="reg-form__input"></div>
+          <input class="input-text" type="text" placeholder="Имя" name="firstName">
+          <input class="input-text" type="text" placeholder="Фамилия" name="lastName">
+          <div class="reg-form__radio">
+            <div class="radio-wrapper">
+              <div class="radio__list">
+                <div class="radio__item">
+                  <input type="radio" id="man" value="Мужчина" name="radio" style="display:none;">
+                  <label class="radio__item-chek" for="man">
+                    <svg class="radio__item-checked" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="12" height="12" rx="6" fill="url(#paint0_linear)"></rect>
+                      <defs>
+                        <linearGradient id="paint0_linear" x1="6" y1="0" x2="6" y2="12" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#BC9CFF"></stop>
+                          <stop offset="1" stop-color="#8BA4F9"></stop>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </label>
+                  <div class="radio__item-description">
+                    <p>Мужчина	</p>
+                  </div>
+                </div>
+                <div class="radio__item">
+                  <input type="radio" id="woman" value="Женщина" name="radio" style="display:none;">
+                  <label class="radio__item-chek" for="woman">
+                    <svg class="radio__item-checked" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="12" height="12" rx="6" fill="url(#paint0_linear)"></rect>
+                      <defs>
+                        <linearGradient id="paint0_linear" x1="6" y1="0" x2="6" y2="12" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#BC9CFF"></stop>
+                          <stop offset="1" stop-color="#8BA4F9"></stop>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </label>
+                  <div class="radio__item-description">
+                    <p>Женщина	</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="enter-form--input">
-            <input class="input-text" type="text" placeholder="Пароль" name="Password">
+          <div class="reg-form__birthDate">
+            <label class="reg-form__birthDate-label">Дата рождения
+              <input class="input-text input-masked" type="text" placeholder="ДД.ММ.ГГГГ">
+            </label>
           </div>
-        </div>
-        <div class="enter-form__longBtn">
-          <button class="button longBtn">Войти<i class="material-icons longBtn__arrow-icon">arrow_forward </i>
-          </button>
-        </div>
-        <div class="enter-noAcc">
-          <div class="enter-noAcc-description">Нет аккаунта на Toxin?</div>
-          <div class="enter-noAcc-button">
+          <div class="reg-form__enterData">   
+            <label class="reg-form__enterData-label">Данные для входа в сервис
+              <input class="input-text" type="text" placeholder="Email" name="email">
+              <input class="input-text" type="text" placeholder="Пароль" name="password">
+            </label>
+          </div>
+          <div class="reg-form__toggleSwitch">
+            <div class="toggle-switch">
+              <div class="toggle-switch-wrapper">
+                <input type="checkbox" id="get" style="display:none;">
+                <label class="toggle-switch__switchWrapper" for="get">
+                  <div class="toggle-switch__switch"></div>
+                </label>
+                <div class="toggle-switch__description"> 
+                  <p>Получать спецпредложения</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="reg-form__longBtn">
+            <button class="button longBtn">Перейти к оплате<i class="material-icons longBtn__arrow-icon">arrow_forward </i>
+            </button>
+          </div>
+        </form>
+        <div class="reg-haveAnAcc">
+          <div class="reg-haveAnAcc__description">Уже есть аккаунт на Toxin</div>
+          <div class="reg-haveAnAcc__button">
             <div class="borderedBtn-wrapper">
-              <button class="button borderedBtn__button">Создать
+              <button class="button borderedBtn__button">Войти
               </button>
             </div>
           </div>
         </div>
-      </form>
+      </div>
     </div>
   </div>
   <div class="column">
-    <div class="calendar">
-      <div class="calendar-wrapper">
-        <div class="calendar-heading">
-          <div class="calendar-heading-arrow"><i class="material-icons calendar-heading-arrow-left"> arrow_back</i></div>
-          <h2 class="calendar-heading-title"> <span class="calendar-month"> </span><span class="calendar-year"> </span></h2>
-          <div class="calendar-heading-arrow"> <i class="material-icons calendar-heading-arrow-right">arrow_forward</i></div>
-        </div>
-        <table class="calendar-table">
-          <thead class="calendar-table-head">
-            <tr>
-              <th>Пн</th>
-              <th>Вт</th>
-              <th>Ср</th>
-              <th>Чт</th>
-              <th>Пт</th>
-              <th>Сб</th>
-              <th>Вс</th>
-            </tr>
-          </thead>
-          <tbody class="calendar-table-body"></tbody>
-        </table>
-        <div class="calendar-buttons">
-          <div class="calendar-clear">
-            <div class="calendar-clear-link">очистить</div>
-          </div>
-          <div class="calendar-confirm">
-            <div class="calendar-confirm-link">применить</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="roomDescr">
-      <div class="roomDescr--slider">
-        <div class="roomDescr--slider-image"><img src="./assets/img/room1.jpg" alt=""></div>
-        <div class="roomDescr--slider-controls">
-          <div class="roomDescr--slider-controls-left"><i class="material-icons roomDescr--slider-controls-left-arrow">expand_more</i></div>
-          <div class="roomDescr--slider-controls-right"><i class="material-icons roomDescr--slider-controls-right-arrow">expand_more</i></div>
-        </div>
-        <div class="roomDescr--slider-dots">
-          <div class="roomDescr--slider-dots-dot roomDescr--slider-dots-dot--active"></div>
-          <div class="roomDescr--slider-dots-dot"></div>
-          <div class="roomDescr--slider-dots-dot"></div>
-          <div class="roomDescr--slider-dots-dot"></div>
-        </div>
-      </div>
-      <div class="roomDescr--description">
-        <div class="roomDescr--description-header">
-          <h2 class="roomDescr--description-header-heading"><span class="heading--num">№  </span>888 <span class="heading--room-type">люкс</span></h2>
-          <div class="roomDescr--description-price">
-            <p class="roomDescr--description-price-num">9 990&#x20bd;&nbsp; </p><span class="roomDescr--description-price-perDay">в сутки</span>
-          </div>
-        </div>
-        <hr class="roomDescr--divider">
-        <div class="roomDescr--rate">
-          <div class="roomDescr--rate-rateBtns"> 
-            <div class="rateBtns-wrapper">
-              <div class="rateBtns__line">
-                <div class="rateBtns__star">
-                  <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                    <defs>
-                      <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#BC9CFF"></stop>
-                        <stop offset="1" stop-color="#8BA4F9"></stop>
-                      </linearGradient>
-                    </defs>
-                  </svg>
+    <div class="column-elem__form">
+      <div class="roomCard">
+        <form class="roomCard-form" action="#">
+          <header class="roomCard-form__header">
+            <h1 class="roomCard-form__header-heading"><span class="heading__num">№ </span>888 <span class="heading__room-type">люкс</span></h1>
+            <div class="roomCard-form__header-price">
+              <p class="header-price">9 990&#x20bd; </p><span class="header-price__perDay">&nbsp;в сутки</span>
+            </div>
+          </header>
+          <div class="roomCard-form__date">
+            <div class="date-dropdown-wrapper">
+              <div class="date-dropdown__field">
+                <h3 class="date-dropdown__field-heading">Прибытие</h3>
+                <div class="date-dropdown__field-result">
+                  <div class="date-dropdown__result">ДД.ММ.ГГГГ</div>
+                  <div class="date-dropdown__arrow"> <i class="material-icons date-dropdown__arrow-icon">expand_more</i></div>
                 </div>
-                <div class="rateBtns__star">
-                  <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                    <defs>
-                      <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#BC9CFF"></stop>
-                        <stop offset="1" stop-color="#8BA4F9"></stop>
-                      </linearGradient>
-                    </defs>
-                  </svg>
+              </div>
+              <div class="date-dropdown__field">
+                <h3 class="date-dropdown__field-heading">Выезд</h3>
+                <div class="date-dropdown__field-result">
+                  <div class="date-dropdown__result">ДД.ММ.ГГГГ</div>
+                  <div class="date-dropdown__arrow"> <i class="material-icons date-dropdown__arrow-icon">expand_more</i></div>
                 </div>
-                <div class="rateBtns__star">
-                  <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                    <defs>
-                      <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#BC9CFF"></stop>
-                        <stop offset="1" stop-color="#8BA4F9"></stop>
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                </div>
-                <div class="rateBtns__star">
-                  <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                    <defs>
-                      <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#BC9CFF"></stop>
-                        <stop offset="1" stop-color="#8BA4F9"></stop>
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                </div>
-                <div class="rateBtns__star">
-                  <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                    <defs>
-                      <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#BC9CFF"></stop>
-                        <stop offset="1" stop-color="#8BA4F9"></stop>
-                      </linearGradient>
-                    </defs>
-                  </svg>
+              </div>
+              <div class="calendar">
+                <div class="calendar-wrapper">
+                  <div class="calendar-heading">
+                    <div class="calendar-heading-arrow"><i class="material-icons calendar-heading-arrow-left"> arrow_back</i></div>
+                    <h2 class="calendar-heading-title"> <span class="calendar-month"> </span><span class="calendar-year"> </span></h2>
+                    <div class="calendar-heading-arrow"> <i class="material-icons calendar-heading-arrow-right">arrow_forward</i></div>
+                  </div>
+                  <table class="calendar-table">
+                    <thead class="calendar-table-head">
+                      <tr>
+                        <th>Пн</th>
+                        <th>Вт</th>
+                        <th>Ср</th>
+                        <th>Чт</th>
+                        <th>Пт</th>
+                        <th>Сб</th>
+                        <th>Вс</th>
+                      </tr>
+                    </thead>
+                    <tbody class="calendar-table-body"></tbody>
+                  </table>
+                  <div class="calendar-buttons">
+                    <div class="calendar-clear">
+                      <button class="button textBtn">очистить
+                      </button>
+                    </div>
+                    <div class="calendar-confirm">
+                      <button class="button textBtn textBtn__purple">применить
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <p class="roomDescr--rate-feedback"> <span class="roomDescr--rate-feedback-num">145 </span>Отзывов</p>
-        </div>
+          <div class="roomCard-form__guests">
+            <label class="roomCard-form__guests-label">Гости
+              <div class="dropdown-wrapper">
+                <div class="dropdown__input">
+                  <div class="dropdown__result">Cколько гостей</div>
+                  <div class="dropdown__arrow"> <i class="material-icons dropdown__arrow-icon">expand_more</i></div>
+                </div>
+                <div class="dropdown__items">
+                  <div class="dropdown__item">
+                    <div class="dropdown__item-name">взрослые</div>
+                    <div class="dropdown-count">
+                      <div class="dropdown-count__minus"> <span>-</span></div>
+                      <div class="dropdown-count__result">0</div>
+                      <div class="dropdown-count__plus"> <span>+</span></div>
+                    </div>
+                  </div>
+                  <div class="dropdown__item">
+                    <div class="dropdown__item-name">дети</div>
+                    <div class="dropdown-count">
+                      <div class="dropdown-count__minus"> <span>-</span></div>
+                      <div class="dropdown-count__result">0</div>
+                      <div class="dropdown-count__plus"> <span>+</span></div>
+                    </div>
+                  </div>
+                  <div class="dropdown__item">
+                    <div class="dropdown__item-name">младенцы</div>
+                    <div class="dropdown-count">
+                      <div class="dropdown-count__minus"> <span>-</span></div>
+                      <div class="dropdown-count__result">0</div>
+                      <div class="dropdown-count__plus"> <span>+</span></div>
+                    </div>
+                  </div>
+                  <div class="dropdown__confirm">
+                    <button class="button textBtn textBtn__purple">применить
+                    </button>
+                  </div>
+                  <div class="dropdown__clear">
+                    <button class="button textBtn">очистить
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </label>
+          </div>
+          <div class="roomCard-form__priceList">
+            <div class="priceList__item">
+              <p class="priceList__item-description">9 990&#x20bd; X 4 суток</p>
+              <p class="priceList__item-price">39 960&#x20bd;</p>
+            </div>
+            <div class="priceList__item">
+              <p class="priceList__item-description">Сбор за услуги: скидка 2 179&#x20bd;</p>
+              <p class="priceList__item-price">0&#x20bd;</p>
+            </div>
+            <div class="priceList__item">
+              <p class="priceList__item-description">Сбор за дополнительные <br>услуги</p>
+              <p class="priceList__item-price">300&#x20bd;</p>
+            </div>
+            <div class="priceList__total">
+              <h2 class="priceList__total-heading">Итого</h2>
+              <div class="priceList__total-line"></div>
+              <p class="priceList__total-price">38 081&#x20bd;</p>
+            </div>
+          </div>
+          <div class="roomCard-form__longBtn">
+            <button class="button longBtn">Забронировать<i class="material-icons longBtn__arrow-icon">arrow_forward </i>
+            </button>
+          </div>
+        </form>
       </div>
     </div>
-    <div class="roomDescr">
-      <div class="roomDescr--slider">
-        <div class="roomDescr--slider-image"><img src="./assets/img/room2.jpg" alt=""></div>
-        <div class="roomDescr--slider-controls">
-          <div class="roomDescr--slider-controls-left"><i class="material-icons roomDescr--slider-controls-left-arrow">expand_more</i></div>
-          <div class="roomDescr--slider-controls-right"><i class="material-icons roomDescr--slider-controls-right-arrow">expand_more</i></div>
-        </div>
-        <div class="roomDescr--slider-dots">
-          <div class="roomDescr--slider-dots-dot roomDescr--slider-dots-dot--active"></div>
-          <div class="roomDescr--slider-dots-dot"></div>
-          <div class="roomDescr--slider-dots-dot"></div>
-          <div class="roomDescr--slider-dots-dot"></div>
-        </div>
-      </div>
-      <div class="roomDescr--description">
-        <div class="roomDescr--description-header">
-          <h2 class="roomDescr--description-header-heading"><span class="heading--num">№  </span>840 <span class="heading--room-type"></span></h2>
-          <div class="roomDescr--description-price">
-            <p class="roomDescr--description-price-num">9 990&#x20bd;&nbsp; </p><span class="roomDescr--description-price-perDay">в сутки</span>
+    <div class="column-elem__form">
+      <div class="enter">
+        <form class="enter-form" action="#">
+          <header class="enter-form__header">
+            <h1 class="enter-form__header-heading">Войти</h1>
+          </header>
+          <div class="enter-form__input-items">
+            <div class="enter-form__input">
+              <input class="input-text" type="text" placeholder="Email" name="Email">
+            </div>
+            <div class="enter-form__input">
+              <input class="input-text" type="text" placeholder="Пароль" name="Password">
+            </div>
           </div>
-        </div>
-        <hr class="roomDescr--divider">
-        <div class="roomDescr--rate">
-          <div class="roomDescr--rate-rateBtns"> 
-            <div class="rateBtns-wrapper">
-              <div class="rateBtns__line">
-                <div class="rateBtns__star">
-                  <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                    <defs>
-                      <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#BC9CFF"></stop>
-                        <stop offset="1" stop-color="#8BA4F9"></stop>
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                </div>
-                <div class="rateBtns__star">
-                  <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                    <defs>
-                      <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#BC9CFF"></stop>
-                        <stop offset="1" stop-color="#8BA4F9"></stop>
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                </div>
-                <div class="rateBtns__star">
-                  <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                    <defs>
-                      <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#BC9CFF"></stop>
-                        <stop offset="1" stop-color="#8BA4F9"></stop>
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                </div>
-                <div class="rateBtns__star">
-                  <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                    <defs>
-                      <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#BC9CFF"></stop>
-                        <stop offset="1" stop-color="#8BA4F9"></stop>
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                </div>
-                <div class="rateBtns__star">
-                  <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
-                    <defs>
-                      <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#BC9CFF"></stop>
-                        <stop offset="1" stop-color="#8BA4F9"></stop>
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                </div>
+          <div class="enter-form__longBtn">
+            <button class="button longBtn">Войти<i class="material-icons longBtn__arrow-icon">arrow_forward </i>
+            </button>
+          </div>
+          <div class="enter-noAcc">
+            <div class="enter-noAcc__description">Нет аккаунта на Toxin?</div>
+            <div class="enter-noAcc__button">
+              <div class="borderedBtn-wrapper">
+                <button class="button borderedBtn__button">Создать
+                </button>
               </div>
             </div>
           </div>
-          <p class="roomDescr--rate-feedback"> <span class="roomDescr--rate-feedback-num">65 </span>Отзывов</p>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="column-elem__table">
+      <div class="calendarCard">
+        <div class="calendarCard-wrapper">
+          <div class="calendarCard__heading">
+            <div class="calendarCard__heading-arrow"><i class="material-icons calendarCard__heading-arrow-left"> arrow_back</i></div>
+            <h2 class="calendarCard__heading-title"> <span class="calendarCard__month"> Август</span><span class="calendarCard__year"> 2019</span></h2>
+            <div class="calendarCard__heading-arrow"> <i class="material-icons calendarCard__heading-arrow-right">arrow_forward</i></div>
+          </div>
+          <table class="calendarCard__table">
+            <thead class="calendarCard__table-head">
+              <tr>
+                <th>Пн</th>
+                <th>Вт</th>
+                <th>Ср</th>
+                <th>Чт</th>
+                <th>Пт</th>
+                <th>Сб</th>
+                <th>Вс</th>
+              </tr>
+            </thead>
+            <tbody class="calendarCard__table-body">
+              <tr>
+                <td class="calendarCard__last-month">29</td>
+                <td class="calendarCard__last-month">30</td>
+                <td class="calendarCard__last-month">31</td>
+                <td class="calendarCard__month-cell">1</td>
+                <td class="calendarCard__month-cell">2</td>
+                <td class="calendarCard__month-cell">3</td>
+                <td class="calendarCard__month-cell">4</td>
+              </tr>
+              <tr>
+                <td class="calendarCard__month-cell">5 </td>
+                <td class="calendarCard__month-cell">6</td>
+                <td class="calendarCard__month-cell">7</td>
+                <td class="calendarCard__month-cell today-active">8							</td>
+                <td class="calendarCard__month-cell">9</td>
+                <td class="calendarCard__month-cell">10</td>
+                <td class="calendaCardr__month-cell">11</td>
+              </tr>
+              <tr>
+                <td class="calendarCard__month-cell">12</td>
+                <td class="calendarCard__month-cell">13</td>
+                <td class="calendarCard__month-cell">14</td>
+                <td class="calendarCard__month-cell">15</td>
+                <td class="calendarCard__month-cell">16</td>
+                <td class="calendarCard__month-cell">17</td>
+                <td class="calendarCard__month-cell">18</td>
+              </tr>
+              <tr>
+                <td class="calendarCard__month-cell calendarCard__month-cell__active calendarCard__month-cell__active-start">19</td>
+                <td class="calendarCard__month-cell calendarCard__month-cell__active-range">20</td>
+                <td class="calendarCard__month-cell calendarCard__month-cell__active-range">21</td>
+                <td class="calendarCard__month-cell calendarCard__month-cell__active-range">22</td>
+                <td class="calendarCard__month-cell calendarCard__month-cell__active calendarCard__month-cell__active-end">23</td>
+                <td class="calendarCard__month-cell">24</td>
+                <td class="calendarCard__month-cell">25</td>
+              </tr>
+              <tr>
+                <td class="calendarCard__month-cell">26</td>
+                <td class="calendarCard__month-cell">27</td>
+                <td class="calendarCard__month-cell">28</td>
+                <td class="calendarCard__month-cell">29</td>
+                <td class="calendarCard__month-cell">30</td>
+                <td class="calendarCard__month-cell">31</td>
+                <td class="calendarCard__next-month">1</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="calendarCard__buttons">
+            <div class="calendarCard__clear">
+              <button class="button textBtn">очистить
+              </button>
+            </div>
+            <div class="calendarCard__confirm">
+              <button class="button textBtn textBtn__purple">применить
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column-card">
+      <div class="roomDescr">
+        <div class="roomDescr__slider">
+          <div class="roomDescr__slider-image"><img src="./assets/img/room1.jpg" alt=""></div>
+          <div class="roomDescr__slider-controls">
+            <div class="slider-controls__left"><i class="material-icons slider-controls__left-arrow">expand_more</i></div>
+            <div class="slider-controls__right"><i class="material-icons slider-controls__right-arrow">expand_more</i></div>
+          </div>
+          <div class="roomDescr__slider-dots">
+            <div class="slider-dots__dot slider-dots__dot__active"></div>
+            <div class="slider-dots__dot"></div>
+            <div class="slider-dots__dot"></div>
+            <div class="slider-dots__dot"></div>
+          </div>
+        </div>
+        <div class="roomDescr__description">
+          <div class="roomDescr__description-header">
+            <h2 class="roomDescr__description-header-heading"><span class="heading__num">№  </span>888 <span class="heading__room-type">люкс</span></h2>
+            <div class="roomDescr__description-price">
+              <p class="roomDescr__description-price-num">9 990&#x20bd;&nbsp; <span class="roomDescr__description-price-perDay">в сутки</span></p>
+            </div>
+          </div>
+          <hr class="roomDescr__divider">
+          <div class="roomDescr__rate">
+            <div class="roomDescr__rate-rateBtns"> 
+              <div class="rateBtns-wrapper">
+                <div class="rateBtns__line">
+                  <div class="rateBtns__star">
+                    <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                      <defs>
+                        <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#BC9CFF"></stop>
+                          <stop offset="1" stop-color="#8BA4F9"></stop>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="rateBtns__star">
+                    <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                      <defs>
+                        <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#BC9CFF"></stop>
+                          <stop offset="1" stop-color="#8BA4F9"></stop>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="rateBtns__star">
+                    <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                      <defs>
+                        <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#BC9CFF"></stop>
+                          <stop offset="1" stop-color="#8BA4F9"></stop>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="rateBtns__star">
+                    <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                      <defs>
+                        <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#BC9CFF"></stop>
+                          <stop offset="1" stop-color="#8BA4F9"></stop>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="rateBtns__star">
+                    <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                      <defs>
+                        <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#BC9CFF"></stop>
+                          <stop offset="1" stop-color="#8BA4F9"></stop>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="roomDescr__rate-feedback"> <span class="roomDescr__rate-feedback-num">145 </span>Отзывов</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column-card">
+      <div class="roomDescr">
+        <div class="roomDescr__slider">
+          <div class="roomDescr__slider-image"><img src="./assets/img/room2.jpg" alt=""></div>
+          <div class="roomDescr__slider-controls">
+            <div class="slider-controls__left"><i class="material-icons slider-controls__left-arrow">expand_more</i></div>
+            <div class="slider-controls__right"><i class="material-icons slider-controls__right-arrow">expand_more</i></div>
+          </div>
+          <div class="roomDescr__slider-dots">
+            <div class="slider-dots__dot slider-dots__dot__active"></div>
+            <div class="slider-dots__dot"></div>
+            <div class="slider-dots__dot"></div>
+            <div class="slider-dots__dot"></div>
+          </div>
+        </div>
+        <div class="roomDescr__description">
+          <div class="roomDescr__description-header">
+            <h2 class="roomDescr__description-header-heading"><span class="heading__num">№  </span>840 <span class="heading__room-type"></span></h2>
+            <div class="roomDescr__description-price">
+              <p class="roomDescr__description-price-num">9 990&#x20bd;&nbsp; <span class="roomDescr__description-price-perDay">в сутки</span></p>
+            </div>
+          </div>
+          <hr class="roomDescr__divider">
+          <div class="roomDescr__rate">
+            <div class="roomDescr__rate-rateBtns"> 
+              <div class="rateBtns-wrapper">
+                <div class="rateBtns__line">
+                  <div class="rateBtns__star">
+                    <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                      <defs>
+                        <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#BC9CFF"></stop>
+                          <stop offset="1" stop-color="#8BA4F9"></stop>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="rateBtns__star">
+                    <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                      <defs>
+                        <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#BC9CFF"></stop>
+                          <stop offset="1" stop-color="#8BA4F9"></stop>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="rateBtns__star">
+                    <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                      <defs>
+                        <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#BC9CFF"></stop>
+                          <stop offset="1" stop-color="#8BA4F9"></stop>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="rateBtns__star">
+                    <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                      <defs>
+                        <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#BC9CFF"></stop>
+                          <stop offset="1" stop-color="#8BA4F9"></stop>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="rateBtns__star">
+                    <svg class="rateBtns__star-icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 13.4219L13.75 15.6719L12.7656 11.4062L16.0938 8.5L11.6875 8.125L10 4.09375L8.3125 8.125L3.90625 8.5L7.23438 11.4062L6.25 15.6719L10 13.4219ZM19.9844 7.23438L14.5469 11.9688L16.1875 19L10 15.25L3.8125 19L5.45312 11.9688L0.015625 7.23438L7.1875 6.625L10 0.015625L12.8125 6.625L19.9844 7.23438Z" fill="url(#paint0_linear)"></path>
+                      <defs>
+                        <linearGradient id="paint0_linear" x1="10" y1="-2" x2="10" y2="22" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#BC9CFF"></stop>
+                          <stop offset="1" stop-color="#8BA4F9"></stop>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="roomDescr__rate-feedback"> <span class="roomDescr__rate-feedback-num">65 </span>Отзывов</p>
+          </div>
         </div>
       </div>
     </div>

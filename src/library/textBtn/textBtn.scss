@@ -1,10 +1,16 @@
 @import "./active/active";
 @import "./hover/hover";
+@import "./__button/button";
+@import "./purple/purple";
 
-.textBtn__button{
+.textBtn{
     text-decoration: none;
     @include MontserratBold();
     text-transform: uppercase;
     color:$darkShade50;
     transition: all .1s linear;
+    background: transparent;
+}
+.button.textBtn{
+    padding:0;
 }

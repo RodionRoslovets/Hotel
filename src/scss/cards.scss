@@ -14,26 +14,180 @@
 body {
     background: #E5E5E5;
 }
-
+.logo-grey{
+    padding:30px 0 65px 30px;
+}
 .wrapper {
     display: flex;
     justify-content: space-between;
-    width: 1160px;
+    width:100%;
+    max-width: 1160px;
     margin:auto;
+    @media screen and (max-width:1100px){
+        flex-direction:column;
+        align-items: center;
+        padding:0 20px;
+    }
 }
-
-.find,
-.room-card,
-.enter-form {
+.column-elem__form{
+    @include MB(40px);
+}
+.column-elem__table{
+    @include MB(40px);
+    max-width:320px;
+}
+.column-card{
+    width:270px;
+    @include MB(40px);
+}
+.calendarCard{
+    width: 100%;
+    padding:20px 20px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    transition: all .1s linear;
+    &__heading{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        &-title{
+            @media screen and (max-width:768px) {
+                font-size:16px;
+            }
+        }
+        &-arrow{
+            @include flexVertCenter();
+            color:$purple;
+            cursor: pointer;
+        }
+    }
+    &__table{
+        width:100%;
+        margin-top:30px;
+        border-spacing: 0px;
+        &-head th{
+            @include MontserratBold();
+            color:$purple;
+            width:40px;
+            height:40px;
+            @media screen and (max-width:768px) {
+                width:20px;
+                height:20px;
+            }
+        }
+        &-body{
+            width:100%;
+            font-size:12px;
+            & td{
+                width:40px;
+                height:40px;
+                text-align: center;
+                cursor: pointer;
+                position:relative;
+                @media screen and (max-width:768px) {
+                    width:20px;
+                    height:20px;
+                }
+            }
+        }
+    }
+    &__last-month, &__next-month{
+        color:$darkShade25;
+    }
+    &__buttons{
+        display: flex;
+        justify-content: space-between;
+        @include MontserratBold();
+        text-transform: uppercase;
+        line-height: 15px;
+        cursor: pointer;
+        @include MT(20px);
+    }
+    &__month-cell__active{
+        font-weight: bold;
+        color:#fff;
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        border-radius:50%;
+        &-start{
+            position:relative;
+            z-index: 1;
+            &:after{
+                content: '';
+                display:block;
+                position:absolute;
+                top:0;
+                right:0;
+                z-index:-1;
+                width:20px;
+                height:40px;
+                background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+                opacity:0.25;
+                @media screen and (max-width:768px) {
+                    height:100%;
+                }
+            }
+        }
+        &-end{
+            position:relative;
+            z-index: 1;
+            &:after{
+                content: '';
+                display:block;
+                position:absolute;
+                top:0;
+                left:0;
+                z-index:-1;
+                width:20px;
+                height:40px;
+                background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+                opacity:0.25;
+                @media screen and (max-width:768px) {
+                    height:100%;
+                }
+            }
+        }
+        &-range{
+            z-index: 1;
+            &:after{
+                content: '';
+                width:40px;
+                height:40px;
+                position: absolute;
+                top:0;
+                left:0;
+                z-index: -1;
+                background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+                opacity:0.25;
+                @media screen and (max-width:768px) {
+                    width:100%;
+                    height:100%;
+                }
+            }
+        }
+    }
+}
+.calendarCard-wrapper{
+    width:100%;
+    max-width: 280px;
+    margin: auto;
+    
+}
+.today-active{
+    font-weight: bold;
+    color:#fff;
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    border-radius:50%;
+}
+.find{
     background: #fff;
     width: 380px;
     padding: 40px 30px 30px;
     border: 1px solid rgba(0, 0, 0, 0.12);
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-}
-@media screen and(max-width:768px) {
-    .find, .enter-form{
+    @media screen and(max-width:768px) {
         width:100%;
     }
 }
@@ -42,44 +196,22 @@ body {
     @media screen and(max-width:768px) {
         width:100%;
     }
+    &__date{
+        display: flex;
+        justify-content: space-between;
+        @include MB(20px);
+    }
+    &__heading{
+        line-height: 30px;
+        @include MB(20px);
+    }
+    &__guests {
+        @include MB(30px);
+    }
+    &__longBtn{
+        height:44px;
+    }
 }
-
-.find-form--date{
-    display: flex;
-    justify-content: space-between;
-    @include MB(20px);
-}
-
-.find-form--heading,
-.reg-form--heading{
-    line-height: 30px;
-    @include MB(20px);
-}
-
-.find-form--date-label,
-.find-form--guests-label,
-.reg-form--birthDate-label,
-.reg-form--enterData-label,
-.room-card-form--date-label,
-.room-card-form--guests-label {
-    @include MontserratBold();
-    text-transform: uppercase;
-}
-
-.find-form--guests {
-    @include MB(30px);
-}
-
-.find-form__longBtn,
-.reg-form__longBtn,
-.enter-form__longBtn{
-    height:44px;
-}
-
-.input-text {
-    @include MB(9px);
-}
-
 .reg{
     background: #fff;
     width: 380px;
@@ -90,154 +222,193 @@ body {
     @media screen and(max-width:768px){
         width:100%;
     }
-}
-.reg-form--radio {
-    width:220px;
-    @include MB(7px);
-    @media screen and(max-width:768px){
-        width:100%;
+    &-haveAnAcc {
+        @include MT(30px);
+        @include flexVertCenter();
+        justify-content: space-between;
+        &__button{
+            width:99px;
+            height:44px;
+        }
     }
 }
-.reg-form--enterData{
-    position: relative;
-    top: -5px;
-}
-.reg-form--birthDate-label,
-.reg-form--enterData-label {
-    @include MontserratBold();
-    text-transform: uppercase;
-}
+.reg-form{
+    &__heading{
+        line-height: 30px;
+        @include MB(20px);
+    }
+    &__birthDate-label{
+        @include MontserratBold();
+        text-transform: uppercase;
 
-.input-masked {
-    @include MB(20px);
-}
-
-.reg-form--toggleSwitch {
-    @include MB(18px);
-    position: relative;
-    top: -6px;
-}
-
-.reg-haveAnAcc {
-    @include MT(30px);
-    @include flexVertCenter();
-    justify-content: space-between;
-}
-.reg-haveAnAcc-button{
-    width:99px;
-    height:44px;
-}
-
-.room-card-form--header,.roomDescr--description-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-}
-
-.heading--num {
-    font-size: 14px;
-    @media screen and (max-width:1199px) and (min-width:900px){
-        font-size: 12px;
+    }
+    &__longBtn{
+        height:44px;
+    }
+    &__radio {
+        width:220px;
+        @include MB(7px);
+        @media screen and(max-width:768px){
+            width:100%;
+        }
+    }
+    &__enterData{
+        position: relative;
+        top: -5px;
+        &-label{
+            @include MontserratBold();
+            text-transform: uppercase;
+        }
+    }
+    &__toggleSwitch {
+        @include MB(18px);
+        position: relative;
+        top: -6px;
     }
 }
-
-.heading--room-type {
-    @include MontserratBold();
-    color: $purple;
-    text-transform: uppercase;
-    letter-spacing: normal;
-    @media screen and (max-width:1199px) and (min-width:900px){
-        font-size: 10px;
-    }
-}
-@media screen and (max-width:768px){
-    .room-card{
+.roomCard{
+    background: #fff;
+    width: 380px;
+    padding: 40px 30px 30px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    @media screen and (max-width:768px){
         width: 100%;
         padding: 20px 15px 20px;
     }
 }
-
-.room-card-form--header{
-    @include MB(20px);
-} 
-.room-card-form--header-price {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+.roomCard-form{
+    &__guests-label {
+        @include MontserratBold();
+        text-transform: uppercase;
+    }
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        @include MB(20px);
+        &-price {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+    }
+    &__date {
+        @include MB(16px);
+    }
+    &__guests{
+        @include MB(17px);
+    }
+    &__priceList{
+        padding-top:3px;
+    }
+    &__longBtn{
+        width:320px;
+        height: 44px;
+        @media screen and (max-width:768px){
+            width:100%; 
+        }
+    }
 }
-.room-card-form--date {
-    @include MB(16px);
-}
-.room-card-form--guests{
-    @include MB(17px);
+.heading {
+    &__num{
+        font-size: 14px;
+        @media screen and (max-width:1199px) and (min-width:900px){
+            font-size: 12px;
+        }
+    }
+    &__room-type {
+        @include MontserratBold();
+        color: $purple;
+        text-transform: uppercase;
+        letter-spacing: normal;
+        @media screen and (max-width:1199px) and (min-width:900px){
+            font-size: 10px;
+        }
+    }    
 }
 .header-price {
     color: $darkShade50;
     @include MontserratBold();
     font-size: 14px;
-    &-perDay{
+    &__perDay{
         font-size:12px;
     }
 }
-.room-card-form--priceList{
-    padding-top:3px;
-}
-.priceList--item{
-    display: flex;
-    justify-content: space-between;
-    line-height: 18px;
-    @include MB(16px);
-    @media screen and (max-width:768px){
-        display:none;
+.priceList{
+    &__item{
+        display: flex;
+        justify-content: space-between;
+        line-height: 18px;
+        @include MB(16px);
+        @media screen and (max-width:768px){
+            display:none;
+        }
+    }
+    &__total{
+        display:flex;
+        align-items: baseline;
+        justify-content: space-between;
+        @include MT(30px);
+        @include MB(20px);
+        @media screen and (max-width:768px){
+            flex-direction: column;
+            align-items: center;
+            @include MT(0px);
+             @include MB(20px);
+        }
+        &-line{
+            border-bottom: 1px dotted $darkShade25;
+            width:182px;
+            @media screen and (max-width:768px){
+                display:none;
+            }
+        }
+        &-price{
+            font-family: Quicksand;
+            font-weight: bold;
+            font-size: 19px;
+        }
     }
 }
-.priceList--total--line{
-    border-bottom: 1px dotted $darkShade25;
-    width:182px;
-    @media screen and (max-width:768px){
-        display:none;
+.enter-form {
+    background: #fff;
+    width: 380px;
+    padding: 40px 30px 30px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    @media screen and(max-width:768px) {
+        width:100%;
+    }
+    &__longBtn{
+        height:44px;
+    }
+    &__header{
+        @include MB(20px);
+    }
+    &__input-items{
+        @include MB(20px);
     }
 }
-.priceList--total{
-    display:flex;
-    align-items: baseline;
-    justify-content: space-between;
-    @include MT(30px);
-    @include MB(20px);
-    @media screen and (max-width:768px){
-        flex-direction: column;
+.enter{
+    &-noAcc{
+        @include MT(30px);
+        display:flex;
+        justify-content: space-between;
         align-items: center;
-        @include MT(0px);
-         @include MB(20px);
+        &__button{
+            width:99px;
+            height:44px;
+        }
     }
 }
-.priceList--total--price{
-    font-family: Quicksand;
-    font-weight: bold;
-    font-size: 19px;
+.input-text {
+    @include MB(9px);
 }
-.room-card-form--longBtn{
-    width:320px;
-    height: 44px;
-    @media screen and (max-width:768px){
-        width:100%; 
-    }
-}
-.enter-form--header{
+.input-masked {
     @include MB(20px);
-}
-.enter-form--input-items{
-    @include MB(20px);
-}
-.enter-noAcc{
-    @include MT(30px);
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.enter-noAcc-button{
-    width:99px;
-    height:44px;
 }
 .roomDescr{
     width:auto;
@@ -247,44 +418,106 @@ body {
     @media screen and (max-width:767px){
         @include MB(10px);
     }
-    
+    &__slider{
+        height:152px;
+        position:relative;
+        @media screen and (max-width:1399px) and (min-width:1200px){
+            height:134px;
+        }
+        @media screen and (max-width:1199px) and (min-width:900px){
+            height:112px;
+        }
+        @media screen and (max-width:899px) and (min-width:768px){
+            height:129px;
+        }
+        @media screen and (max-width:767px){
+            height:100%;
+        }
+        &-image{
+            height:100%;
+        }
+        &-image img{
+            height:100%;
+            width:100%;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+        }
+        &-controls{
+            width:100%;
+            height:100%;
+            position: absolute;
+            top:0;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            color:#fff;
+            @media screen and (max-width:767px){
+                height:97%;
+            }
+        }
+        &-dots{
+            width:42px;
+            position:absolute;
+            bottom:15px;
+            right:15px;
+            display:flex;
+            justify-content: space-between;
+        }
+    }
+    &__description{
+        padding:20px;
+        @media screen and (max-width:1399px) and (min-width:1200px){
+            padding: 0 10px 10px;
+        }
+        @media screen and (max-width:1199px){
+            padding: 10px;
+        }
+        &-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            &-heading{
+                @media screen and (max-width:1199px) and (min-width:900px){
+                    font-size:16px;
+                } 
+            }
+        }
+        &-price{
+            color: rgba(31, 32, 65, 0.5);
+            &-num{
+                font-family:Montserrat-Bold;
+                font-size:14px;
+                @media screen and (max-width:1199px) and (min-width:900px){
+                 font-size:12px;
+                }
+            }
+            &-perDay{
+                font-family: Montserrat;
+                font-size:12px;
+                @media screen and (max-width:1199px) and (min-width:900px){
+                    font-size:10px;
+                }
+            }
+        }
+    }
+    &__rate{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        &-feedback-num{
+            font-family:Montserrat-Bold;
+            font-size:14px;
+            @media screen and (max-width:1199px) and (min-width:900px){
+                font-size:12px;
+            }
+        }
+    }
+    &__divider{
+        margin:7px 0px;
+    }
 }
-.roomDescr--slider{
-    height:152px;
-    position:relative;
-    @media screen and (max-width:1399px) and (min-width:1200px){
-        height:134px;
-    }
-    @media screen and (max-width:1199px) and (min-width:900px){
-        height:112px;
-    }
-    @media screen and (max-width:899px) and (min-width:768px){
-        height:129px;
-    }
-    @media screen and (max-width:767px){
-        height:100%;
-    }
-}
-.roomDescr--slider-image img{
-    width:100%;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-}
-.roomDescr--slider-controls{
-    width:100%;
-    height:100%;
-    position: absolute;
-    top:0;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    color:#fff;
-    @media screen and (max-width:767px){
-        height:97%;
-    }
-}
-.roomDescr--slider-controls-left, 
-.roomDescr--slider-controls-right{
+.slider-controls__left, 
+.slider-controls__right{
     width:42px;
     height:100%;
     @include flexAllCenter();
@@ -294,76 +527,25 @@ body {
     transition: all .1s linear;
     &:hover{
         opacity:1;
-    }
-    
+    }    
 }
-.roomDescr--slider-controls-right{
+.slider-controls__right{
     background: linear-gradient(-90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
 }
-.roomDescr--slider-controls-left-arrow{
+.slider-controls__left-arrow{
     transform:rotate(90deg);
 }
-.roomDescr--slider-controls-right-arrow{
+.slider-controls__right-arrow{
     transform:rotate(-90deg);
 }
-.roomDescr--slider-dots{
-    width:42px;
-    position:absolute;
-    bottom:15px;
-    right:15px;
-    display:flex;
-    justify-content: space-between;
-}
-.roomDescr--slider-dots-dot{
+.slider-dots__dot{
     width:7.5px;
     height:7.5px;
     border: 1px solid #FFFFFF;
     border-radius: 50%;
     background:rgba(0, 0, 0, 0.05);
     transition:all .1s linear;
-}
-.roomDescr--slider-dots-dot--active{
-    background:white;
-}
-.roomDescr--description{
-    padding:20px;
-    @media screen and (max-width:1399px) and (min-width:1200px){
-        padding: 0 10px 10px;
+    &__active{
+        background:white;
     }
-    @media screen and (max-width:1199px){
-        padding: 10px;
-    }
-    &-header-heading{
-        @media screen and (max-width:1199px) and (min-width:900px){
-            font-size:16px;
-        } 
-    }
-}
-.roomDescr--description-price{
-    display:flex;
-}
-.roomDescr--description-price, .roomDescr--rate{
-
-    color: rgba(31, 32, 65, 0.5);
-}
-.roomDescr--description-price-num, .roomDescr--rate-feedback-num{
-    font-family:Montserrat-Bold;
-    font-size:14px;
-    @media screen and (max-width:1199px) and (min-width:900px){
-        font-size:12px;
-    }
-}
-.roomDescr--description-price-perDay{
-    font-size:12px;
-    @media screen and (max-width:1199px) and (min-width:900px){
-        font-size:10px;
-    }
-}
-.roomDescr--divider{
-    margin:7px 0px;
-}
-.roomDescr--rate{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
 }

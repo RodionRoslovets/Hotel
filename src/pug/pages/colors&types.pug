@@ -1,0 +1,36 @@
+block variables
+	- var title = "colors&types"
+	- var colors = [{heading: 'Dark Shade 100%', text: '#1F2041', style:'background: #1F2041;'}, {heading: 'Dark Shade 75%', text: '#1F2041', style:'background: rgba(31, 32, 65, 0.75);'}, {heading: 'Dark Shade 50%', text: '#1F2041', style:'background: rgba(31, 32, 65, 0.5);'}, {heading: 'Dark Shade 25%', text: '#1F2041', style:'background: rgba(31, 32, 65, 0.25);'}, {heading: 'Dark Shade 5%', text: '#1F2041', style:'background: rgba(31, 32, 65, 0.05);'}, {heading: 'Purple', text: '#BC9CFF', style:'background: #BC9CFF;'}, {heading: 'Green', text: '#6FCF97', style:'background: #6FCF97;'}]
+
+include ../includes/header.pug
+.logo-grey
+	+logoGrey()
+.CTwrapper
+	.colors
+		each el in colors
+			.colors-item
+				.colors-block(style=el.style)
+				.colors-description
+					h2.colors-heading #{el.heading}
+					p.colors-text #{el.text}
+	.type
+		.type-item
+			.type-tag
+				.type-tag-h1 H1
+			.type-description
+				h1.type-description-text This one is the sub-section or widget title
+		.type-item
+			.type-tag
+				.type-tag-h2 H2
+			.type-description
+				h2.type-description-text Next one is the item title inside widgets
+		.type-item
+			.type-tag
+				.type-tag-h3 H3
+			.type-description
+				h3.type-description-text This is a label or CTA text
+		.type-item
+			.type-tag
+				.type-tag-body Body
+			.type-description
+				p.type-description-text This is the body text which is used for most of the design, like paragraphs, lists, etc.

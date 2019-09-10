@@ -284,12 +284,13 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     }
     //Выводим результат
-    let acceptButton = document.querySelectorAll('.calendar-confirm-link'), 
+    let acceptButton = document.querySelectorAll('.calendar-confirm'), 
 		dateField = document.querySelectorAll('.date-dropdown__result'),
-		calendarClear = document.querySelectorAll('.calendar-clear-link');    
+		calendarClear = document.querySelectorAll('.calendar-clear');    
     
 		for(let i = 0;i < acceptButton.length; i++){
-			acceptButton[i].addEventListener('click', ()=>{
+			acceptButton[i].addEventListener('click', (e)=>{
+                e.preventDefault();
 				let res,
                     res2,
                     resMonth,
@@ -324,7 +325,8 @@ window.addEventListener('DOMContentLoaded', () => {
 		}
 		
 		for(let i = 0; i < calendarClear.length; i++){
-			calendarClear[i].addEventListener('click', ()=>{
+			calendarClear[i].addEventListener('click', (e)=>{
+                e.preventDefault();
 				dateField.forEach(el => {
                     el.innerHTML = 'ДД.ММ.ГГГГ';
                 });

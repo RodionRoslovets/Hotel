@@ -8,65 +8,65 @@ block variables
 	- var footerNav = [{heading: 'Навигация', items:['О нас', 'Новости', 'Служба поддержки', 'Услуги']}, {heading: 'О нас', items:['О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы']},{heading: 'Служба поддержки', items:['Соглашения', 'Сообщество', 'Связь с нами']}]
 
 include ../includes/header.pug
-.searchRoom-overlay
-			p.searchRoom-overlay-close X
-.searchRoom-header
+.searchRoom__overlay
+			p.searchRoom__overlay-close X
+.searchRoom__header
 	+header(false, headerNav, '','Войти', 'Зарегистрироваться')
 main.main-content
-	aside.main-content-sidebar
-		.main-content-sidebar--dateFilter 
-			h3.main-content-sidebar--dateFilter-heading даты пребывания в отеле
+	aside.main-content__sidebar
+		.main-content__sidebar-dateFilter 
+			h3.main-content__dateFilter-heading даты пребывания в отеле
 			+dateFilter('19 авг - 23 авг')
-		.main-content-sidebar--dropdownList-guests
-			h3.main-content-sidebar--dropdownList-heading Гости
+		.main-content__sidebar-dropdownList-guests
+			h3.main-content__dropdownList-heading Гости
 			+dropdown(3, 'взрослые', 'дети', 'младенцы')
-		.main-content-sidebar--range
-			.main-content-sidebar--range-slider
+		.main-content__sidebar-range
+			.main-content__range-slider
 				+rangeSlider('диапазон цены')
-			p.main-content-sidebar--range-description Стоимость за сутки пребывания в номере
-		.main-content-sidebar--checkBoxBtns
+			p.main-content__range-description Стоимость за сутки пребывания в номере
+		.main-content__sidebar-checkBoxBtns
 			+checkBoxBtns(chckBtns, 'checkBoxButtons')
-		.main-content-sidebar--richCheckbox
+		.main-content__sidebar-richCheckbox
 			+richCheckboxBtns(richCheckbox, 'richCheckBoxButtons', 'Доступность')
-		.main-content-sidebar--dropdownList-comfort
-			h3.main-content-sidebar--dropdownList-heading удобства номера
+		.main-content__sidebar-dropdownList-comfort
+			h3.main-content__dropdownList-heading удобства номера
 			+dropdown(3, 'спальни', 'кровати', 'Ванные комнаты')
-		.main-content-sidebar--checkBoxList
+		.main-content__sidebar-checkBoxList
 			+checkboxList(chckBox, 'list', 'дополнительные удобства')
-	.main-content-main
+	.main-content__main
 		
-		.main-content-main--heading
-			h1.main-content-main--heading-text Номера, которые мы для вас подобрали
-			p.main-content-main--heading-filter Фильтры
-		.main-content-main--rooms
-			.main-content-main--rooms-line
-				.main-content-main--rooms-line-item
+		.main-content__main-heading
+			h1.main-content__main-heading-text Номера, которые мы для вас подобрали
+			p.main-content__main-filter Фильтры
+		.main-content__main-rooms
+			.main-content__main-rooms-line
+				.main-content__rooms-line-item
 					+roomDescr('./assets/img/room1.jpg', '888', '145', 'люкс')
-				.main-content-main--rooms-line-item
+				.main-content__rooms-line-item
 					+roomDescr('./assets/img/room2.jpg', '840', '65')
-				.main-content-main--rooms-line-item
+				.main-content__rooms-line-item
 					+roomDescr('./assets/img/room3.jpg', '980', '35', 'люкс')
-			.main-content-main--rooms-line
-				.main-content-main--rooms-line-item
+			.main-content__main-rooms-line
+				.main-content__rooms-line-item
 					+roomDescr('./assets/img/room4.jpg', '856', '19')
-				.main-content-main--rooms-line-item
+				.main-content__rooms-line-item
 					+roomDescr('./assets/img/room5.jpg', '740', '44')
-				.main-content-main--rooms-line-item
+				.main-content__rooms-line-item
 					+roomDescr('./assets/img/room6.jpg', '982', '56')
-			.main-content-main--rooms-line
-				.main-content-main--rooms-line-item
+			.main-content__main-rooms-line
+				.main-content__rooms-line-item
 					+roomDescr('./assets/img/room7.jpg', '678', '45')
-				.main-content-main--rooms-line-item
+				.main-content__rooms-line-item
 					+roomDescr('./assets/img/room8.jpg', '450', '39')
-				.main-content-main--rooms-line-item
+				.main-content__rooms-line-item
 					+roomDescr('./assets/img/room9.jpg', '350', '77')
-			.main-content-main--rooms-line
-				.main-content-main--rooms-line-item
+			.main-content__main-rooms-line
+				.main-content__rooms-line-item
 					+roomDescr('./assets/img/room10.jpg', '666', '25')
-				.main-content-main--rooms-line-item
+				.main-content__rooms-line-item
 					+roomDescr('./assets/img/room11.jpg', '444', '15')
-				.main-content-main--rooms-line-item
+				.main-content__rooms-line-item
 					+roomDescr('./assets/img/room12.jpg', '352', '55')
-		.main-content-main--pagination
+		.main-content__main-pagination
 			+pagination()
 +footer(footerNav, 'Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»', 'Подписка', 'Получайте специальные предложения и новости сервиса', 'Copyright © 2018 Toxin отель. Все права зачищены.', 'Email')

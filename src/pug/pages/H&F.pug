@@ -4,9 +4,13 @@ block variables
 	- var footerNav = [{heading: 'Navigation', items:['About Us', 'News', 'Support', 'Products']}, {heading: 'About Us', items:['Who we are', 'Our team', 'Careers', 'Investors']},{heading: 'Support', items:['Documentation', 'Community', 'Get in Touch']}]
 
 include ../includes/header.pug
-
-+header(false, headerNav, '','Login', 'Register')
-+header(true, headerNav, 'Cosmin Negoita')
-+footer(footerNav, 'Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.', 'Subscribe to our newsletter', 'Receive our latest news and promotions in your inbox!', 'Copyright © 2018 Toxin UI Kit. All rights reserved.')
-+footerNew()
-
+.logo-grey
+	+logoGrey()
+.headerElem
+	+header(false, headerNav, '','Login', 'Register')
+.headerElem
+	+header(true, headerNav, 'Cosmin Negoita')
+.footerElem
+	+footer(footerNav, 'Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.', 'Subscribe to our newsletter', 'Receive our latest news and promotions in your inbox!', 'Copyright © 2018 Toxin UI Kit. All rights reserved.')
+.footerElem
+	+footerNew()

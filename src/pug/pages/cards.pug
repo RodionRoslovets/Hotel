@@ -3,15 +3,88 @@ block variables
 	- var radioBtns = [{val:'Мужчина', param:{name:'man', val:'Мужчина'}}, {val:'Женщина', param:{name:'woman', val:'Женщина'}}]
 include ../includes/header.pug
 
-
+.logo-grey
+	+logoGrey()
 .wrapper
 	.column
-		+findForm()
-		+regForm()
+		.column-elem__form
+			+findForm()
+		.column-elem__form
+			+regForm()
 	.column
-		+roomCard()
-		+enterForm()
+		.column-elem__form
+			+roomCard()
+		.column-elem__form
+			+enterForm()
 	.column
-		+calendar()
-		+roomDescr('./assets/img/room1.jpg', '888', '145', 'люкс')
-		+roomDescr('./assets/img/room2.jpg', '840', '65')
+		.column-elem__table
+			.calendarCard
+				.calendarCard-wrapper
+					.calendarCard__heading
+						.calendarCard__heading-arrow
+							i.material-icons.calendarCard__heading-arrow-left  arrow_back
+						h2.calendarCard__heading-title  
+							span.calendarCard__month  Август
+							span.calendarCard__year  2019
+						.calendarCard__heading-arrow 
+							i.material-icons.calendarCard__heading-arrow-right arrow_forward
+					table.calendarCard__table
+						thead.calendarCard__table-head
+							tr
+								th Пн
+								th Вт
+								th Ср
+								th Чт
+								th Пт
+								th Сб
+								th Вс
+						tbody.calendarCard__table-body
+							tr
+								td.calendarCard__last-month 29
+								td.calendarCard__last-month 30
+								td.calendarCard__last-month 31
+								td.calendarCard__month-cell 1
+								td.calendarCard__month-cell 2
+								td.calendarCard__month-cell 3
+								td.calendarCard__month-cell 4
+							tr
+								td.calendarCard__month-cell 5 
+								td.calendarCard__month-cell 6
+								td.calendarCard__month-cell 7
+								td.calendarCard__month-cell.today-active 8							
+								td.calendarCard__month-cell 9
+								td.calendarCard__month-cell 10
+								td.calendaCardr__month-cell 11
+							tr
+								td.calendarCard__month-cell 12
+								td.calendarCard__month-cell 13
+								td.calendarCard__month-cell 14
+								td.calendarCard__month-cell 15
+								td.calendarCard__month-cell 16
+								td.calendarCard__month-cell 17
+								td.calendarCard__month-cell 18
+							tr
+								td.calendarCard__month-cell.calendarCard__month-cell__active.calendarCard__month-cell__active-start 19
+								td.calendarCard__month-cell.calendarCard__month-cell__active-range 20
+								td.calendarCard__month-cell.calendarCard__month-cell__active-range 21
+								td.calendarCard__month-cell.calendarCard__month-cell__active-range 22
+								td.calendarCard__month-cell.calendarCard__month-cell__active.calendarCard__month-cell__active-end 23
+								td.calendarCard__month-cell 24
+								td.calendarCard__month-cell 25
+							tr
+								td.calendarCard__month-cell 26
+								td.calendarCard__month-cell 27
+								td.calendarCard__month-cell 28
+								td.calendarCard__month-cell 29
+								td.calendarCard__month-cell 30
+								td.calendarCard__month-cell 31
+								td.calendarCard__next-month 1
+					.calendarCard__buttons
+						.calendarCard__clear
+							+textBtn('очистить', 'textBtn') 
+						.calendarCard__confirm
+							+textBtn('применить',  'textBtn textBtn__purple')  
+		.column-card
+			+roomDescr('./assets/img/room1.jpg', '888', '145', 'люкс')
+		.column-card
+			+roomDescr('./assets/img/room2.jpg', '840', '65')

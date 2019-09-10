@@ -7,10 +7,10 @@ include ../includes/header.pug
 
 .registration-header
     +header(false, headerNav, '','Войти', 'Зарегистрироваться')
-main.registration-main
-    .registration-main-regForm.registration-main-regForm--active
+main.registration__main
+    .main__regForm.main__regForm__active
         +regForm()
-    .registration-main-enterForm
+    .main__enterForm
         +enterForm()
 .registration-footer
     +footer(footerNav, 'Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»', 'Подписка', 'Получайте специальные предложения и новости сервиса', 'Copyright © 2018 Toxin отель. Все права зачищены.', 'Email')

@@ -5,7 +5,8 @@ window.addEventListener('DOMContentLoaded', () => {
         dropdownResult = document.getElementsByClassName('dropdown__input');
 
     for(let i = 0; i < dropdownResult.length; i++){
-        dropdownArrow[i].addEventListener('click', () => {
+        dropdownArrow[i].addEventListener('click', (e) => {
+            e.preventDefault();
             if (!dropdownList[i].classList.contains('dropdown__items__visible')) {
                 dropdownList[i].style = "display:block;";
                 setTimeout(() => {
