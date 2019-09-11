@@ -1,3 +1,4 @@
+extends ../layout/main.pug
 block variables
 	- var title = 'Search Room'
 	- var headerNav = [{name:'О нас', submenu:false},{name:'Услуги', submenu:true},{name:'Вакансии', submenu:false},{name:'Новости', submenu:false},{name:'Соглашения', submenu:true}]
@@ -5,68 +6,61 @@ block variables
 	- var chckBtns = [{val:'Можно курить', checkProps:{name:'smoke', val:'Можно курить'}}, {val:'Можно с питомцами', checkProps:{name:'pets', val:'Можно с питомцами'}}, {val:'Можно пригласить гостей (до 10 человек)', checkProps:{name:'guests', val:'Можно пригласить гостей (до 10 человек)'}}]
 	- var richCheckbox = [{name:'wide', value:'wide', head:'Широкий коридор', text:'Ширина коридоров в номере не менее 91 см.', checkProps:{name:'wide', val:'wide'}}, {name:'helper', value:'helper', head:'Помощник для инвалидов', text:'На 1 этаже вас встретит специалист и проводит до номера.',checkProps:{name:'helper', value:'helper'}}]
 	- var chckBox = [{val:'Завтрак', checkProps:{name:'breakfast', val:'Завтрак'}}, {val:'Письменный стол', checkProps:{name:'table', val:'Письменный стол'}}, {val:'Стул для кормления', checkProps:{name:'feedChair', val:'Стул для кормления'}}, {val:'Кроватка', checkProps:{name:'litlleBad', val:'Кроватка'}}, {val:'Телевизор', checkProps:{name:'tv1', val:'Телевизор'}}, {val:'Шампунь', checkProps:{name:'schampoo1', val:'Шампунь'}}, {val:'Телевизор', checkProps:{name:'tv2', val:'Телевизор'}}, {val:'Шампунь', checkProps:{name:'schampoo2', val:'Шампунь'}}]
-	- var footerNav = [{heading: 'Навигация', items:['О нас', 'Новости', 'Служба поддержки', 'Услуги']}, {heading: 'О нас', items:['О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы']},{heading: 'Служба поддержки', items:['Соглашения', 'Сообщество', 'Связь с нами']}]
 
-include ../includes/header.pug
-.searchRoom__overlay
-			p.searchRoom__overlay-close X
-.searchRoom__header
-	+header(false, headerNav, '','Войти', 'Зарегистрироваться')
-main.main-content
-	aside.main-content__sidebar
-		.main-content__sidebar-dateFilter 
-			h3.main-content__dateFilter-heading даты пребывания в отеле
-			+dateFilter('19 авг - 23 авг')
-		.main-content__sidebar-dropdownList-guests
-			h3.main-content__dropdownList-heading Гости
-			+dropdown(3, 'взрослые', 'дети', 'младенцы')
-		.main-content__sidebar-range
-			.main-content__range-slider
-				+rangeSlider('диапазон цены')
-			p.main-content__range-description Стоимость за сутки пребывания в номере
-		.main-content__sidebar-checkBoxBtns
-			+checkBoxBtns(chckBtns, 'checkBoxButtons')
-		.main-content__sidebar-richCheckbox
-			+richCheckboxBtns(richCheckbox, 'richCheckBoxButtons', 'Доступность')
-		.main-content__sidebar-dropdownList-comfort
-			h3.main-content__dropdownList-heading удобства номера
-			+dropdown(3, 'спальни', 'кровати', 'Ванные комнаты')
-		.main-content__sidebar-checkBoxList
-			+checkboxList(chckBox, 'list', 'дополнительные удобства')
-	.main-content__main
-		
-		.main-content__main-heading
-			h1.main-content__main-heading-text Номера, которые мы для вас подобрали
-			p.main-content__main-filter Фильтры
-		.main-content__main-rooms
-			.main-content__main-rooms-line
-				.main-content__rooms-line-item
-					+roomDescr('./assets/img/room1.jpg', '888', '145', 'люкс')
-				.main-content__rooms-line-item
-					+roomDescr('./assets/img/room2.jpg', '840', '65')
-				.main-content__rooms-line-item
-					+roomDescr('./assets/img/room3.jpg', '980', '35', 'люкс')
-			.main-content__main-rooms-line
-				.main-content__rooms-line-item
-					+roomDescr('./assets/img/room4.jpg', '856', '19')
-				.main-content__rooms-line-item
-					+roomDescr('./assets/img/room5.jpg', '740', '44')
-				.main-content__rooms-line-item
-					+roomDescr('./assets/img/room6.jpg', '982', '56')
-			.main-content__main-rooms-line
-				.main-content__rooms-line-item
-					+roomDescr('./assets/img/room7.jpg', '678', '45')
-				.main-content__rooms-line-item
-					+roomDescr('./assets/img/room8.jpg', '450', '39')
-				.main-content__rooms-line-item
-					+roomDescr('./assets/img/room9.jpg', '350', '77')
-			.main-content__main-rooms-line
-				.main-content__rooms-line-item
-					+roomDescr('./assets/img/room10.jpg', '666', '25')
-				.main-content__rooms-line-item
-					+roomDescr('./assets/img/room11.jpg', '444', '15')
-				.main-content__rooms-line-item
-					+roomDescr('./assets/img/room12.jpg', '352', '55')
-		.main-content__main-pagination
-			+pagination()
-+footer(footerNav, 'Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»', 'Подписка', 'Получайте специальные предложения и новости сервиса', 'Copyright © 2018 Toxin отель. Все права зачищены.', 'Email')
+block content
+	main.main-content
+		aside.main-content__sidebar
+			.main-content__sidebar-dateFilter 
+				h3.main-content__dateFilter-heading даты пребывания в отеле
+				+dateFilter('19 авг - 23 авг')
+			.main-content__sidebar-dropdownList-guests
+				h3.main-content__dropdownList-heading Гости
+				+dropdown(3, 'взрослые', 'дети', 'младенцы')
+			.main-content__sidebar-range
+				.main-content__range-slider
+					+rangeSlider('диапазон цены')
+				p.main-content__range-description Стоимость за сутки пребывания в номере
+			.main-content__sidebar-checkBoxBtns
+				+checkBoxBtns(chckBtns, 'checkBoxButtons')
+			.main-content__sidebar-richCheckbox
+				+richCheckboxBtns(richCheckbox, 'richCheckBoxButtons', 'Доступность')
+			.main-content__sidebar-dropdownList-comfort
+				h3.main-content__dropdownList-heading удобства номера
+				+dropdown(3, 'спальни', 'кровати', 'Ванные комнаты')
+			.main-content__sidebar-checkBoxList
+				+checkboxList(chckBox, 'list', 'дополнительные удобства')
+		.main-content__main
+			.main-content__main-heading
+				h1.main-content__main-heading-text Номера, которые мы для вас подобрали
+				p.main-content__main-filter Фильтры
+			.main-content__main-rooms
+				.main-content__main-rooms-line
+					.main-content__rooms-line-item
+						+roomDescr('./assets/img/room1.jpg', '888', '145', 'люкс')
+					.main-content__rooms-line-item
+						+roomDescr('./assets/img/room2.jpg', '840', '65')
+					.main-content__rooms-line-item
+						+roomDescr('./assets/img/room3.jpg', '980', '35', 'люкс')
+				.main-content__main-rooms-line
+					.main-content__rooms-line-item
+						+roomDescr('./assets/img/room4.jpg', '856', '19')
+					.main-content__rooms-line-item
+						+roomDescr('./assets/img/room5.jpg', '740', '44')
+					.main-content__rooms-line-item
+						+roomDescr('./assets/img/room6.jpg', '982', '56')
+				.main-content__main-rooms-line
+					.main-content__rooms-line-item
+						+roomDescr('./assets/img/room7.jpg', '678', '45')
+					.main-content__rooms-line-item
+						+roomDescr('./assets/img/room8.jpg', '450', '39')
+					.main-content__rooms-line-item
+						+roomDescr('./assets/img/room9.jpg', '350', '77')
+				.main-content__main-rooms-line
+					.main-content__rooms-line-item
+						+roomDescr('./assets/img/room10.jpg', '666', '25')
+					.main-content__rooms-line-item
+						+roomDescr('./assets/img/room11.jpg', '444', '15')
+					.main-content__rooms-line-item
+						+roomDescr('./assets/img/room12.jpg', '352', '55')
+			.main-content__main-pagination
+				+pagination()

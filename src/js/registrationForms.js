@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', ()=>{
-    let loginBtn = document.querySelectorAll('.header--login-button'),
-        registerBtn = document.querySelectorAll('.header--register-button'),
+    let loginBtn = document.querySelectorAll('.header__login-button'),
+        registerBtn = document.querySelectorAll('.header__register-button'),
         enterForm = document.querySelectorAll('.main__enterForm'),
         regForm = document.querySelectorAll('.main__regForm');
 

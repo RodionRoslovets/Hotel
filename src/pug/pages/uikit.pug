@@ -1,5 +1,8 @@
 block variables
 	- var title = 'uikit';
+	- var dropdExt = [{name:'Спальни', val:2}, {name: 'кровати', val:2}, {name:'ванные комнаты', val:0}]
+	- var dropdExtRoom1 = [{name:'Взрослые', val:0}, {name: 'Дети', val:0}, {name:'Младенцы', val:0}]
+	- var dropdExtRoom2 = [{name:'Взрослые', val:2}, {name: 'Дети', val:1}, {name:'Младенцы', val:0}]
 	- var chckBox = [{val:'Завтрак', checkProps:{name:'breakfast', val:'Завтрак'}}, {val:'Письменный стол', checkProps:{name:'table', val:'Письменный стол'}}, {val:'Стул для кормления', checkProps:{name:'feedChair', val:'Стул для кормления'}}, {val:'Кроватка', checkProps:{name:'litlleBad', val:'Кроватка'}}, {val:'Телевизор', checkProps:{name:'tv1', val:'Телевизор'}}, {val:'Шампунь', checkProps:{name:'schampoo1', val:'Шампунь'}}, {val:'Телевизор', checkProps:{name:'tv2', val:'Телевизор'}}, {val:'Шампунь', checkProps:{name:'schampoo2', val:'Шампунь'}}]
 	- var chckBtns = [{val:'Можно курить', checkProps:{name:'smoke', val:'Можно курить'}}, {val:'Можно с питомцами', checkProps:{name:'pets', val:'Можно с питомцами'}}, {val:'Можно пригласить гостей (до 10 человек)', checkProps:{name:'guests', val:'Можно пригласить гостей (до 10 человек)'}}]
 	- var radioBtns = [{val:'Мужчина', param:{name:'man', val:'Мужчина'}}, {val:'Женщина', param:{name:'woman', val:'Женщина'}}]
@@ -8,72 +11,317 @@ block variables
 	- var advantages = [{img: 'insert_emoticon', heading: 'Комфорт', text: 'Шумопоглощающие стены'}, {img: 'location_city', heading: 'Удобство', text: 'Окно в каждой из спален'}]
 	
 include ../includes/header.pug
-+logoGrey()
-label Text field
-+textInput('Email')
-br
-label dropdown
-+dropdown(3, 'взрослые', 'дети', 'младенцы')
-br
-label Masked text field
-+maskedText()
-br
-label date dropdown
-+date('Date dropdown', 'Date dropdown')
-br
-label filter date dropdown
-+dateFilter()
-label subscribe text field
-+subscrTextField('Email')
-br
-label checkbox buttons
-+checkBoxBtns(chckBtns, 'checkBoxButtons')
-br
-label expandable checkbox
-+checkboxList(chckBox, 'list')
-br
-label radio buttons
-+radioBtns(radioBtns, 'radio')
-br
-label toggle
-+toggleSwitch('Получать спецпредложения', 'get')
-br
-label like button
-+likeBtn(10)
-br
-label rate button
-+rateBtns(second)
-br
-label rich checkbox button
-+richCheckboxBtns(richCheckbox, 'richCheckBoxButtons')
-br
-label bullet list
-+bulletList('bullets list', bullets)
-br
-label filled button
-.filled-button
-	+filledBtn('click me')
-br
-label border button
-.border-button
-	+borderBtn('click me')
-br
-label text button
-+textBtn('click me')
-br
-label long button
-+longBtn('click me')
-br
-label pagination
-+pagination()
-br
-label range slider
-+rangeSlider()
-br
-label comment
-+comment('./assets/img/image.png', 'Мурад Сарафанов', '5 дней назад', 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.', 45)
-br
-label advantages
-+advantages(advantages)
 
-+calendar()
+.logo-grey
+	+logoGrey()
+.elems-wrapper
+	.stuff
+		.stuff-column
+			.stuff__textField
+				.textField__head
+					h3.textField__head-heading text field
+					p.textField__head-state default
+				//- input(type="text" placeholder="Email" value="").textField__field
+				+textInput('Email', name)
+			.stuff__textField__active
+				.textField__head
+					h3.textField__head-heading text field
+					p.textField__head-state Hover / Focus 
+				//- input(type="text" placeholder="Email" value="This is pretty awesome").textField__field.textField__field__active
+				+textInput('Email', name)
+			.stuff__dropdown
+				.dropdown__head
+					h3.dropdown__head-heading Dropdown
+					p.dropdown__head-state Default 
+				//- .dropdown__field
+				//- 	.dropdown__field-wrapper
+				//- 		p.dropdown__field-text Сколько гостей
+				//- 		.dropdown__field-arrow
+				//- 			i.material-icons expand_more
+				+dropdown(3, 'взрослые', 'дети', 'младенцы')
+			.stuff__maskField
+				.maskField__head
+					h3.maskField__head-heading masked text field
+					p.maskField__head-state Default 
+				//- .maskField__field
+				//- 	input(type="text" placeholder="ДД.ММ.ГГГГ")
+				+maskedText()
+			.stuff__dateDropdowns
+				//- .elems__dateDropdown__default
+				//- 	.dateDropdown__head
+				//- 		h3.dateDropdown__head-heading date dropdown
+				//- 	.dateDropdown__field
+				//- 		p.dateDropdown__field-text ДД.ММ.ГГГГ
+				//- 		i.material-icons.dateDropdown__field-arrow expand_more
+				//- .elems__dateDropdown__active
+				//- 	.dateDropdown__head
+				//- 		h3.dateDropdown__head-heading date dropdown
+				//- 	.dateDropdown__field
+				//- 		p.dateDropdown__field-text 19.08.2019
+				//- 		i.material-icons.dateDropdown__field-arrow expand_more
+				+date('date dropdown', 'date dropdown')
+			.stuff__dateFilter
+				.dateFilter__head
+					h3.dateFilter__head-heading filter date dropdown
+				//- .dateFilter__field
+				//- 	p.dateFilter__field-text 19 авг - 23 авг
+				//- 	i.material-icons.dateFilter__field-arrow expand_more
+				+dateFilter('19 авг - 23 авг')
+			.stuff__subscribeField
+				.subscribeField__head
+					h3.subscribeField__head-heading subscription text field
+				//- .subscribeField__field
+				//- 	input(type="text" placeholder="Email")
+				//- 	i.material-icons.subscribeField__field-arrow arrow_forward
+				+subscrTextField('Email')
+		.stuff-column
+			.stuff__checkboxBtns
+				//- .checkboxBtns__head
+				//- 	h3.dropdown__head-heading Checkbox Buttons
+				//- .checkboxBtns__items
+				//- 	.checkboxBtns__item
+				//- 		each el in chckBtns
+				//- 			.checkboxBtns__item-box
+				//- 				if el.active
+				//- 					svg.checkboxBtns__item-box-check(width="10", height="11", viewBox="0 0 10 11", fill="none", xmlns="http://www.w3.org/2000/svg")
+				//- 						path(d="M1.46439 4.40768L5.70703 8.65032L4.29282 10.0645L0.0501771 5.82189L1.46439 4.40768Z", fill="url(#paint0_linear)")
+				//- 						path(d="M8.53546 2.99347L9.94967 4.40768L4.29282 10.0645L2.8786 8.65032L8.53546 2.99347Z", fill="url(#paint1_linear)")
+				//- 						defs
+				//- 							linearGradient(id="paint0_linear", x1="7.82835", y1="2.28636", x2="2.1715", y2="7.94321", gradientUnits="userSpaceOnUse")
+				//- 								stop(stop-color="#BC9CFF")
+				//- 								stop(offset="1", stop-color="#8BA4F9")
+				//- 							linearGradient(id="paint1_linear", x1="7.82835", y1="2.28636", x2="2.1715", y2="7.94321", gradientUnits="userSpaceOnUse")
+				//- 								stop(stop-color="#BC9CFF")
+				//- 								stop(offset="1", stop-color="#8BA4F9")
+				//- 			p.checkboxBtns__item-description #{el.val}
+				+checkBoxBtns(chckBtns, 'checkFieldsName')
+			.stuff__radioBtns
+				.radioBtns__head
+					h3.radioBtns__head-heading Radio Buttons
+				//- .radioBtns__items
+				//- 	each el in radioBtns
+				//- 		.radioBtns__item
+				//- 			.radioBtns__item-box
+				//- 				if el.active
+				//- 					svg.radio__item-box-checked(width="12", height="12", viewBox="0 0 12 12", fill="none" xmlns="http://www.w3.org/2000/svg")
+				//- 						rect(width="12", height="12", rx="6", fill="url(#paint0_linear)")
+				//- 						defs
+				//- 							linearGradient(id="paint0_linear", x1="6", y1="0", x2="6", y2="12", gradientUnits="userSpaceOnUse")
+				//- 								stop(stop-color="#BC9CFF")
+				//- 								stop(offset="1" stop-color="#8BA4F9")
+				//- 			p.radioBtns__item-description #{el.val}
+				+radioBtns(radioBtns, 'radio')
+			.stuff__toggle
+				.toggle__head
+					h3.toggle__head-heading Toglle
+				.toggle__items
+					//- 	.toggle__item
+					//- 			.toggle__item-box.toggle__item-box__active
+					//- 				.toggle__item-switch.toggle__item-switch__active
+					//- 			.toggle__item-description Получать спецпредложения
+					//- 	.toggle__item
+					//- 		.toggle__item-box
+					//- 			.toggle__item-switch
+					//- 		.toggle__item-description Получать спецпредложения
+					+toggleSwitch('Получать спецпредложения', '1')
+					+toggleSwitch('Получать спецпредложения', '2')
+			.stuff__like
+				.like__head
+					h3.like__head-heading like button
+				.like__items
+					//- 	.like__item
+					//- 		.like__heart
+					//- 			i.material-icons.like__heart-icon favorite_border
+					//- 		p.like__num 2
+					//- 	.like__item__active
+					//- 		.like__heart
+					//- 			i.material-icons.like__heart-icon.like__heart-icon__active favorite_border
+					//- 		p.like__num__active 2
+					+likeBtn(2)
+					+likeBtn(11)
+			.stuff__rate
+				.rate__head
+					h3.rate__head-heading rate button
+				.rate__items
+					//- 	.rate__item
+					//- 		i.material-icons.like__heart-icon.rate__item-icon__active star
+					//- 		i.material-icons.like__heart-icon.rate__item-icon__active star
+					//- 		i.material-icons.like__heart-icon.rate__item-icon__active star
+					//- 		i.material-icons.like__heart-icon.rate__item-icon__active star
+					//- 		i.material-icons.like__heart-icon.rate__item-icon star_border
+					//- 	.rate__item
+					//- 		i.material-icons.like__heart-icon.rate__item-icon__active star
+					//- 		i.material-icons.like__heart-icon.rate__item-icon__active star
+					//- 		i.material-icons.like__heart-icon.rate__item-icon__active star
+					//- 		i.material-icons.like__heart-icon.rate__item-icon__active star
+					//- 		i.material-icons.like__heart-icon.rate__item-icon__active star
+					+rateBtns()
+					+rateBtns()
+		.stuff-column
+			.stuff__range
+				+rangeSlider('Range Slider')
+			.stuff__buttons
+				h3.buttons__heading buttons
+				.buttons__filled
+					+filledBtn('click me')
+					+filledBtn('click me')
+				//- 	.buttons__filled__default
+				//- 		button click me
+				//- 	.buttons__filled__active
+				//- 		button click me
+				.buttons__bordered
+					+borderBtn('click me')
+					+borderBtn('click me')
+				//- 	.buttons__bordered__default
+				//- 		button click me
+				//- 	.buttons__bordered__active
+				//- 		button click me
+				.buttons__text
+					+textBtn('click me', 'textBtn textBtn__purple')
+					+textBtn('click me', 'textBtn')
+				//- 	.buttons__text__default
+				//- 		button click me
+				//- 	.buttons__text__active
+				//- 		button click me
+				.buttons__long
+					+longBtn('перейти к оплате')
+				//- 	button.buttons__long-button перейти к оплате
+				//- 		i.material-icons.buttons__long-button-arrow arrow_forward
+
+			.stuff__pagination
+				.pagination__head
+					h3.pagination__head-heading pagination
+				+pagination()
+	.dd-lists
+		.dd-list
+			.dd-list__dropdown
+				.dropdown__head
+					h3.dropdown__head-heading Dropdown
+					p.dropdown__head-state Default 
+				//- .dropdown__field
+				//- 	.dropdown__field-wrapper
+				//- 		p.dropdown__field-text 2 спальни, 2 кровати...
+				//- 		i.material-icons.dropdown__field-arrow expand_more
+				+dropdown(3, 'взрослые', 'дети', 'младенцы')
+			.dd-list__dropdown__expanded
+				.dropdown__head
+					h3.dropdown__head-heading Dropdown
+					p.dropdown__head-state Default 
+				//- .dropdown__field
+				//- 	.dropdown__field-wrapper
+				//- 		p.dropdown__field-text 2 спальни, 2 кровати...
+				//- 		i.material-icons.dropdown__field-arrow expand_more
+				//- 	.dropdown__field__expanded
+				//- 		each el in dropdExt 
+				//- 			.dropdown__expanded-item
+				//- 				p.expanded-item__description #{el.name}
+				//- 				.expanded-item__count
+				//- 					if el.val > 0
+				//- 						.count__minus.count__minus__active - 
+				//- 					else
+				//- 						.count__minus - 
+				//- 					.count__num #{el.val} 
+				//- 					.count__plus + 
+				+dropdown(3, 'взрослые', 'дети', 'младенцы')
+		.dd-list
+			.dd-list__dropdown__expanded
+				.dropdown__head
+					h3.dropdown__head-heading Dropdown
+				//- .dropdown__field
+				//- 	.dropdown__field-wrapper
+				//- 		p.dropdown__field-text Сколько гостей
+				//- 		i.material-icons.dropdown__field-arrow expand_more
+				//- 	.dropdown__field__expanded
+				//- 		each el in dropdExtRoom1 
+				//- 			.dropdown__expanded-item
+				//- 				p.expanded-item__description #{el.name}
+				//- 				.expanded-item__count
+				//- 					if el.val > 0
+				//- 						.count__minus.count__minus__active - 
+				//- 					else
+				//- 						.count__minus - 
+				//- 					.count__num #{el.val} 
+				//- 					.count__plus + 
+				//- 		.dropdown__expanded-buttons
+				//- 			.dropdown__clear-button
+
+				//- 			.dropdown__accept-button
+				//- 				+textBtn('применить', 'textBtn textBtn__purple')
+				+dropdown(3, 'взрослые', 'дети', 'младенцы')
+		.dd-list
+			.dd-list__dropdown__expanded
+				.dropdown__head
+					h3.dropdown__head-heading Dropdown
+				//- .dropdown__field
+				//- 	.dropdown__field-wrapper
+				//- 		p.dropdown__field-text 3 гостя
+				//- 		i.material-icons.dropdown__field-arrow expand_more
+				//- 	.dropdown__field__expanded
+				//- 		each el in dropdExtRoom2
+				//- 			.dropdown__expanded-item
+				//- 				p.expanded-item__description #{el.name}
+				//- 				.expanded-item__count
+				//- 					if el.val > 0
+				//- 						.count__minus.count__minus__active - 
+				//- 					else
+				//- 						.count__minus - 
+				//- 					.count__num #{el.val} 
+				//- 					.count__plus + 
+				//- 		.dropdown__expanded-buttons
+				//- 			.dropdown__clear-button
+				//- 				+textBtn('очистить', 'textBtn')
+				//- 			.dropdown__accept-button
+				//- 				+textBtn('применить', 'textBtn textBtn__purple')
+				+dropdown(3, 'взрослые', 'дети', 'младенцы')
+	.check
+		.check-column
+			.check__expCheckboxList
+				//- .expCheckboxList__head
+				//- 	h3.expCheckboxList__head-heading expandable checkbox list
+				//- 	i.material-icons.expCheckboxList__field-arrow expand_more
+				+checkboxList(chckBox, 'chk', 'expandable checkbox list')
+			.check__expCheckboxList
+				//- .expCheckboxList__head
+				//- 	h3.expCheckboxList__head-heading expandable checkbox list
+				//- 	i.material-icons.expCheckboxList__field-arrow__active expand_more
+				//- .expCheckboxList__list
+				//- 	each el in chckBox
+				//- 		.expCheckboxList__list-item
+				//- 			.expCheckboxList__list-item-box
+				//- 				if el.active
+				//- 					svg.expCheckboxList__list-box-check(width="10", height="11", viewBox="0 0 10 11", fill="none", xmlns="http://www.w3.org/2000/svg")
+				//- 						path(d="M1.46439 4.40768L5.70703 8.65032L4.29282 10.0645L0.0501771 5.82189L1.46439 4.40768Z", fill="url(#paint0_linear)")
+				//- 						path(d="M8.53546 2.99347L9.94967 4.40768L4.29282 10.0645L2.8786 8.65032L8.53546 2.99347Z", fill="url(#paint1_linear)")
+				//- 						defs
+				//- 							linearGradient(id="paint0_linear", x1="7.82835", y1="2.28636", x2="2.1715", y2="7.94321", gradientUnits="userSpaceOnUse")
+				//- 								stop(stop-color="#BC9CFF")
+				//- 								stop(offset="1", stop-color="#8BA4F9")
+				//- 							linearGradient(id="paint1_linear", x1="7.82835", y1="2.28636", x2="2.1715", y2="7.94321", gradientUnits="userSpaceOnUse")
+				//- 								stop(stop-color="#BC9CFF")
+				//- 								stop(offset="1", stop-color="#8BA4F9")
+				//- 			p.expCheckboxList__list-item-description #{el.val}
+				+checkboxList(chckBox, 'chk', 'expandable checkbox list')
+		.check-column
+			.check__richCheckbox
+				//- .richCheckbox__head
+				//- 	h3.dropdown__head-heading Rich Checkbox Buttons
+				//- .richCeckbox__items
+				//- 	each el in richCheckbox
+				//- 		.richCeckbox__item
+				//- 			.richCeckbox__item-box
+				//- 			.richCeckbox__item-description
+				//- 				h4.richCeckbox__item-description-heading #{el.head}
+				//- 				p.richCeckbox__item-description-text #{el.text}
+				+richCheckboxBtns(richCheckbox, 'name', 'Rich Checkbox Buttons')
+		.check-column
+			.check__bullets
+				h3.bullets__heading bullet list
+				+bulletList(bullets)
+	.feedback
+		.feedback-column
+			.feedback-column__advantages
+				+advantages(advantages)
+				hr.advantages-item__line
+		.feedback-column
+			.feedback-column__comment
+				+comment('./assets/img/image.png', 'Мурад Сарафанов', '5 дней назад', 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.', 12) 

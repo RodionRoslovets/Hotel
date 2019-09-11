@@ -1,16 +1,14 @@
+extends ../layout/main.pug
+
 block variables
     - var title = 'registration'
     - var headerNav = [{name:'О нас', submenu:false},{name:'Уcлуги', submenu:true},{name:'Вакансии', submenu:false},{name:'Новости', submenu:false},{name:'Соглашения', submenu:true}]
     - var footerNav = [{heading: 'Навигация', items:['О нас', 'Новости', 'Служба поддержки', 'Услуги']}, {heading: 'О нас', items:['О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы']},{heading: 'Служба поддержки', items:['Соглашения', 'Сообщество', 'Связь с нами']}]
     - var radioBtns = [{val:'Мужчина', param:{name:'man', val:'Мужчина'}}, {val:'Женщина', param:{name:'woman', val:'Женщина'}}]
-include ../includes/header.pug
 
-.registration-header
-    +header(false, headerNav, '','Войти', 'Зарегистрироваться')
-main.registration__main
-    .main__regForm.main__regForm__active
-        +regForm()
-    .main__enterForm
-        +enterForm()
-.registration-footer
-    +footer(footerNav, 'Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»', 'Подписка', 'Получайте специальные предложения и новости сервиса', 'Copyright © 2018 Toxin отель. Все права зачищены.', 'Email')
+block content
+    main.registration__main
+        .main__regForm.main__regForm__active
+            +regForm()
+        .main__enterForm
+            +enterForm()

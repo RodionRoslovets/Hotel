@@ -1,6 +1,7 @@
 
 include ../utils/mixins
 block variables
+	- var headerNav = [{name:'О нас', submenu:false},{name:'Услуги', submenu:true},{name:'Вакансии', submenu:false},{name:'Новости', submenu:false},{name:'Соглашения', submenu:true}]
 
 doctype html
 html(lang='en')
@@ -11,3 +12,4 @@ html(lang='en')
 		link(href="https://fonts.googleapis.com/icon?family=Material+Icons", rel="stylesheet")
 		link(href="https://fonts.googleapis.com/css?family=Open+Sans:700,800&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet")
 	body
+		+header(false, headerNav, '','Войти', 'Зарегистрироваться')
