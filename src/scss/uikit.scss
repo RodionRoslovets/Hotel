@@ -24,84 +24,316 @@
 @import "../library/advantages/advantages";
 @import "../library/calendar/calendar";
 
-.stuff{
-    display:flex;
-    justify-content: space-between;
-}
-.dd-lists{
-    display:flex;
-    justify-content: space-between;
-}
-.check{
-    display:flex;
-    justify-content: space-between;
-}
-.feedback{
-    display:flex;
-    justify-content: space-between;
-}
+
 .elems{
     &-wrapper{
         width:100%;
         max-width:1440px;
         padding: 0 140px;
+        position: relative;
+        top: -6px;
+        margin:auto;
     }
 }
+.stuff{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 99px;
+    &__textField{
+        width:320px;
+        margin-bottom: 20px;
+        & input{
+            margin-bottom: 0;
+        }
+        &__active{
+            width:320px;
+            margin-bottom: 20px;
+            & input{
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__dropdown{
+        width:320px;
+        margin-bottom: 22px;
+    }
+    &__maskField{
+        width:320px;
+        margin-bottom: 40px;
+        & input{
+            margin-bottom: 0;
+        }
+    }
+    &__dateDropdowns{
+        width:320px;
+        margin-bottom: 40px;
+    }
+    &__dateFilter{
+        width:266px;
+        margin-bottom: 42px;
+    }
+    &__subscribeField{
+        width:266px;
+    }
+    &__checkboxBtns{
+        width:222px;
+        margin-bottom: 41px;
+    }
+    &__radioBtns{
+        width: 220px;
+        margin-bottom: 30px;
+    }
+    &__toggle{
+        width: 260px;
+        margin-bottom: 44px;
+    }
+    &__like{
+        width: 90px;
+        margin-bottom:40px;
+    }
+    &__rate{
+        width: 260px;
+    }
+    &__range{
+        width: 266px;
+        margin-bottom: 43px;
+    }
+    &__buttons{
+        width: 320px;
+        margin-bottom: 40px;
+    }
+    &__pagination{
+        width: 240px;
+        & .pagination{
+            left:0;
+        }
+    }
+    &-column:nth-child(2){
+        position: relative;
+        left: -3px;
+    }
+}
+.dd-lists{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:170px;
+}
+.dd-list{
+    &__dropdown{
+        width: 266px;
+        margin-bottom:21px;
+        &__expanded{
+            width: 266px;
+        }
+    }
+    &__dropdown-guests__expanded{
+        width: 320px;
+    }
+    &:nth-child(2){
+        position: relative;
+        left: 54px;
+    }
+}
+.check{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 22px;
+    height:348px;
+    &__expCheckboxList{
+        width: 266px;
+        &:first-child{
+            margin-bottom: 20px;
+        }
+        &:nth-child(2) .checkbox-list__list-item{
+            margin-bottom:10px;
+        }
+    }
+    &__richCheckbox{
+        width: 266px;
+    }
+    &__bullets{
+        width: 290px;
+    }
+    &-column:first-child{
+        position: relative;
+        top:-14px;
+    }
+    &-column:nth-child(2){
+        position: relative;
+        left: 11px;
+    }
+    &-column:nth-child(3){
+        position: relative;
+        left: -32px;
+    }
+}
+.feedback{
+    display:flex;
+    justify-content: space-between;
+    &-column{
+        &__advantages{
+            width: 290px;
+        }
+        &__comment{
+            width: 711px;
+            position: relative;
+            top: 8px;
+            left: -2px;
+        }
+    }
+}
+
 .textField{
     &__head{
         display:flex;
         justify-content: space-between; 
+        align-items: center;
+        line-height: 15px;
+        margin-bottom: 5px;
+        &-heading {
+            margin-bottom: 0;
+        }
+        &-state{
+            text-transform: uppercase;
+            font-size:12px;
+        }
     }
 }
 .dropdown{
     &__head{
         display:flex;
         justify-content: space-between; 
+        align-items: center;
+        line-height: 15px;
+        margin-bottom: 5px;
+        &-heading {
+            margin-bottom: 0;
+        }
+        &-state{
+            text-transform: uppercase;
+            font-size:12px;
+        }
     }
 }
 .maskField{
     &__head{
         display:flex;
         justify-content: space-between; 
+        align-items: center;
+        line-height: 15px;
+        margin-bottom: 5px;
+        &-heading {
+            margin-bottom: 0;
+        }
+        &-state{
+            text-transform: uppercase;
+            font-size:12px;
+        }
     }
 }
 .dateFilter{
     &__head{
         display:flex;
         justify-content: space-between; 
+        align-items: center;
+        line-height: 15px;
+        margin-bottom: 5px;
+        &-heading {
+            margin-bottom: 0;
+        }
     }
 }
 .subscribeField{
     &__head{
         display:flex;
         justify-content: space-between; 
+        align-items: center;
+        line-height: 15px;
+        margin-bottom: 4px;
+        &-heading {
+            margin-bottom: 0;
+        }
+    }
+}
+.radioBtns{
+    &__head{
+        margin-bottom: 13px;
+    }
+}
+.toggle{
+    &__head{
+        margin-bottom: 13px;
+    }
+    &__item:first-child{
+        margin-bottom: 10px;
     }
 }
 .like{
+    &__head{
+        margin-bottom: 15px;
+    }
     &__items{
         display:flex;
         justify-content: space-between; 
     }
 }
 .rate{
+    &__head{
+        margin-bottom: 18px;
+    }
     &__items{
         display:flex;
         justify-content: space-between; 
     }
 }
 .buttons{
+    &__heading{
+        margin-bottom: 15px;
+    }
     &__filled{
         display:flex;
         justify-content: space-between; 
+        width: 218px;
+        margin-bottom: 30px;
     }
     &__bordered{
         display:flex;
         justify-content: space-between; 
+        width: 218px;
+        margin-bottom: 27px;
     }
     &__text{
         display:flex;
         justify-content: space-between; 
+        width: 144px;
+        margin-bottom: 26px;
     }
+    &__long{
+        width:320px;
+        height:44px;
+    }
+}
+.filled-button{
+    width: 99px;
+    height: 44px;
+    & button{
+        padding:0 19px;
+    }
+}
+.bordered-button{
+    width: 99px;
+    height: 44px;
+    & .button{
+        padding:0 16px;
+    }
+}
+.pagination{
+    &__head{
+        margin-bottom: 17px;
+    }
+}
+.bullets__heading{
+    margin-bottom:14px;
 }
 /* .textField{
     &__head{

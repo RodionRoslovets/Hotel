@@ -1,6 +1,9 @@
 @import './variables';
 @import './mixins.scss';
 
+.ct-body{
+    background: #fff;
+}
 .CTwrapper{
     display:flex;
     justify-content:space-between;

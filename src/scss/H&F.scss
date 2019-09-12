@@ -1,13 +1,16 @@
 @import './variables';
 @import './mixins.scss';
 
+.headers-and-footers-body{
+    background: #E5E5E5;
+}
 .headerElem, .footerElem{
     @include MB(40px);
 }
 .header{
     background:#fff;
     width:100%;
-    padding:15px 140px;
+    padding:11px 140px;
     display:flex;
     justify-content:space-between;
     align-items: center;

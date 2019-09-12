@@ -1,0 +1,12 @@
+include ../utils/mixins.pug
+block variables
+doctype html
+html(lang='en')
+	head
+		title #{title}
+		meta(charset='utf-8')
+		meta(content="width=device-width, initial-scale=1" name="viewport")
+		link(href="https://fonts.googleapis.com/icon?family=Material+Icons", rel="stylesheet")
+		link(href="https://fonts.googleapis.com/css?family=Open+Sans:700,800&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet")
+	body(class=bodyClass)
+		block kit-content
