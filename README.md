@@ -1,8 +1,6 @@
 Отель для FSD.
 
-Ссылки
-  UIkit:
-  
+  UIkit:  
     https://rodionroslovets.github.io/Hotel/dist/colors&types.html  цвета и типы шрифтов
     https://rodionroslovets.github.io/Hotel/dist/uikit.html основные элементы 
     https://rodionroslovets.github.io/Hotel/dist/cards.html формы
