@@ -9,7 +9,7 @@
     https://rodionroslovets.github.io/Hotel/dist/H&F.html хедеры и футеры
     
   Hotel:
-    https://rodionroslovets.github.io/Hotel/dist/landing.html
-    https://rodionroslovets.github.io/Hotel/dist/searchRoom.html
-    https://rodionroslovets.github.io/Hotel/dist/roomDetails.html
-    https://rodionroslovets.github.io/Hotel/dist/registration.html
+    https://rodionroslovets.github.io/Hotel/dist/landing.html лендинг
+    https://rodionroslovets.github.io/Hotel/dist/searchRoom.html страница поиска
+    https://rodionroslovets.github.io/Hotel/dist/roomDetails.html страница номера
+    https://rodionroslovets.github.io/Hotel/dist/registration.html регистрация
